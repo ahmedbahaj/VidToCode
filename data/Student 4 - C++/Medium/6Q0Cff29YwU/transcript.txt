@@ -1,0 +1,270 @@
+[0.70] [Music]
+[4.07] hello friends this is an occasion in
+[6.18] watching civility video series on C++
+[8.01] and in this video we'll be learning what
+[9.66] is class and object in C++ so this is a
+[12.81] very basic video and we will try to
+[15.06] understand with this diagram here so
+[16.68] these two are the classes so fighter
+[20.07] plane is a class and the objects are
+[22.97] mig-29 Hall tasers Mirage 2000 and all
+[27.27] that so these are the real objects and
+[31.59] this is like an abstract entity okay
+[34.77] so classes are like a blueprint see the
+[39.66] phone is a blueprint if somebody is
+[42.15] telling phone you will get some picture
+[44.52] in your mind like this correct but what
+[48.09] phone iPhone 10 Google pixel or moto G 4
+[52.65] plus so these are the objects this is an
+[55.47] object of phone okay
+[57.99] these are the object there will be so
+[60.72] many objects of single class so these
+[63.42] are the objects of the classes so as you
+[66.54] can see here in order to make any object
+[69.75] first of all you must have the blueprint
+[72.03] okay so if you are creating a fighter
+[75.45] plane or iPhone or Google pixel phone
+[79.23] and all that first you need to have the
+[82.23] class of that then only you can create
+[84.99] some phone so this was about class and
+[88.44] object so you might have understood that
+[91.04] before you need to create the class and
+[93.96] then only you can create the object out
+[96.09] of that okay what I mean to say is
+[98.12] before creating any phone physical phone
+[101.76] people would have created a blueprint of
+[105.09] phone right like the phone should look
+[107.49] like this one and this is going to be
+[109.92] the screen part and here will put some
+[112.62] buttons and all that okay so the
+[114.72] blueprint should be ready in order to
+[116.64] actually create that okay so before you
+[119.31] need to create the classes in order to
+[121.71] create the object so first understand
+[124.14] what is the requirement for creating the
+[126.87] class there are two things you need to
+[129.84] create in class first is attribute
+[133.56] and another one is the functionalities
+[135.81] these functionalities you can understand
+[138.00] like the operations you can perform on
+[140.13] the object okay and attributes like how
+[143.97] it will look like like if it is iPhone
+[146.16] or Google pixel and moto G for then what
+[149.85] will be the screen size and what will be
+[152.70] the chipset inside that and all those
+[154.41] real attributes of some particular form
+[157.59] okay so you will be setting the
+[159.30] attributes and allowed operations that
+[163.41] what operations you want to allow to
+[165.15] your phone like receiving a call and
+[168.26] watching videos playing some music and
+[171.99] all that so those are the operations so
+[174.87] let's create the class of phone will
+[176.49] understand there really bad so in order
+[178.59] to create a class first you need to
+[180.72] write a keyword named class and the name
+[185.16] of the class so our name goes like this
+[188.25] and there are some standards like if you
+[191.34] have written your class name then the
+[193.86] initial character should be an uppercase
+[196.47] character okay so this is our class and
+[200.61] we'll start with curly and and braces
+[203.70] and this semicolon so now whatever will
+[206.34] come inside this starting and ending
+[209.22] curly bracket will be considered the
+[211.20] part of this class okay so whatever you
+[213.72] want to write should belong to your
+[215.73] class you will be writing in between
+[217.38] these two so as I was telling the
+[219.81] attributes so let's write some
+[221.64] attributes so let's say that phoned name
+[225.93] because our phones have name and like
+[230.22] size so some pixel by some picture okay
+[233.91] so these are the attributes you can
+[235.41] write as many as you want I will be
+[238.71] writing these only for the simplicity
+[240.54] and here comes the operations so
+[243.60] operations are called functions in
+[245.67] programming language and operations
+[247.47] words like make make call and another
+[252.36] operation could be void receive call
+[255.78] correct so these two are the operations
+[258.72] now it's up to you what you want to
+[261.71] do inside these functions and notice
+[264.41] this everything we are writing inside
+[266.27] this and and starting curly braces of
+[269.48] our class so these two are the
+[272.03] attributes and these two are the
+[273.83] operations now here is another thing
+[276.28] something called access specifier so we
+[280.85] have three access specifier private
+[283.46] protected and public those access
+[286.37] specifier I will talk about later in
+[288.74] some videos because that is a big topic
+[290.93] for now you just understand that if you
+[293.69] are making something as a public in your
+[296.90] class then you can access that part from
+[300.53] outside this class and if you have make
+[303.05] something private you cannot access that
+[305.42] private stuff outside this class so I
+[308.66] can specify also written like this PU BL
+[312.62] IC public so if you have written public
+[315.71] here it means whatever comes after this
+[318.50] is public so generally we keep the
+[322.39] methods are the operations whatever
+[325.01] operations you are making for particular
+[327.92] class we keep all those operations
+[330.23] public so that you can call those
+[332.12] operations from somewhere else
+[334.22] okay let's print some message which will
+[337.22] give you a good idea about this so
+[340.28] making call using this phone we mean and
+[347.14] here we can write like receiving call
+[350.65] using the same form so till now our two
+[355.04] things are ready first is attribute of
+[357.41] the phone like how the phone would look
+[359.60] like what will be the name of the phone
+[361.10] and the size of the phone what chipset
+[362.84] will use and all that and what
+[365.33] operations are allowed so for simplicity
+[367.73] I am keeping just simple operations so
+[370.70] these things are ready now there is
+[372.32] something called constructor which is an
+[375.11] spatial member function and used to
+[378.56] construct the object okay and this is
+[381.92] how the constructor looks like there are
+[384.20] two three types of constructors that
+[386.33] we'll discuss later but for now you just
+[388.91] understand that constructors are having
+[392.30] the same name what your class name
+[394.08] is and they're used to construct the
+[396.78] object so as this is used to construct
+[400.17] the object it will take some parameters
+[402.93] and assign these attributes so I'll just
+[406.08] show you just bear with me till and you
+[408.42] will be really understanding the logic
+[409.86] behind object and classes so the string
+[413.46] type name and string type size and what
+[418.68] we will do is P underscore name is equal
+[421.89] to name and P underscore size is equal
+[426.30] to size now we are almost ready so these
+[430.68] are the attributes we generally keep the
+[432.75] attributes in private section and yeah I
+[434.67] forgot to mention that if I'm not
+[437.16] writing anything like oblique or private
+[440.69] then automatically it will become
+[444.03] private see before I was not writing
+[445.74] this private here so whatever comes
+[448.08] under without any access specifier that
+[451.74] becomes private automatically so this
+[454.59] two lines comes under private section
+[457.41] and we keep attributes inside private
+[459.72] section so that no one will able to
+[462.42] change them without using our own class
+[465.83] functions okay so that we will see
+[469.29] little later I mean when you will see my
+[472.02] whole videos and the full journey of
+[474.36] learning C++ we will understand these
+[476.67] things by taking the real time examples
+[479.01] so for now you just think that these are
+[481.62] inside private section and these are
+[484.44] inside public session so public sections
+[487.02] can be called from outside this class so
+[489.78] now let's create an object
+[492.44] to create an object first you have to
+[495.33] write the class name it will say that
+[498.39] what type of object you are creating and
+[500.31] the object name that could be anything
+[502.68] it depends on you so I will say that
+[504.93] phone one okay and you have to pass some
+[508.92] parameters to parameters so this is
+[512.82] where you are going to create a phone
+[514.83] and that phone would look like this okay
+[518.61] so this is your phone it is going to
+[520.89] look like this and
+[523.26] as you're creating a phone you will end
+[526.41] up calling constructor this is your
+[528.63] constructor so as you can see if you
+[530.52] have some prior knowledge about
+[531.69] programming these are two parameters and
+[535.08] here we'll pass the parameters so first
+[538.02] one is taking the name so I will just
+[540.09] say I phone X or 10 and sorry for that I
+[545.70] don't know the pixel size of that so
+[549.17] excuse me for that I will just simply
+[552.24] say that okay thousand cross 500 excuse
+[555.60] me for this so actually I'm not a big
+[559.41] fan of iPhone and phones actually I'm
+[561.90] not into phone and all so your object is
+[565.23] ready ultimately your phone is ready now
+[567.81] if you want to make some operation on
+[571.71] phone let's suppose you want to call
+[573.03] somebody
+[573.87] let's do that phone may call now you
+[577.71] will get the clear picture let's run
+[580.26] this see making call using iPhone X got
+[585.00] it so this is how you perform the
+[586.83] operation using your object you write
+[590.01] the object name dot and write whatever
+[593.37] operation you want to do let's do
+[595.23] another operation on the same phone so
+[597.39] phone one receive call ok this is
+[602.25] another example I mean another function
+[603.99] let's run this if you are running this
+[607.20] receiving call using iPhone X this is
+[609.96] the beauty you have a phone class
+[613.37] deferred attributes these are the
+[616.32] operations and this is where you
+[618.45] construct your phone class ok
+[622.26] now let's create another phone we are
+[624.63] creating phones here man oh my goodness
+[627.30] so phone class again how you create an
+[632.40] object let me take it to this and this
+[637.56] time we'll say like phone 2 or something
+[640.95] or you can just give the name some
+[643.89] meaningful name so that if someone is
+[646.14] reviewing your code they will be able to
+[648.54] understand it so as this was an iPhone I
+[652.50] can say I
+[654.84] phone okay and then we have to change
+[658.38] here also iPhone and here also I phone
+[664.22] so this time if I will create a Google
+[667.20] pixel then I will be giving like gee
+[670.47] Excel and equally I will be passing two
+[674.46] parameters here first will be the name
+[676.95] so Google pixel to excel and let's
+[683.85] assume this one is having two thousand
+[686.76] cross seven hundred and G pixel dot make
+[692.10] call and G pixel dot they seem call this
+[698.70] will clear they are so much doubt so
+[701.64] let's give some space here and let's
+[706.41] again run this see making call using
+[710.31] iPhone X receiving call using iPhone X
+[712.62] and making call using Google pixel to
+[715.74] excel and receiving College in Google
+[717.72] pixel to accept so you can see that you
+[721.32] have only one class but you have
+[723.66] different different objects of that
+[725.52] particular class and here comes the
+[727.62] beauty you have defined a type or
+[730.44] something called a blueprint of
+[731.97] something
+[733.14] now you can treat that blueprint and
+[735.93] create so many objects out of it so this
+[739.77] was the basic about classes and object
+[742.68] so this is your class phone its class
+[745.34] iPhone this one is an object and if you
+[748.65] are creating any object like this then
+[750.72] it will automatically call the
+[752.49] constructor okay and there are three
+[755.67] types of constructor this is
+[757.26] parametrized constructor one is default
+[759.84] constructor and in the one is a copy
+[761.70] constructor so the constructor we'll see
+[764.55] in the next video so this video will
+[766.41] keep this much ugly
+[767.46] so if you liked the video don't forget
+[769.38] to hit the like button and if you don't
+[771.36] subscribe to it go for it it will help
+[773.22] you and me a lot so thanks for watching
+[775.74] bye bye

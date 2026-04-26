@@ -1,0 +1,67 @@
+Welcome to the to do list app :)
+
+
+Please select one of the following options
+------------------------------------------
+1. Add a new task
+2. Delete a task
+3. List tasks
+4. Quit
+Enter your choice: 3
+There are no tasks currently.
+
+
+Please select one of the following options
+------------------------------------------
+1. Add a new task
+2. Delete a task
+3. List tasks
+4. Quit
+Enter your choice: 1
+Please enter a task: go to grocery store
+Task 'go to grocery store' added to the list.
+
+
+Please select one of the following options
+------------------------------------------
+1. Add a new task
+2. Delete a task
+3. List tasks
+4. Quit
+Enter your choice: 3
+Current Tasks:
+Task #0. go to grocery store
+
+
+Please select one of the following options
+------------------------------------------
+1. Add a new task
+2. Delete a task
+3. List tasks
+4. Quit
+Enter your choice: 2
+Current Tasks:
+Task #0. go to grocery store
+Enter the # to delete: 0
+Task 0 has been removed.
+
+
+Please select one of the following options
+------------------------------------------
+1. Add a new task
+2. Delete a task
+3. List tasks
+4. Quit
+Enter your choice: 3
+There are no tasks currently.
+
+
+Please select one of the following options
+------------------------------------------
+1. Add a new task
+2. Delete a task
+3. List tasks
+4. Quit
+Enter your choice: 4
+Goodbye 👋👋
+PS C:\Users\PC\Desktop\Test\Medium\To Do List> 

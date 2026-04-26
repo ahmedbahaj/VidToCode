@@ -1,0 +1,229 @@
+[0.03] hey welcome to draft Academy my name is
+[1.83] Mike in this tutorial I'm gonna show you
+[3.57] how to use arrays in Java now an array
+[6.81] is a special structure inside of Java
+[9.33] where we can store information so we can
+[11.94] store data inside of an array and it's
+[14.94] pretty similar to a variable so if
+[17.19] you're familiar with variables in Java
+[19.05] you know that a variable can store a
+[21.09] single value so I can create a variable
+[23.73] and I can store like a number or a
+[26.01] string or a boolean value inside of that
+[28.89] variable one of the limitations of just
+[32.34] creating a regular variable is that you
+[34.83] can only store one value and a lot of
+[38.01] situations when we're programming we're
+[40.62] gonna want to store large amounts of
+[42.15] data so instead of just storing one
+[44.16] piece of information we're going to want
+[45.75] to store a bunch of pieces of
+[47.37] information like a bunch of values and
+[49.35] we can basically use an array to do
+[51.90] something like that so I'm gonna show
+[53.37] you guys how to create an array and it's
+[55.50] all gonna be really clear so the way we
+[58.14] can create is a written array is pretty
+[59.85] similar to the way that we create a
+[61.38] variable the first thing I want to do is
+[63.48] specify the type of data that I'm gonna
+[66.09] put inside of this array so I can just
+[68.73] say string and now since I'm creating an
+[71.64] array I want to make these open and
+[73.53] closed square brackets and this
+[75.75] basically tells Java that we want to
+[78.21] create an array we don't want to create
+[80.46] a variable remember an array can store
+[83.91] multiple values a variable can only
+[86.55] store one value so we're gonna create
+[88.83] our array and then we're just gonna give
+[91.14] it a name so I'm just gonna call this
+[92.58] friends so maybe this will be like an
+[94.92] array that stores a list of all of our
+[97.44] friends and we can set this equal to
+[99.30] something so I can say string box
+[101.88] friends is equal to and now I can make
+[104.43] these open and closed curly brackets and
+[106.77] inside of here I can just start typing
+[108.90] out the values that I want to put inside
+[111.54] of this array so we could start typing
+[113.31] out the name of some of our friends so I
+[115.38] could say like Jim so this is going to
+[118.38] be one entry in the array when I want to
+[120.90] add another one I just put a comma and
+[122.82] now I can put the next one so we could
+[124.98] say like Karen and Kevin
+[129.09] so right here I'm creating an array and
+[131.61] I'm storing three
+[132.79] strings inside of it I'm storing Jim
+[135.61] this is the first element in the array
+[137.17] Karen is the second element in the array
+[139.72] and Kevin is the third element in the
+[141.94] array so we basically have a variable
+[144.76] except we're storing a bunch of
+[146.98] different values so inside of this one
+[148.87] friends array we can have three
+[151.21] different values and really you can put
+[153.13] as many values inside of an array as you
+[154.87] want that's what they're for they're
+[156.49] meant to hold large amounts of
+[158.52] information so the question becomes now
+[161.50] that we've stored this data how can we
+[164.08] access it in other words let's say I
+[166.03] want to access one of these individual
+[168.19] values inside of my array well I'm gonna
+[170.74] come down here into this print line
+[172.18] statement and I'll show you how we can
+[173.83] access one of these values if I just
+[176.68] type out friends like this and I try to
+[179.47] print it out to the screen you'll notice
+[181.75] over here that we get this like crazy
+[183.43] string basically this is just saying
+[185.44] that we have an array of strings that
+[187.63] doesn't really help us I want to access
+[189.64] the individual elements so I can use a
+[192.01] special syntax I can make an open and
+[194.11] close square brackets after the name of
+[196.78] the array so again I'm typing out the
+[199.12] name of the array and then open and
+[201.16] close square brackets inside of these
+[203.41] square brackets I can just say the index
+[206.11] of the element that I want to access in
+[208.45] the array so if I want to access the
+[211.15] first element in the array this string
+[213.58] with Jim inside of it I can put a 0 here
+[216.72] now the way that arrays index the
+[220.18] content is they start counting at 0 so
+[223.03] we would say that this jim string is
+[225.70] actually at index position 0 so this
+[229.21] would be a position 0 this Karen string
+[232.06] would be at position 1 and this Kevin
+[234.28] string would be at position 2 so if I
+[236.68] want to access this string inside of
+[238.78] this array I have to put a 0 in here
+[240.85] because the array starts indexing at 0
+[244.18] not 1 so if I type friend 0 there this
+[248.62] should print out that first element in
+[250.15] our array you can see that it does if I
+[252.34] type a 1 in here now we'll print out
+[254.14] Karen and if I type a 2 in here will
+[257.20] print out Kevin so you can access
+[259.62] individual attributes inside of this
+[262.15] array by referring to their index inside
+[265.69] of the
+[266.20] Raye and that can be really helpful
+[267.85] another thing that we can do is we can
+[270.70] actually grab some information about
+[272.95] this array so I can actually access an
+[275.35] attribute about this array called length
+[277.54] so I can say friends dot length and if I
+[282.19] just type this this is actually gonna
+[283.84] tell me how many entries are inside of
+[286.09] this array so you can see over here it
+[288.22] says three because there's three
+[290.41] elements inside of the array so in a lot
+[292.93] of situations you're gonna want to be
+[294.28] able to figure out how many elements are
+[296.38] inside of your array and you can do
+[298.24] something like this
+[299.46] another thing we can do with arrays is
+[301.69] modify one of these values so let's say
+[304.30] that I wanted to modify this first value
+[306.37] instead of having it equal to Jim we
+[308.32] could change the name all I have to do
+[310.42] is come down here and I can just say
+[312.75] friends and again I want to access the
+[316.15] specific element inside of this array so
+[318.28] I can say friends zero since I'm trying
+[320.68] to access this element and I can just
+[322.93] set it equal to something
+[324.19] so I can basically use this as I would a
+[326.92] normal variable I can give it another
+[328.60] value so I could say Mike inside of here
+[331.45] and now if I was to print out friends
+[334.60] zero then I should just get Mike instead
+[338.53] of Jim so I've actually changed or
+[341.29] updated the value inside of this array
+[344.11] and that can be really useful so now you
+[346.36] know how to create an array you know how
+[348.16] to modify elements inside of array and
+[350.47] you know how to access individual
+[352.21] elements inside the array and over here
+[355.36] what I did you know the way that I
+[356.83] declared the array over here is just one
+[359.17] way that you can do it let's say there's
+[361.15] a situation where you don't know what
+[363.40] elements you want to put in the array
+[365.08] right off the bat so for example over
+[367.72] here I'm giving this array all the
+[369.97] elements like right up front you know I
+[372.04] know exactly what I want to go in there
+[373.72] so I just put them in there and we're
+[375.28] good to go but in a lot of cases when
+[377.59] you're programming you're not gonna know
+[379.24] what you want to put in the array right
+[381.34] away and so what we can do is we can
+[384.01] actually create this array a different
+[385.99] way so I can say string friends and I
+[389.86] can just set this equal to new string
+[393.46] and then I want to type these open and
+[395.35] close square brackets inside of these
+[397.69] square brackets I need to tell job
+[399.79] how many elements I want to put inside
+[402.01] of this array so for example when we
+[404.56] have that list of friends we have three
+[406.27] elements inside of it so I'm just going
+[407.80] to put three over here but let's say we
+[409.99] wanted to have ten elements we could
+[411.52] just say ten and when you're working in
+[414.43] Java you have to be very specific with
+[416.50] how many items you want to store inside
+[419.02] of your array and we can use something
+[421.33] like this to do that so we're basically
+[423.61] creating this string we're telling it
+[425.20] how many elements we want to put in it
+[427.09] but we're not telling it what elements
+[428.89] we want to put in it just yet and the
+[430.96] way that we can do that the way that we
+[432.34] can populate this array is by doing
+[435.25] something like this so you see down here
+[436.93] I have friends 0 is equal to Mike well
+[439.96] what this is gonna do is it's gonna
+[441.07] insert this element inside of the array
+[443.83] so now when I print out that first
+[446.35] element it's gonna give me Mike if I try
+[449.77] to print out the second element though
+[451.27] so if I put a 1 in here you'll notice
+[453.52] that we get the value of null and that
+[456.19] means that we haven't put a value inside
+[458.89] of this array in position 1 yet so why
+[461.50] don't we go ahead and do that I can say
+[463.38] friends 1 and we'll just set this equal
+[466.12] to Karen and actually we'll put one in
+[470.98] for the last one too so we'll say
+[473.70] friends 2 is equal to Kevin so now this
+[480.13] array should be fully populated with all
+[482.44] of these values so I can actually access
+[484.30] that first element in the array and I'm
+[486.76] able to get the value so that's the
+[488.68] basics of working with arrays arrays are
+[491.11] extremely useful and you know if you
+[493.30] plan on going forward with Java
+[494.92] programming you're definitely gonna use
+[496.72] them so I would recommend just playing
+[498.31] around with arrays giving them different
+[499.96] values you know playing around with
+[501.46] accessing the values modifying the
+[503.08] values and really just get comfortable
+[504.52] using them hey thanks for watching if
+[507.73] you enjoyed the video please leave a
+[508.93] like and subscribe to drop acad to be
+[510.82] the first to know when we release new
+[512.08] content also we're always looking to
+[514.36] improve so if you have any constructive
+[516.43] criticism or questions or anything leave
+[518.32] a comment below finally if you're
+[520.15] enjoying chopped Academy and you want to
+[521.47] help us grow head over to draft Khadem
+[523.57] e-comm forward slash contribute and
+[525.25] invest in our future

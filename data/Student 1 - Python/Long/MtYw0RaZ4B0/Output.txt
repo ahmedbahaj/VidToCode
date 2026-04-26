@@ -1,0 +1,71 @@
+Guess the word:  _ _ _ _ _ _ _ 
+6  chances left
+a
+Sorry! You have guessed a wrong letter!
+
++---+
+    |
+    |
+    |
+    ===
+Guess the word:  _ _ _ _ _ _ _
+5  chances left
+c
+Sorry! You have guessed a wrong letter!
+
++---+
+  | |
+  O |
+    |
+    ===
+Guess the word:  _ _ _ _ _ _ _
+4  chances left
+g
+Sorry! You have guessed a wrong letter!
+
++---+
+  | |
+  O |
+ /| |
+    ===
+Guess the word:  _ _ _ _ _ _ _
+3  chances left
+b
+Sorry! You have guessed a wrong letter!
+
++---+
+  | |
+  O |
+ /|\|
+    ===
+Guess the word:  _ _ _ _ _ _ _
+2  chances left
+d
+Awesome Job! You guessed the correct letter!
+Guess the word:  d_ _ _ _ _ _
+2  chances left
+r
+Sorry! You have guessed a wrong letter!
+
++---+
+  | |
+  O |
+ /|\|
+  |  ===
+Guess the word:  d_ _ _ _ _ _
+1  chances left
+l
+Awesome Job! You guessed the correct letter!
+Guess the word:  d_ l_ _ _ _
+1  chances left
+u
+Sorry! You have guessed a wrong letter!
+
+ /
++---+
+  | |
+  O |
+ /|\|
+  |  ===
+Sorry you guessed the wrong letter. Try again.
+PS C:\Users\PC\Desktop\Test\Long\Hangman> 

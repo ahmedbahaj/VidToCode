@@ -1,0 +1,406 @@
+[0.24] hi everyone welcome to my channel my
+[3.04] name is saldina
+[4.08] and i make i.t and programming related
+[6.48] videos so
+[7.36] if that is something that is of interest
+[9.12] to you consider subscribing to my
+[11.12] channel
+[11.84] and give this video a thumbs up as well
+[14.48] and in this particular video i want to
+[16.40] talk about
+[17.20] polymorphism now the first thing that i
+[19.76] want to do is i want to explain
+[21.60] what is polymorphism polymorphism
+[24.48] describes the ability of
+[26.56] an object for example to have multiple
+[29.76] forms now that means that you can have
+[33.28] two or more objects that inherit from
+[36.48] the same base class
+[38.48] those objects can have the method that
+[41.04] has the same name
+[42.48] but different implementation meaning
+[44.56] different behavior
+[46.16] and i'm going to demonstrate that on an
+[48.24] example
+[49.20] now here i have some code that we have
+[51.76] written
+[52.24] in my previous courses so if you haven't
+[55.28] watched those make sure to do so the
+[57.68] links to those videos are going to be in
+[59.76] the description
+[61.20] and i'm very quickly going to go over
+[63.60] this code
+[64.72] so here i have click created a class
+[67.12] that is called
+[67.92] youtube channel that class has three
+[70.80] private
+[71.44] properties name subscribers count and
+[74.40] then
+[74.96] published video titles and then it has
+[78.00] one protected property which is owner
+[81.20] name now this private properties these
+[84.96] are available only in this class
+[87.20] and then these protected properties
+[89.36] these are available in derived classes
+[91.68] as well
+[92.56] and then here we have public methods as
+[95.68] well
+[96.64] and this here is our constructor so it
+[99.68] just
+[100.72] initializes values of these properties
+[104.96] i'm going to collapse that and then here
+[108.00] we have
+[108.64] get info method with which just
+[111.68] writes out information about our youtube
+[114.08] channel
+[115.44] and then these subscribe and unsubscribe
+[118.96] methods
+[120.08] these just increase or decrease the
+[123.36] the number of our subscribers
+[126.72] let's collapse that and then publish
+[128.64] video method
+[130.08] it just um adds another video to this
+[133.76] published video titles
+[135.52] list so that would be our youtube
+[139.04] channel base class and then here
+[141.36] we have cooking youtube channel which is
+[143.44] a specific type of youtube channel
+[146.08] that inherits from this base class here
+[149.92] and that cooking youtube channel has its
+[152.48] own constructor which is this one here
+[155.12] and here we have just invoked the
+[157.52] constructor of
+[158.64] our base class and then here we have
+[161.68] implemented a method which is called
+[164.16] practice and it says
+[166.00] that when you practice and you have a
+[168.40] cooking youtube channel you will have to
+[170.64] be practicing
+[172.00] cooking and then learning new recipes
+[174.08] and experimenting with spices
+[176.08] now what i want to do is i want to
+[178.24] create another
+[179.60] derived class so i'm going to copy this
+[185.04] okay and then this derived class should
+[188.64] be
+[189.28] called for example let's paste the name
+[192.40] here
+[193.12] so singer's youtube channel and i'm
+[196.00] going to paste the name
+[197.84] here as well on my constructor so
+[201.20] this is going to be a youtube channel
+[203.28] about singing
+[204.72] now as you can see this singer's youtube
+[207.52] channel
+[208.00] has this practice method as well but
+[210.80] this implementation
+[212.00] is not right for my singers youtube
+[214.64] channel because
+[215.68] if you're a singer you are not going to
+[217.44] benefit really from
+[218.80] practicing cooking and then from
+[220.72] learning recipes
+[221.92] and experimenting with spices but what
+[224.40] you should do instead is you should
+[226.88] practice something else so i'm going to
+[229.60] copy
+[230.64] that so that i don't make a typo
+[234.32] like this so someone who
+[237.52] is trying to make a singer's youtube
+[240.16] channel
+[241.20] is going to take singing classes and
+[243.76] then learning new songs
+[245.44] and then he should as well be learning
+[247.76] how to dance because
+[248.96] i believe that singers should know how
+[250.96] to dance as well
+[252.84] okay so now we have implemented
+[255.92] this singer's youtube channel and as you
+[258.40] can see as i already demonstrated
+[260.48] it has this same method which is
+[263.12] practice
+[264.24] but this method has different
+[266.48] implementation
+[267.52] than this one and as you can see here
+[270.40] this is the implementation of our
+[272.16] practice method
+[273.36] on our cooking channel and then this
+[275.28] here is the implementation
+[277.36] on our singers youtube channel so what i
+[280.00] want to do now
+[281.20] is i want to create this singer's
+[282.96] youtube channel here we already have
+[285.36] cooking youtube channel
+[287.04] so it is a video it is a code from one
+[289.76] of my previous videos
+[291.44] and then what i want to do is i want to
+[293.44] create um
+[294.72] singer's youtube channel so let's call
+[297.04] it
+[297.76] um singers
+[300.96] youtube channel and let's say that it is
+[304.08] going to be called for example
+[306.40] john sings like this and then owner
+[309.76] is going to be a guy named john
+[313.04] like this okay now after i have created
+[317.68] this cooking youtube channel and then
+[320.00] this singer's youtube channel
+[321.92] you can probably call it singing youtube
+[324.00] channel or something like that
+[326.64] this is the best name that i could come
+[328.32] up with okay
+[330.00] so now what i want to do is i want to
+[332.48] invoke
+[333.36] methods on these two classes and the
+[336.16] methods that i want to invoke are going
+[337.84] to be
+[338.48] these two so practice and then this
+[340.64] practice method as well so here i'm
+[342.48] going to say
+[343.44] cooking youtube channel dodge practice
+[346.64] like this and then let's invoke the same
+[349.92] method for my singers youtube channel
+[352.88] like this and now if i run my program
+[357.44] as you can see it says that amy is
+[359.92] practicing cooking
+[361.20] and then john is taking singing classes
+[364.08] and learning new songs and learning
+[366.24] how to dance i can imagine that
+[369.60] okay now after i have invoked these two
+[373.52] methods you can really see oh
+[375.36] i have stopped my program i'm sorry so
+[378.16] here you can see that this
+[380.08] cooking youtube channel has invoked its
+[383.04] own method so
+[384.56] this cooking youtube channel has invoked
+[386.64] the method that has been
+[388.00] implemented in this cooking youtube
+[390.16] channel class which is
+[391.76] this one here and then this
+[394.96] invocation so this singer's youtube
+[396.96] channel when you invoke practice method
+[399.28] on that
+[400.40] this method here is going to be invoked
+[402.56] so this method that is implemented in
+[405.12] singer's youtube channel class now let's
+[408.16] add another thing
+[409.36] and that is going to be here in this
+[412.16] practice method
+[413.20] and then in this practice method as well
+[415.44] what i want to do
+[416.40] is i want to say that each time that
+[419.68] our user practices cooking and then
+[422.72] practices
+[423.52] singing what is going to happen is the
+[426.48] quality of that youtube channel is going
+[428.64] to increase
+[429.76] so in order to track that quality
+[432.24] content
+[433.04] rating i'm going to create a property
+[435.68] and that is going to be here
+[437.12] in this youtube channel in this base
+[439.04] class so i'm going to make that property
+[442.24] protected protected because i want to
+[444.56] have it accessible
+[446.08] in my cooking youtube channel and then
+[448.32] in my singer's youtube channel as well
+[450.16] so i want that property to i want to
+[452.96] access that property from my derived
+[454.96] classes and because of that
+[456.40] i'm going to make it protected so here
+[458.64] i'm going to say
+[459.44] and and let's call it content quality
+[466.16] like this okay and initially
+[469.52] i want to set the value of this content
+[471.92] quality variable
+[473.44] in this constructor here i want to set
+[475.44] it to zero
+[477.20] like this because i want to say that
+[479.76] when you create your youtube channel
+[481.68] this constructor here is going to be
+[483.20] invoked and you are going to have zero
+[485.68] subscribers and you are going to have a
+[488.00] zero knowledge about content quality so
+[491.36] your rate content quality rate is going
+[493.84] to be
+[494.56] zero so let's close that
+[497.68] and then what i want to do here in this
+[500.48] practice method
+[501.44] is i want to say each time that you
+[503.36] practice your content quality should
+[505.44] increase
+[506.40] so let's increase that variable
+[509.60] content where is it
+[514.00] content quality plus plus so i'm going
+[516.32] to increment
+[517.68] that content quality and then i'm going
+[519.76] to do the same
+[521.60] here like this now let's say for example
+[525.76] that
+[526.32] my um the singer here john
+[529.44] he is going to practice a lot so he has
+[533.04] practiced five times more than amy
+[536.40] did so if i run my program now
+[539.68] you can see that john is practicing and
+[542.88] then
+[543.52] again and again and again so he is
+[546.32] practicing a lot
+[547.44] and amy is not really so what do i want
+[551.20] to do with this content quality property
+[554.08] well
+[554.96] let's say that i want to implement
+[556.56] another method and that method is going
+[558.96] to be
+[559.60] as well implemented here in this base
+[561.68] class and that method is going to be
+[563.84] called
+[564.64] uh check analytics because that check
+[567.60] analytics
+[568.40] method should be available for all
+[570.72] youtube channels so that is not
+[572.40] something that is specific for
+[574.24] this cooking youtube channel only or for
+[576.88] this
+[577.28] singing youtube channel so singer
+[579.28] youtube channel
+[580.48] but that method should be available for
+[583.20] all
+[583.60] youtube channels and because of that i'm
+[586.08] going to implement it in this
+[587.68] base class so let's say void
+[591.52] check analytics
+[596.72] like this okay
+[599.84] and now what i want to do in this check
+[602.32] analytics method
+[603.52] is i want to use this property this
+[606.08] content quality property in a following
+[608.48] way so i want to say
+[610.56] if content quality is
+[613.92] less than 5 i want to write out a
+[616.72] message to my user so i want to say
+[619.20] c out and then let's write out the name
+[621.92] of this youtube channel
+[623.28] like this and then let's add
+[626.80] a message which is going to say let me
+[629.84] copy that
+[632.00] okay this is going to say that this
+[635.12] channel has a bad quality content
+[637.52] because
+[638.48] this content quality has a rating that's
+[641.84] that
+[642.16] is less than five and let's add
+[645.52] and line and then what is going to
+[647.76] happen if this content quality is not
+[650.40] uh less than five so if it is equal to
+[652.96] five or greater than five
+[655.04] i'm going to put else block here
+[658.16] and what i want to say here
+[661.84] okay is that this channel has
+[665.28] a good content great content actually
+[669.52] okay like this now what am i going to do
+[673.20] with this check analytics method well
+[675.36] i'm going to try to invoke it
+[677.28] here but the way that i want to try to
+[680.40] invoke this
+[682.08] this method that we just implemented is
+[684.32] going to be in a following
+[686.00] way so there is one very interesting
+[689.12] thing
+[689.60] when it comes to polymorphism and the
+[692.48] thing is related to pointers
+[694.80] um at this point i haven't made videos
+[697.28] about pointers on my channel but if you
+[699.20] are watching this video sometime in the
+[700.72] future then
+[701.68] those videos are probably available on
+[703.76] my channel so make sure to
+[705.68] look for them on my channel and then in
+[707.52] the description of this video as well
+[709.84] so let's create a pointer and that
+[712.80] pointer is going to be a pointer
+[714.96] of our base class so a pointer of type
+[718.80] youtube channel okay like this and let's
+[722.40] call it
+[723.28] youtube one and what i want to do
+[726.64] is i want to assign to this pointer here
+[729.52] address
+[730.56] of this cooking youtube channel and you
+[734.00] can do that you can assign to a pointer
+[737.44] of a base class an address
+[740.56] of derived class so i'm going to say
+[743.60] here
+[744.00] please this pointer assign address
+[747.36] of this cooking youtube channel class
+[750.96] like this and then what i want to do is
+[753.52] i want to create another pointer
+[755.60] let's call it youtube youtube2 and then
+[758.32] to this youtube2
+[759.92] pointer i want to assign the address of
+[762.48] my singer's youtube
+[764.16] channel like this so one more time
+[767.68] a pointer of base class
+[770.88] can point to a variable of
+[773.92] derived class now what i can do
+[777.28] using these pointers is i can invoke
+[780.88] method that i have just created which is
+[784.72] this one
+[785.36] here so check analytics so let's do that
+[788.32] let's say
+[789.28] youtube channel one and then um
+[792.80] let's invoke this method let's say check
+[795.12] analytics
+[796.16] like this and if you just noticed it has
+[799.36] changed my
+[800.00] dot to this symbol here because this is
+[802.64] used when you want to invoke
+[804.16] methods using pointers so i'm going to
+[809.12] copy this again for my second youtube
+[811.84] channel
+[812.80] like this and now if i run my program
+[817.60] as you can see our john has been
+[820.08] practicing
+[820.96] a lot and then amy has been practicing
+[824.00] only
+[824.64] one time so here after i have invoked
+[828.24] these two methods this first method says
+[830.88] that
+[831.52] amy's kitchen has bad quality content
+[834.16] because she hasn't been practicing
+[835.92] enough
+[836.96] and then after this youtube channel to
+[839.68] check analytics
+[840.96] you can see that it writes out this
+[843.28] message that
+[844.40] john sings channel has great content
+[847.12] because
+[847.84] he has been practicing a lot as you can
+[850.64] see here
+[852.72] okay so here we have
+[856.00] used polymorphism in order to implement
+[859.52] this practice method in our cooking
+[862.48] youtube channel and then
+[863.68] in our singers youtube channel so
+[866.08] implementation
+[867.52] of our singers youtube channel practice
+[869.44] method is here and then
+[871.04] for our cooking youtube channel our
+[872.64] practice method looks like this
+[875.52] and we have done that thanks to the
+[878.40] polymorphism so
+[879.84] different implementations but the same
+[883.68] method name and then i have demonstrated
+[886.96] here
+[887.36] how you can use pointers to point
+[890.96] to an object of derived class and you
+[894.16] can store that
+[895.20] in a pointer of base class and then we
+[898.72] have invoked
+[899.52] this check analytics methods using these
+[903.60] pointers of base class
+[906.80] so i hope that you enjoyed this video if
+[908.96] you did
+[909.84] give it a thumbs up and don't forget to
+[912.08] subscribe to my channel
+[913.28] click the bell icon as well and i'm
+[915.84] going to see you in my next video
+[918.08] bye

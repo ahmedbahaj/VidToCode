@@ -1,0 +1,12 @@
+{
+  "title": "Merge Sort - Data Structures & Algorithms Tutorial Python #17",
+  "video_id": "nCNfu_zNhyI",
+  "webpage_url": "https://www.youtube.com/watch?v=nCNfu_zNhyI",
+  "channel": "codebasics",
+  "uploader": "codebasics",
+  "upload_date": "2020-10-21",
+  "duration_seconds": 1301,
+  "view_count": 124087,
+  "description": "Merge sort is a sorting algorithm that gives time complexity of O(nlogn) and thus performs better than insertion sort, bubble sort etc. In this data structures and algorithm video in python, we will go over how exactly merge sort works, implement merge sort in python and at the end there will be an exercise for you for practice.\n\nCode: https://github.com/codebasics/data-structures-algorithms-python/blob/master/algorithms/5_MergeSort/merge_sort_final.py\nExercise: https://github.com/codebasics/data-structures-algorithms-python/blob/master/algorithms/5_MergeSort/merge_sort_exercise.md\nData structures and algo in python playlist: https://www.youtube.com/playlist?list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12\n\nTopics \n00:00 Merge sort Theory\n06:13 Merge sort Coding\n19:41 Merge sort Exercise\n\n🔖Hashtags🔖\n\n#mergesort #datastructures #algorithms #python #mergesortpython #sortalgorithm #pythonmergesort #mergesort #datastructure #mergesortcode #mergesortprogram\n\nDo you want to learn technology from me? Check https://codebasics.io/ for my affordable video courses.\n\nPrevious video: https://www.youtube.com/watch?v=K0zTIF3rm9s&list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12&index=16\n\nArticle explaining merge sort time complexity: https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/analysis-of-merge-sort\n\nWebsite: https://codebasics.io/\nFacebook: https://www.facebook.com/codebasicshub\nTwitter: https://twitter.com/codebasicshub\nLinkedin: https://www.linkedin.com/company/codebasics/\nDiscord:  https://discord.gg/r42Kbuk\n\n\nDISCLAIMER: All opinions expressed in this video are of my own and not that of my employers'.",
+  "extracted_at_utc": "2026-02-16T01:51:17+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Understanding Python: Argparse CLI",
+  "video_id": "J51vxXAWigI",
+  "webpage_url": "https://www.youtube.com/watch?v=J51vxXAWigI",
+  "channel": "Jake Callahan",
+  "uploader": "Jake Callahan",
+  "upload_date": "2021-05-14",
+  "duration_seconds": 1271,
+  "view_count": 15210,
+  "description": "In this video, I go over how to write a CLI using argparse.\nIncluded in the lesson is how to create a parse, add arguments, and parse the arguments. Additionally, I show a number of features argparse offers for arguments and options.\nAs always, if you have any questions or suggestions for future videos, please leave a comment down below.\n\nFollow me on twitter: https://twitter.com/JakeJCallahan\nSource: https://github.com/JacobCallahan/Understanding/\nTimelapse music: 失望した by Eva\nLink: https://youtu.be/jVTsD4UPT-k\nOutro music: Elix by Synthness\nLink: https://youtu.be/yEhj3leVJeY",
+  "extracted_at_utc": "2026-02-16T02:57:58+00:00"
+}

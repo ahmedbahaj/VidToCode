@@ -1,0 +1,301 @@
+[1.00] so welcome back in today's video we are
+[3.16] going to look at a nice concept called
+[5.16] polym what is polyethism in Java while
+[8.60] dealing with Ops one of the key Concepts
+[11.36] to note is polyethism so what is
+[14.36] polyethism polyethism simply is how a
+[17.24] method or an object reacts in many ways
+[20.72] uh pothis is divided into into two
+[26.16] words pism is divided into two words po
+[31.12] and
+[32.80] morphism so simply po
+[36.08] means
+[37.88] many
+[39.64] and morphism
+[42.88] means
+[45.80] Behavior
+[48.76] Behavior Behavior so simply this
+[51.92] sums sums it up uh what is polyethism uh
+[57.32] how many uh how a method or how many
+[62.12] methods or objects are react in
+[64.12] different ways let me give you a a real
+[67.60] life uh scenario I can be one person but
+[70.60] behaving different ways at school I I
+[73.92] behave differently and at home I also
+[76.52] behave differently
+[78.96] so that's the same thing here pism uh
+[82.76] you can have a method behaving in
+[84.52] different ways so pism is also divided
+[88.64] into type
+[90.68] we
+[92.12] have two types
+[94.36] here we have the compile
+[100.16] time have the compile
+[103.44] time compile
+[109.92] time have the compile time and we have
+[112.68] the run
+[115.32] time the run
+[118.44] time run time
+[120.64] so what does this mean this simply means
+[123.84] how this simply means how is a let me
+[127.80] say we are now let me give examples of
+[130.92] uh methods how is a method going to
+[133.96] react on on compil time and how is a
+[137.44] method going to react on run time simply
+[140.24] compile time is when you know how your
+[142.32] method is going to uh the result of your
+[144.96] method let me say you having a method
+[147.08] which which is adding two numbers uh and
+[150.32] you know the result that's what we call
+[152.32] compile time and run time you don't know
+[155.04] which method is going to be executed at
+[157.16] a certain point that's what we call run
+[160.24] time but also comp time we already saw
+[163.20] what we call uh we already saw what we
+[166.68] call method overloading and Method
+[171.88] overriding so in compile time that's
+[175.32] where we see
+[177.36] method or that's where we find me
+[180.92] method
+[182.88] over
+[185.44] loading that's where we find method
+[187.64] overloading you can have in method
+[190.40] overloading you can have many you can
+[193.96] have many let remove this in method
+[199.16] overloading you can have multiple can
+[203.32] have multiple methods let me say the add
+[207.16] method and this add method have
+[211.52] uh parameters let me say and in
+[217.20] one comma int n
+[221.00] to comma
+[223.92] int n three uh this has to close you can
+[230.12] have something like this you can
+[232.88] have in method overloading you can have
+[236.24] many many methods and taking this
+[240.80] taking the same arguments or it can be
+[243.92] the same or multiple arguments but you
+[246.80] know the results a while for method
+[249.92] overing uh you can have a
+[252.36] class let me say class let me say Class
+[256.36] C inside your class C having a method
+[260.44] having a method let me say add add
+[264.00] method add method taking argument of
+[267.76] int M1 and
+[272.04] in N to something like this uh and you
+[276.16] have another
+[278.68] class let me close this and you have
+[281.32] another class
+[283.16] here called
+[286.24] advanced
+[289.96] advanced called advanced advanced
+[293.92] C
+[296.92] Advanced but extending
+[302.40] attributes Al so just this but extending
+[306.20] attributes of the parent class which is
+[309.32] our calculator now inside here you can
+[311.92] have yeah you can have this same method
+[317.48] here but at run time uh while compiling
+[321.20] you don't know which method is going to
+[322.60] be executed but you already have these
+[325.64] uh your methods arranged but here you
+[327.84] can see that advanced calculator is EXT
+[329.88] attributes from the main parent or the
+[332.48] main calculator here this is what we
+[334.80] call method overwriting whereby you can
+[337.84] have a parent a parent class having the
+[341.04] same method as a child class but at run
+[343.44] time you don't know which is going to be
+[345.16] executed uh the difference between uh
+[348.00] overriding and overloading is here you
+[350.16] know which method is going to be
+[351.60] executed and you know which results are
+[355.16] you expecting and now here this is
+[358.12] called uh the compil time
+[360.60] uh behavior and this is called the
+[362.32] runtime Behavior so method overloading
+[364.60] falls under comp time and Method
+[367.00] overriding Falls and run time so let us
+[369.80] see let us give a small example uh in in
+[374.64] real time and we see so let us begin
+[377.68] with uh so let us begin with uh method
+[380.52] overloading so I'll first do here
+[382.40] comment and we say here this is method
+[389.36] of
+[391.16] loading so as I previously explained let
+[394.36] me create a
+[395.72] class class let me call it which name
+[399.44] can I give it let me call it
+[403.08] addition because I'm going to have
+[405.20] addition methods here so inside my
+[407.44] addition class I'm going to create a
+[409.00] method I will say uh in in add is taking
+[414.72] two arguments n one and int
+[420.12] taking n two something like this so it
+[423.64] is
+[424.56] returning is returning n one plus n two
+[430.12] something like
+[432.04] this I'm having this method so I can
+[435.00] have multiple methods this is what we
+[436.72] call method overloading I can have
+[438.92] multiple methods but taking different
+[440.60] arguments let say this is taking n a out
+[444.40] is taking three arguments instead of one
+[447.32] and this one is taking
+[450.80] double is taking a double instead of a
+[454.24] instead of a instead of instead of
+[458.68] taking integers so what I'll do is I'll
+[461.84] come here down and duplicated add in the
+[465.84] addition so this will be this will take
+[468.84] also
+[469.96] in something like this this it take like
+[474.20] four arguments yeah to make it come out
+[478.40] as we want uh we have this we have these
+[481.44] three methods uh it is one method but it
+[484.80] is taken in different arguments one
+[487.60] method We Are overriding One method so
+[490.00] in other words let me come here create a
+[492.04] new instance of that class it's an
+[494.28] addition class I say addition which is
+[496.68] each data type I say addition is equal
+[499.16] to object which is the new instance of
+[502.08] this object so let me try to give
+[505.52] arguments or assign arguments to My
+[507.40] Method so I'll come here I say
+[511.56] object dot I want to access the first
+[514.48] one which is taking into object 10 + 2
+[520.92] something like this I'll do the same
+[523.40] thing for the rest object dot I'll take
+[526.44] that one which is taking three arguments
+[529.08] uh I'll say five comma 6 comma and five
+[535.12] again something this close so I'll
+[538.36] create another object for the double one
+[542.24] dou I say uh 8 comma 9 comma 2 comma and
+[550.04] three yeah this one terminate something
+[553.96] like this so let me output them and see
+[556.72] say system out I'm going first output uh
+[560.64] the first one let me save this in two
+[562.96] variables in this one is ADD add one
+[568.60] which is equal to
+[570.84] say in add two is equal to that then
+[575.68] remember this is a double
+[578.48] double double add three which is equal
+[582.24] to that so let me print out these three
+[584.48] functions that I'm having all these
+[586.00] three methods the first one is add
+[588.88] one add one I give some
+[593.76] space some space uh the second one is
+[597.48] add to
+[599.72] I also give some
+[602.56] space and then lastly is add
+[607.88] three something like this so here I
+[611.08] already know uh my result 10 + 2 is 12
+[615.96] uh 5 + 6 that is 21 + 5 uh that is 26
+[621.24] the same thing here so when I run and
+[623.20] compile this I already know my result at
+[626.12] compile time so that that is called
+[628.84] method overloading so in polyethism that
+[631.72] one falls under the compile time type
+[634.64] under polyethism you already know how
+[636.44] your behavior you already know the
+[638.08] behavior of your method so when I run
+[640.44] and compile you see that I'm able to get
+[643.48] I'm able to get my results as I intended
+[647.08] uh but here sorry here I have to add
+[651.08] three and here I have to add remember so
+[656.24] add one so that's the result so when I
+[660.08] run again and compile I'm able to access
+[663.56] uh the the ones that I wanted yeah here
+[667.84] this is 12 uh this is yeah this is 16
+[673.64] yeah sorry this is 16 and this is 22.0
+[677.76] which is a double data type so we expect
+[680.12] a zero at the end so that's what we call
+[683.16] method over loading so down here I I'll
+[687.92] comment this
+[690.44] I'll say now let us turn to Method
+[696.00] overriding method
+[698.52] overriding here this is
+[702.56] Method
+[705.72] overriding so as you hear this word
+[708.16] overriding you have two classes let me
+[710.16] say class class A sorry Class A which is
+[715.52] our parent class and class
+[719.56] Class
+[720.76] B which is our child class or our sub
+[723.88] class but it's extending attributes of
+[725.76] Class A so inside here in class A I
+[729.12] system I'll create a
+[731.36] method method called um just a void
+[735.12] method called
+[737.28] show this method I'm going to what am I
+[740.20] going to show I say system out this is
+[744.40] plus
+[746.32] a and here down here I will say
+[749.92] system. out create another I'll create
+[752.84] the same method inside Class B but this
+[756.92] is going to be B so in this case so when
+[760.12] I come here down let me comment out this
+[763.60] when I come here down I create a new
+[765.24] instance I can first use this I create a
+[767.92] new instance of b b
+[771.76] here then I come inside
+[774.60] B object do uh let me say show
+[779.76] the show method and I run and
+[783.96] compile you see that I'm able to access
+[786.76] uh Class B which is uh Here in My Method
+[790.80] so what is
+[792.96] this what is happening here here uh this
+[796.84] is called uh compile time or this is
+[799.92] called sorry this is called runtime uh
+[802.84] Behavior whereby I don't know after
+[805.12] calling Class B I don't know which
+[807.24] method is going to be executed remember
+[809.44] here up I'm having uh the show method
+[813.24] and the same thing I'm having the show
+[815.48] method in the child class but remember
+[818.04] child the child class is extending
+[820.40] attributes of the parent class so after
+[822.40] printing out the show class I'm able to
+[824.64] access the the method in the method in
+[828.92] the child class simply because uh the
+[831.60] method in the child class is overriding
+[834.08] the method in the parent class so that's
+[836.80] what we called the one time Behavior so
+[840.52] if I want both of them to show you know
+[842.48] what we do I use the super key whereby I
+[846.04] can now access the what super dot so
+[850.12] here I'll be able to access the both of
+[853.28] them at uh at a single time or at one
+[856.72] time using the super keyword but without
+[858.72] using this the parent the child class is
+[861.52] going to override the method for the
+[864.84] child class method is going to override
+[866.60] the parent class method if it com
+[869.64] and they are having the same names so
+[872.16] that's what we call the
+[873.92] runtime Behavior so that's simply that
+[877.64] simply sums it up what refer to as polym
+[882.16] whereby you have you can have multiple
+[884.80] methods behaving in a different way and
+[887.60] we have seen that it's also divided into
+[889.88] two the compare time and runtime
+[892.56] behaviors whereby under the comp time we
+[894.96] have method overloading you have the
+[896.80] same method taking different arguments
+[899.16] and you already know your results and
+[901.08] for the run
+[902.36] time we have what we call method
+[904.76] overwriting you didn't write it
+[908.88] here
+[910.76] method
+[912.80] method over
+[917.52] writing falls under method overriding
+[920.96] falls under
+[923.24] the run time whereby you have the same
+[926.48] method in two classes the parent class
+[928.32] and the child class whereby the child
+[930.64] class is going to override the method in
+[933.40] the parent class so that's simply what
+[936.28] polym is uh this can also happen to not
+[940.00] only not only methods but also objects
+[943.92] so that's it for today uh thank you very
+[946.44] much

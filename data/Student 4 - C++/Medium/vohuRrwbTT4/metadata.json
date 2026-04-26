@@ -1,0 +1,12 @@
+{
+  "title": "C++ Programming: Binary Search Algorithm",
+  "video_id": "vohuRrwbTT4",
+  "webpage_url": "https://www.youtube.com/watch?v=vohuRrwbTT4",
+  "channel": "ReelLearning",
+  "uploader": "ReelLearning",
+  "upload_date": "2012-07-01",
+  "duration_seconds": 893,
+  "view_count": 233763,
+  "description": "Code can be found at http://pastebin.com/fsmGF1hp\nConcepts:\nHow the binary search algorithm works\nPerformance of binary search in comparison to linear search\nBinary search cuts the search space in half on each comparison\nImplementation of binary search in C++\nBinary search has log(n) running time (time complexity).",
+  "extracted_at_utc": "2026-02-13T11:43:57+00:00"
+}

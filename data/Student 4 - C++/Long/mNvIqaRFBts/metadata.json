@@ -1,0 +1,12 @@
+{
+  "title": "Tic Tac Toe Game in C++",
+  "video_id": "mNvIqaRFBts",
+  "webpage_url": "https://www.youtube.com/watch?v=mNvIqaRFBts",
+  "channel": "Kenny Yip Coding",
+  "uploader": "Kenny Yip Coding",
+  "upload_date": "2024-03-11",
+  "duration_seconds": 1220,
+  "view_count": 31053,
+  "description": "How to code tic tac toe in c++. In this video, you will learn how to code tic tac toe in C++ using a 2D array. You will learn how to get user input and do safe type checking to check for valid inputs and clear unwanted inputs. You will also learn how to update the 2D array tic tac toe board, and check for winning conditions horizontally, vertically, and diagonally. \n\nCode: https://github.com/ImKennyYip/cpp/blob/master/25_TicTacToe.cpp\n\nIf you need to review past C++ Topics:\nTernary Operator: https://youtu.be/wOxjjy3tKAo\nUser Inputs: https://youtu.be/xqMaEKd48yU\nFor Loops: https://youtu.be/dZDpUwtPLWI\n2D Arrays: https://youtu.be/A4nX2f4xldQ\n\nC++ Playlist: \nhttps://www.youtube.com/playlist?list=PLnKe36F30Y4ZDNIOZ51sX25pWKQ1pkpTE\n\nGithub Repo for C++ Code:\nhttps://github.com/ImKennyYip/cpp\n\nInstall C++ with VS Code: \nhttps://youtu.be/DMWD7wfhgNY\n\nSubscribe for more coding tutorials 😄!\n\n⭐ If you enjoyed the tutorial and would like to support the channel, you can do so here 💖: https://buymeacoffee.com/kennyyipcoding",
+  "extracted_at_utc": "2026-02-13T14:20:05+00:00"
+}

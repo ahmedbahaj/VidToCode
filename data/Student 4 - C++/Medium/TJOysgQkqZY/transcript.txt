@@ -1,0 +1,337 @@
+[1.92] hey guys in this topic we're going to
+[3.76] create a banking program for practice
+[6.40] we'll be able to deposit money withdraw
+[8.48] money and show a balance this is more or
+[10.72] less just for practice let's begin by
+[12.72] creating our functions
+[15.04] void show
+[17.36] balance
+[19.12] there will be one parameter double
+[21.84] balance
+[22.88] whatever our bank account balance is
+[24.64] we'll show it
+[27.28] the return type is double
+[29.60] deposit
+[31.44] no parameters
+[34.08] double
+[35.44] withdraw
+[36.80] and there will be one parameter double
+[39.60] balance
+[41.84] let's fill in a few things within the
+[43.20] main function
+[45.04] double
+[46.08] balance and i will go ahead and set this
+[48.08] to zero
+[49.60] as well as int
+[51.36] choice i will set that to zero as well
+[54.00] we'll use a switch to determine if the
+[56.00] user wants to show their balance
+[58.72] make a deposit a withdrawal or exit
+[62.32] let's display some output some prompts
+[65.52] standard output
+[67.52] enter your choice
+[72.56] and i'm just going to add some text
+[74.00] decorations because i think that'll be
+[75.92] cool
+[77.12] maybe a bunch of asterisks
+[80.24] and one more
+[84.00] okay
+[84.88] we have option one
+[86.96] one
+[88.56] show
+[89.60] balance
+[94.48] two will be deposit money
+[101.76] three is withdrawal money
+[109.52] four will be exit
+[117.12] then we'll accept some user input
+[118.96] standard
+[120.24] input
+[121.60] choice
+[124.56] now we're going to create a switch
+[126.96] we're examining the user's choice
+[130.56] switch
+[133.20] we're examining our choice against many
+[135.60] matching cases
+[137.36] we have case one
+[139.60] case two
+[142.00] three
+[144.16] four
+[145.68] then a default case
+[149.28] okay case one the user wants to show
+[151.76] their balance we'll invoke the show
+[154.48] balance function but we need to pass in
+[157.28] our balance
+[161.36] balance
+[163.12] and then we are going to break
+[166.72] case two the user wants to deposit money
+[170.08] so we're going to take our balance
+[173.44] equals
+[174.56] balance
+[176.24] plus our deposit function
+[178.96] so deposit will return a double
+[181.84] right here
+[183.52] so we're going to add that to our
+[184.88] balance once we verify it actually we
+[187.20] can shorten this to balance plus equals
+[190.40] whatever value is returned with the
+[192.16] deposit function
+[194.16] then we are going to break
+[197.52] case three withdraw money
+[200.32] balance
+[201.60] minus equals
+[204.16] the withdraw function
+[205.84] pass in our balance
+[208.64] we're withdrawing money from our balance
+[210.56] once we verify it
+[213.36] then we're going to break
+[215.84] we'll exit with case 4
+[217.76] i'll display some output standard output
+[221.92] thanks for visiting
+[227.44] then i'm going to break
+[230.00] okay default case
+[232.16] standard
+[233.44] output
+[236.00] invalid
+[237.84] choice
+[240.40] okay now we're going to place all of
+[242.16] this code within a do while loop
+[248.48] do all of this
+[250.56] while some condition is true
+[252.88] so let's take all this code
+[254.88] cut it
+[256.56] put it within that do while loop
+[259.20] let me just format this a little bit
+[264.00] the condition will be while choice does
+[267.12] not equal four
+[269.04] four is what we used to exit
+[271.44] we'll need to add some function
+[272.72] definitions
+[275.20] but i'm going to fill these in later
+[279.60] we'll need to return something
+[281.68] so let's return zero for the time being
+[284.64] for two of these functions at least
+[286.56] return zero
+[288.24] okay let's run and compile this just to
+[290.08] test our do while loop
+[293.84] okay enter your choice uh one show
+[296.88] balance that doesn't show our balance
+[298.88] yet but it will deposit money withdraw
+[302.00] now we should be able to exit by
+[303.36] pressing four
+[305.36] thanks for visiting okay so we know that
+[307.44] the do while loop is working
+[309.28] let's fill in our functions let's begin
+[310.96] with show balance
+[313.04] now with the show balance function we're
+[315.04] receiving our balance as an argument
+[318.24] so i'm going to display standard output
+[323.28] your
+[325.84] balance
+[326.96] is
+[328.48] dollar sign or some other currency if
+[330.16] you choose
+[332.32] i'll display our balance
+[334.48] then add a new line
+[340.48] so let's say we have 123 dollars in our
+[344.40] account
+[347.36] i'm going to show my balance
+[350.52] 123. even but i would like to display
+[353.44] cents i'll need two decimal places after
+[355.84] the decimal
+[357.68] so there's one thing we can include
+[359.84] we'll include this header file
+[362.00] include
+[364.00] io man ip
+[366.48] there's a function in here to set some
+[368.16] precision for floating point numbers
+[371.36] i'm going to make this change after the
+[373.44] dollar sign
+[376.56] standard
+[378.08] set
+[378.96] precision
+[380.88] pass in 2 for 2 decimal places
+[385.36] then add
+[387.28] standard
+[388.72] fixed
+[390.40] this will display our balance up to 2
+[392.48] decimal places after the decimal point
+[395.68] so let's try that again
+[398.40] okay show balance 123 dollars and zero
+[402.16] cents
+[403.76] if i were to change this to
+[406.84] 123.01 we should display two decimal
+[409.68] places
+[412.00] yep 123 dollars and one cent
+[415.44] okay that is the show balance function
+[418.16] let's work on the deposit function
+[421.44] okay now we're within the deposit
+[423.28] function i'm going to create a local
+[425.36] variable named amount
+[427.60] set this equal to zero
+[430.16] we'll ask the user how much they would
+[431.60] like to deposit standard output
+[435.20] enter amount
+[437.12] to be
+[438.64] deposited
+[443.44] standard
+[444.80] input
+[446.48] r amount
+[448.72] so i'm gonna set balance back to zero
+[451.92] then let's test it
+[454.40] show balance
+[455.68] one your balance is zero dollars and
+[457.92] zero cents i would like to make a
+[459.20] deposit
+[460.48] uh 420
+[462.80] 69 cents
+[466.00] okay now i would like to show my balance
+[467.92] after we make a deposit
+[472.24] so within case two after making a
+[474.48] deposit let's show our balance pass in
+[477.20] the balance variable
+[479.28] now let's do so after withdrawal 2.
+[483.12] okay let's try that again
+[487.12] show balance zero dollars zero cents
+[489.44] make a deposit
+[491.28] 420 69 cents
+[494.64] your balance is zero dollars and zero
+[496.56] cents
+[497.92] so what we're going to do is return our
+[500.16] amount at the end of this function
+[502.00] return amount
+[505.48] 420 dollars 69 cents
+[508.48] all right we have our balance
+[511.76] the user is able to enter in negative
+[513.68] money enter amount to be deposited
+[515.92] negative one thousand your balance is
+[518.32] now negative one thousand dollars
+[520.80] we need to prevent somebody from making
+[522.56] a negative deposit
+[525.04] so before we return our amount let's use
+[527.36] an if statement
+[530.72] if
+[532.00] amount
+[533.44] is greater than zero
+[535.84] then we will return the amount
+[542.88] else
+[544.80] standard
+[546.84] output that's
+[548.88] not a valid amount
+[554.08] then let's return zero
+[556.64] okay let's try that again
+[559.76] deposit money negative one thousand
+[561.84] dollars
+[564.24] that's not a valid amount your balance
+[566.08] is zero dollars
+[568.00] i'm just going to add a new line
+[570.16] like right here
+[571.92] then let's make a legitimate deposit
+[573.84] deposit money i will deposit one
+[576.56] thousand dollars in one cent
+[578.48] your balance is one thousand dollars and
+[580.48] one cent
+[581.60] okay that is the deposit function that
+[583.68] is complete
+[585.68] then we have the withdrawal function
+[587.92] we'll create a local variable named
+[590.08] amount of the double data type
+[592.64] we'll create a prompt standard output
+[596.32] enter amount to be withdrawn
+[603.12] standard input
+[605.60] amount
+[608.24] at the end of this program we will
+[609.84] return amount
+[612.24] okay let's test it
+[613.84] okay i need to deposit some money first
+[615.92] i will deposit one thousand dollars and
+[618.56] one cent
+[620.40] then let's withdraw money
+[622.40] i will withdraw one hundred dollars and
+[625.44] one cent
+[626.64] my new balance is nine hundred dollars
+[628.72] but we can overdraw our account still so
+[631.12] i'm going to withdraw a million dollars
+[634.24] and one cent
+[636.32] our balance shouldn't be negative so
+[638.00] let's prevent our user from overdrafting
+[640.24] their account
+[641.36] within our withdrawal function let's add
+[643.28] an if statement
+[645.04] if amount
+[646.88] is greater than our balance
+[649.92] will display
+[653.12] insufficient
+[656.24] funds
+[661.52] then we will return zero
+[666.40] okay i'm going to withdraw
+[668.72] one million dollars
+[670.56] and one cent
+[673.04] insufficient funds your balance is zero
+[676.16] okay now what if the user would like to
+[678.24] deposit negative money withdraw money
+[681.84] negative one thousand
+[684.08] your balance is one thousand dollars
+[686.88] we'll need to make sure that the amount
+[688.40] is a legitimate amount i'll add an elsif
+[690.72] statement
+[692.00] if amount
+[694.40] is less than zero
+[698.00] standard output
+[701.28] that's not a valid amount
+[708.40] now else
+[710.16] we will return the amount to be
+[712.24] withdrawn
+[716.32] then within the elsif statement we'll
+[717.84] need to return zero
+[720.32] there
+[722.56] okay let's withdraw money
+[724.48] enter amount to be withdrawn negative
+[726.32] one thousand dollars
+[728.16] that's not a valid amount that's good
+[730.16] let's withdraw again
+[732.72] i would like to withdraw 100
+[735.44] insufficient funds my balance is zero
+[738.16] let's deposit some money
+[740.08] 99.99
+[742.16] our balance is 99.90
+[744.64] let's withdraw again
+[746.72] let's try and withdraw 100
+[748.64] nope we can't
+[750.64] let's withdraw again 99.99
+[753.92] your balance is zero that's good then
+[755.84] let's exit
+[759.04] press 4 to exit thanks for visiting okay
+[761.84] so these functions are done
+[764.80] there's just one more thing we should
+[766.32] add
+[768.88] if i type in some characters like the
+[770.64] word pizza well this will break our
+[772.88] program
+[774.08] we'll want to clear the input buffer so
+[776.72] after our choice let's add these two
+[778.64] lines
+[780.48] standard
+[782.48] input dot clear function
+[786.64] so i haven't talked about this function
+[788.24] this function will reset any error flags
+[790.48] when the standard input fails to
+[792.24] interpret the input then follow this
+[794.56] with
+[795.76] f
+[796.56] flush
+[798.80] this is a function pass in standard
+[801.28] input this will clear the input buffer
+[803.92] basically speaking once we hit enter we
+[805.60] have a new line character within our
+[807.28] input buffer so we just need to flush
+[809.28] that and get rid of it that should
+[810.88] prevent our program from going crazy so
+[813.20] let's type in some characters
+[816.16] invalid choice cool then i would like to
+[818.96] exit
+[820.08] all right everybody that is a banking
+[822.08] program for some practice
+[824.08] if you would like a copy of this code
+[825.52] i'll post this in the comments section
+[827.04] down below and well yeah that's a
+[828.96] banking practice program in c plus plus

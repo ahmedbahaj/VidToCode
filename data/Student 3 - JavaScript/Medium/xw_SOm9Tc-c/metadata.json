@@ -1,0 +1,12 @@
+{
+  "title": "Learn Binary Search with Visualizer | JavaScript",
+  "video_id": "xw_SOm9Tc-c",
+  "webpage_url": "https://www.youtube.com/watch?v=xw_SOm9Tc-c",
+  "channel": "LetCode with Koushik",
+  "uploader": "LetCode with Koushik",
+  "upload_date": "2022-07-27",
+  "duration_seconds": 806,
+  "view_count": 1341,
+  "description": "Binary Search is a searching technique which works on the Divide and Conquer approach. It is used to search for any element in a sorted array. Compared with linear, binary search is much faster with a Time Complexity of O(logN)\n\nSteps:\nBASE CONDITION: If starting index is greater than ending index return false.\nCompute the middle index.\nCompare the middle element with number x. If equal return true.\nIf greater, call the same function with ending index = middle-1 and repeat step 1.\nIf smaller, call the same function with starting index = middle+1 and repeat step 1.\n\nUse the visualizer:\nhttps://pythontutor.com/render.html#mode=display\n\nSource code:\nhttps://github.com/ortoniKC/JS_DS_ALGO\n\n(https://www.geeksforgeeks.org/binary-search-in-javascript/#:~:text=Binary%20Search%20is%20a%20searching,O(N)%20time%20complexity.)\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCNcnqL0P17hISKlOxTjkJ0g/join\n\n---------------------------------------------------------------------\n😊Just in case you want to support me,\n🎁https://www.buymeacoffee.com/letcode\n\n--------------------------Thank you---------------------------\n\nThanks for watching, if you like the video, give it a thumbs up 👆.\nSharing is caring, kindly share the video with your friends and colleagues.\nDon't forget to subscribe and hit the bell 🔔 notification.\n\n--------------------------------SOCIAL--------------------------------\n\n📝Test Practice Site: https://letcode.in/\n👥Facebook Group: https://www.facebook.com/groups/letcode\n🐦Discord: https://discord.gg/Tvwac8HgQD\n📸Instagram: https://www.instagram.com/letcode.in/\n🎓 LinkedIn: https://www.linkedin.com/in/ortoni/\n⛳️ XPath Extension: https://bit.ly/2T5EUCu\n\nJoin our WhatsApp group (Only for Channel Members)\nhttp://bit.ly/3cSPCpm\n\n#letcode #javascript",
+  "extracted_at_utc": "2026-02-14T14:46:37+00:00"
+}

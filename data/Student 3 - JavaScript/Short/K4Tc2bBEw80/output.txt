@@ -1,0 +1,6 @@
+Let's play!roll
+1
+play again?yes
+3
+play again?no
+Bye

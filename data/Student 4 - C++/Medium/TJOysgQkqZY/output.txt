@@ -1,0 +1,38 @@
+******************
+Enter your choice:
+******************
+1. Show Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+2
+Enter amount to be deposited: 69420
+Your balance is: $69420.00
+******************
+Enter your choice:
+******************
+1. Show Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+3
+Enter amount to be withdrawn: 420
+Your balance is: $69000.00
+******************
+Enter your choice:
+******************
+1. Show Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+1
+Your balance is: $69000.00
+******************
+Enter your choice:
+******************
+1. Show Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+4
+Thanks for visiting!

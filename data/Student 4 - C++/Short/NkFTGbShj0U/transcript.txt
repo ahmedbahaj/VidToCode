@@ -1,0 +1,119 @@
+[0.92] hey what's going on everybody welcome
+[2.96] back to our Channel where we make coding
+[4.84] simple fun and easy to understand if
+[7.52] you're just starting out on your
+[8.52] programming Journey you're in the right
+[10.12] place today we're diving into one of the
+[12.08] most fundamental and essential
+[13.52] algorithms linear search now imagine
+[16.36] you've misplaced your keys somewhere in
+[17.76] your room what do you do you start
+[19.68] checking every spot one by one until you
+[21.60] find them that's basically linear search
+[23.68] and action in this video we'll walk
+[25.72] through how linear search works break
+[27.36] down the concept step- byep implemented
+[29.24] in C++ and see exactly why it's such a
+[31.60] powerful tool for beginners like you
+[33.36] before we get started make sure you have
+[34.96] a basic understanding of programming
+[36.60] Concepts like loops and arrays if you're
+[38.84] familiar with those you'll have no
+[40.44] trouble following along so grab your
+[42.88] notebook a cup of coffee and let's jump
+[45.04] right into understanding linear search
+[47.36] let's start with the basics what exactly
+[49.44] is linear search linear search is a
+[51.60] simple algorithm used to find the
+[53.12] position of a Target value in a list it
+[55.32] works by checking each element of the
+[56.68] list one by one starting from the first
+[58.96] until it finds the target or reaches the
+[60.84] end of the list imagine you're searching
+[62.84] for your favorite book on an unsorted
+[64.56] shelf you go through each book one by
+[66.56] one until you find the right one that's
+[68.48] practically linear search now you might
+[70.92] be wondering when should we use linear
+[72.28] search well it's perfect when the data
+[75.12] isn't sorted the list is small you want
+[77.56] a simple solution without much
+[79.16] complexity let's break it down step by
+[81.44] step suppose we have this array 3
+[84.72] 57291 our goal is to find the number
+[87.24] seven start at the first element is 3
+[90.04] equal to 7 no move to the next element
+[93.20] is 5 equal to 7 no keep going until you
+[96.28] find S once we find it we return its
+[99.00] position which in this case is index 2
+[101.80] remember that index always starts from
+[103.76] zero now that you have a clear
+[105.72] understanding of how linear search works
+[107.44] you're ready to apply it in your own
+[109.00] projects all right let's see how we can
+[111.28] code this in C++ it's super simple watch
+[114.32] closely I already have the boilerplate
+[116.52] code written in C++ here and I am using
+[119.04] the STD name space here so I don't have
+[121.56] to write that scope resolution operator
+[123.36] anywhere inside the main function let's
+[126.08] create our array or list of some
+[127.76] elements integer array square brackets
+[131.52] equals inside the curly brackets let's
+[133.88] give some values randomly 2 6 3 0 9 and
+[138.92] 5 then we have to calculate the size of
+[141.28] this array integer size equals size of
+[145.08] array divided by the size of array at
+[147.92] index zero now let's define Target
+[150.76] integer Target equals let's say we want
+[153.64] to find the element 9 that's it we're
+[156.08] all set our next step is to create the
+[158.80] linear search function integer you can
+[161.36] name it anything I am writing linear
+[163.40] search it takes three parameters integer
+[167.04] array integer size and lastly integer
+[171.12] Target now we have to write a for Loop
+[173.92] to iterate through each element of this
+[175.68] array for INT I equal 0 I less than size
+[181.08] i++ now we have to check each element
+[183.56] using if statement if array at index I
+[187.60] equals to Target which means we have
+[189.88] found the target just return I which is
+[193.24] the index outside the F Loop if the
+[196.16] target doesn't exists in our array we
+[198.56] have to return minus one and that's it
+[201.40] everything is set up now we have to run
+[204.44] that function on our array integer
+[206.80] result equals linear search pass the
+[209.92] parameters required first one is array
+[212.64] second one is size and last one is the
+[214.76] target let's print the result in
+[216.52] terminal character output result let's
+[219.84] run our program as you can see it gives
+[222.40] index 4 but if I change the target to an
+[224.96] element that doesn't exist in Array
+[227.08] let's say Target equals 10 if I run this
+[229.88] it gives minus one I hope everything is
+[232.04] clear now let's talk about the time
+[234.36] complexity of linear search in the worst
+[236.80] case we might have to check every single
+[238.76] element so the time complexity is Big O
+[241.04] N where n is the size of the list and
+[243.52] for space complexity it's Big O constant
+[246.12] because we're not using any extra space
+[248.92] Here's a quick look at its pros and cons
+[251.08] pros simple to implement and works for
+[253.40] both sorted and unsorted data cons
+[256.04] inefficient for large data sets since
+[257.80] it's linear and that's linear search in
+[260.04] a nutshell it's a great starting point
+[262.08] for understanding search algorithms if
+[264.16] you enjoyed this video don't forget to
+[265.84] like subscribe and hit the Bell icon for
+[268.04] more algorithm breakdowns and coding
+[269.52] tips
+[270.24] let me know in the comments what
+[271.40] algorithm you'd like me to cover next
+[273.36] until then keep coding and stay curious
+[275.88] see you in the next video thanks for
+[277.76] watching

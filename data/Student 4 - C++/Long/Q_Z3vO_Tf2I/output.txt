@@ -1,0 +1,17 @@
+Enter Size of array: 
+10
+Enter 10 integers in any order: 
+12
+23
+2
+14
+28
+3
+2
+55
+4
+7
+Before Sorting
+12 23 2 14 28 3 2 55 4 7 
+After Sorting
+2 2 3 4 7 12 14 23 28 55 

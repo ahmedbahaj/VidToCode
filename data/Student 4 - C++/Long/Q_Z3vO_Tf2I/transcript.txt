@@ -1,0 +1,515 @@
+[0.12] yo what's going on guys then Meyer for
+[2.34] simple snippets and welcome back to
+[4.11] another video tutorial on data
+[5.64] structures and algorithms and this is
+[7.74] the part 2 of QuickStart sorting
+[9.99] algorithm where we are going to write a
+[11.82] code in C++ program to implement the
+[14.04] QuickStart sorting algorithm now before
+[16.17] we start off if you don't know what
+[17.40] quicksort is how it works behind the
+[19.35] scenes and if you are doubtful about the
+[21.69] entire working please watch the part 1
+[24.06] of quicksort because that's where we've
+[25.98] discussed the entire algorithm we have
+[27.54] dry run that algorithm we've taken
+[29.49] diagrammatic representation and we saw
+[32.25] step by step what happens in the
+[34.05] algorithm so part one is more important
+[36.54] if you don't really understand quicksort
+[38.55] part 2 that is this part is just the
+[40.80] implementation of that algorithm so
+[42.42] converting that algorithm into C++ code
+[44.64] so I'll link that video in fact I'll
+[46.92] link the entire DAC course the entire
+[49.20] playlist there are a lot of video
+[50.91] tutorials in this paleis do check it out
+[52.53] and with that being said let's get
+[54.51] started if you're new to my channel my
+[56.97] name is ton my sac pal and I do a lot of
+[58.77] computer science and information
+[59.88] technology video tutorials like computer
+[62.28] programming development technology talks
+[64.50] and a lot more on this channel so if
+[66.69] that's something you are interested into
+[68.13] then definitely subscribe and turn on
+[69.99] the notifications to get the latest
+[71.61] updates and never miss out on such
+[73.47] important topics so we are going to
+[75.90] write C++ programming but the algorithm
+[78.12] is pretty much the same so you can use
+[79.80] any other general-purpose programming
+[81.00] language like Java JavaScript Python
+[82.98] whatever you have just the syntax is
+[85.08] going to be different but the logic is
+[86.82] going to be the same so I'll put the
+[88.50] algorithm on the right you can see the
+[90.45] quicksort algorithm as well as the
+[92.43] partition function algorithm which is
+[94.05] used in the quicksort algorithm on the
+[95.79] right hand side and this is what we saw
+[97.74] in the part 1 so we are simply gonna
+[99.96] convert this in C++ code and I'll
+[102.45] explain to you at every step but as I
+[104.58] mentioned if you want in-depth what
+[106.29] happens behind the scenes what is the
+[107.85] part one so let's quickly get started
+[109.83] and as you can see I've already typed a
+[112.17] little bit of C++ code you can open up
+[114.81] your de C++ ID or whichever ID you are
+[117.36] using and type in this boilerplate that
+[120.63] is the structure of C++ program so in
+[123.06] the end main let's get started with the
+[124.80] coding in the first thing is we will
+[127.29] create a size variable and array and
+[130.14] then take the size of the array from the
+[132.12] user now this is possible
+[133.80] in the later versions of C++ that is
+[136.11] dynamically taking the size of the array
+[137.70] otherwise if you using turbo C++ the
+[140.55] array size has to be predefined
+[142.20] and it is not something that you can do
+[144.30] at runtime so I'm gonna write in size
+[146.91] equals to zero and then I'm gonna say
+[149.07] enter the size of the array then I'm
+[151.02] going to say C in size so taking the
+[153.18] size this is how you actually take in
+[154.56] input and this is how you print the
+[156.57] output I hope you know basic C++ syntax
+[159.54] I have a completed C++ tutorials course
+[161.88] also and then I'm gonna create erasing
+[165.21] into my array with that size that you
+[167.40] entered okay so this is very basic the
+[170.91] next thing that I'm going to do is I'm
+[172.41] gonna say C out enter then I'm gonna
+[174.87] print the size that you've entered so
+[177.15] the way it is going to be printed is
+[178.71] enter and integers in any order so this
+[181.83] size is going to be the size that you
+[183.66] enter so if you enter fie so it will be
+[185.52] enter Phi integers in any order next
+[188.61] thing I'm going to do is I'm going to
+[190.11] say for in I equal to 0 I less than the
+[192.69] size I plus plus so this is just running
+[195.03] the for loop on this array and then I'm
+[197.94] going to take input of every element of
+[200.40] the array okay so this is again basic I
+[203.28] know I'm literally copy pasting this
+[205.53] core because this is simple you can
+[208.38] pause the screen I'm obviously going to
+[210.00] be sharing this entire code on our
+[211.59] official website but I would request you
+[214.11] guys to type it for the first time if
+[215.76] you're an absolute beginner but if you
+[217.65] want you can refer this code link in the
+[219.39] video description and yeah so now next
+[221.55] thing is this is where we take the input
+[223.20] from the user
+[224.07] we've stored it in the my array array
+[227.16] after this I'm gonna say before sorting
+[231.18] and then again I'm gonna use the same
+[233.07] for loop to print out the array elements
+[235.95] which are not yet sorted okay
+[238.13] so again the same for loop I equal to 0
+[240.84] I less than the size of the array I plus
+[243.09] plus and then I'm going to see out my
+[244.95] array of I and then concatenate a little
+[247.71] bit of space between the elements that
+[249.27] are printed after that I'm gonna say C
+[251.46] out and L so that we come on the next
+[253.05] line now after this this is where we
+[255.69] call our quicksort function now
+[258.21] obviously we have to create this
+[259.59] user-defined function over your on the
+[261.45] top before the int main but right now
+[264.51] I'm just writing it as it is if you see
+[267.36] that I
+[267.81] or if you see the algorithm on the
+[269.31] right-hand side the quicksort function
+[271.05] takes the array it takes the start index
+[274.62] s and it takes the N index now in the
+[277.71] array if the size is 5 the start index
+[280.14] is 0 and n index is full and not finite
+[282.66] the indexes start from 0 so it should be
+[285.12] 1 less than the size so I'm passing our
+[287.37] array myarray like this you don't have
+[289.35] to use square brackets when you pass the
+[291.21] array into a function the next thing is
+[293.67] start index which is 0 obviously and the
+[295.62] end index is going to be size minus 1
+[297.33] hence this is the code that you have to
+[299.43] type ok now after this I am again gonna
+[302.34] say C out after sorting and I can use
+[305.97] the same for loop but this time it is
+[308.31] going to be sorted because quicksort is
+[310.14] called over your so let me just comment
+[311.94] this out quick start call here in the
+[315.54] main function ok or I'll just stick
+[318.33] quicksort called ok now we have to
+[321.33] create this quicksort function as well
+[323.37] as the partition function which is there
+[324.93] inside the quicksort function so this
+[327.06] was all about the main function okay so
+[329.49] let's just save this I'm going to take
+[331.89] quick underscore start underscore
+[334.95] algorithm okay hit execute compile and
+[340.29] run let's see if this works ok are we
+[342.81] getting an error because we still have
+[344.10] to you know create this function
+[345.78] obviously I'm just gonna comment this
+[347.70] line for now and let's see if everything
+[350.22] else works everything else should over
+[352.08] basically so you have to say enter size
+[354.60] of the array I will see if I enter find
+[357.09] details I'm going to say 5 6 4 3 2 if I
+[361.02] hit enter it is thing before starting 5
+[363.09] 6 4 3 2 after sorting 5 6 4 3 2 now
+[366.30] obviously we are not yet sorting it I
+[368.40] just wanted to check if everything is
+[371.07] working so once we apply the quicksort
+[373.56] once we create this function they
+[375.96] obviously will be sorted okay so let's
+[378.18] come at the top over here let's create
+[380.07] this function I'm going to say void
+[382.79] quicksort the first parameter of the
+[386.46] quicksort in the algorithm also you can
+[388.08] see is integer array you can use float
+[391.14] array you can use double array also but
+[393.75] right now the data type that you are
+[395.73] using is integer the second parameter is
+[399.66] the star
+[400.29] next denoted by s so I'm gonna say int s
+[402.93] and the third parameter is obviously the
+[405.69] end index denoted by E okay
+[408.30] this is basic so the very first step in
+[411.66] the quicksort function as you can see is
+[413.97] first you have to check if s is less
+[417.57] than P this is the very basic step basic
+[421.62] checking without which we will go into
+[423.51] an infinite recursion because quicksort
+[425.67] is recursive and uses the concept of
+[427.62] divide and conquer we've talked about it
+[429.21] previously so this condition basically
+[431.55] checks if the start index is less than n
+[435.18] index so this condition basically means
+[437.52] that this quicksort will call itself
+[439.29] recursively till we have more than one
+[442.71] element in the sub array because when
+[445.89] the start index and n index will be
+[447.66] equal it will mean that there is only
+[449.61] one element in the sub array and if the
+[452.04] end index is greater than start index it
+[455.10] would mean that it is an invalid
+[456.33] condition invalid state so when is the
+[458.52] start index and an index of any array
+[461.25] seem when we have only one element right
+[463.71] if you have only one element we will
+[465.03] have only one index that is index 0 so
+[467.49] that is the condition that will stop the
+[469.08] recursion and that's why we have to make
+[470.43] this check now once this check is done
+[472.47] if this is true if the start index is
+[474.60] less than the end index the very first
+[476.40] step is to create an integer called int
+[479.46] P which is going to be the partition
+[481.80] index and we will say partition so
+[485.31] partition function is called and inside
+[487.65] this also we are passing the same end
+[489.84] array so in ARR so I have named it as
+[493.62] arr and we are passing the same start
+[497.28] index and we are passing the same and
+[499.50] index so of course we have to create
+[502.44] this separately so we cannot give the
+[504.99] data type over your you have to simply
+[506.70] pass these variables that are created
+[509.13] over here these are the arguments and we
+[511.17] have to pass them as it is because we
+[512.88] are giving a function called this
+[514.11] partition function has to be created
+[515.64] separately and this partition function
+[518.01] is going to return an integer which is
+[520.11] going to be the index position for the
+[522.33] next partition right because if you see
+[524.55] step 2 and 3 in the algorithm in the
+[526.56] quicksort function we have to call
+[528.45] quicksort recursively two times for the
+[530.85] left partition and for the right
+[532.29] partition and
+[533.93] the way we do this is we use this p
+[536.21] point as the partition index so what we
+[539.30] do at the next step is we say quicksort
+[541.94] this time we pass the same area
+[544.13] obviously the start index is going to be
+[546.80] the same because now we are calling
+[548.03] quicksort for the left partition so n
+[551.21] index this time is going to be P minus 1
+[554.92] similarly for the right partition the
+[558.86] start index is going to be P plus 1 and
+[560.84] n index is going to be as it is which is
+[563.45] e okay so this is a recursive quick
+[568.97] start call for left partition this is a
+[573.80] recursive quicksort call for a right
+[575.99] partition so this is it you know this is
+[578.63] the only simple thing that you have to
+[581.21] do for the quick start function but the
+[583.88] real crux or the real activities or the
+[588.11] real code happens inside the partition
+[590.06] function because this is where you get
+[592.22] the partition index that is this
+[594.14] partition function returns the point
+[596.30] where you have to do the partitioning
+[597.44] and it also does the sorting that is the
+[600.38] in-place sorting we've seen how in-place
+[602.84] sorting works in the working of
+[604.69] quicksort in part 1 in detail but now
+[607.76] let's actually go ahead and start with
+[609.56] writing the partition function now we
+[612.26] know that this partition function
+[613.61] returns an integer value the integer
+[615.98] value is the index position where the
+[617.39] partition should happen which is stored
+[619.10] in this variable so when you create the
+[621.50] function you have to say impartation it
+[625.28] is going to take an integer array it is
+[627.80] going to take start index and it is
+[630.41] going to take an index now do note that
+[634.40] you have to create this function on the
+[636.38] top at the very beginning before
+[638.78] quicksort because if you create this
+[641.12] function over your what will happen is
+[643.13] this quicksort will be called first and
+[644.96] when it will be called it will look for
+[646.70] partition but partition is going to be
+[649.97] created over your that is after
+[651.83] quicksort so it will throw up an error
+[653.39] saying that they did not find this
+[655.70] partition function so whichever function
+[657.74] is called forced in the user-defined
+[660.50] functions has to come on the top okay so
+[662.99] when the int main will start executing
+[664.64] it is below the quicksort function right
+[667.32] user defined function all the user
+[669.54] different functions if kept above the in
+[672.00] domain it will not throw up an error
+[674.04] otherwise we'll have to do the forward
+[675.42] declaration because the compilation
+[677.28] happens from top to bottom right so if
+[680.10] quick start and partition function were
+[681.72] below in domain while compiling from top
+[684.21] to bottom this line this fortieth line
+[686.52] will give us an error if quicksort
+[688.23] function was declared below without the
+[690.27] forward declaration now if you want more
+[692.37] details I will drop some link in the
+[693.84] video description to let you know what
+[695.28] is forward declaration but anyways let's
+[697.65] create the partition function now the
+[699.72] very first thing in the partition
+[701.22] function is to select one element and
+[704.19] call it as pivot now depending upon how
+[707.01] you select the element quicksort can be
+[709.47] divided or you know classified into
+[711.24] different versions or different modes
+[713.48] according to our algorithm and according
+[716.10] to what we've set in part one we are
+[718.23] gonna select the last element always and
+[720.90] set it as pivot you can also go and
+[723.18] select the first element you can also go
+[725.07] and select any random element or the
+[727.29] median element and that's how you can
+[729.63] implement quicksort in different modes
+[731.37] or different ways but our code our
+[734.31] setting is such that we are gonna select
+[736.44] the last element and select it as the
+[738.30] pivot element so I'm going to create the
+[740.40] integers named pivot we're gonna say ARR
+[743.64] of E and that's because E is the last
+[748.32] index that is passed in this function so
+[750.72] s is the start index is the end index so
+[753.75] ARR of e would be the end element and
+[756.39] that would be selected as the pivot one
+[759.30] more integer named P index has to be set
+[763.26] which is going to keep a track of the
+[766.05] elements in the array that are smaller
+[767.67] and it will be incremented every time a
+[770.13] smaller element is swapped to the left
+[772.83] so the whole idea about quicksort
+[774.84] sorting algorithm is to select the pivot
+[777.09] element okay
+[778.44] so once you have a pivot element you
+[780.33] compare all the other elements with that
+[782.52] pivot element and whichever element is
+[784.41] smaller than the pivot you shift it to
+[786.63] the leftmost side of the array and once
+[789.09] you compare all the elements you bring
+[791.52] that pivot element to the position in a
+[794.79] way that all the leftmost element are
+[797.01] smaller than that pivot element okay and
+[799.02] that is done using this
+[800.76] you next variable which will keep a
+[802.17] track of where you have to bring the
+[803.91] pivot element at the end so you'll
+[805.92] understand that as we move on so P index
+[808.50] will start from the start index so start
+[810.57] index is given by s so that's the second
+[813.09] step now we use the for loop and the for
+[817.08] loop is used to do the comparison so
+[818.70] let's say if you selected the pivot
+[820.08] which is the last element so all the
+[822.48] other elements are supposed to be
+[823.68] compared with that element right so
+[825.09] that's where we are going to use the for
+[827.13] loop I'm going to say int I equals to
+[829.70] start index I is less than II okay you
+[834.54] can also say I is less than equal to e
+[836.82] minus 1 or you can say I is less than e
+[839.88] it is pretty much the same and the
+[842.07] reason we have to see less than is
+[843.54] because if there are fire elements in
+[845.76] the array and the last element is
+[847.71] selected as pivot we only want to run
+[850.23] from 0 to 3 that is the first four
+[852.93] elements are supposed to be compared
+[854.25] with the last element so you don't want
+[855.63] to run to all the elements because the
+[857.64] last element is the pivot so pivot
+[859.68] cannot be compared by itself we have to
+[861.66] compare all the other elements with the
+[863.28] pivot element okay a hence it is I less
+[866.28] than E and you have to say I plus plus
+[869.27] so in the for loop we have to make that
+[871.74] comparison we have to say if ARR of I is
+[876.56] less than the pivot value then according
+[881.31] to the algorithm we have to do the
+[882.63] swapping of ARR of I and a error of P
+[885.81] index element now in the algorithm it is
+[888.15] given by one line but obviously swapping
+[890.04] will require some line of code and the
+[892.59] basic swapping technique is to create a
+[894.81] temporary variable so I am going to say
+[896.19] int M equal to a R R of I air R of I
+[902.90] equals to a R of P index and then air R
+[907.29] of P index equals should temp now this
+[912.06] is basic swapping technique I hope you
+[913.95] know this and then the second step in
+[916.23] the if block is to increment P index so
+[919.83] this will now move forward in the array
+[922.26] for further comparisons and swapping ok
+[925.17] so basically this for loop is done and
+[927.36] this for loop as I mentioned will
+[928.92] compare all the other elements with the
+[931.62] last element which is selected as pivot
+[933.29] whichever
+[934.38] the element is smaller than the pivot
+[936.06] will be strapped to the left and that
+[938.82] index will be noted down so if two
+[941.67] elements are smaller than the pivot the
+[944.10] P index value will become two and when
+[946.98] you come outside the for loop we will do
+[949.29] one more swapping which will take that
+[951.81] pivot element and bring it to that P
+[954.27] index position which is now become two
+[955.77] so again we can use the same concept of
+[958.38] temporary variable to do the swapping so
+[960.39] I'm going to say in temp equals two
+[962.78] ARR of e because the end element is the
+[967.77] pivot element then we will say ARR of e
+[970.41] is equal to here R of P index and now I
+[974.88] will say ARR of P index equals to temp
+[979.04] simple enough this is done but one last
+[982.56] step that is required is to return this
+[985.77] P index so after this entire partition
+[988.74] function computes his execution till
+[990.42] this point what has happened is the
+[992.49] pivot element will come in the array
+[994.41] into a such a position where all the
+[996.96] elements to the left of that pivot or
+[999.09] left of that element will be smaller and
+[1001.70] all the elements to the right will be
+[1003.47] greater
+[1004.31] so that index position is basically
+[1007.10] where we want to do the partition right
+[1009.32] so that's where we want to do the
+[1010.64] partition and we want to apply quicksort
+[1012.38] on the left of that and on the right of
+[1014.84] that so we need that index point and
+[1017.30] that is where this P index is keeping a
+[1019.37] track of that particular index and hence
+[1022.40] we are going to return that from this
+[1023.87] partition function which will again be
+[1026.00] stored in this P variable and then again
+[1028.91] click start will be called on the left
+[1030.29] and right sub arrays of that very same
+[1032.93] array and hence we need to return this P
+[1035.30] index okay so this is pretty much it
+[1037.46] we've pretty much created both quicksort
+[1039.92] and partition functions I hope this runs
+[1042.50] in the forest go let's actually try to
+[1044.57] save you this and let's execute this
+[1046.94] this is where the function is going to
+[1049.16] be called I have uncommented it let's go
+[1051.68] to execute compile and run okay so yeah
+[1054.62] we're getting an error because without
+[1056.93] error nothing works in the forest whoa
+[1059.33] okay if you see I missed out the
+[1062.00] brackets over here square brackets of
+[1063.74] the array whenever you are creating a
+[1065.90] function which takes
+[1068.21] in the arguments obviously you have to
+[1070.07] specify these square brackets which
+[1071.69] would be note that it is a array
+[1073.01] variable and not a simple variable okay
+[1075.71] also do note that arrays are always
+[1078.17] passed by address and not by a value and
+[1080.84] if you don't know what is passed by
+[1082.37] address pass by value pass by reference
+[1084.26] in C++ you check out that video where I
+[1087.56] explain it very clearly in the C++
+[1089.54] playlist I will link that video in fact
+[1091.97] I'll link the entire C++ playlist if you
+[1093.83] just want to view it but those three
+[1095.96] concepts are important to understand the
+[1097.70] difference in and I think everything
+[1100.19] should work now let's go to execute
+[1101.99] compile and run and yeah things are
+[1104.06] working fine so it's saying enter the
+[1106.46] size of the array let's enter 5 and to
+[1108.80] find details let's say 5 or 6 to 8 this
+[1113.24] is not in any particular order if I hit
+[1116.03] enter
+[1116.45] there you go before starting 5 for 6 to
+[1119.09] 8 after sorting 2 4 5 6 8 everything is
+[1123.20] pretty much sorted in ascending order
+[1124.64] which means our quicksort algorithm is
+[1126.62] working fine let's compile and run it
+[1129.35] one more time and let's enter you know
+[1131.90] seven elements this time 4 5 3 2 6 8 how
+[1137.99] many elements have we entered 1 2 3 4 5
+[1141.08] 6
+[1141.59] let's enter 34 let's and let's hit enter
+[1145.85] so we have 2 3 4 5 6 8 34 everything is
+[1150.14] sorted perfectly
+[1151.19] so before sorting and after sorting this
+[1153.71] means our program is working fine and
+[1155.80] quicksort is implemented successfully ok
+[1159.20] so this was the code that is the
+[1161.81] practical side that is the
+[1163.01] implementation of quicksort sorting
+[1164.87] algorithm I did not explain in depth
+[1167.42] because that is covered in part 1 so
+[1169.88] this is just the implementation part
+[1171.89] obviously I am going to be sharing the
+[1173.96] details about the theory about the
+[1176.09] working of quicksort as well as this
+[1177.68] code on our official page so do check
+[1179.84] that out on simple snippets dot tech
+[1181.67] link in the video description and that's
+[1184.25] it for this video guys if you like this
+[1185.81] video please give it a thumbs up do
+[1187.94] share it with your friends there are
+[1189.23] many more tutorials on data structures
+[1190.94] and algorithms coming up so make sure
+[1192.77] you subscribe if you're new on this
+[1194.30] channel and I'll see you guys in the
+[1196.07] next video peace
+[1198.82] [Music]

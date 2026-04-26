@@ -1,0 +1,11 @@
+Number Guessing Game
+Guess a number between 1-100
+Enter a guess: 60
+TOO LOW! Try again
+Enter a guess: 80
+TOO LOW! Try again
+Enter a guess: 90
+TOO HIGH! Try again
+Enter a guess: 87
+CORRECT! The number was 87
+# of attempts: 4

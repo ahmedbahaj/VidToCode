@@ -1,0 +1,305 @@
+[0.00] now once we know why we need threads
+[1.92] let's try to create multiple threads
+[3.78] here and of course to create multiple
+[5.46] choices not like just because we have a
+[7.20] concept of threads we are going to use
+[8.82] in every application what if I say most
+[11.70] of the time you don't even create
+[12.96] threads by yourself see when you build
+[16.32] applications we use certain Frameworks
+[18.48] right now behind the scene this
+[20.28] Frameworks will create threads for you
+[21.78] so if you work on a big project there's
+[24.84] a high chance that you will not even
+[26.34] write threads by yourself but then it's
+[28.80] always better to get Hands-On on some
+[31.38] underlying Concepts right so let's do it
+[33.48] here so what I will do is let's say
+[35.04] let's go for our imaginary concept here
+[36.96] let's say I have a class hi whose job is
+[40.32] to print high okay or maybe I will just
+[42.30] say a Class A whose job is to print high
+[46.56] so what I will do is I will try to
+[48.84] create a function here public void show
+[50.94] and in this show I want to print hi
+[54.18] nothing fancy just hi here the only
+[56.58] thing is I want to print this High
+[57.90] multiple times so I will simply use a
+[59.94] loop here I can say int I equal to 1 and
+[63.60] I less than equal to 10
+[67.14] and I plus plus
+[69.06] okay and then we are putting this inside
+[72.48] a loop so of course when I call this
+[74.64] particular function which is show of
+[76.08] course it will execute height 10 times
+[77.70] right now let's say I I just copy this
+[80.58] code and I paste it here now what I'm
+[83.58] trying to do is we have two classes with
+[86.16] this with the same concept almost
+[88.20] because they both have the same method
+[89.94] name which is show they are both are
+[91.56] running a loop for 10 times the only
+[93.78] thing is the second Loop actually prints
+[95.40] hello the first function here prints
+[97.38] High the second one prints hello that's
+[99.36] the only difference and of course the
+[100.68] class name is different
+[101.94] and now I will go back to my main method
+[104.34] and here I want to create object of
+[105.72] these two classes so we got a class we
+[107.58] got B Class let's create object for them
+[110.10] so I will say a obj1 is equal to new a
+[113.46] so we got the object for a and then I
+[115.74] can say a object 2 is equal to new B and
+[119.04] we got the object for B okay simple
+[121.14] stuff and now I want to call those
+[124.02] methods of course I can simply say
+[126.32] obj.1.0 and obija2 Dot show so basically
+[131.52] what I'm doing is I got object of both
+[133.20] the classes and I'm calling the show
+[134.70] method and I'm thinking it should work
+[136.38] and why not it will white will not work
+[138.30] we have done so many Java codes to allow
+[141.18] it everything was working
+[142.98] let's see what happens so I will compile
+[145.08] this code and you can see there's no
+[146.46] problem there's no compile time issue
+[147.90] and if I run this code oh okay uh we got
+[151.32] the output right so we got all highs
+[153.36] here and we got all hellos right now
+[156.60] that's how your system basically works
+[158.28] you know your execution will start from
+[160.26] main main will say okay uh I mean when
+[162.78] your jvm is executing the Java code it
+[165.54] will start the execution from Main and
+[167.46] from when it says okay this is the first
+[170.40] line which I want to execute the first
+[172.14] line is simply create the object now
+[174.18] behind the scene in the Heap memory you
+[175.68] will get this object okay now the second
+[178.14] line says okay create the B object it
+[180.66] will say Okay B object done and since
+[183.42] everything goes in sequence it will
+[185.40] complete this task this two tasks then
+[188.34] it will go for the next statement which
+[189.90] is calling the show method of a class
+[192.60] right so it will say okay and now I have
+[195.66] to actually move so if you try to
+[197.88] imagine a pointer here not the pointer
+[199.74] in different languages I'm saying just
+[201.00] saying the which statement is getting
+[203.52] executed okay where is your executor
+[206.10] here so the executor says okay my job is
+[209.10] to execute this show method right so the
+[211.98] executor will directly jump to this
+[214.20] method which is show
+[215.70] okay now it will start executing this
+[218.40] method but when you are executing this
+[221.52] method
+[222.54] there is a hold on demo right I mean the
+[225.00] main method is not continuing now so
+[227.22] main will continue for the next
+[228.72] statement only when the previous
+[230.40] statement is done executing so once you
+[233.40] complete the show method execution then
+[235.20] only it will go for the next show right
+[236.76] and that's what it will do so it will
+[238.68] execute this show here it will run this
+[240.48] Loop for 10 times and it will print high
+[242.88] 10 times now once this show me is done
+[245.22] with his work it will go back to the
+[247.44] main method and it will continue for the
+[249.30] next method calling so that everything
+[252.00] basically goes in a sequence right now
+[254.58] what I want to achieve here is I want to
+[256.68] say Hey you know when obj one dot show
+[259.80] is getting executed at the same time
+[261.50] parallely I want to execute this show as
+[264.48] well
+[265.44] okay so if you want to execute two
+[267.54] things at the same time or two behave at
+[269.58] the same time
+[270.84] since methods are behaviors we can use
+[273.42] something called threads okay so we can
+[275.76] say Okay I want to execute this two
+[277.68] objects but then they are not normal
+[279.30] objects you can't execute normal objects
+[282.24] in multiple threads or you can't execute
+[285.12] normal object execution simultaneously
+[287.76] so you have to use multiple threads here
+[289.14] so how do you make your normal objects
+[292.14] as threads now that's tricky right
+[295.68] it's actually very simple
+[297.90] if you want to make these classes or
+[301.02] these objects as threads just extend
+[304.04] with a class called thread it's that
+[307.56] simple the moment you extend with
+[309.18] threads or with a third class now this
+[312.24] class is not a ordinary class
+[314.94] this is a thread okay the same thing you
+[317.58] can do for B so you can say thread and
+[320.64] exit extends thread okay and then you
+[324.24] can come back here and our job is done
+[326.64] right now we don't have normal classes
+[328.32] we have threads oh is it so simple okay
+[331.92] let's see compile and run oh it's not
+[336.36] that simple you can see they are still
+[338.22] running in sequence they are not running
+[339.72] in parallel what I want to do is I want
+[341.34] these two methods to run parallel so
+[343.50] while it is printing High it should also
+[345.54] print hello on the side by side okay
+[347.34] it's not it's not working so what I am
+[349.92] imagining with my code is what should
+[351.60] happen is see uh there is a main method
+[354.36] right so main will continue its work
+[356.04] here so main will keep executing
+[358.50] everything now there will be a point
+[360.48] where main wants to execute the show
+[362.46] method but with two different threads so
+[365.28] I want a show method here and I want a
+[368.34] show method here of course this show
+[369.78] method the first one is of a the second
+[372.66] one is of B but then your our main When
+[376.86] Calls show it should be with the new
+[378.66] thread so I want this to be a new thread
+[381.12] I want this to be a new thread okay now
+[383.94] just by mentioning that this class is
+[386.58] thread it will not get new thread for
+[388.38] you basically we want two threads now
+[390.42] the way you do that is by not calling
+[393.60] show what you have to do is you have to
+[395.22] call a method called start because when
+[398.22] you are thinking that at this point I
+[400.56] want to start a new thread you know we
+[402.60] want to start a new thread here we want
+[404.64] to start a new thread here we can do
+[406.56] that with the help of a start method so
+[408.60] we have to call this method and that's
+[410.28] what we are doing here so we have to say
+[411.54] start for both the threads okay see we
+[414.42] are saying that those are the obj102 but
+[416.34] there are threads now
+[417.78] now the only thing is
+[420.06] when you call start it should also say
+[422.76] start right
+[424.08] is so now think is behind the scene when
+[427.02] you go to start so you can see if I go
+[429.24] to start start is a method belongs to a
+[432.06] thread class
+[433.38] so of course you can do your work here
+[435.12] but the thing is it will create new
+[436.92] thread for you
+[438.36] but it will call not the start method
+[441.00] even if you call it it calls a run
+[442.92] method so this thing you have to
+[444.48] remember in every thread you need to
+[447.12] have a run method that's how it works so
+[450.48] when you say start here it's it's almost
+[452.46] like you know when you are when you want
+[455.10] when you want to participate in a race
+[457.50] right so we have multiple we have
+[459.78] multiple Lanes there right so we have
+[461.64] multiple Lanes multiple people are
+[463.20] waiting to start the game here and of
+[466.68] course you took a position to run but
+[469.92] then you will not run you will wait for
+[472.14] it right what you will wait for you will
+[474.18] wait for some volunteer here to say
+[476.28] start right the moment they they shoot a
+[479.22] gun or they say start you go right in
+[481.56] the same way the moment you say start
+[483.42] here it will execute this one method
+[485.70] okay that's the point you have to
+[486.90] remember
+[488.04] okay let's see if this works now uh we
+[490.50] have done everything what we could have
+[492.06] done to make it work and let's see it
+[494.88] works oh okay
+[496.62] still not working now what is happening
+[498.78] here
+[499.74] see the thing is what if I say they are
+[501.54] actually running parallel the only thing
+[503.52] is when we are saying that see we are
+[506.22] starting with this one right obj1 and
+[508.56] then we are assuming that obj1 will
+[511.62] execute one high and parallely the
+[515.10] second thread which is the B thread will
+[516.78] execute hello at the same time
+[519.42] but the moment you give some time
+[521.64] because the machine is so fast now the
+[523.98] moment I give I have given some time to
+[526.08] the eighth where to execute it is
+[528.66] executing the entire thing at the same
+[530.70] time
+[531.60] okay let me show you what I'm saying
+[533.22] what if I do this for 100.
+[535.98] okay
+[537.72] and let's see what changes so if I
+[539.82] compile this code and run if you can see
+[543.12] if I scroll up things are happening in
+[545.82] parallel
+[546.90] okay so you can see we got few highs
+[549.36] here and then we got few hellos and then
+[552.00] we got few highs we got few hellos
+[555.24] okay things are running in parallel so
+[557.70] these two methods are actually running
+[559.56] at the same time
+[561.00] yeah so what happens is behind the scene
+[563.16] there's a concept of scheduler okay so
+[565.08] in your OS we have a concept of
+[566.94] scheduler now scheduler will say okay if
+[569.40] you want to execute something you have
+[570.84] to come to me first now it doesn't
+[572.70] matter how many threads have you have in
+[574.50] your system of course in my machine I
+[576.78] have shown you that in the last video If
+[578.58] you go to activity monitor you can see
+[580.26] we have so many threads here we have
+[583.02] five 24 threads running and only for one
+[587.04] task in total we I got 2382 threads now
+[591.36] of course you can't execute all at the
+[593.16] same time right now the thing is
+[594.72] nowadays we have multi-core CPUs so you
+[597.18] have multiple cores there right uh and
+[599.94] the beauty is you can execute multiple
+[601.80] thread at the same time so you can
+[603.12] execute let's say if I have four cores I
+[605.16] can execute fourth at the same time if I
+[607.92] have eight core CPU which is OCTA code I
+[610.26] can execute eight threads but we have
+[613.46] 2380 94 threads now how will execute all
+[617.64] so of course you can't execute all at
+[619.62] the same time right so they go for the
+[621.12] time sharing so scheduler in between so
+[623.52] let's say this is your OS here okay so
+[625.62] there's a concept of scheduler which is
+[627.00] responsible to basically allow or thread
+[630.84] to execute let's say we have multiple
+[632.10] threads waiting to execute okay so let's
+[633.96] say we have eight threads here and then
+[636.06] we only have two cores available so on
+[637.86] your CPU basically you have only two
+[640.20] cores right so skater knows you can
+[642.60] actually run only two threads at the
+[643.98] same time so what it does is it
+[645.42] basically allows let's say uh This
+[648.12] Thread and this thread to execute and
+[650.22] then after they they execute they will
+[652.14] allow This Thread and this thread to
+[653.46] execute right so it is schedule a job to
+[655.92] allow which thread to go to execute on
+[658.86] the OS okay uh and that's why
+[662.46] so when when your scheduler allows some
+[665.88] time for your threads to execute your
+[668.28] thread might be executing this number of
+[669.84] iteration at the same time
+[671.88] okay and that's what's what is happening
+[673.86] here so basically we are running
+[675.24] multiple threads at the same time
+[677.40] so yeah that's how you create multiple
+[679.08] threads with the help of the authority
+[680.64] class and in the next video let's try to
+[682.74] optimize this mode and we can see how
+[685.56] can we have one high and one hello
+[687.90] output

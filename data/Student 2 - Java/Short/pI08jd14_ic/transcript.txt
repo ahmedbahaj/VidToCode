@@ -1,0 +1,225 @@
+[0.06] hey what's up guys welcome to another
+[2.16] video in which we are going to write
+[3.60] Java program to make a simple calculator
+[5.76] using the switch case so guys in this
+[8.22] program we will learn to make a simple
+[9.84] calculator using the switch case in Java
+[12.12] now this calculator would be able to add
+[14.88] subtract multiply and divide two numbers
+[18.00] so for example let's say we have these
+[20.94] four operations that is add subtract
+[22.80] multiply and divide by using these
+[25.08] numbers that is one two three four so
+[27.30] basically the user will choose the
+[29.40] operator in this way so for example
+[31.26] let's say the user wants to add two
+[33.66] numbers so the user will provide the
+[35.52] number that is 1 over here which is
+[37.26] being represented by this add
+[38.70] functionality so the user will next
+[41.04] enter the first number so for example
+[42.96] the user enters 10 and the second number
+[45.30] is being entered by the user is 20 so
+[47.64] the result will be equal to 10 plus 20
+[49.74] it is equal to 30. in the similar way
+[52.02] there are other operations as well which
+[53.94] will be covered using this calculator in
+[56.10] the Java program so guys let us move to
+[58.08] Eclipse ID over here and first of all we
+[60.00] will Define some variables so we have in
+[63.18] operator over here first of all which
+[65.46] will Define what kind of functionality
+[67.38] the user wants to perform followed by we
+[70.20] have first number so let's say N1 and
+[72.42] then the second number that is N2 over
+[74.34] here and then guys we will simply show
+[76.20] the users the different operations over
+[78.18] here so we have the print Ln statement
+[80.40] over here and inside this we will Define
+[83.10] the different operations so one is for
+[85.44] ADD and then we have on the next line 2
+[88.44] is for subtract and then so on so over
+[91.32] here what I will do is we provide slash
+[93.66] n I'll just copy and paste these lines
+[96.24] over here since I am little bit lazy
+[98.58] so we have multiply and then we have
+[101.04] slash n and then we also have divide
+[103.62] over here so we copy this and we have
+[106.20] divide now guys on the next line we will
+[108.54] ask the user to provide the operator
+[110.58] that is to choose the operator so we ask
+[113.04] the user to choose operator over here so
+[116.94] choose operator so user will provide one
+[119.28] of the numbers over here either from 1
+[121.26] to 4. so how will the user provide the
+[123.60] number by using the scanner class so we
+[126.00] will be using the scanner class over
+[127.74] here so SC is the object followed by new
+[131.64] scanner and then we have system dot in
+[135.48] so that user can provide the input on
+[137.64] the console over here so now we will be
+[139.56] using the SC object followed by dot next
+[142.56] end over here so this method will take
+[144.60] the input from the user and the input
+[146.88] needs to be stored in this operator
+[148.86] variable so we have operator equal to SC
+[151.20] dot next end so guys basically what we
+[153.36] have done so far is we have provided the
+[155.64] different operations to the user and
+[157.74] user will select one of the operations
+[159.84] to be done with the two numbers that
+[161.88] will be entered by the user so we ask
+[163.86] the user to choose the operator and user
+[166.44] will enter this operator now guys we
+[168.36] will ask the user to enter the two
+[170.10] numbers over here so first of all we
+[172.92] will ask the user to enter first number
+[174.96] so over here we have
+[177.30] and the first
+[180.12] number and then colon so user will
+[183.54] provide first number in N1 so SC dot
+[187.02] next end
+[189.18] so the first number will be stored in
+[191.16] the N1 similarly we will ask the user to
+[193.56] enter the second number so I'll just
+[195.12] copy these lines of code and paste this
+[197.28] over here I'll say enter second number
+[199.80] it is N2 equal to SC dot next end so
+[203.76] guys over here the user is entering two
+[206.04] numbers after entering the operator now
+[208.68] we want the result to be displayed to
+[210.72] the user so what will be the logic the
+[213.30] result needs to be calculated using the
+[215.28] switch case over here so guys which is a
+[217.50] very important case which you can use in
+[219.72] order to carry out different operations
+[221.46] and it is one of the Alternatives of the
+[223.74] if else statements so over here inside
+[225.84] the switch statement what we will pass
+[227.82] is we will pass this operator and check
+[230.04] what is the operator that is being
+[231.66] provided by the user over here so when
+[234.24] we pass operator we have to define the
+[236.58] different cases over here so what are
+[238.62] the cases the cases will be either from
+[240.84] 1 to 4 so we have to Define each and
+[243.30] every case over here so guys this is the
+[245.40] format after providing the case keyword
+[247.44] we provide the value that is 1 1 and
+[249.84] Then followed by colon we have to
+[251.76] provide the operations so for one that
+[254.34] is the add functionality over here what
+[256.80] is the operation that we have to perform
+[258.30] we have to add these numbers that is N1
+[260.94] and N2 so over here what we will do is
+[263.34] we will have another variable which will
+[265.86] store the result and initially we have
+[267.96] its value as 0 over here so what we will
+[270.48] do in this case that is case 1 it is
+[273.00] result equal to N1 plus N2 so basically
+[278.10] these two numbers that is being entered
+[279.84] by the user we are adding both the
+[282.12] numbers and storing it in the result
+[283.86] variable and then guys it is very
+[286.02] important that we have the break keyword
+[288.06] so when we provide the break keyword the
+[290.94] following case statements that we have
+[292.62] to provide over here the control flow
+[294.78] will not go in those case statements so
+[297.24] when we have another case statement the
+[299.40] next case statement will be with the
+[301.20] value of 2 which is representing the
+[303.60] subtract operation over here so this 2
+[306.48] it is colon followed by the same
+[309.06] operation but in this case we have to
+[311.34] subtract the two numbers so N1 we will
+[313.98] do minus N2 over here similarly we have
+[317.22] case 3 and case 4 so I'll quickly copy
+[319.86] and paste these lines of code over here
+[321.66] and I'll change the cases so when we
+[324.12] have case 3 it will be n multiplied by
+[326.82] N2 since case 3 is representing the
+[329.46] multiplication operation and then the
+[331.86] case 4 is representing the Divide
+[333.78] operation so we have to have N1 divided
+[336.48] by N2 s case 4 so over here we have case
+[339.54] 4 and N1 divided by N2 and then guys in
+[343.74] the end we also have the default case so
+[346.14] let's say by mistake user enter some
+[348.54] other number apart from the numbers
+[350.76] between 1 to 4 so the control flow
+[353.76] should go in this default case as well
+[355.86] so when we have this default case we can
+[358.50] have our own code over here so we will
+[360.66] have the print statement and we will say
+[362.82] enter number is not valid or we can say
+[365.52] entered operator is not valid so guys
+[370.44] this is the way we should also have the
+[372.24] default statement over here or the
+[373.92] default case as well in case the entered
+[376.38] number by the user does not fall in this
+[378.30] range so guys after the switch cases
+[380.28] what we will do is we will have the
+[381.96] result in our result variable so we will
+[384.30] simply print this result variable over
+[386.70] here so we have a result is followed by
+[390.12] colon and then we have our result
+[392.04] variable over here so guys this is the
+[394.20] line of code let me just save this file
+[396.06] enter in this code now so as you can see
+[398.76] we have different operations it says add
+[401.40] subtract multiply and divide choose
+[403.32] operator so it is asking the user to
+[405.18] choose the operator so let's say we
+[406.98] provide one as the operator when we
+[408.96] press enter it says enter first number
+[411.18] so let's say I provide 10 and then enter
+[413.52] second number let's say I provide 20 and
+[415.98] then when we press enter it says result
+[418.14] is 30. so guys this is the very simple
+[420.30] way we have created our calculator over
+[422.88] here which is adding two numbers let me
+[425.04] just run this code once again let's say
+[427.08] I want to subtract two numbers over here
+[429.42] so I will choose the operator S2 and
+[432.06] then enter first number let's say I
+[433.92] provide the first number as 45 and then
+[436.32] the second number let's say I provide it
+[438.06] as 30 so the difference of two numbers
+[439.86] will be when I press enter it says
+[442.38] result is 15 that's because 45 minus 30
+[445.32] is 15 over here similarly we can have
+[447.96] multiply as well and divide operators as
+[450.30] well now guys it is very important to
+[451.92] note that whenever we use the Divide
+[453.84] operator it will provide us the integer
+[455.88] value so when we run this code once
+[457.68] again let's say I want to perform the
+[459.96] Divide operation so I press 4 over here
+[462.54] and let's say we provide the first
+[464.46] number that is let's say we provide 10
+[466.56] as the first number and the second
+[468.48] number is 3 so 10 divided by 3 will give
+[471.60] us 3 as the integer and not 3.33 that's
+[475.38] because we are using the integer
+[477.12] variable to store this result so when we
+[479.22] press enter over here we get the result
+[481.14] as 3. now in order to get the accurate
+[483.78] result you need to have the result
+[485.82] variable as double so guys the
+[487.74] operations with the double data type
+[489.54] I'll leave it up to you as a homework
+[491.40] for you so that you come to know how do
+[493.38] we create the simple calculator using
+[495.42] Java program so guys that's it in this
+[497.34] video please make sure that you practice
+[498.78] on your own so that on different inputs
+[500.64] you get different output please make
+[502.38] sure that you like this video so that it
+[504.12] reaches to more people and subscribe to
+[506.04] this channel so that you get the
+[507.36] notifications on upcoming videos as well
+[509.34] the next video that we are going to talk
+[510.90] about is a Java program to find the sum
+[513.36] of natural numbers using recursion so
+[516.12] stay tuned

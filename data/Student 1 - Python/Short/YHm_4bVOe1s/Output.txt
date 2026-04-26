@@ -1,0 +1,3 @@
+PS C:\Users\PC\Desktop\Test\Shorts> & C:/Users/PC/AppData/Local/Python/pythoncore-3.14-64/python.exe "c:/Users/PC/Desktop/Test/Shorts/Python read a file/BubbleSort.py"
+['a', 'b', 'c', 'd', 'e', 'f']
+PS C:\Users\PC\Desktop\Test\Shorts>

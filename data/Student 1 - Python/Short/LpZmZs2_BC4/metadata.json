@@ -1,0 +1,12 @@
+{
+  "title": "Python read a file 🔍",
+  "video_id": "LpZmZs2_BC4",
+  "webpage_url": "https://www.youtube.com/watch?v=LpZmZs2_BC4",
+  "channel": "Bro Code",
+  "uploader": "Bro Code",
+  "upload_date": "2020-12-21",
+  "duration_seconds": 219,
+  "view_count": 125220,
+  "description": "Python reading files tutorial example explained\n\n#python #read #file\n\ntry:\n    with open('test.txt') as file:\n        print(file.read())\nexcept FileNotFoundError:\n    print(\"That file was not found :(\")\n\n––––––––––––––––––––––––––––––\nUp In My Jam (All Of A Sudden) by - Kubbi https://soundcloud.com/kubbi\nCreative Commons — Attribution-ShareAlike 3.0 Unported— CC BY-SA 3.0 \nFree Download / Stream: http://bit.ly/2JnDfCE\nMusic promoted by Audio Library https://youtu.be/tDexBj46oNI\n––––––––––––––––––––––––––––––",
+  "extracted_at_utc": "2026-02-15T23:28:37+00:00"
+}

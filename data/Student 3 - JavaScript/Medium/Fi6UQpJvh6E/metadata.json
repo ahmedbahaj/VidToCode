@@ -1,0 +1,12 @@
+{
+  "title": "Node JS Tutorial - Reading & Writing Files (fs) | NodeJS FileSystem: Read Files Using fs.readFile()",
+  "video_id": "Fi6UQpJvh6E",
+  "webpage_url": "https://www.youtube.com/watch?v=Fi6UQpJvh6E",
+  "channel": "Azhar Techno Coder",
+  "uploader": "Azhar Techno Coder",
+  "upload_date": "2021-05-25",
+  "duration_seconds": 523,
+  "view_count": 1505,
+  "description": "Code : \n\nvar fs = require('fs')\nfs.readFile('readExcel.js','utf8',function(err,data){\n    console.log(data);\n});\nfs.writeFile('write.js',\"console.log('File created')\",function(err){\n    console.log(\"Data is saved\");\n});\nfs.appendFile('write.js',\"console.log('File created')\",function(err){\n    console.log(\"Data is saved\");\n});\nfs.unlink('write.js',function(err){\n    console.log(\"File Deleted\");\n});\n\nApply the scenarios individually as shown in the video\n\n\nVideo Tags:\n\n0:00 - Introduction of FSO in javascript\n1:01- Read File Method with example\n3:11 - Write File Method with example\n6:04 - Append File Method with example\n6:59 - Unlink File Method with example\n8:33 - End Tags and subscription to the channel\n\n\nNext Steps : \n\n---------------------------------------------------------------------------------------------------------------------------------------------------------\n---------------------------------------------------------------------------------------------------------------------------------------------------------\nMust Watch Playlists\n\n► 1. Javascript - https://youtube.com/playlist?list=PLO2l2fYgN805CokP5kaOWOhqP3-2vyXdS\n► 2. Puppetter - https://youtube.com/playlist?list=PLO2l2fYgN805E5fbSnvtFM3K9c92ePS8e\n► 3. Cypress - https://youtube.com/playlist?list=PLO2l2fYgN807KRpLfvvrqa1MSX8XdYxkV\n► 4. Tech works - https://www.youtube.com/watch?v=ZNAdt4Oe5Sw&list=PLO2l2fYgN807CQ5H3ER__7x7LeEA10T2Z\n► 5.  Vbscript Basics To Advanced - https://www.youtube.com/watch?v=z_ctZDolyG0&list=PLO2l2fYgN805CuD-90ESrxRqX__-YJMym\n► 6. Jmeter - https://youtube.com/playlist?list=PLO2l2fYgN806eNr5cr-TMTX8xGTW7Mtcn\n► 7. Excel - https://youtube.com/playlist?list=PLO2l2fYgN806piZ2fD0bYNi3ExoPJlcqj\n---------------------------------------------------------------------------------------------------------------------------------------------------------\n---------------------------------------------------------------------------------------------------------------------------------------------------------\n\n\n\n#FileSystem\n#ReadAndWriteFiles\n#FSO",
+  "extracted_at_utc": "2026-02-14T15:23:19+00:00"
+}

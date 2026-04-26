@@ -1,0 +1,12 @@
+{
+  "title": "JavaScript – Memoization & Recursion | Fibonacci & Factorial Algorithms",
+  "video_id": "k_5n4Pd5Ngk",
+  "webpage_url": "https://www.youtube.com/watch?v=k_5n4Pd5Ngk",
+  "channel": "Qixotl LFC",
+  "uploader": "Qixotl LFC",
+  "upload_date": "2021-05-13",
+  "duration_seconds": 1093,
+  "view_count": 737,
+  "description": "In this video you will learn two fundamental topics in Computer Science: Recursion & Memoization (Dynamic Programming).  To cement your learning, we will be using these concepts on two example algorithms; the Fibonacci sequence & the Factorial of a number. For each algorithm, you will learn the standard implementation as well as the recursive implementation which will be used in conjunction with Memoization. With this approach, you will learn the benefits of recursion & Memoization, as well as how they change a normal iterative algorithm.\n\nThis entire demonstration will be interspersed with animations. These graphics will give the explanations a visual aid that can make, what would otherwise be complex principles, a lot easier to understand.\n\n📚 Materials/References:\n\nThe completed code: https://replit.com/@LFCProductionsP/FibonacciFactorial-algorithms#index.js\n\n🧠 Concepts Covered:\n\n- What Memoization is. Or as some pretentiously call it, dynamic programming.\n- How recursive differs from iterative algorithms.\n-  How to avoid a stack overflow when using recursion.\n- How to create a closure in JavaScript & use it to store cached data.\n- The iterative & recursive approach to creating both a Fibonacci sequence algorithm & a Factorial algorithm.\n\n💻 Technologies used: \n\n- JavaScript, written on the online IDE, replit.\n\nIf you enjoyed this video then please consider liking 👍 and subscribing. You would be doing me a huge favour if you did this and it would be greatly appreciated ❤️ by me. Likewise, if you have any queries or comments that you want answered. Then please, don’t hesitate post them down into the comments box below. I would love to hear back from you and will answer all of your questions to the best of my ability. \n\nStay awesome guys. ❤️\n\n#JavaScript#ComputerScience#CS#Algorithms#Recursion#Recursive#Memoization#DynamicProgramming#Fibonacci#Factorial#Cache",
+  "extracted_at_utc": "2026-02-14T15:11:44+00:00"
+}

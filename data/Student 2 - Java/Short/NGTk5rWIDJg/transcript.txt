@@ -1,0 +1,127 @@
+[0.60] hi everyone in this video I will be showing you
+how to perform linear search with the help of an
+[6.24] array in Java so let's get started so for this we
+will be needing two inputs one is going to be the
+[11.64] element that we want to search in the array and
+second input is going to be the array itself so
+[16.20] I'll be like manually declaring both if you
+want you can get the input from the user so
+[19.98] first let me have the array so it's going to
+be int array let me have some elements as one
+[28.20] 45 16 and 100 and zero five yeah I think this will
+be good and next is going to be the element to be
+[38.16] searched I will have that element to be as int
+n equal to for this purpose now I will have it
+[43.62] as 10 okay so for this you can get the input from
+the user as well it's totally up to you with the
+[48.36] help of scanner so for this we'll be using a
+simple for Loop basically we will just iterate
+[53.16] through this entire array and we'll be having
+a if condition inside the for Loop to check
+[57.78] whether the particular element to be searched is
+present in the array it's going to be like manual
+[61.74] comparison first we will compare this element
+with zeroth index then first index then second
+[65.52] index and if you have found that we will be just
+breaking the loop Okay so it's going to be for
+[74.34] int i equal to 0 I less than I less than okay
+yeah array dot length okay and next is going to
+[83.94] be i++ and next as I told you earlier we
+will be iterating through each element present
+[89.88] in array so it's going to be if array name of I equality our n we can just print system dot out
+[102.42] Dot printf use printf
+there okay not print element
+[113.40] found in index percentage d if you want to get
+the index you can also do that if you want to
+[120.78] return like using a function you can also do
+that its up to you I'll just print I
+[125.22] so basically we are saying the element is found
+and we are also printing the index over here so
+[129.12] now I will show you how to print if the element is
+not present in that particular array itself okay
+[133.68] because now we are done with element found we
+need to also device a condition so that way
+[137.58] we are able to find out if the element is also
+not present in that array so for this we will be
+[141.66] using a flag just a variable okay so let me just
+have f as my flag F equal to I will just have the
+[148.08] initial value of 0 and if the particular element
+is found I will change the flag value to 1 okay
+[154.56] and after the for Loop like once the for Loop is
+terminated I will have a if condition over here if
+[160.20] flag that is our variable F
+equal to 0 I'll just copy this
+[169.32] and I will just paste it over
+here I'll just put element
+[176.22] not found okay so let me just now explain you
+what I did so I'm just having a variable F
+[181.80] equal to 0 and only if this particular element
+n that we are searching is present in the array
+[187.20] I am changing the flag value to 1. so if the
+particular if I'm going to put some value as
+[192.18] n equal to 6 6 is not at all present inside
+this array itself so what happens for you
+[196.92] every time this for Loop is going to run this
+if condition is going to be false because 6 isn't
+[201.06] present in our array itself so program flow
+won't even come inside this if condition itself
+[206.46] because this if condition is never going to be
+true since our element is not present in the
+[210.60] array so our F variable f is also going to
+remain 0 the forever in the program till this
+[215.64] point even if the for loop terminates our variable
+f is going to still remain as 0 so it will come
+[220.98] over here 0 equal to 0 which means that the
+element is not found and if I will go with 5
+[226.26] it will iterate for some time and at the last element
+five is present in our array so what happens is that
+[231.42] 5 equal to 5 the condition is going to be true
+the if statement satisfies it goes here f values
+[236.10] becomes 1 and element found will be printed so
+after this for loop is executed, it comes over here
+[241.62] F value is 1 because this condition is
+satisfied so F will be 1 and this will
+[245.82] never get executed because this will be false
+so hope that made sense so let me just now
+[251.46] run and show you how this works and I will
+also show you another criteria okay another
+[254.88] criteria what you can do after this one as well
+so I will just now compile it and run it so here
+[264.30] you can see element found in index 5 which is for
+I am searching 5 over here I will go with 6 6 is
+[269.28] not present I am compiling it and running it again
+so here you can see I've got element not found so which
+[276.24] means that this is working perfectly fine so the
+final scenario what I wanted to show you was this
+[280.50] is like a bonus scenario I guess so if I add I
+will change the number as 5 itself and if I add
+[286.20] multiple number of fives okay I'm having three
+like three values as five so we will be getting
+[292.56] this particular thing printed twice
+so here you can see right I will
+[297.12] now run it so here you can see I'm getting this
+printed trice 5 element found in index 6 element
+[304.50] found in index seven if you want to like avoid that you
+can have a slash n over here so in case what
+[310.14] if you wanted to only get the first index or
+the first occurrence of that particular number
+[315.72] you want the print statement to get executed only
+once rather than getting printed three times like
+[322.08] this in case if there is multiple values of the
+number that we're searching in the array you want
+[327.12] the print statement to be executed only once so
+in that case you can just add a break statement
+[332.70] below the print statement, so if that particular element that we are searching in the array it just hits this condition this becomes
+true and once it gets printed it reaches a
+[342.48] break so break what basically does is that
+it just terminates the for Loop forever so
+[347.40] you have to be careful and also have F
+equal to one above the break statement
+[351.24] so I am saving it and if I just now run it I'll be
+getting only once the print statement even though
+[357.18] we are having that particular value trice okay
+I hope this made sense to you and that's it for
+[364.08] this video I've also done many other tutorials
+in Java C C++ node.js react.js mongodb
+[368.88] MySQL and spring boot so do check the playlist
+of my channel subscribe me thanks for watching

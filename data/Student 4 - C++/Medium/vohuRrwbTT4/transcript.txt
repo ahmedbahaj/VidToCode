@@ -1,0 +1,391 @@
+[0.08] In this video, we're going to take a
+[1.20] look at the binary search algorithm. So,
+[2.96] in one of my previous videos, we looked
+[4.72] at the linear search algorithm and saw
+[7.04] how it worked and also coded up uh an
+[9.44] implementation of it in C++. So, with
+[12.16] linear search, we didn't have any sort
+[13.84] of preconditions and we didn't have to
+[15.60] have a sorted array. In the case of
+[18.08] binary search, we do have to have a
+[20.24] sorted array. So, we do have that
+[21.76] requirement. But the cool thing about
+[23.92] binary search in comparison to linear
+[25.68] search is we cut our search space in
+[27.84] half on every single comparison. With
+[30.48] linear search, if we had a 50,000 or
+[33.04] 100,000 element array or maybe a million
+[35.12] element array, we may have to do 50,000
+[37.84] 100,000 a million comparisons before we
+[40.88] find the value that we're looking for
+[42.40] because it may be at the very end of our
+[44.00] array or it may not even be at the in
+[46.32] the array at all and we we've done all
+[48.16] those comparisons before we find that
+[50.08] out. uh that's not the case with binary
+[52.40] search. So with binary search with a
+[53.92] 50,000 element array after the first
+[56.32] comparison, if the thing that we were
+[57.92] looking for uh didn't match on that
+[60.16] first comparison, then it would
+[61.92] eliminate half of the search space. So
+[64.00] to give you a broad idea of what's going
+[65.60] on with the binary search algorithm is
+[67.60] that we find a midpoint value. So we're
+[69.84] able to calculate that fairly easily
+[71.60] since we're dealing with a sorted array.
+[74.32] And we will do a comparison between the
+[76.40] value that we're searching for and that
+[77.84] midpoint value and see if they're the
+[79.92] same. If they're not the same, what
+[81.92] happens is we're able to eliminate half
+[83.92] of the search space at that point in
+[85.92] time, either the bottom half or the top
+[87.44] half, depending on if the value that
+[89.52] we're looking for is greater than or
+[92.00] less than the midpoint value. So, let me
+[94.40] show you how binary search works on this
+[96.64] small array that we have here. So, you
+[98.24] can see that we have an eight element
+[99.68] array here and it meets the precondition
+[101.84] of being a sorted array. So all our
+[103.76] values here are sorted in ascending
+[106.00] order. And we'll say that we're
+[108.16] searching for the value of 82. So I'll
+[110.32] just say SV for search value. And the
+[113.04] search value is going to be 82. And we
+[115.28] can see the 82 exists in this array. It
+[117.52] exists here at the second to last
+[119.76] element of our array. And the way the
+[122.32] binary search works is it starts off by
+[124.64] setting up a low and high value. The low
+[127.52] is just going to be set up to hold the
+[130.16] index of the very first element of our
+[132.64] array. That's how it uh starts off. And
+[134.88] the high would just be holding the very
+[137.84] last index of our array. And then based
+[141.60] off of low and high, we calculate a
+[143.44] midpoint. So we just simply take the
+[145.28] index value at high, add it to low. So
+[147.52] this would be 7 plus 0, divide that by
+[149.84] two, which would be 3.5. and then
+[152.08] truncate the fractional part since we
+[153.92] don't have any uh fractional index
+[156.24] values. So that would be three. So our
+[158.64] midpoint would be set here to three. And
+[162.48] now we do a comparison between this
+[164.40] value here, the midpoint which is 47,
+[166.80] and our search value. We see that those
+[168.40] are not equal. And the next thing we do
+[171.20] is check to see if our search value is
+[173.76] greater than or less than the midpoint
+[175.84] value. So if it turns out that the
+[178.24] search value is in fact greater than our
+[180.40] midpoint value, we're able to update our
+[184.00] low value and the low value would be
+[186.48] updated to being one more than the
+[188.40] midpoint and then we would update our
+[190.24] midpoint. Now if it turns out that the
+[192.64] high value just to kind of discuss what
+[194.80] happens, we know that uh in our case the
+[196.88] search value is in fact greater than the
+[198.40] midpoint value. But if it was the case
+[200.48] that uh say we were looking for uh 22
+[203.28] instead of 82. So in that case we would
+[206.00] find that the midpoint or the search
+[208.16] value is in fact less than the midpoint
+[210.48] and we would end up updating high to
+[213.12] being one less than the midpoint. Let's
+[215.60] go ahead and uh update our low value to
+[218.64] being one more than the midpoint. So
+[220.80] I'll go ahead and uh indicate that the L
+[224.56] our low value is going to be updated to
+[227.84] being one more than the midpoint value.
+[230.80] And then we'll update uh midpoint. So
+[233.36] midpoint gets updated as well. So
+[235.60] midpoint's going to be updated by taking
+[237.44] the new low, which is four, adding it to
+[240.00] seven, which would be 11, and dividing
+[241.84] that by two, which would be 5.5. So we'd
+[244.80] now have midpoint uh setting at five.
+[248.24] Again, we uh top off the fractional
+[250.80] part. So we truncate that. So we'd have
+[253.76] midpoint here at five. And what we
+[257.68] effectively have done after all that is
+[260.56] eliminated half of our search space. So
+[263.36] all of this business here is no longer
+[266.08] in our search space because we have a
+[267.68] new low and a new high. So the algorithm
+[270.64] starts all over again. So we say that we
+[272.88] do the comparison between what we have
+[275.20] at midpoint which would be 67 and 82.
+[277.84] And we see that 82 is in fact greater
+[279.68] than 67. So we're going to be updating
+[282.40] low once again. So we'll have low being
+[285.28] updated to being one more than the
+[286.96] midpoint. So I'll indicate that low is
+[289.28] being uh updated here to being one more
+[293.36] than the midpoint. And then we would
+[295.60] calculate the new midpoint. So midpoint
+[297.52] would just be calculated by adding low
+[299.76] and high which is uh 13 in this case and
+[302.64] then dividing by two and that would be
+[305.52] 6.5. We lop off or truncate the
+[308.72] fractional part. So that would be six.
+[310.80] So we now have midpoint being six which
+[313.84] is in this case the same as low and
+[316.40] that's perfectly okay for this
+[317.84] algorithm. So midpoint is now here and
+[320.80] then we would do a comparison between
+[322.64] the midpoint value which is 82 and the
+[325.20] search value which is 82 and they're
+[327.52] equal. So we're able to stop our search
+[330.16] uh at that point in time. But you can
+[332.40] see that uh you know we eliminated half
+[335.44] of our um search space once again.
+[339.12] So this is really powerful in terms of
+[340.88] the way that binary search works. And
+[343.68] let's remember uh just to kind of
+[345.28] emphasize some of the main points is
+[347.92] that we do have this precondition that
+[349.60] the array must be sorted. And the other
+[352.00] thing is is it cuts the search space in
+[354.00] half after every single comparison which
+[356.64] is huge. Now more formally we would
+[358.72] probably say that the uh performance of
+[361.04] binary search if we were looking at you
+[363.36] know describing a function in terms of
+[365.44] the amount of work required the the
+[367.20] amount of comparisons we'd say it has
+[369.52] this log base 2 n performance where n
+[372.24] would be the uh number of elements that
+[374.56] we have in our array. So in this case we
+[377.28] only had eight elements array but you
+[378.96] could think of something really large.
+[380.16] So maybe u 64,000 element array. So with
+[383.84] a 64,000 element array, if you were
+[385.76] doing log base 2 of 64,000, that would
+[389.28] be around 16. And if you were to do a
+[392.40] log base 2 of of double that, say
+[394.88] 128,000, that' only be 17 something. I
+[397.44] don't know exactly what it would be, but
+[398.80] around 17. So you'd only have to do
+[401.04] really one more comparison if you
+[403.04] doubled the search space. And that's
+[404.56] really what's going on with binary
+[406.40] search. we're able to double our search
+[408.16] space and only have to do one more
+[409.68] comparison to determine if the thing
+[411.84] that we're looking or to find the thing
+[413.52] that we're looking for or to determine
+[415.68] that the thing that we're looking for is
+[417.52] not in the array. So let's go over to
+[419.44] Eclipse now and code up our own version
+[421.68] of binary search. All right, so I'm over
+[423.84] in Eclipse now and I've already created
+[425.36] a project and also I've created a CPP
+[427.28] file called binary search. And what I've
+[429.60] done is copied the body of our main
+[432.40] function from linear search. So, in one
+[435.04] of my previous videos, we did a linear
+[436.64] search algorithm. And I've just copied
+[438.56] the body of the the main function from
+[440.64] that particular program into the main
+[443.28] function here. And the only thing that
+[444.88] I'm going to change up in this
+[446.00] particular main function is our array.
+[448.40] I'm going to make this array uh a sorted
+[450.64] array. So, we'll just use the same
+[452.00] numbers that we used in the example uh
+[454.72] that we did previously. So, we'll say we
+[457.04] have 12 and 22. Let's see. 34
+[462.24] uh 47 55
+[465.60] uh 67 let's see what else do we have
+[468.40] oops I forgot a comma let's see comma
+[470.96] and then we had 67 and then 82 and then
+[474.80] also 98 and the other thing we'll change
+[478.08] is just the number of elements in array
+[480.32] so whenever we call binary search so I
+[482.16] can guess I guess guess I should change
+[483.44] this here to uh binary search since
+[486.56] that'll be the name of our function and
+[488.48] we'll change this here to eight since we
+[490.96] have eight elements in our array now.
+[492.56] And the rest of this particular body of
+[494.64] our main function from linear search
+[496.16] that I've pasted over here into our
+[498.40] binary search main function body will
+[500.72] stay the same. So if you have any
+[502.40] questions about how we developed uh the
+[504.72] code associated with this main function,
+[506.88] go and look at the linear search
+[508.24] algorithm video and explain in detail
+[511.04] sort of what we did here and probably
+[512.88] read through it and not have too much of
+[514.40] a problem. Also, I should note that you
+[516.40] can find a copy of this code from this
+[518.08] video out on past. So if you look at the
+[520.08] description, I'll have a link there to
+[522.16] the URL on pacebin where you can find
+[524.00] this code. Okay. So let's go above the
+[526.00] main function here and start writing the
+[528.00] function definition for binary search.
+[530.48] So this is going to be an int returning
+[532.24] function just like our linear search was
+[533.92] an int returning function. So we're
+[535.68] going to just return the int value that
+[538.00] represents the index of where we found a
+[540.72] particular search value. If we don't
+[542.48] find it, we'll just return negative one.
+[544.88] So we'll have int as our return type and
+[547.36] the name of this particular function.
+[549.04] will just be binary search and we'll
+[551.68] pass in our formal parameters of an int
+[553.84] array and we'll pass in the size. So
+[556.80] we'll say that that's int size and we'll
+[559.04] also pass in the search value. So the
+[561.60] exact same formal parameters that we had
+[563.84] for our linear search function. So if
+[566.96] you remember from our discussion we said
+[568.56] that we needed to have a low and high
+[570.24] value. So those were initializ the low
+[572.16] value was initialized to zero and the
+[574.32] high value is going to just be
+[575.36] initialized to the last element or the
+[577.36] index of the last element of the array
+[579.12] which will just be size minus one. So
+[581.04] we'll have an int variable here called
+[583.12] low that we'll set to zero and another
+[586.08] int variable uh called high that we will
+[589.36] set to size minus one. So that's our low
+[593.04] and our high. Now the next part here uh
+[596.32] I'm going to focus on really what we
+[598.48] would do on a single iteration. So we
+[600.56] continue doing the same operations over
+[602.48] and over again. So I just want to focus
+[604.64] in on what we're going to be doing on
+[606.08] each iteration. We talked about being
+[608.00] able to calculate this uh this midpoint.
+[610.80] So I'm going to declare a variable
+[612.16] called mid here. And then below that I'm
+[615.44] going to calculate what mid is. So we'll
+[617.60] say that mid is going to be equal to we
+[621.12] said that that was just simply low plus
+[623.60] high, right? And then we divided that by
+[626.72] two. Now the cool thing is we're'll be
+[628.64] doing integer division here. So low and
+[630.32] high are both integers. Uh two here is a
+[632.64] int literal. So we have an int div /ed
+[634.72] by int. So we end up with integer
+[636.48] division and we're automatically uh
+[638.64] lpping off truncating that fractional
+[640.56] part which is exactly what we want to
+[642.16] have in order to calculate the midpoint
+[645.12] index value. So we get that and then
+[647.44] once we calculate the midpoint index
+[649.76] value we can start doing our comparison
+[651.84] between our search value and the value
+[654.96] that that's there at the midpoint. So we
+[657.36] can ask this question. We can say if the
+[660.08] search value
+[662.08] so if our search value is equal to the
+[665.28] value that we have at array mid. So
+[668.80] basically what we're saying there is
+[670.72] we're just checking what the value is
+[672.32] there at the at the midpoint that we
+[674.08] calculated. If that turns out to be the
+[676.00] case, our search is over with and we can
+[677.76] just return mid at that point. Now, if
+[681.12] that's not the case, we know that we
+[682.64] either need to update u low or high. So,
+[686.08] we'll have an else if here and say,
+[688.88] well, if the search value the search
+[691.44] value turns out to be greater than uh
+[694.72] array mid, so the the value that we have
+[697.20] there at the midpoint, then what we'll
+[699.04] need to do is update low. So in that
+[701.36] case we'll update low to just being mid
+[704.88] + one. And that was the the case that we
+[707.20] saw whenever we were searching for the
+[710.08] value of I think it was 82. So we were
+[712.24] searching for 82 and we kept having to
+[714.32] update uh low in that case. If that
+[716.80] turns out not to be the case, we can
+[718.80] just say else because there's really
+[720.16] nothing else to test. We'll update high.
+[722.56] And high is just going to be updated to
+[724.32] being mid minus one. And that's pretty
+[728.16] much it in terms of what we're going to
+[729.36] be doing on each iteration. Now, we got
+[731.52] to think about uh the looping structure
+[733.60] that we're going to have here. So, we
+[734.88] got to wrap up all this code that we
+[736.56] just wrote here related to calculating
+[738.48] the midpoint and then doing comparisons
+[741.12] between the value at the midpoint and
+[743.20] our search value to determine whether we
+[745.04] found our value or if we need to update
+[747.04] low or if we need to update high. So
+[749.44] really this this uh set of steps here
+[752.00] keeps going on as long as the low value
+[755.68] is less than or equal to the high value.
+[758.64] As soon as the high value crosses over
+[760.88] the low value or the low value crosses
+[762.64] over the high value, we need to stop at
+[764.64] that point because we now have exhausted
+[766.64] search space of our array. So what we're
+[768.72] going to do here is just have a while
+[770.32] loop here. So while that condition there
+[773.28] is where we have low less than or equal
+[776.00] to high then we want to keep doing this
+[779.92] uh operations or these set of operations
+[782.08] here where we're updating the midpoint
+[785.12] and then the uh the value that we're
+[787.52] looking for is not equal to the value
+[789.44] there at the midpoint either updating
+[791.20] high or low. So let me just tab all that
+[793.12] code over and put in a close brace
+[795.92] there. And that's pretty much it in
+[797.92] terms of our binary search except for if
+[801.28] it turns out that we don't find the
+[802.80] thing that we're looking for, we still
+[804.40] need to return a particular value. And
+[806.00] so we'll return, let me uh create some
+[808.32] spaces there so you guys can see that a
+[809.76] little bit better. So we'll return
+[811.20] negative one. So that's it for binary
+[814.32] search. So not too bad of a function in
+[816.16] terms of the number of lines of code and
+[817.76] even the the complexity of of the
+[819.76] algorithm is not that bad. So let's go
+[822.16] ahead and build this and run it. So I'm
+[823.76] going go ahead and build it.
+[826.80] Looks like it looks like everything
+[828.24] built okay. And now we'll run it just to
+[830.40] test everything out here.
+[833.20] So we'll go ahead and uh enter in an
+[834.72] integer. We'll enter in uh 82 just to
+[837.52] see a value that's actually in the
+[839.36] array. And we see that the number 82 was
+[842.08] found at the element with index value of
+[844.08] six. Let's check that out. So 0 1 2 3 4
+[847.92] 5 6. Yeah. So that's where 82 was found.
+[850.48] Let's run it a couple more times
+[853.44] and we'll put in maybe the value of 22
+[857.28] and we can see that 22 was found at the
+[859.92] element with index value of one and that
+[862.40] is the case because this would be zero
+[863.68] and this would be one. Uh let's put in a
+[865.84] value that doesn't exist in our array.
+[867.20] So we'll put in maybe the value of uh
+[869.84] let's see 26
+[872.00] and we can see that 26 was not found.
+[874.16] The other thing that I'd encourage you
+[875.28] to do is, you know, something I really
+[877.52] want people to, I guess, embrace is this
+[879.60] idea of using the debugger. So, you may
+[881.76] want to step through the code and see
+[883.20] exactly what paths of execution is being
+[885.52] taken in the binary search function as
+[888.96] you put in different values. Uh, so
+[891.12] that's it for this video.

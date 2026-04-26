@@ -1,0 +1,414 @@
+[0.16] in this video i want to show you guys
+[1.60] how to create a rock paper scissors game
+[3.76] and the way it's going to work is we're
+[5.12] going to play against the computer
+[6.80] and the first to win best two out of
+[8.88] three rounds
+[10.24] wins the entire game so the way we're
+[13.12] going to start out creating this program
+[15.12] is by creating two variables the first
+[17.36] being the user score
+[18.72] and the second being the cpu score these
+[21.04] two variables are going to
+[22.48] keep track of who gets best two out of
+[24.64] three first
+[25.52] so we're going to create our first
+[26.56] variable of the integer data type and
+[28.32] we're going to call user score
+[30.96] we're going to initialize it to zero at
+[32.88] least at first
+[34.40] we're going to do the same thing with
+[35.44] the cpu score
+[38.08] also initialized to zero next
+[41.52] what we need to do is we need to create
+[42.88] an infinite while loop and every single
+[45.12] iteration of this while loop
+[46.72] is going to mimic a particular round in
+[49.76] this rock paper scissors game
+[51.52] the reason it needs to be infinite is
+[53.44] because we don't know how many rounds we
+[55.20] have to play
+[56.32] until someone gets best two out of three
+[58.72] first so we're just going to say
+[60.24] while true to create our infinite while
+[62.32] loop
+[63.36] the first thing we're going to do in
+[64.32] this while loop is we're going to ask
+[66.08] the user
+[66.88] to enter one for rock two for paper and
+[69.04] three for scissors
+[70.24] so we can do this with a simple print
+[72.40] line function so system.out.printline
+[76.24] and what we're going to say is enter one
+[78.16] for rock
+[79.60] two for paper and three for scissors
+[86.40] now we've asked them to enter one two or
+[89.28] three
+[90.24] next we need to get user input and the
+[92.40] way we can do this is with a particular
+[94.48] class
+[95.28] and that class is called the scanner
+[97.20] class in order to use the functions
+[99.36] inside of this class that we need
+[101.04] we have to first import this class and i
+[103.28] did we can do this
+[104.72] by just typing import java.util.scanner
+[108.40] and then in order to use the functions
+[110.00] inside of the scanner class we have to
+[111.68] create an
+[112.08] object of it and i'm going to do it
+[113.68] right here so we're just going to say
+[114.96] scanner
+[115.92] call this object scan you can call it
+[117.76] whatever you want but for simplicity
+[119.60] sake i'm going to call it scan
+[121.52] is equal to new scanner what i'm going
+[124.56] to pass this object is parameters is
+[126.48] system
+[127.36] dot in so now we've imported the scanner
+[131.44] class we've created an object of the
+[132.72] scanner class
+[133.68] we can now use the functions necessary
+[135.68] inside of that class to get user input
+[137.92] and i'm going to create a new variable
+[139.36] called user choice
+[141.36] so you end uh user choice
+[145.20] and what is going to be equal to is scan
+[148.08] dot
+[148.56] next int
+[151.76] so what this next int function does
+[155.52] that's located inside of the scanner
+[157.12] class
+[157.76] is it gets user input in the form of an
+[159.84] integer and it's going to store it
+[161.68] inside of this user choice
+[163.92] variable so as of now we've got the user
+[167.68] choice
+[168.32] we now need to get the cpu's choice and
+[170.32] we're going to do is a little bit
+[171.36] differently
+[172.00] i'm going to create the variable first
+[173.44] so int cpu
+[175.76] choice um
+[178.88] the way we're going to do this is we
+[180.64] need to get the
+[182.32] computer to pick a random number between
+[185.12] one and three we don't want to pick this
+[186.96] because it wouldn't be too fun just
+[188.56] playing a rock paper scissors game
+[190.40] with ourselves so we need to
+[193.44] import another class which is the random
+[196.00] class
+[196.80] and this random class allows us to pick
+[199.76] random numbers between a particular
+[202.32] specified interval so we're going to
+[204.80] import this random class
+[206.24] right here and just like the scanner
+[209.04] class in order to use this random class
+[211.52] or the functions inside of it we have to
+[213.20] create an object of it so i'm going to
+[214.64] create it right here
+[215.68] we're going to say random we're going to
+[218.72] call this object rand is equal to new
+[222.00] random this object requires no
+[226.96] sorry about that this object requires no
+[229.36] parameters
+[230.40] so we've imported the class create an
+[233.20] object of the class we can now use
+[235.12] the functions we need that are located
+[238.48] inside of that class
+[240.16] so we're going to say rand dot next
+[243.60] int we're going to pass to this function
+[246.88] is 3. so this next end function located
+[250.16] inside of the random class
+[251.68] whatever we pass to that function so in
+[253.68] this case we pass 3
+[255.28] it's going to pick a random number
+[258.48] within the interval that we specified
+[261.20] the interval that we specified
+[263.28] is uh 3 however
+[267.36] um the way this works is it goes up two
+[270.24] but it doesn't
+[270.96] include the number that we enter here so
+[273.44] what
+[274.00] the random number it will pick is from
+[276.32] the integer zero one or
+[277.92] two in order to get one two or three
+[280.96] all we have to do is say plus one
+[284.24] not there plus one
+[288.64] so now um for every round or every
+[292.08] iteration of our while loop
+[294.16] um this next int method is going to pick
+[297.12] a random
+[298.24] integer between one and three between
+[301.68] one and three and it's gonna store in
+[303.44] our cpu choice
+[304.80] so now we've got our user choice our cpu
+[306.88] choice we now need
+[308.40] to get into creating the logic for this
+[311.04] program
+[313.04] and the way we're going to do this is
+[314.64] with a series of if
+[316.16] else if statements we need to tell java
+[319.84] what to do during any
+[323.44] and every possible scenario that can
+[325.60] occur so say for example we pick rock
+[328.32] and the user picks scissors
+[330.00] we need to tell the computer what
+[331.92] happens then or if we pick
+[333.60] two and java picks one we need to
+[337.44] explicitly state every scenario and then
+[339.92] tell the computer what to do
+[341.28] in each one of those scenarios so
+[344.40] we can take care of a lot of
+[346.64] possibilities
+[348.00] um with a simple if statement and those
+[350.96] are ties so we can say if
+[353.76] cpu choice is equal to
+[357.28] user choice so if it is a tie
+[361.28] what we're going to do
+[364.72] is we're going to just tell the user
+[366.88] that it was a tie
+[368.00] and no points will be awarded we're
+[369.76] going to do this with a
+[371.16] system.out.printline function
+[374.48] so we're going to say tie
+[377.84] no points will be awarded
+[382.96] yeah okay awarded
+[386.24] okay now from here what we need to do
+[390.08] is we need to create an elsif statement
+[392.48] or a couple of them
+[394.00] and these are going to be if we pick one
+[396.64] or rock if we pick scissors
+[398.72] and if we pick paper so
+[402.08] else if user
+[405.28] choice is equal to two
+[410.96] sorry one and user choice
+[414.72] that c needs to be capitalized so is
+[417.20] equal to one
+[418.88] we also need to do it if user choice is
+[421.20] equal to two
+[428.16] and then we need to do it
+[431.36] if user choice is equal to three
+[440.40] okay what goes inside of these else if
+[442.32] statements
+[443.76] are so say for example the user choices
+[446.24] one
+[446.96] we need to create an if statement for if
+[449.44] the cpu
+[450.08] choice is two and if it is three because
+[452.80] those are the only two
+[454.40] possible outcomes that can occur if we
+[457.36] pick one
+[458.88] although i'm sure you're you're thinking
+[461.76] well the cpu can also pick one but we've
+[464.24] taken care of
+[465.04] all ties right here so inside of these
+[469.04] elsif statements we don't have to
+[470.48] specify one here
+[472.56] or two here or a three here so we're
+[474.96] going to
+[475.92] create an else if statement here
+[479.44] or an if statement here
+[482.96] and we're going to say if cpu choice is
+[485.04] equal to 2 so
+[486.24] if cpu choice is equal to 2
+[494.08] what we're going to say is the cpu chose
+[497.36] paper and you have lost this round
+[500.48] um so we can do another print line
+[502.48] function so system
+[503.68] dot out dot print slide
+[508.16] cpu chose paper
+[511.84] and you have lost this round
+[517.12] from here since we lost this round in
+[519.36] the cpu one
+[520.56] we need to increment the cpu score
+[523.76] so we're just going to say cpu score
+[528.64] plus plus and then we want to display
+[531.44] the scores so we can do another print
+[533.20] line function
+[536.24] and we're actually going to do a printf
+[537.60] function and this is slightly different
+[539.12] than a print line and i'll go in
+[541.60] i'll explain that to you in a second but
+[543.36] we can say cp
+[545.84] cpu score
+[549.04] percenty backslash n
+[554.56] user score
+[558.48] percenty backslash n
+[562.48] comma cpu score
+[566.00] comma user
+[569.28] score okay
+[572.40] so what this does is this printf
+[574.24] function is a little bit different than
+[576.00] the print line function we've been using
+[577.60] up here
+[578.32] this printf function what it does
+[581.36] is it takes these variables right here
+[583.68] and it places them
+[585.84] in this where these percent ds are these
+[587.92] percent these are placeholders so
+[590.64] say cpu score is one and user score is
+[593.04] zero
+[593.84] cpu score um it'll say cpu score
+[597.92] one user score zero
+[601.04] these backslash ends are escape
+[603.28] characters
+[604.08] and what they do is they go to the next
+[605.92] line
+[607.36] so instead of creating two print line
+[609.76] functions or two printf functions
+[611.76] i can create one and explicitly state
+[614.80] the
+[615.28] new line characters and i can do it all
+[617.52] in one uh
+[618.32] print line function and it just looks
+[621.12] much better in my opinion
+[623.36] so we have the logic for if the cp if
+[626.00] our choices one and the cpu choice is
+[628.00] two
+[628.64] we need to do if the cpu choice is equal
+[631.44] to three
+[632.88] so what we can say is else if
+[636.96] cpu choice is equal to three
+[643.84] we're basically going to do the same
+[645.20] thing so i can just copy this
+[649.36] copy and paste it in here i'm actually
+[653.12] going to
+[654.00] create a space put it here
+[658.64] and then what we need to put is cpu
+[660.64] chose scissors
+[666.08] and you have won this round
+[669.44] you have one we need to increment our
+[673.60] score
+[674.00] instead since we won so user
+[677.60] score and then we're going to display
+[680.96] the two scores on the screen so now
+[683.36] we've uh
+[684.80] created every single possible outcome
+[687.20] that can occur
+[688.48] and what to do during those outcomes if
+[691.60] we choose one we now need to do the same
+[693.52] thing for if we choose two
+[695.20] so i can copy this block of code
+[700.16] and i'm going to paste it in here
+[707.52] okay so we need to change a few things
+[710.32] if user choice is 2 we need to do
+[712.64] if the cpu choice is 1 and what we're
+[715.92] going to
+[716.56] say is
+[719.92] cpu chose rock and you have won this
+[722.56] round
+[723.20] so cpu chose rock
+[728.48] and you have won this round
+[732.00] we need to increment our score since we
+[734.24] won so
+[735.12] user score and then we're gonna display
+[738.40] the scores
+[739.44] and if cpu choice is equal to three we
+[742.32] need to say
+[743.12] cpu chose scissors and you have lost
+[746.40] this round so you've lost
+[750.48] we need to increment the cpu score
+[756.32] and display the scores okay so we're
+[759.20] going to do the same thing
+[760.48] here paste this
+[763.84] and we need to say fcpu choice equal to
+[766.00] 1
+[767.36] and we're going to say cp chose rock
+[774.24] and you have lost this round we're going
+[776.48] to increment the cpu score
+[778.40] and then we need to change this to a two
+[782.56] and say cpu chose paper
+[787.36] and you have won this round okay and
+[790.64] we're going to increment the user score
+[791.84] and then we're going to display the
+[792.80] scores on the screen
+[795.60] we've now created all the logic what we
+[798.00] need to do next
+[798.96] is we need to create a way to break out
+[802.00] of this infinite while loop okay
+[804.16] and the way we can do this is by
+[805.68] creating a couple if statements
+[807.92] so we can say if the cpu score or the
+[810.80] user score is equal to 2
+[812.80] we're going to break out of this
+[814.16] infinite while loop so we can say
+[818.72] if the cpu
+[822.40] score is equal to 2.
+[828.24] we're going to um
+[831.60] do a print line function and say sorry
+[833.92] but you have lost best two out of three
+[835.60] we're gonna tell the user that
+[837.12] so system dot out
+[840.32] dot print line
+[843.44] sorry but you have lost
+[847.52] best two out of three
+[855.44] and then we're going to um
+[859.12] display the uh scores so we're just
+[862.48] going to copy this
+[864.16] line of code right here copy this
+[868.40] paste it here
+[874.88] and then we need to break out of this
+[877.92] infinite while loop
+[879.92] okay and we need to do the same thing
+[881.76] for if
+[884.56] the user score is equal to two because
+[887.04] it's best two out of three
+[888.32] so if user score is equal to two
+[897.20] and we need to do it right here so paste
+[902.00] if cpu score is equal to if
+[905.12] user score we need to change that so if
+[907.44] user
+[908.32] score is equal to two we're just going
+[911.28] to say
+[912.40] congrats
+[915.60] you have one
+[922.56] best two out of three and then we're
+[924.00] going to display the cpu score and our
+[926.40] score
+[927.44] and we're going to break out of the
+[929.20] infinite while loop and we will only
+[931.20] break
+[931.92] if the cpu score equals 2 or the user
+[934.56] score equals 2.
+[936.40] so now let's make sure our brackets are
+[938.64] in place so we have those so we have
+[940.64] those
+[943.28] where does this go to this goes to
+[946.40] we need to add another one for our class
+[948.32] it seems
+[950.32] these can get very hairy make sure you
+[953.68] keep track of all of them okay this
+[956.80] looks like it will work
+[958.32] let's run it enter one for rock two for
+[962.32] paper three for scissors i'm going to
+[963.84] pick rock
+[966.08] no i do not want to cancel
+[969.28] one i picked rock tie no points will be
+[971.76] awarded i'll make this bigger
+[973.60] um enter one for rock two for paper
+[975.68] three for scissors
+[976.64] i'll pick paper tie i'll pick paper
+[979.92] again
+[980.32] cp chose scissors and you have lost this
+[982.08] round it displayed the cpu score
+[984.80] and the user score
+[989.44] so i'm going to pick three cpu chose
+[992.56] paper and you have one this round so
+[994.08] it's one to one
+[995.68] i'll choose scissors again cpu chose
+[999.28] paper and you have won this round
+[1001.04] uh i won best two out of three and it
+[1003.04] congratulates me it says congrats you
+[1004.96] have one best two out of three
+[1006.64] it displays our score cpu scores one and
+[1009.52] my score is two
+[1011.20] so that is how you create a simple rock
+[1014.16] paper scissors in
+[1015.36] java against the computer if it was
+[1018.80] helpful
+[1019.52] i would appreciate if you liked
+[1020.80] commented and subscribed
+[1022.80] and i will see you guys in future
+[1025.12] tutorials

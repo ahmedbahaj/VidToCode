@@ -1,0 +1,96 @@
+[0.03] hey what's going on everybody this is
+[1.95] video number six and the C++ tutorial
+[4.77] series this video we're gonna be
+[6.36] discussing variables and how to use them
+[8.70] in our C++ programs before you started I
+[11.40] would ask you to check out the sponsor
+[12.72] Embarcadero C++ builder C++ builder is
+[16.14] an IDE that gives you all the tools
+[17.55] needed to create and deploy applications
+[19.68] in C++ with this you can do
+[22.26] drag-and-drop pixel-perfect UI's and
+[24.72] with that you can deploy to Windows Mac
+[26.37] iOS and Android so it's definitely a
+[28.68] pretty cool tool if you're wanting to
+[29.94] build real world applications I'll leave
+[32.13] a link for you guys in the description
+[33.00] go check them out you won't be
+[34.41] disappointed
+[35.25] the main point of variables is to store
+[37.56] some value for us and then we can use
+[40.35] that value throughout our program so
+[42.81] what exactly does a variable look like
+[44.55] first copy this example and then I'll
+[46.47] explain each piece alright so we created
+[49.02] a variable with the name or identifier
+[51.30] of slices think of like slices of pizza
+[53.52] here obviously and we assign it the
+[55.71] value 5 so this equal symbol is actually
+[58.98] called the assignment operator and it's
+[61.14] how we store a value inside of a
+[63.15] variable last thing here is this int
+[65.25] this is known as the data type it's an
+[67.74] integer 5 is an example of an integer
+[70.20] similar to how we had return 0 down here
+[73.68] and the function returns an int here
+[76.23] well we're just creating a variable of
+[78.21] type integer and it stores an integer
+[80.97] value and don't forget that semicolon at
+[83.40] the end altogether there's 5 pieces the
+[85.89] data type the identifier the assignment
+[88.44] operator the value and then the
+[90.00] semicolon now what's going on here is
+[92.13] actually a two-step process
+[93.81] there's the Declaration and then there's
+[95.97] the initialization so we could actually
+[98.13] break these up into two separate
+[99.81] statements and that's what we're going
+[100.95] to be doing now so to do that what we
+[102.93] could do is get rid of this equals 5 and
+[104.52] just put a semicolon this is the
+[107.07] declaration then we can do the
+[108.93] initialization by saying slices is the
+[112.29] value 5 so we assign 5 to slices now
+[115.41] note we only use the data type when we
+[117.42] define the variable the declaration says
+[120.54] it exists and then the initialization
+[122.28] says as a value in this situation we are
+[125.10] assigning a literal value by literal I
+[127.32] mean it's literally typed out in our
+[128.91] code it's a 5 we don't always have to do
+[131.70] that we could actually use an express
+[133.64] so for example we could have 5 plus 1
+[135.92] which is an example of an expression now
+[138.50] slices is going to have the value 6 and
+[141.32] we can actually output slices in a C out
+[143.69] by typing the name of the variable like
+[147.20] so and there's no quotes you just type
+[149.27] it plain as is and when we run this we
+[151.52] get at 6 right here we can also assign
+[154.01] from another variable so for example I
+[156.47] could have a variable children and I can
+[159.08] assign this the value slices now when we
+[162.44] output children this is also going to
+[164.66] have the value 6 there we go so slices
+[168.68] was copied into children so now they
+[171.17] both have their own values 6 they're not
+[173.75] pointing to the same thing so I could
+[175.43] set slices to something else and
+[177.43] children is going to remain the same you
+[181.58] can see it's still 6 so that is your
+[183.92] introduction to variables we're gonna be
+[185.57] using them throughout this entire series
+[187.67] and you're never going to get away from
+[189.14] variables in programming so make sure
+[191.24] you understand these concepts if you
+[193.10] have any questions or any suggestions
+[195.05] leave a comment in the comment section
+[196.64] below please be sure to subscribe and
+[198.56] check out the next video because we're
+[200.15] gonna be talking about how we can make
+[201.80] our output a little bit more beautiful
+[203.48] than just the 6 followed by my name so
+[206.60] that's what we're gonna be doing in the
+[207.53] next video template izing our output so
+[210.17] check it out guys
+[211.12] [Music]

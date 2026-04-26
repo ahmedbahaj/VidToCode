@@ -1,0 +1,100 @@
+   |   |   
+   |   |  
+___|___|___
+   |   |   
+   |   |  
+___|___|___
+   |   |   
+   |   |  
+   |   |   
+Current Player is X
+Enter r c from 0-2 for row and column: 1 1 
+   |   |   
+   |   |  
+___|___|___
+   |   |   
+   | X |  
+___|___|___
+   |   |   
+   |   |  
+   |   |   
+Current Player is O
+Enter r c from 0-2 for row and column: 2 2
+   |   |   
+   |   |  
+___|___|___
+   |   |   
+   | X |  
+___|___|___
+   |   |   
+   |   | O
+   |   |   
+Current Player is X
+Enter r c from 0-2 for row and column: 0 2
+   |   |   
+   |   | X
+___|___|___
+   |   |   
+   | X |  
+___|___|___
+   |   |   
+   |   | O
+   |   |   
+Current Player is O
+Enter r c from 0-2 for row and column: 2 0
+   |   |   
+   |   | X
+___|___|___
+   |   |   
+   | X |  
+___|___|___
+   |   |   
+ O |   | O
+   |   |   
+Current Player is X
+Enter r c from 0-2 for row and column: 2 1 
+   |   |   
+   |   | X
+___|___|___
+   |   |   
+   | X |  
+___|___|___
+   |   |   
+ O | X | O
+   |   |   
+Current Player is O
+Enter r c from 0-2 for row and column: 0 1
+   |   |   
+   | O | X
+___|___|___
+   |   |   
+   | X |  
+___|___|___
+   |   |   
+ O | X | O
+   |   |   
+Current Player is X
+Enter r c from 0-2 for row and column: 1 2
+   |   |   
+   | O | X
+___|___|___
+   |   |   
+   | X | X
+___|___|___
+   |   |   
+ O | X | O
+   |   |   
+Current Player is O
+Enter r c from 0-2 for row and column: 1 0
+   |   |   
+   | O | X
+___|___|___
+   |   |   
+ O | X | X
+___|___|___
+   |   |   
+ O | X | O
+   |   |   
+Current Player is X
+Enter r c from 0-2 for row and column: 0 0 
+Tie!

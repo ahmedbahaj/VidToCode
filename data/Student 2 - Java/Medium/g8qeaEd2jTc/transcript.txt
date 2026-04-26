@@ -1,0 +1,405 @@
+[0.00] in this video we are going to code the
+[1.60] bubble sort sorting algorithm
+[3.44] in java even though bubble sort
+[5.04] definitely isn't the fastest sorting
+[6.72] algorithm in the world
+[7.76] it's a really great algorithm for
+[9.36] beginners to learn and implement
+[10.96] and we're going to see if bubble sort
+[12.24] can sort an array of 14
+[14.08] ins faster than the five hours or so it
+[16.48] took to do it with bogo sort hopefully
+[18.24] this is a little faster than that
+[19.84] if this is your first time on the
+[20.88] channel thanks for watching my name is
+[22.32] john and i do a new java tutorial video
+[24.64] every single week so be sure to leave a
+[26.24] like and hit the subscribe button so you
+[27.84] don't miss the new video every week
+[29.60] before we get started as always the full
+[31.36] source is available in the link down
+[32.80] below in the description so go and get
+[34.72] it a few weeks ago on this channel
+[36.32] we coded a ridiculous sorting algorithm
+[38.80] called bogosort that's the sorting
+[40.64] algorithm where all you do is
+[42.08] randomly shuffle your list and then
+[43.84] check to see if it's sorted and if it
+[45.36] isn't
+[45.76] keep shuffling it until it is that video
+[48.08] is here if you want to go check it out
+[49.52] that algorithm is obviously silly and it
+[51.84] just gets super crazy slow even with
+[53.84] just a few values in your list here
+[55.52] we'll be coding
+[56.32] bubble sort now of course it isn't a
+[58.00] super fast sorting algorithm
+[59.76] but it is much better than bogo sort
+[62.08] first let's just look at a visual
+[63.68] representation of how bubble sort works
+[65.84] this is a gif that's just taken from
+[67.52] wikipedia
+[68.32] what it does is it goes through the list
+[69.60] starting at the beginning and it
+[70.96] compares
+[71.68] each number with the number after it and
+[74.00] if those two numbers are not in the
+[75.76] right order
+[76.64] it swaps them and if they are in the
+[78.56] right order it just leaves them where
+[79.84] they are and then it moves to the next
+[81.20] number and compares
+[82.32] that number with the one after it and
+[83.76] does the same thing and then when it
+[85.28] reaches the end of the list
+[86.56] it just starts over at the beginning and
+[88.00] does the whole thing again you can see
+[89.84] in this animation why it's called bubble
+[91.52] sort because what happens is like the
+[92.80] highest numbers
+[93.68] kind of bubble to the top it keeps going
+[95.84] through the list over and over again
+[97.20] swapping values when they're out of
+[98.80] order and it only stops
+[100.00] when it goes to the list and doesn't
+[101.60] have to swap anything and that's how it
+[103.68] knows that the list is finally in order
+[106.00] obviously if you go through the list and
+[107.52] no two numbers are out of order
+[109.12] you know your list is perfectly sorted
+[111.04] and that's how this sorting algorithm
+[112.56] knows that it's done
+[113.52] all right so enough about the conceptual
+[115.04] part let's get to coding
+[117.04] i have pre-coded here just a little
+[118.48] setup that gives us a
+[120.16] random list of numbers that we can sort
+[122.16] so quickly just to step through it
+[123.76] we start out with an array of ins and
+[126.32] we'll just make it size 10 so we'll
+[127.76] start
+[128.08] with just 10 inch that we're sorting and
+[130.16] then i have this for loop here
+[131.52] that goes through that end array and
+[133.12] then fills it up with random ends
+[134.88] basically between zero and a million and
+[136.88] then once we have that array of random
+[138.56] ins print out the before state where of
+[140.48] course
+[141.04] that list is not in order at all and
+[142.88] then we have the spot where we are going
+[144.16] to be writing our bubble sort sorting
+[146.24] algorithm
+[146.88] and then right after that we print out
+[148.32] the array again and it should be in
+[150.16] perfectly
+[150.88] sorted order and this print array method
+[152.80] that i'm calling to print the array all
+[154.40] it's doing is looping through each
+[155.60] element
+[156.00] in the array and printing it out okay so
+[158.24] here's where we're going to be writing
+[159.92] our bubble sort algorithm so i think we
+[161.92] want to start with a
+[163.04] for loop let's start with the process
+[164.96] where it goes from the beginning to the
+[166.72] end
+[167.04] of the list and for each element it'll
+[169.04] check whether it is out of order with
+[170.64] the one
+[171.04] after it or not and if those two are out
+[172.64] of order we swap them and then we move
+[174.24] on to the next two
+[175.28] so here's what that looks like we're
+[176.40] going to create a for loop and we'll
+[178.00] just do 4
+[178.96] int i equals 0 and we're going to loop
+[181.84] while
+[182.24] i is less than the length of our numbers
+[185.36] list
+[186.56] minus one so you might be thinking
+[188.80] usually when we're looping through an
+[190.40] array
+[190.88] we might go until i is less than
+[192.56] numbers.length and not numbers.length
+[194.40] minus one so why are we doing
+[195.68] numbers.length
+[196.72] minus one and the reason is when we're
+[198.56] looking at the second to last element
+[200.40] we'll be comparing it with the one after
+[202.16] it which will be the last element
+[203.76] so so there's no reason to look at the
+[205.76] last element by itself there's nothing
+[207.60] after it to compare it with so we just
+[208.88] can stop at
+[209.68] numbers.length minus one then of course
+[211.68] i plus plus two increment i
+[213.36] every time through the loop all right
+[214.88] now each time through the loop here we
+[216.00] want to compare
+[217.12] the element of the index we're looking
+[218.48] at with the one after it and if they're
+[220.16] out of order we want to swap them
+[221.60] so we can write that condition with a
+[223.20] pretty simple if statement we can just
+[224.96] say
+[225.36] if numbers i that's the number
+[228.56] at index i so the first time through
+[230.48] this loop we'll be looking at the very
+[232.00] first element the zeroth
+[233.60] element in our array is greater than
+[236.56] numbers
+[238.16] i plus 1. so this will tell us if the
+[241.04] number at the index we're looking at
+[242.72] is greater than the next number so if
+[245.28] this number is greater than the next
+[246.48] number these are out of order and we
+[247.84] need to swap them
+[248.80] and swapping two numbers is kind of a
+[250.08] classic programming problem when you
+[251.76] want to swap two variables or here
+[253.92] just two different elements in an array
+[255.84] it's easiest to use
+[256.96] a temp variable and i'll show you what i
+[258.40] mean here so we can create int
+[260.00] temp equals numbers i
+[263.36] so temporarily we're going to save the
+[264.96] value we have here at index i
+[267.12] in our array to this temp variable then
+[269.28] we're going to set
+[270.80] that value at numbers i to be what is
+[273.60] currently at
+[274.64] numbers i plus 1. so now our element at
+[277.92] index i
+[278.72] has what was at i plus 1 and now we have
+[281.44] to assign
+[282.48] the i plus 1 index to be what was at i
+[285.76] and we can do that by using our temp
+[287.60] variable so we can say
+[288.96] numbers at i plus 1 equals temp
+[292.24] and that's why you need this temp
+[293.68] variable if you ignore using this temp
+[295.36] variable and just set
+[296.72] numbers i equals numbers i plus one they
+[298.88] both then have exactly the same value
+[300.96] and the value you had at the i position
+[303.52] is lost and you can't set the i plus one
+[305.68] position to it so that's why you
+[306.88] temporarily save it
+[308.00] to a temp variable like this this is a
+[309.92] very classic way to swap two elements in
+[312.32] an array or two variables
+[314.00] in any programming language all right so
+[315.84] now we've coded one iteration of going
+[318.08] through the list and swapping the
+[319.36] elements that were out of order
+[320.80] but going through it just one time won't
+[323.04] make it end up in perfect order and we
+[324.72] can even run our program to show what i
+[326.24] mean
+[326.56] so we can see our before state where we
+[328.08] have just you know a completely
+[329.84] random order and then after right now
+[331.84] we're doing just one iteration of the
+[333.52] bubble sort process
+[334.56] so what that one iteration does while
+[336.00] it's going through each element and
+[337.60] swapping them if they're out of order
+[339.04] what you'll end up with is the highest
+[340.80] one will be at the top but all the other
+[342.72] ones won't necessarily be in order yet
+[344.48] so what the algorithm has to do is keep
+[346.00] going through this array over and over
+[347.44] again swapping elements that are out of
+[348.96] order until it has a perfectly sorted
+[350.96] list but that won't happen
+[352.00] after just one iteration so how do we
+[353.68] code this to iterate through this list
+[355.44] over and over again doing that swapping
+[357.28] until the array is finally in order well
+[359.12] here's what we can do we can create a
+[360.88] boolean
+[362.00] we'll call it swapped something and
+[364.32] initialize it first to true and then
+[366.08] what we're going to do is enclose this
+[368.08] entire for loop that we currently have
+[370.56] in a while loop and the condition we are
+[372.96] going to have for our while loop
+[374.64] is swapped something you will use the
+[376.48] swapped something boolean so each time
+[378.56] through this while loop it looks to see
+[380.40] if swap something is true and if it is
+[382.72] it'll keep going through this while loop
+[384.24] right now of course since nothing is
+[385.68] changing the swapped something to false
+[387.84] ever this will always be true and it'll
+[389.92] just loop through this infinitely
+[391.20] of course that's not what we want what
+[392.56] we actually want to do is right before
+[395.44] each time we start going through this
+[397.76] for loop we actually want to set
+[400.08] swap something to false what we're
+[403.20] really going for here is we're trying to
+[404.64] tell the program
+[406.00] if you go through every element in this
+[407.76] list and you didn't have to swap
+[409.20] anything
+[409.84] then you know it is already in perfect
+[411.92] order but if you did have to swap
+[413.60] something
+[414.16] well you're gonna have to go through it
+[415.44] again so that's why here right before we
+[417.60] jump into our for loop we want to set
+[419.36] swap something to false but then the
+[421.36] moment that we
+[422.08] find out oh we had to swap something
+[423.92] something wasn't in
+[425.12] order then we went to set swapped
+[426.88] something to true
+[428.64] so basically we start optimistically hey
+[430.48] we didn't have to swap anything yet but
+[432.24] then as we're going through our list and
+[433.68] we discover ah there was something
+[435.36] that was out of order and we're about to
+[437.36] have to swap something
+[438.40] we're going to set swap something to
+[440.48] true in that situation where it did have
+[442.32] to swap something
+[443.28] once it gets out of this for loop and
+[444.88] goes back to the top of the while loop
+[446.32] it said
+[446.88] ah yep i just had to swap something my
+[448.72] last iteration through this loop so i
+[450.32] better go through it again because my
+[451.52] list still wasn't in perfect
+[452.96] order and you might be thinking what's
+[454.24] kind of weird here is we had to start
+[455.68] with a swapped something of true
+[457.76] that was just to get it in the while
+[459.76] loop the first time
+[460.80] if we started out with it set to false
+[463.12] this value would be false and it
+[464.40] wouldn't even enter the while loop at
+[465.76] all so as a side note if you wanted to
+[467.44] you could rework this with a do while
+[469.20] loop and you wouldn't have to start it
+[470.40] with true but i just tend to like the
+[472.00] cleanliness of a while loop a little
+[473.28] better than a do while loop
+[474.48] but it would work great with a do while
+[476.16] loop as well okay i think that should
+[478.24] give
+[478.56] us a working bubble sort so let's run
+[481.04] our program
+[482.00] with 10 random numbers and see if it
+[484.00] sorts them on
+[485.68] all right there's our before state all
+[487.84] crazy and out of order
+[489.04] and after we can take a look and it
+[490.80] looks like our array is in
+[492.56] perfect sorted order and with just 10
+[494.96] elements it's very quick
+[496.32] runs in about uh one second it looks
+[498.40] like so that's pretty cool right we
+[499.92] coded our own
+[500.96] real sorting algorithm and we've tried
+[502.64] it for 10 numbers let's increase that a
+[504.72] bit
+[505.20] and try to sort um a thousand numbers
+[508.08] we'll run that
+[509.92] and still finished uh very very quickly
+[512.00] there's all the out of order ones
+[513.92] and now we should see starting here's
+[516.40] the after state and yeah it looks like
+[518.08] those are in perfect order
+[519.60] great and now let's get a little crazier
+[522.00] let's do
+[523.04] a hundred thousand elements here we go
+[528.80] okay this one's taking a little bit
+[530.16] longer it's still running it printed out
+[532.40] our uh
+[533.68] our unsorted list and now it's it's
+[535.68] sorting them before it prints it out
+[538.56] see what happens
+[544.00] taking a while okay there it goes it
+[546.88] looks like it sorted it in
+[548.24] order nicely but it did take about
+[551.28] about 25 seconds or so so it's kind of a
+[553.28] long time it's not a very
+[554.88] effective thing for really huge sets of
+[557.04] data but if you remember our bogo sort
+[559.28] with just
+[560.08] 14 elements took something like five
+[562.48] hours and here we're sorting a hundred
+[564.24] thousand elements
+[565.20] in less than 30 seconds so it's
+[566.80] definitely not amazing but
+[568.32] infinitely better than bogosort next
+[570.64] let's step it up and sort
+[573.20] a million elements here we go
+[578.48] well it takes a while to just print out
+[579.76] a million elements but it did finish
+[581.04] that here we go
+[586.72] bubble sort has a complexity of what's
+[588.96] called big o
+[590.16] of n squared what that basically means
+[593.04] is
+[593.68] as the number of elements that we're
+[595.20] trying to sort increases
+[596.80] the amount of time or the amount of
+[598.16] memory needed to do that sorting
+[600.16] increases at the rate of the number of
+[602.16] elements squared what that means
+[603.76] practically for us here in this
+[604.88] situation
+[605.76] is now that we increased the number of
+[607.92] elements that we want to sort from 100
+[609.84] 000 to a million
+[610.96] it may seem like it should just take
+[612.32] maybe 10 times as long to sort that
+[614.40] because we have 10 times the number of
+[615.76] elements but in reality because this is
+[617.84] the big o
+[618.48] of n squared it's probably going to take
+[621.36] much much
+[622.08] longer than just 10 times the amount of
+[624.32] time it took
+[625.36] to do 100 000. but we'll wait and see it
+[628.40] could take
+[629.20] uh quite a long time okay finally
+[631.60] finished so it went from about 9
+[633.52] 15 to 9 52 so it took about 37 minutes
+[637.44] for it to finish sorting those 1 million
+[640.72] inch so there's a pretty long time it's
+[642.80] it's not near as bad as
+[644.32] the 5 hours it took to sort 14 ins with
+[647.28] bogosort but although this sorting
+[648.96] algorithm works just fine
+[650.64] it's not efficient enough for you to
+[652.00] want to use for large data sets like
+[654.08] this
+[654.56] with an algorithm that has a complexity
+[656.16] of big o of n squared you can kind of
+[658.08] think about it that when you
+[659.12] double the size of the data set that you
+[661.60] want to sort
+[662.56] give or take you're going to quadruple
+[664.08] the amount of time that it takes so here
+[665.84] when we went from sorting a hundred
+[667.44] thousand elements to a million
+[669.20] we went from taking less than 30 seconds
+[671.20] to over 30 minutes so it's taking more
+[673.20] than 60 times as long
+[674.72] to sort an array 10 times as long if you
+[676.72] enjoyed this video or learned something
+[677.92] please be sure to let me know with a
+[679.04] like and hit the subscribe button if
+[680.40] you'd like to see a new java video like
+[682.00] this one every single week and really
+[683.52] thank you for taking the time to like
+[684.80] and subscribe
+[685.52] it might not seem like much but it's the
+[686.96] only way these videos get out to help
+[688.32] more people
+[689.04] so i do appreciate it thanks for
+[690.48] watching see you next time

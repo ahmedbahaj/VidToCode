@@ -1,0 +1,146 @@
+[0.00] in this video we're going to create a
+[2.76] simple number guessing game in C plus
+[4.50] the program will create a random integer
+[7.26] between 1 and 100 and then the program
+[10.32] will continually prompt the user to
+[12.78] guess the number and it will tell the
+[14.58] user if they need to guess higher or
+[16.98] lower until they get it correct so first
+[19.26] off we'll use the Rand function to
+[21.60] generate the random integer we'll
+[23.70] include the C stdlib library where this
+[27.66] function is defined so that we can use
+[29.70] it
+[30.60] this Library also includes the SRAM
+[33.06] function that we're going to use to seed
+[35.76] the random number generator we're going
+[38.28] to use the current time as the seed
+[40.08] value so we'll also include the C time
+[42.96] Library
+[43.98] which includes the time function which
+[46.20] is going to return the current time
+[48.30] so the first thing we'll do is call sred
+[52.26] and we need to supply srand with a seed
+[55.44] value that's going to determine the
+[57.72] sequence of random integers that are
+[60.06] going to be generated when we call Rand
+[61.94] we want the random integer that our
+[64.68] program creates to be potentially
+[66.48] different each time a program runs in
+[69.12] order to achieve this we need to supply
+[71.28] a different Z value each time our
+[73.50] program runs we could use the current
+[75.66] time as a seed value because the current
+[78.30] time is going to be different each time
+[80.64] our program runs so the time function
+[83.04] from the C time library is going to
+[85.32] return the current time when it's past
+[87.36] the argument null so here we'll have
+[89.58] time null to use the current time as DC
+[92.70] value now it's probably fine to leave it
+[95.64] like this but technically the time
+[97.50] function returns a Time underscore T
+[100.14] value and S Rand expects an unsigned int
+[104.28] so we could use an explicit type cast
+[106.38] here we could have unsigned int
+[110.46] to ensure that value is cast to the type
+[113.34] unsigned end
+[114.72] next we'll declare a variable called
+[117.24] number of type int and number is going
+[120.24] to store the random integer we'll use
+[122.76] the Rand function to help create this
+[125.16] random integer
+[126.42] so Rand is going to return a random
+[129.60] integer between 0 and some very large
+[132.66] number
+[133.50] but we want to have a random integer in
+[136.32] the range 1 to 100. so we'll use some
+[139.32] operations to take this random integer
+[141.42] and give us a random integer in the
+[144.06] range of 1 to 100. so first we'll use
+[147.84] modulus 100 where the modulus operator
+[151.02] is going to give us the remainder of an
+[154.08] integer division operation so here if we
+[157.26] do modulus 100 the only possibilities
+[160.20] are remainders in the range 0 to 99 so
+[164.52] for example if the Rand function
+[166.56] returned the random integer 500 modulus
+[170.28] 100 would take that and give us back
+[172.68] zero if we had 501 then modulus 100
+[177.54] would give us back 1. if we had
+[181.34] 599 as our random integer modus 100
+[186.18] would give us back 99.
+[189.78] and if the Rand function were to give us
+[192.42] back 600
+[194.16] then modulus 100 would take that and
+[197.10] give us back zero
+[199.02] so this here is going to give us a
+[201.90] random integer in the range 0 to 99.
+[206.34] so if we have 0 to 99
+[209.70] and we take that and add 1 to it
+[212.52] that's going to give us back a random
+[214.74] integer in the range 1 to 100. so all we
+[218.94] need to do here is take this
+[221.40] and add one to it
+[223.98] and now we're going to have a random
+[225.90] integer in the range 1 to 100. next
+[229.56] we'll declare an INT variable called
+[232.38] guess
+[233.70] that's going to store the guess that the
+[235.68] user enters
+[237.30] then we'll create a do while loop to
+[239.58] continually prompt the user to enter in
+[241.62] the guess until they get it right
+[243.96] so here we'll have do
+[246.48] while
+[248.46] guess does not equal number
+[252.78] so so long as the user has not correctly
+[255.48] guessed the number we're going to keep
+[257.40] the game going
+[258.78] so the first thing we'll do in the loop
+[260.64] body is prompt the user to enter the
+[263.10] guess so off here C out
+[266.28] and then enter guess between 1 and 100
+[270.90] colon
+[272.82] then we'll use CN to store the guess the
+[276.00] user enters into the guess variable
+[278.00] Suave CN and then guess next if the
+[282.66] guest the user entered is greater than
+[285.18] the number that means the user needs to
+[288.42] guess lower next time so I've here C out
+[292.02] guess lower followed by an inline
+[296.34] else if they guess the user entered is
+[299.76] less than the number
+[301.62] that means the user needs to guess
+[303.54] higher next time so we'll have here C
+[305.82] out and then guess higher followed by
+[309.30] and inline
+[310.68] now if the guess is not greater than or
+[313.44] less than the number that means it must
+[315.72] be equal to the number in which case the
+[318.06] user got it right and here for the else
+[320.58] case we'll output here
+[323.36] U1
+[325.08] followed by an inline
+[327.72] so so long as the guess is not correct
+[330.24] the game is going to keep going and the
+[332.70] user will keep getting advice as to how
+[334.68] to guess next time
+[336.12] when the user does get it right guess
+[338.04] will equal number and at that point the
+[340.68] game is going to stop
+[342.18] we can now test out our game so we'll
+[344.46] save compile and run a program and for
+[347.46] our first guess one trend 50. it says
+[351.24] that gets lower so we'll try 25
+[354.18] it says think it's lower so we'll try
+[356.16] 10.
+[357.48] now it says gets higher so we'll try 17.
+[360.84] it says gets lower so we'll try 13.
+[363.54] it says lower again so we'll try 12 and
+[366.54] now we got it right and the game is over
+[369.24] so this is how we can create a simple
+[371.40] number guessing game in C plus checkout
+[374.12] portfoliocourses.com where we'll help
+[375.96] you build a portfolio that will impress
+[377.34] employers

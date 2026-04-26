@@ -1,0 +1,8 @@
+1 - Add 
+ 2 - Subtract 
+ 3 - Multiply 
+ 4 - Divide
+Choose Operator: 1
+Enter first number : 2
+Enter second number : 3
+Result is : 5

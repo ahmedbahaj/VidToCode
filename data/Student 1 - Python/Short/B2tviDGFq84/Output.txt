@@ -1,0 +1,24 @@
+PS C:\Users\PC\Desktop\Test\Shorts> & C:/Users/PC/AppData/Local/Python/pythoncore-3.14-64/python.exe c:/Users/PC/Desktop/Test/Shorts/CodeForGame.py
+Enter Guess: 50
+Guess higher!
+Enter Guess: 75
+Guess lower! 
+Enter Guess: 65
+Guess lower! 
+Enter Guess: 64
+Guess lower! 
+Enter Guess: 60
+Guess lower! 
+Enter Guess: 59
+Guess lower! 
+Enter Guess: 58
+Guess lower!
+Enter Guess: 57
+Guess lower!
+Enter Guess: 56
+Guess lower!
+Enter Guess: 55
+Guess lower!
+Enter Guess: 54
+You won!
+PS C:\Users\PC\Desktop\Test\Shorts>

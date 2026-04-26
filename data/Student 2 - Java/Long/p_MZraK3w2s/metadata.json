@@ -1,0 +1,12 @@
+{
+  "title": "Binary Search Algorithm In Java | FREE DSA Course in JAVA | Lecture 48",
+  "video_id": "p_MZraK3w2s",
+  "webpage_url": "https://www.youtube.com/watch?v=p_MZraK3w2s",
+  "channel": "TAP ACADEMY",
+  "uploader": "TAP ACADEMY",
+  "upload_date": "2023-01-14",
+  "duration_seconds": 1204,
+  "view_count": 35198,
+  "description": "We are learning about the searching algorithms in arrays. We have covered linear search algorithms in the last class and now we are going to learn about a very common and more effective search algorithm ie. Binary search.\n\n\nBefore moving to binary search, let's take a more practical example of search from our day to day lives.\n\n\nHow do you search for a number in a dictionary. Say you have to search success in a dictionary.\n\n\nThe linear search algorithm approach will be that you will start from will work starting with a and go in a sequential manner but surely it will take a lot of time and no one will do that.\n\n\nWe know that success start with s and hence we'll  randomly attempt to open the dictionary and many we get c. Surely s is ahead of c and hence you will now search ahead of c.\n\n\nThe next time you may get t and hence you'll limit your search before t obviously.\n\n\nWhat you are actually doing is shortening up the scope of search until you arrive at s and ultimately will find the word success.\n\n\nThis is what we need to do in a binary search. We need to shorten our scope of research with every attempt in a binary search algorithm.\n\n\nLet's see how we can actually write a program to cover this binary search algorithm approach to search an element in an array in Java.\n\n\nWatch the complete lecture to understand the binary search algorithm.\n\n\nSubscribe to our channel for regular updates on the dsa course and click on the bell icon to never miss an update from our dsa course.\n\n\nData Structures and Algorithms Free Course (Learn DSA Without Paise) Playlist - https://youtube.com/playlist?list=PLU83Ru7iGtAvP1rqt65MCDSBPFCzUKGXG\n\n\nFor more information, fill this form: https://forms.gle/8eiUmM92Fx563Aen9 \nor call us at 8884881203\n\n\nFacebook: https://www.facebook.com/thetapacademy\n\n\nInstagram:https://www.instagram.com/tapacademy_online\n\n\nLinkedin: https://www.linkedin.com/company/73820805\n\n\nWebsite: https://www.thetapacademy.com​\n#dsa #dsacourse #java #dsainjava #javaprogramming #coding #coder #recursion #placement #array #arrayquestion #arrayjava",
+  "extracted_at_utc": "2026-02-19T19:25:25+00:00"
+}

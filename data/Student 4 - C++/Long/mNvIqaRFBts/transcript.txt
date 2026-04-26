@@ -1,0 +1,422 @@
+[0.08] hey there hope you're having a wonderful
+[1.64] day in this video we're going to be
+[3.48] coding the game tic tac toe in
+[6.36] C++ so to begin we need to represent the
+[9.44] Tic Tac Toe board and to do so we are
+[12.08] going to use a 2d array and it's going
+[14.68] to be a 2d array of characters so let's
+[18.00] create the board so car board and it's
+[21.88] going to be a 3X3 board so there are
+[24.36] three rows and three
+[27.88] columns and to begin we are going to
+[30.68] have a white space so let's create a row
+[35.52] of Whit space so the Whit space
+[37.72] character is going to represent an empty
+[40.24] tile so I'm just going to copy and paste
+[46.32] this okay so now we have our board and
+[50.16] now what we need to do is display the
+[52.32] board so let's print it out so to print
+[55.68] it out I'm going to use a for Loop so
+[57.96] for in I is equal to 0 I Less Than 3 I
+[63.92] ++ I'm going to see
+[66.28] out board of
+[69.60] i0 board of
+[72.28] i1 and board of
+[76.08] I2 and let's print out the endline
+[78.60] character as well so currently if I run
+[81.56] the program you're going to see nothing
+[83.72] because this is all empty Whit space so
+[86.84] let's fill in some values so let's put
+[89.32] in X here
+[90.56] here maybe an O here an X here o here x
+[96.72] here and let's put it over here and
+[100.20] let's do one more okay so now we have a
+[104.20] sample Tic Tac Toe board so now if I
+[106.44] save and run the
+[107.88] program you can see we have our Tic Tac
+[110.68] Toe
+[111.68] board now for this tutorial I want to
+[114.68] make the Tic Tac Toe board a lot nicer
+[116.88] than this so I'm going to get rid of
+[119.00] this and rep replace it with a nicer
+[123.72] display all right so I've copy and
+[125.80] pasted couple lines of print statements
+[127.56] here and this is going to be how we're
+[130.32] displaying this Tic Tac Toe board we are
+[132.64] going to use these vertical lines and
+[134.68] these underscores as dividers so if I
+[138.44] save and run the
+[140.72] program you can see our board will look
+[143.20] something like
+[145.32] this all right so now we have our board
+[148.44] being displayed let's reset this back to
+[150.92] the white spaces all right so now
+[153.28] everything's Whit space so if I save and
+[155.56] run the
+[156.44] program you can see we start off with an
+[159.24] empty Tic Tac Toe grid all right cool so
+[162.72] we have our tic TCT toe board and a way
+[164.56] to display it and I'm going to copy and
+[167.04] paste this into the video description so
+[169.08] you don't have to write all of this out
+[171.68] all right so now what we need are the
+[173.12] two players so let's create two
+[175.36] variables so con car player X is equal
+[179.60] to to
+[180.96] X and consar player o is equal to O and
+[187.04] we are going to create a third variable
+[188.76] that will keep track of the current
+[190.16] player so car current player is equal to
+[194.96] player X so by default we are going to
+[198.24] have player X start first and then after
+[201.44] player X goes we assign current player
+[203.96] to player o so we are going to alternate
+[206.52] between X and O okay so now we have our
+[209.08] two players so what we need to do is
+[211.96] start the game so there are nine tiles
+[215.08] so what I'm going to do is use a for
+[217.08] Loop and iterate nine times so one for
+[219.84] each turn so once nine turns have passed
+[222.96] the board will fill up so here I'm going
+[225.52] to do for INT I is equal to 0 I less
+[229.72] than 9 I ++ and at the start of each
+[233.76] turn I want to print the board so the
+[236.36] players can see what the current state
+[238.16] of the board is for now for nine turns
+[240.92] we are going to print the board and we
+[243.20] need to ask the current player to input
+[245.32] two values a row and column so for
+[248.52] instance if the player X wants to place
+[251.52] the X over here then this would be
+[254.72] index0 1 2 and then within this array is
+[258.64] going to be 0 1 so the input should be 2
+[263.60] 1 and if the player wants to place the
+[266.36] value here this would be index 0 and
+[268.80] then 0 1 1 2 so this would be
+[271.64] 02 okay all right so let's keep track of
+[274.92] the row and column numbers so R is going
+[277.96] to stand for row and I'm going to by
+[280.20] default make this Nega -1 and the same
+[283.44] for the column number this is going to
+[285.68] be the default value so -1 means that
+[288.80] the player has not made a decision for
+[291.80] which row or column number so if you try
+[294.40] to do board1 1 you cannot change
+[297.32] anything okay all right all right so
+[299.84] let's get the user input and before we
+[302.20] get the user input let's print out the
+[305.20] current player so we know who is playing
+[307.84] this turn so let's do SE
+[311.04] out current
+[313.44] player is and then current
+[318.28] player and then
+[320.56] endline and then now let's get the user
+[322.92] input so let's print out a message
+[325.08] prompting the user to pass in two values
+[328.36] of row and column number
+[331.00] so let's see out enter RC from 0 to two
+[335.76] for row and
+[339.08] column and then we are going to CN r
+[343.96] c and then after that we are going to do
+[346.44] Board of RC and set it to current
+[351.52] player and then we need to switch the
+[354.48] current player so current player we are
+[356.72] going to assign current player to and
+[358.96] over here I'm I'm going to use the
+[360.04] Turner operator and if you need a
+[362.20] refresher on Turner operators in C++ I
+[364.96] have a video on that and I will link it
+[366.76] in the video
+[368.52] description so here we are going to
+[370.60] check if current
+[372.24] player is equal to player
+[375.04] X then we Set current player to player o
+[379.00] otherwise we Set current player to
+[381.44] player
+[382.44] X all right cool so now if I save and
+[384.96] run the program you can see we have our
+[387.52] board current players X and I'm going to
+[390.00] do 2 1 and the x is over here now and
+[394.08] here I'm going to do 0 0 and then we can
+[396.76] do 1 one and then let's block this so
+[400.20] we're going to do 01 and then 02 and you
+[404.00] get the idea we have a Tic Tac to game
+[406.04] up and running and now there are two
+[408.48] issues and one of them is I can
+[410.56] overwrite the player x with player o so
+[414.40] we don't have a check in place to see if
+[416.28] the tile's empty or not so here I can do
+[419.16] Z 02 and so 02 is this top right corner
+[422.44] so now it's players o turn so if I put
+[425.08] 02 you can see we've overwritten that x
+[428.28] with an O and another issue is if I put
+[431.72] in a value that is outside the
+[434.16] boundaries we are going to get an error
+[436.64] so if I put 3 three there's no index 33
+[439.80] so it's going to give us an error and
+[442.00] likewise if I put values that are not
+[444.12] numbers like a b we are going to get an
+[447.68] error so I tried to do a B you can see
+[450.84] nothing happens so we need to resolve
+[453.24] these issues so the first issue is we
+[456.08] need to make sure that the user does not
+[458.76] overwrite a tile that is not empty and
+[461.44] the second issue is we need to check to
+[463.04] make sure that these are valid inputs so
+[465.68] there's going to be a chance that the
+[467.08] user is going to Fumble on the inputs so
+[470.20] here I'm going to use a while loop so
+[472.64] while
+[473.64] true and I'm going to place this inside
+[476.24] here so within this while loop we are
+[478.32] going to constantly tell the user to
+[480.52] input a value for RNC until they give us
+[483.72] a valid row and column number so here
+[486.56] we're going to use a w Loop and pass in
+[488.92] true and we are only going to break out
+[490.96] if the values are valid so I'm going to
+[493.72] do a few checks here so if R is less
+[496.80] than zero or R is greater than 2 or C is
+[502.60] less than Z or C is greater than 2 I'm
+[506.68] going to see out in valid input try
+[512.80] again else if board RC is not equal to a
+[519.24] white
+[520.32] space we are going to see Out tile is
+[524.80] full try
+[527.88] again and let's add a period to these
+[531.36] statements okay so the first check is
+[533.88] going to see if the values they input
+[536.96] for row and column it's going to check
+[539.28] to see if they are within the ranges of
+[541.44] 0 and two so if it's less than Z or
+[543.96] greater than two for both the row and
+[545.72] column then we have an invalid input
+[548.40] otherwise if it is within the boundaries
+[551.20] of our board we are going to make a
+[552.96] check to see if the tile that we are
+[555.16] trying to place an exer O on if it is
+[558.16] not a white space that means that tile
+[560.48] already has a value otherwise if we
+[563.44] don't have these two issues then we are
+[565.92] going to break so this will mean that
+[568.60] the row column inputs are valid okay and
+[572.80] because of these issues what we need to
+[574.76] do is reset the r and C values to1 so
+[579.08] I'm going to do R is equal
+[580.84] to1 and C is equal to1 so now let's save
+[585.04] and run the program so now if I do 0 0
+[588.84] and I try 0 0 with o it's going to say
+[591.88] tile is fo try again so if I do it again
+[595.04] T is f try again so I'm going to do 01
+[598.48] and now if I I do something that's out
+[600.52] of bounds so let's say 3 three it's
+[603.92] going to say invalid input try again so
+[606.88] let's do
+[608.04] 21 and then if I use an input that's not
+[611.28] a number let's see what happens so if I
+[614.40] do a b and you can see we get this
+[617.88] printed over and over again so I'm going
+[620.20] to press contrl C to exit so why did
+[623.40] this happen well this is getting printed
+[626.04] out over and over again and when we are
+[628.68] input putting values in our input stream
+[631.76] for instance a b these two values are
+[634.72] going to stay within the input stream
+[636.68] they have nowhere to go and we cannot
+[638.88] assign them to R and C because these are
+[641.56] integers whereas A and B are characters
+[644.08] or strings so there's no way for us to
+[647.08] assign these values to RN C from the
+[649.20] input Stream So these values are stuck
+[652.32] there so it doesn't matter if we reset
+[654.04] RN C to1 because there are these two
+[657.52] values stuck there it's going to
+[659.48] constantly try to sign a and b to RN C
+[662.24] which is why we get this infinite Loop
+[664.60] so what I need to do is clear the input
+[666.60] string so first I need to do cn.
+[670.32] clear and this is going to clear the
+[672.32] airor
+[674.08] flags and then what we need to do is
+[676.60] discard the values from the input Stream
+[679.92] So to do so I'm going to do cn. ignore
+[683.88] and I'm going to pass in
+[686.40] 10,000 and the new line character
+[690.40] all right so this line is going to
+[692.08] discard the values in our input stream
+[694.60] and skip to the next new line character
+[696.64] up to 10,000
+[698.56] characters okay so I just put 10,000
+[701.64] here because um obviously we're not
+[703.72] going to have this many values in the
+[705.40] input stream but assuming that the user
+[707.44] does not put a and b maybe they just put
+[709.64] a very long string that is going to get
+[712.48] stuck in the input stream so let's
+[714.80] assume that the person playing this game
+[716.92] is not going to pass in a value that is
+[719.64] 10,000 characters long all right so now
+[722.60] if I save and run the program and I put
+[725.36] in a like so you can see invalid input
+[729.28] try again and I can do 0 0 1 0 if I
+[733.68] tried to do one Z again we're going to
+[735.72] say tile is full try
+[737.68] again and if I put 10 10 this is an
+[741.20] invalid input because this is out of
+[742.80] boundaries and I can put in random
+[745.40] mashes of characters and you can see
+[748.16] invalid input okay so this is us
+[750.12] clearing the input stream every time so
+[752.36] I do 22 we are back in the game and I
+[755.16] can do 21 and I can do one one and so on
+[759.56] okay so we have a functional game of tic
+[762.24] tac toe and we are able to process the
+[764.52] input correctly so now what we need to
+[766.60] do is check for winners all right so
+[769.44] over here I'm going to create a new
+[771.68] variable car winner and I'm going to set
+[774.48] this to an empty space character so this
+[778.04] means that there are no winners but
+[779.80] after every turn we are going to check
+[781.36] to see if they're winners and if they're
+[782.84] winners we are going to assign this to
+[784.60] either X or o okay so at the end of the
+[788.24] turn we are going to check to see if
+[790.00] there's a winning condition so let's
+[792.72] check all the rows so for INT R is equal
+[796.68] to 0 R Less Than 3 R
+[800.88] ++ and you might be wondering why I can
+[803.44] use R here and that is because this
+[805.72] variable is constrained to the local
+[808.04] scope of this for Loop so this R is not
+[811.20] the same as the r over here okay so if
+[815.32] board r z is not equal to a white space
+[820.52] this means there's either an X or o in
+[822.28] it and board of
+[825.16] r0 is equal to board of R1 and board of
+[831.36] R1 is equal to board of
+[834.80] R2 so here we are saying if this is not
+[837.76] an empty tile then we check for this row
+[840.76] if the value at column 0o is equal to
+[843.36] the value at column 1 and the value at
+[845.12] column 1 is equal to the value at column
+[847.00] 2 this means that all three values are
+[849.88] equal therefore we have a match so what
+[852.84] we're going to do is assign winner to
+[855.44] board of
+[857.24] r0 and then I'm going to break for an
+[859.68] early exit so if we have a winner in the
+[863.00] first row there's no need to check the
+[864.68] other two rows that's why we do an early
+[867.20] exit Okay so that for checking
+[869.88] horizontal and let's do columns as well
+[872.84] so this is vertical and it's going to be
+[875.40] similar so I'm going to do for in C is
+[878.20] equal to z c Less Than 3
+[883.04] C++ if board 0 C so you can see we flip
+[888.36] the row and column variables here so if
+[891.28] board 0 C is not equal to an empty white
+[895.12] space and board of0 C
+[899.32] is equal to board of 1 C and board of 1
+[903.72] C is equal to board of 2 C this means we
+[907.96] have a match vertically so winner is
+[910.76] going to be board of0 C and we are going
+[915.56] to break out of this for Loop all right
+[918.64] and now let's check the diagonals so we
+[921.36] are going to do the left diagonal so if
+[924.12] Board of 0 0 is not equal to a white
+[928.32] space
+[929.44] and board 0 0 is equal to board of 1 one
+[935.08] and board of 1 one is equal to board of
+[938.92] 22 that means we have a winner so winner
+[942.16] is going to be board of0
+[945.08] 0 and then let's do the other way so
+[948.56] else if Board of 02 so this is starting
+[952.96] from the top right is not equal to a
+[955.96] white space and board of 02 is equal to
+[960.28] board of 1 one and board of 1 1 is equal
+[965.84] to board of two 0 we are going to assign
+[969.20] winner to board of
+[973.36] 02 okay and now what we need to do is if
+[976.96] there is indeed a winner then we are not
+[979.68] going to continue the game so instead of
+[982.40] asking the current player for an input
+[984.52] we are going to check if winner is not
+[988.04] equal to a white space then I'm going to
+[991.20] break out of this for Loop okay so we
+[993.52] going to end the game here after
+[994.88] printing out the state of the board and
+[996.68] we are no longer going to ask the user
+[998.24] for an input and outside of the for Loop
+[1000.88] we are going to add a message to declare
+[1002.80] who the winner is so if winner is not
+[1006.24] equal to a wh
+[1008.40] space we are going to see
+[1012.04] out
+[1013.56] player
+[1016.52] winner is the winner
+[1022.96] else if we do have a white space that
+[1025.56] means we didn't break out of the for
+[1027.44] Loop and therefore nine turns have
+[1029.52] passed and there are no winners we are
+[1031.44] going to see
+[1032.76] out
+[1036.20] tie all right so now let's save and run
+[1038.92] the code all right so now let's test
+[1042.00] this by going through all the winning
+[1043.88] conditions so let's start with
+[1045.44] horizontal so I'm going to have X win
+[1048.16] hor horizontally in the middle so this
+[1050.48] is the row one so for X I'm going to do
+[1054.44] 1 0 and then let's have o do 0 0 and
+[1058.52] then one two
+[1060.48] 02 and then 1 one and you can see player
+[1064.28] X is the winner so this is
+[1067.04] horizontal all right now let's try
+[1068.92] vertically and we are going to use the
+[1070.72] last column and let's make player o win
+[1073.32] this game so X we are just going to
+[1075.92] place this at 1 player o we are going
+[1078.44] going to place this at 02 and for X I'm
+[1081.88] going to do 0 0 and player o I'm going
+[1085.32] to do 22 and then player X let's do 1 Z
+[1091.60] and finally for player O Let's do 1 2
+[1096.16] and as you can see player o is the
+[1097.80] winner so this is vertical and now we
+[1101.16] have player X let's do diagonal so this
+[1104.40] is 0 0 1 1 and 22 so let's do 0 0 and
+[1109.32] let's say o wants to do z0 as well you
+[1111.88] can see tile is full try again so here
+[1115.00] let's do 0 1 and then X is going to do 1
+[1118.64] one and we're going to have o do
+[1122.36] 02 and X is going to do 22 and as you
+[1126.08] can see player X is the
+[1129.00] winner all right now let's do this
+[1131.56] diagonally so let's do 02 and then 0 0
+[1137.04] for o 1
+[1139.44] one and then let's do 1
+[1142.28] two and then 2 0 and as you can see the
+[1147.04] other diagonal works this is called
+[1148.76] anti- diagonal so player X is the winner
+[1152.36] and finally let's do one where we have a
+[1155.24] tie so this might be a little tricky to
+[1157.44] replicate so let's say x I'm going to
+[1160.08] place X at 01 and then o at 0 0 and
+[1165.00] let's put X at 02 and then o at 1 1
+[1170.84] Let's Place X at 2 0 or actually 22 and
+[1175.64] then let's Place o at 1 2 and then for X
+[1179.60] we need to block this one over here so
+[1181.92] this will be 1 0 and then we have 2 1
+[1188.60] and 2 0 all right so we have a TI and
+[1192.84] nobody has won this tic tac toe game so
+[1195.32] we print out taii all right cool so we
+[1198.72] have a fully functional game of tic
+[1200.76] tactoe in
+[1202.28] C++ and if you found this video helpful
+[1204.96] make sure you give this video a like and
+[1207.24] if you have any questions let me know
+[1208.92] Down Below in the comments and if you
+[1211.20] want to stay up to date on more C++
+[1213.36] tutorials make sure you subscribe to the
+[1216.20] channel and I'll see you in the next
+[1218.20] video bye-bye

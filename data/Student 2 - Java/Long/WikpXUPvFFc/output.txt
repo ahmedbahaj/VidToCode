@@ -1,0 +1,11 @@
+enter 1 for 2 for paper and 3 for scissors
+1
+Tie. no points will be awarded
+enter 1 for 2 for paper and 3 for scissors
+2
+Tie. no points will be awarded
+enter 1 for 2 for paper and 3 for scissors
+3
+Cpu chose rock and u have lost this round
+CPU score: 1
+ User score: 0

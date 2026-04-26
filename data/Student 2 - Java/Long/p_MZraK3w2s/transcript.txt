@@ -1,0 +1,446 @@
+[0.24] foreign
+[14.22] welcome back to the data structures and
+[17.16] algorithms classes my dear friends we
+[19.32] were discussing linear data structures
+[21.06] in that we were discussing arrays and
+[23.52] now to help you perform search operation
+[26.94] in a very efficient manner in an array I
+[30.30] would like you to understand and
+[32.22] remember a very commonly used searching
+[35.10] algorithm called as binary search now
+[37.20] how does this binary search work we will
+[39.66] look at that later for the time being I
+[42.12] want you to look at real life right now
+[44.34] let us assume I'll give you a dictionary
+[46.08] and I'll ask you to search for a word
+[48.30] called as success
+[49.74] tell me how will you guys perform
+[52.38] searching will you do searching like
+[54.18] this let us assume that you will begin
+[56.10] from the page where all the words from a
+[59.58] star that is basically your first page
+[61.20] and will you go till the last page which
+[63.48] is z one by one one by one one by one
+[65.88] will you keep going till you find
+[67.50] success
+[68.58] I don't think any of you would do that
+[71.10] if you did that where you go from the
+[73.68] first page till the last page trying to
+[75.78] find the word then in a way you're using
+[78.60] the linear search way of Performing
+[81.30] search linear search is what you're
+[83.34] doing but we human beings are
+[85.44] intelligent you will not use a linear
+[87.42] way of searching instead what will you
+[89.10] do what you will do is you will take the
+[91.74] dictionary and you will randomly open it
+[94.68] when you randomly open it let us assume
+[97.44] that you ended up in C so you're
+[100.80] beginning from C and obviously until end
+[103.50] of the page Z is there now you will see
+[106.14] Y and C so C comes before yes C comes
+[111.12] before s which means all the words
+[113.64] before c all the words before c you need
+[117.42] not search
+[118.44] which means now your search you
+[120.72] restricted from C page till the last
+[124.32] page
+[125.16] now again there randomly you will open
+[127.26] when you randomly open you will see that
+[129.90] you have landed in the page where words
+[132.24] of tea are there words of T are there
+[134.52] now you know that t comes after yes
+[138.84] which means all the words after the page
+[141.84] of T will never have success in it will
+[144.42] never have any words which begin with
+[145.80] yes which means you don't have to go to
+[147.48] Z so now what you do is you will now
+[149.64] realize that okay my beginning may be C
+[151.86] but my ending page now becomes T I don't
+[154.68] have to look for anything after T so see
+[156.72] how you are cutting out Pages you're
+[159.24] reducing the number of searches again
+[161.58] you will randomly open and when you
+[163.56] randomly open you have now landed on
+[166.14] words with P
+[168.36] now you know P comes before yes
+[172.02] you know t comes after yes which means
+[174.96] now your search will only be restricted
+[177.60] to such Words which lie between P to T
+[182.40] any confusion till this point of time
+[184.50] and then maybe when you again randomly
+[186.96] open between P to t you land on yes and
+[189.78] you find success and the meaning of
+[192.48] so every time you kept opening checking
+[196.02] whether your word lies there check
+[198.42] whether your word will come before that
+[200.70] or after that and accordingly adjusted
+[203.52] the number of pages where search is
+[205.62] going to be performed my friends this is
+[208.44] the primary idea between performing or
+[212.52] the underlying principle of Performing
+[215.28] binary search I hope everybody has been
+[218.70] able to understand this much now how do
+[221.58] we implement it in a programming
+[223.74] scenario admission
+[225.48] let us assume I have been given an array
+[228.72] of values like this clearly one can
+[231.66] notice that none of the values in this
+[234.48] array are sorted they're not sorted it's
+[237.18] all jumbled up
+[238.62] one thing you must commit to your memory
+[241.52] binary search can never ever be
+[244.86] performed if the array is not sorted
+[247.94] reasons are simple let us go back to the
+[251.28] example of dictionary don't you agree
+[253.62] dictionary is a sorted book where it's
+[257.22] sorted alphabetically from a till z it
+[260.40] is sorted that is why your approach
+[262.38] previously worked if it was all jumbled
+[264.90] up how will you do whatever you did last
+[267.72] time you cannot do it right so remember
+[270.30] always that sorting is important so what
+[273.36] I will do is first thing if binary
+[275.10] search has to work I am now going to go
+[277.68] ahead and sort this array the ascending
+[280.50] order I have sorted it any confusion
+[283.32] today how to sort you guys know a
+[285.66] built-in function RS dot sort also you
+[287.64] can call if you're using Java in Python
+[290.40] also built-in sorting functions is there
+[292.26] if you're using lists any confusion till
+[294.48] it beautiful now what I will do is let
+[298.26] us apply binary so how does binary
+[300.60] search work very simple now that I've
+[303.12] sorted it I am going to have a variable
+[305.46] called a ski inside which the value is
+[307.14] 30. my ultimate aim is to search for 13
+[309.18] and you may say 13 is not there correct
+[310.98] that you as a human being looking at all
+[312.84] now the program has to do the same so
+[315.96] how are we going to do it easy very easy
+[318.36] what I will do is I am going to have two
+[320.88] pointers guys which will help me two
+[323.82] variables which will help me do the
+[325.50] search so in fact three variables called
+[329.34] as low
+[331.08] high and mid which I am showing as a
+[334.68] table like this low high and mid now why
+[339.30] do I need this table you will understand
+[341.18] initially initially low is going to be
+[344.58] pointing to the first element which is
+[346.44] the zeroth element
+[347.70] high is going to be pointing to the last
+[349.86] element last elements index so the last
+[352.56] elements index is eight I hope you're
+[354.84] able to think what will need to be mid
+[358.16] depends upon low and high so what I will
+[361.38] do is I will tell mid D is equal to low
+[364.92] plus High divided by two correct that is
+[367.92] how you will find the middle point in
+[369.36] your array so if I do low plus High
+[371.70] divided by 2 you know it is 0 Plus 8
+[374.70] divided by 2 is nothing but 4 so now mid
+[377.16] will be pointing to 4 any confusion till
+[381.24] this point of time now this low high and
+[384.72] mid I will keep adjusting adjusting
+[387.30] adjusting till I find my element how
+[389.94] does that work let me show you now that
+[392.10] I found mid first thing I will check is
+[394.38] I found the middle element first thing
+[396.66] I'll check is is the middle element
+[398.10] equal to my key how will you do that
+[400.68] simple if condition if it is K is equal
+[403.98] to a of mid double check
+[406.92] yes in this case it is not the element
+[409.32] is 12 is the middle element but it's not
+[411.66] 13 is what we're searching for it's not
+[413.22] if it was if it was I would have
+[415.92] directly returned the index I would have
+[418.38] directly return the index so I'll return
+[420.24] it if I find it
+[422.34] else means what now that I know that the
+[426.42] middle element is not what I'm looking
+[428.10] for now what I want to do is I want to
+[431.70] adjust low and high now why am I
+[434.76] adjusting very simple guys think about
+[437.40] it middle element is 12. what you are
+[440.34] searching for is 13 this is a sorted
+[442.92] array if really 13 was there was there
+[447.06] okay will it be to the left of 12 or
+[451.20] will it be to the right of 12 where
+[453.30] would you find 30 anyone with common
+[455.82] sense who tell me sir if 13 was there it
+[458.46] will be to the right side it will never
+[460.32] be to the left side because 13 is
+[463.44] greater than 12 or 12 is lesser than 30
+[466.68] which means all these elements I can
+[469.14] ignore them no need to perform such
+[471.26] Common Sense how will I do it very
+[474.72] simple
+[475.62] else I will check if in case the key is
+[481.02] less than a of mid if this key was less
+[484.86] than this element it will not be to the
+[486.54] right it will be to the left if you will
+[488.58] be to the left then my search must only
+[490.74] be here for that I have to adjust this
+[494.04] low and high because this low and high
+[496.44] will tell me the range of values I must
+[499.26] check I will be able to think so if
+[502.02] we're tall the mid element was lesser
+[503.82] then from here to here I should search
+[506.34] if you have to here I should search low
+[508.50] I need not adjust let it be as it is but
+[511.08] this high from here I should bring it
+[513.84] here see I'm bringing High here
+[521.96] that is what I'm doing hey if key
+[524.88] element was lesser than the element at
+[526.68] the middle then adjust high by bringing
+[529.68] it one less than one before bit and low
+[532.86] will be low itself
+[534.66] I don't have to change it so whatever is
+[536.58] the value
+[540.18] else if key was first of all if K was
+[544.26] not equal to Middle element it is not
+[546.12] less than middle element else means what
+[548.40] it is greater you need not check
+[550.08] explicit is greater if it is greater
+[553.02] then my search must be from here to here
+[555.96] if my search must be from here to here
+[558.00] should I adjust low or so they are just
+[560.46] High obviously this low value is what I
+[562.86] should be bringing it here
+[564.48] I should bring low value here would you
+[566.64] agree in this case that is what is
+[568.20] happening so low must come mid plus one
+[571.14] it should come here that's what I'm
+[572.52] telling low is equal to Mid plus one
+[574.74] high will remain asset
+[577.50] my dear friends this is the core of what
+[581.52] you call as binary search any confusion
+[585.48] till here now this should keep repeating
+[588.24] keep repeating as
+[590.04] we will see that see that but in this
+[591.90] case
+[596.12] which means low becomes mid plus one
+[599.52] great again I will repeat I will now
+[602.70] find the new MID if I find a new MID
+[604.62] look at this low is mid plus one so four
+[607.56] plus one five high is as it is a plus 5
+[611.10] is 13 13 divided by 2 is 6 floor
+[613.38] division so mid becomes six similar
+[616.32] discount
+[617.04] again check is the element you're
+[619.56] searching for the element present at Mid
+[622.20] is this the case no false
+[625.08] false means I'll come and check hey if
+[627.24] in case the element that I'm searching
+[629.64] for is it less than the middle element
+[632.06] the middle element is 16 is it less than
+[636.84] 16 yes if it is less than 16 it will be
+[640.62] on the left of 16 not to the
+[642.84] if you do the if it is to the left of 16
+[645.18] then should I actually I'm just slower
+[647.04] shoulder I'm just high high should be
+[648.60] adjusted and what should I become high
+[651.18] should become mid minus 1 and that is
+[653.94] what we are also telling mid minus one
+[655.50] so here High e in the next calculation
+[659.04] High becomes mid minus one six minus 1
+[663.00] is 5 low remains as it is
+[666.36] no remains as it is so this is low this
+[670.80] is high both are equal again I will find
+[674.40] the mid which means what 5 plus 5 10 10
+[676.74] divided by 2 is 5 so mid also becomes 5.
+[679.32] so low high and mid at the same place
+[681.12] now I will again check hey is the
+[684.06] element at the middle equal to the key
+[686.40] no it is not equal I will check if in
+[689.28] case the element that I'm searching for
+[691.26] is it lesser than the middle element yes
+[693.42] it is lesser than the middle element if
+[695.34] it is lesser than the middle element
+[696.78] then what should I do mid high should
+[700.68] become mid minus one so see if I do that
+[703.80] high becomes mid minus 1 so make this 5
+[707.34] 5 minus 1 4 Low remains as it is so 5
+[712.02] now if you notice the first thing ever
+[714.90] something has happened where the low
+[717.78] value is greater than the high value or
+[721.68] the high value has become lower than the
+[724.08] low value I will be able to think this
+[726.72] should never happen if this happens it
+[730.38] means that the element that you're
+[732.54] searching for was never found now if
+[736.26] you're able to think the element you're
+[737.46] searching for is never fun
+[739.08] and if at all the element was there at
+[742.14] one point or the other this condition
+[744.84] would have got satisfied and wherever
+[747.96] mid disappointing you would have found
+[749.58] irrelevant I hope you're able to think
+[751.92] any confusion till it so my dear friends
+[754.92] what is the condition for which this has
+[757.98] to keep repeating this should keep
+[760.32] repeating
+[762.00] while
+[763.28] low value
+[765.66] is less than the high value or equal to
+[770.04] the high value never greater I hope
+[773.52] everything so no less than see less than
+[777.60] less than or equal to see equal to high
+[781.62] any confusion till this point of time
+[783.78] till then it has to keep working any
+[787.56] confusion this is the simple
+[791.28] search algorithm right now that you
+[793.98] understood let us go and write some code
+[797.64] all right my dear friends so now please
+[799.98] understand I have created a function
+[802.20] called as binary search accepts an array
+[804.06] and a key so inside this I will create
+[806.22] one integer variable called as n for low
+[809.52] and initially its value will be zero
+[811.98] comma
+[813.48] I'll create one variable called as hi
+[815.96] whose initial value will be the last
+[818.58] index so length minus 1 a DOT length
+[821.88] minus one simple
+[824.34] okay great now I will come I'll also
+[826.86] create build and I maybe I'll initialize
+[829.38] it to zero
+[831.12] next I'll come down now I'll write my y
+[833.28] loop as long as low value is less than
+[837.84] or equal to Mid
+[841.50] all right okay sorry right if it is less
+[844.38] than or equal to high then come inside
+[846.42] find the midpoint so mid is equal to low
+[849.60] plus High divided by
+[855.00] L plus h divided by 2
+[858.90] anyways you know truncation will happen
+[861.24] floor division only will happen
+[864.24] what we must do is we will come down and
+[867.30] I will now check if in case
+[869.88] the key value is equal to the element
+[873.42] present at Mid position so a of mid
+[876.36] if that is the case I'll just return
+[878.46] with
+[881.88] I'll return it next I'll come down else
+[885.72] I will check if in case the key value is
+[888.72] less than
+[890.58] key value is less than the mid value a
+[894.90] of if it is less than a of mid then low
+[899.04] will be low but high should be brought
+[901.44] before mid so I will tell high is equal
+[903.84] to Mid minus 1.
+[906.18] and low is equal to low
+[910.92] see this is optional for you to write
+[913.08] but I'm just because anyways you are not
+[914.76] changing it I'm writing it so that you
+[916.68] know you understand but you need not
+[918.42] really write it as code okay next
+[921.60] uh yeah you can just comment that and
+[924.30] keep it
+[927.12] you need not write it because it makes
+[928.68] no sense L is equal to l anyway if it is
+[931.38] the same you're not changing it right
+[932.88] else
+[934.70] uh what I will do is now if key is
+[937.56] greater then low value should come after
+[939.90] mid so L is equal to Mid plus 1 high
+[943.74] Remains the Same so I'll just write X is
+[946.20] equal to X and I'll just comment it not
+[948.12] required h
+[950.46] yeah I'll just comment that
+[953.70] right good now this will keep looping
+[958.20] if at all the element was there at one
+[961.50] point mid will come at that element and
+[964.80] this condition will be true you'll
+[966.24] return the position
+[967.68] but if in case you came out of the loop
+[973.08] it means that you never ever found the
+[975.90] element so return minus one so all
+[978.96] search searching functions will return
+[981.72] minus 1 is a standard value to indicate
+[984.00] that the index is not present because
+[986.40] you know an array has zero base indexing
+[989.58] so from 0 to positive values indexes
+[992.22] will go so if you get minus 1 it means
+[994.74] it is not there that is the thinking
+[996.66] okay
+[998.10] so now uh I'll just uh see uh I've
+[1001.28] created an array guys or it's sorted see
+[1003.74] it's sorted because you know sorting is
+[1005.42] very important key is 13 13 is not there
+[1008.60] minus 1 I should get so if in case I
+[1011.06] execute it then -1 I have got I'll give
+[1013.70] maybe 15 as the key then obviously it is
+[1016.94] there so it is at 0 1 2 3 4 5. so it's
+[1021.50] at index file
+[1023.48] perfectly it looks now what is the time
+[1026.36] complexity You Must Be Wondering guys
+[1028.22] it's very simple every time if you
+[1030.62] notice you are cutting the array by half
+[1034.64] your search is being by how because
+[1036.74] every time mid is finding the middle
+[1039.92] point then low and high you are
+[1042.26] adjusting so every time the search
+[1044.66] you're cutting it by half half half half
+[1047.60] or we're able to think if 10 elements
+[1050.42] are there then you'll search five
+[1051.92] elements then you will search two
+[1053.66] elements if 2011s are there then it will
+[1056.66] become 10 then it will become 5 then it
+[1058.94] will become 2. every time you're cutting
+[1060.80] it by half so whenever a loop is cutting
+[1065.18] by half we have seen in so many programs
+[1069.14] that the time complexity is always
+[1071.96] bigger of log n but same thing if I
+[1076.04] compare it with linear search it is Big
+[1078.38] O of n so you can see that is n linear
+[1081.74] time this is logarithmetic type
+[1083.60] obviously any day this is more efficient
+[1085.82] so binary search is very very important
+[1088.88] however I am giving you a tip here see
+[1093.08] come down
+[1094.52] here let us assume this was not sorted
+[1098.78] if this was not sorted binary search
+[1101.60] will not work if it will not work you
+[1104.06] have to solve it so either you can write
+[1106.58] some selection sort insertion sort
+[1108.98] bubbles or something and you know
+[1111.02] whatever sorting algorithm you use okay
+[1113.18] let us assume the best sorting algorithm
+[1115.34] you use which will be login time
+[1117.32] complexity okay any login will be the
+[1119.96] time complexity of like a very good
+[1121.82] sorting algorithm now let us assume I go
+[1124.94] here in the next line I just tell arrays
+[1127.04] dot sort of a
+[1129.14] assume this was not started I raised dot
+[1132.32] sort
+[1133.94] a I have again okay so you can just
+[1136.64] change these elements just uh randomly
+[1139.10] interchange them
+[1140.66] yeah that's it
+[1143.84] yeah enough so now this is not soft so
+[1146.42] obviously first you have to sort only
+[1147.68] then you can pass now the Sorting will
+[1150.62] take any login
+[1152.84] then buying a research will take log n
+[1155.96] so now plus you have to add both of them
+[1159.26] so it will be n log n plus log I'll be
+[1162.74] able to think now obviously compare that
+[1165.62] with linear search it is only n
+[1168.44] so that is Big O of n this will become
+[1170.66] big go of n log n plus log n
+[1174.14] so whenever you have to find some
+[1177.62] element
+[1178.70] in an unsorted array always go for
+[1182.30] linear such it is better better way to
+[1185.06] find but if you have a sorted array
+[1187.76] always close your eyes and go for by
+[1191.54] any confusion delay I hope both the ways
+[1194.66] of searching and when to use what is
+[1196.40] clear to you so now let's take our
+[1199.16] knowledge on a race a step further for
+[1201.68] that I will catch you in the next class

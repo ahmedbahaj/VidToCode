@@ -1,0 +1,196 @@
+[0.24] hello everybody in today's video we're
+[2.48] going to create a number guessing game
+[4.16] using Java let's get started in this
+[6.60] program we'll be using random numbers
+[8.96] we'll need to create a random object
+[11.68] random random equals new
+[15.88] random then import this class so at the
+[19.40] top of our Java file import
+[22.24] java.util random this random object can
+[25.92] Generate random numbers for us we'll
+[28.80] also accept user input we'll need a
+[31.24] scanner scanner scanner equals new
+[35.56] scanner then within the set of
+[37.44] parenthesis type
+[39.12] system.in then import this class as well
+[42.64] import
+[43.96] java.util.scanner we have a random
+[46.64] object to Generate random numbers and a
+[49.16] scanner object to accept user
+[51.64] input what are the different variables
+[53.96] we'll need we'll need the following an
+[57.52] integer to hold our guess
+[60.44] so let's say we're going to guess a
+[61.72] random number between 1 and 100 we'll
+[64.44] use the scanner to accept an integer and
+[67.36] place it within this variable of
+[69.44] guess for example the guess might be
+[72.68] 50 we'll need to keep track of the
+[74.88] amount of attempts it took a user to get
+[77.04] the correct number int attempts we'll
+[81.16] assign these
+[82.44] later and we'll need a random number int
+[86.28] random number let's go ahead and assign
+[89.44] this right away
+[90.56] way to generate a random number we're
+[93.00] going to use our random
+[94.92] object use the next in method of a
+[98.80] random object within this method we can
+[101.96] list two numbers a range if I would like
+[105.24] a number between let's say 1 and 10 my
+[108.76] two numbers would be 1 comma 11 the
+[112.20] first number is inclusive the second
+[114.60] number is
+[115.84] exclusive let's perform a test run of a
+[118.24] random number I just want to be sure
+[120.20] that it's generating correctly when
+[122.60] writing a program it is a good idea to
+[124.28] test your code every once in a while
+[125.96] just to be sure that everything is
+[128.28] working so we should get random numbers
+[130.84] between 1 and 10 1 10 5 8 good enough a
+[140.04] random number stores a random number
+[141.92] after generating
+[144.36] it let's create a welcome message let's
+[148.12] say number
+[150.44] guessing
+[152.12] game we will prompt the
+[155.60] user guess a
+[158.32] number
+[160.96] between let's start with 1 through 10
+[164.32] later on we'll increase it to
+[170.60] 100 now we'll need a while loop but not
+[173.48] just any while loop we'll create a do
+[175.52] while loop so do this code once while
+[179.92] while this condition remains true and
+[182.56] let me zoom in a little
+[184.68] bit so what's our condition going to be
+[188.32] we're going to continue playing this
+[189.92] game while our
+[192.44] guess does not equal our random number
+[197.44] we'll keep on playing until we get the
+[199.24] random number exclamation point equals
+[201.96] means not equal so if our guess does not
+[205.52] equal our random number this returns
+[208.12] true then we we want to keep playing
+[211.24] while our guess doesn't equal the random
+[213.52] number within this do while
+[216.96] loop we'll prompt the user to enter in
+[219.56] their guess I'm going to use print line
+[222.28] instead of print for guess a number
+[223.96] between 1 and
+[225.52] 10 now we'll prompt the user to enter a
+[228.56] number enter a guess enter a
+[233.24] guess for this I'll use print instead of
+[235.76] print
+[236.64] line we will assign our guess variable
+[241.32] equal to use our scanner use the next
+[245.96] int
+[248.88] method we're also keeping track the
+[251.16] amount of attempts it takes a user to
+[252.96] get the correct
+[254.12] number so we can increment attempts by
+[257.16] adding
+[260.28] Plus+ and let's go ahead and initialize
+[262.96] attempts we'll set that to be
+[267.00] zero temporarily outside the while loop
+[270.52] I'm going to
+[272.40] print you have
+[275.64] one my random number right now is only
+[278.24] between 1 and 10 I'm just going to keep
+[280.68] guessing until we get the right
+[285.40] number so I'll just start with one and
+[287.92] go all the way to
+[294.36] 10 the answer was nine we escaped the
+[297.48] while loop
+[299.76] so we know that this is working
+[302.00] currently one thing this program is
+[304.04] missing is that we'll want to give a
+[306.00] user a clue if their guess is too low or
+[309.40] too high because we have no way to
+[312.00] tell I'm just typing in random numbers
+[314.84] and I have no clue how close I am to the
+[316.88] actual number that we need to
+[319.60] guess let's get rid of this print
+[322.60] statement we were using it for testing
+[325.24] purposes within the do while loop we'll
+[328.12] write an if statement we'll check if our
+[332.04] guess is less than a random
+[335.92] number that means we guess too
+[338.60] low if that's the case we'll output the
+[342.44] following too low try
+[351.40] again else
+[353.60] if our guess is greater than our random
+[358.48] number then that means we guess too
+[362.16] high too high try
+[366.32] again if our guess isn't lower than our
+[369.08] random number and our guess isn't
+[371.40] greater than our random number that
+[373.40] means our guess must equal the random
+[376.52] number so if that's the case we would be
+[379.36] executing this lse statement because the
+[381.96] preceding two conditions would be false
+[384.76] that means we have the right answer the
+[386.64] right guess so we'll output the
+[388.96] following
+[394.88] correct the let me zoom
+[397.68] out the number
+[401.28] was plus our random
+[408.88] number and then we'll display the amount
+[411.16] of attempts it
+[413.12] took number of
+[417.32] attempts plus our variable of attempts
+[421.12] after each guess we increment it by
+[425.16] one the last thing I'm forgetting is to
+[428.12] close my scanner because I always forget
+[430.32] to close
+[431.32] it scanner.
+[435.04] close okay let's perform a test run
+[438.56] we're only guessing a number between 1
+[440.20] and 10
+[442.16] currently I'll guess something right in
+[444.24] the middle five too low try again the
+[447.56] random number we have to guess should be
+[449.52] between 5 and 10 then I'll go with seven
+[453.20] too low 8 too low 9 too low okay it must
+[459.00] be 10 then correct the number was 10
+[462.60] number of attempts it took
+[465.00] five we're going to improve this code
+[467.52] now what if we would like the numbers 1
+[469.88] through 100 this time well we could make
+[473.00] this program a little more flexible
+[475.44] instead of hardcoding these numbers
+[477.52] within the next integer method we'll
+[480.08] Place some variables here instead we
+[482.60] will create int Min equals whatever you
+[485.84] want the minimum to be let's say one int
+[488.72] Max I will set the max to be 100 let's
+[492.32] replace these two
+[493.68] numbers the first one will be Min comma
+[498.80] Max so these variables behave as if they
+[501.84] were these numbers within this range the
+[504.84] second number is exclusive so to include
+[508.12] 100 I'm going to add
+[510.04] +
+[510.96] 1 give me the numbers between 1 and
+[515.32] 100 within this print statement let's
+[518.32] use print F
+[521.12] instead we'll replace these numbers with
+[524.16] the format specifier a placeholder we
+[527.48] will display an integer so we need D
+[530.56] let's do the same thing with 10
+[536.40] d uh let's do comma min
+[540.28] comma
+[541.60] Max and then add a new line at the
+[546.20] end let's do one final
+[548.68] run so now we're guessing a number
+[551.00] between 1 and 100 I'll guess something
+[554.12] right in the middle too high try again
+[557.08] our number is going to be between 1 and
+[558.84] 50 then 25 too high 12 to high six too
+[566.16] high three too low between three and six
+[571.32] four correct the number was four the
+[574.20] number of attempts it took six
+[576.72] attempts all right everybody so that is
+[579.16] a number guessing game that you can
+[580.84] create using Java
