@@ -1,0 +1,397 @@
+[1.68] hey what's up everyone my name is aditya
+[4.08] from brainstorm codings so in this video
+[6.56] i will create a web server using node.js
+[9.28] which will listen to the request coming
+[11.44] from the user's browser and it will also
+[13.92] send a response back to the user so
+[16.16] let's get started
+[21.87] [Music]
+[28.72] i have created a folder and named it as
+[30.72] server code and i opened it here in vs
+[33.36] code so by the way i'll be using vs code
+[35.76] for this video and for the upcoming
+[37.20] videos as well
+[39.12] so if you are using vs code then there
+[41.28] is a way to open a folder to create a
+[43.28] new folder and open it here in vs code
+[45.36] you can see the file option and the open
+[47.28] folder option
+[48.48] just go there select a folder where you
+[50.40] want to create this subfolder and it
+[52.00] will open automatically in vs code
+[54.64] so before writing a program we need to
+[56.72] create a file
+[60.16] and this file will be server.js
+[64.56] so to create a server in node.js we have
+[68.64] to use some functions to do that
+[71.20] and this function are part of a specific
+[73.44] module which is the http module and in
+[76.40] node.js if you want to use any module or
+[79.60] if you want to use any function which is
+[81.76] a part of a specific module
+[85.04] we have to import
+[86.96] the module first
+[88.72] now there is a specific way to
+[91.60] do that in node.js
+[93.84] first we will create a constant variable
+[96.80] and the name of the variable will be
+[98.40] same as the name of the module or just
+[100.56] for our convenience in future
+[103.84] and we'll use
+[105.52] a function which is require and this
+[107.84] function takes
+[109.20] one argument
+[110.64] which is the name of the module
+[115.44] now to create a server we need to use a
+[117.68] function and the name of the function is
+[119.76] create server
+[121.84] so for accessing that function which is
+[124.32] part of the http module we need to use
+[126.40] this variable first then the period
+[128.56] operator
+[130.00] and then we'll
+[132.16] use
+[133.36] the server function to create server
+[135.20] function
+[136.16] so this function takes one argument
+[138.80] which is a callback function
+[141.68] i'll use this arrow function syntax
+[145.20] and this arrow function or this callback
+[147.12] function takes two arguments the first
+[149.12] one will be the request parameter and
+[150.72] the second one will be in the response
+[152.24] parameter
+[153.76] and request parameter will be used to
+[156.08] play with the request which is uh
+[158.80] being sent to the server from the
+[160.40] browser and the response parameter will
+[162.56] be used to send respond back to the
+[165.20] browser
+[166.64] so
+[167.36] this will be a really simple video uh i
+[170.16] won't make it complicated
+[171.92] uh we just need to send a response a
+[174.64] simple response back to the server so
+[176.64] we're using this end function i think
+[179.04] this is the simplest way to send a
+[180.88] response back to the server
+[184.64] and the response will be
+[186.72] hello world
+[190.56] and this server
+[192.00] will listen
+[193.36] to
+[193.53] [Music]
+[194.72] listen on port number 3000 and you can
+[196.96] choose any port it's your personal
+[199.28] choice
+[200.40] so
+[201.52] so for using this function
+[203.76] we will save it in a variable
+[206.32] as well
+[208.08] and then we'll use this variable
+[211.04] and a function
+[213.04] so you can see this listen function here
+[214.96] we'll use the listen function
+[218.96] so the server will start listening on
+[220.96] port number uh
+[222.88] the one we specify here so i like the
+[225.36] port number 3000 by the way
+[227.68] so i'll specify it
+[230.64] then there is another argument we can
+[232.24] also specify the ip address
+[235.04] but if you don't specify it then it will
+[236.96] automatically by default run on the
+[240.16] localhost
+[241.76] so i don't think i need to specify that
+[245.36] and this will also take a callback
+[247.44] function
+[248.56] so whenever
+[250.32] the server will start we will get to see
+[253.04] a message in our console so
+[255.84] this is the console we have
+[259.76] so we want to say that server
+[262.32] is
+[263.12] listening
+[264.80] on code
+[269.04] 3000
+[272.64] so yeah this is it
+[275.04] if i save this program now in order to
+[277.44] run any program in node.js there is a
+[279.84] command which is we use the node keyword
+[283.60] first and then we use the name of the
+[286.88] file
+[289.12] so if i run this
+[292.24] it will take some time based on your
+[294.56] system configuration
+[299.28] and whenever the server will start
+[301.04] listening we will get to see this
+[302.72] message in the console and as you can
+[304.88] see we have a message that server has
+[306.96] started listening on port
+[308.84] 3000 so let's go to the browser and then
+[312.24] access this server and send send the
+[314.40] request and let's see what response we
+[316.72] get to see
+[320.80] okay so let's send request
+[324.40] to the server we know that the server is
+[326.56] running on localhost and on port 3000
+[334.64] hit enter
+[336.24] yeah all right we have the response
+[338.16] hello world
+[339.36] as we expected
+[341.68] let's see the network tab by the way
+[353.84] so let's go to the network tab
+[360.96] okay here we are
+[363.36] so if i refresh the page
+[366.32] we get to see that there are two get
+[368.32] requests the first one is for
+[370.96] the default path which is the slash
+[373.84] path because we have not specified any
+[376.48] route yet so we'll do that in later
+[378.56] videos
+[379.68] you can see that we have this response
+[381.36] 200 okay
+[384.40] and
+[385.52] we have the request headers as well
+[390.32] and some response headers
+[392.72] so we can see the content length is 12
+[394.96] we can see the date
+[398.96] and this request is for the favor fave
+[401.60] icon
+[403.76] okay so this is the only thing
+[406.00] which matters to us so we have the 200
+[408.24] okay response and the server is finally
+[410.48] running
+[412.80] now let's try to send a json data let's
+[415.92] try that
+[420.80] okay so now as we have a server which is
+[422.96] running completely fine and sending a
+[425.44] response hello world
+[427.76] i want to send a different response
+[429.68] which will be adjacent data
+[432.64] and to do that first we need to specify
+[434.80] the content type for the response
+[438.48] so we'll use this response parameter
+[440.96] again and we have a spacer function
+[443.60] which is set header so whenever we want
+[445.68] to set a header for the response we use
+[448.08] this function
+[451.36] now i want to set the content type so i
+[453.76] will specify this first
+[457.28] and this will be
+[459.12] the content type this will be the value
+[461.20] for this key content type
+[463.60] now i want to send the json data
+[466.72] so the content type will be application
+[469.36] slash json
+[472.08] this is it
+[473.28] now as i said
+[476.32] this will be
+[478.16] the end of the response we are using
+[480.16] this end function which is used to send
+[482.16] response back to the server and
+[485.12] let's see what happens if we
+[487.76] set a header
+[489.92] after sending a response to the server
+[493.12] all right so let's save that
+[496.72] let's quit this server first because
+[498.88] every time you make a change and you
+[500.88] want to
+[502.72] make that change happen to the server
+[504.88] you have to quit the server first and
+[506.72] then restart it again
+[509.60] let's restart it okay so server is
+[511.76] listening now let's go to the browser
+[513.20] and let's see what happens if if we get
+[515.76] an error or the server is just running
+[518.40] fine
+[525.68] okay so let's see if everything is
+[527.44] working fine or not
+[530.00] let's refresh this page
+[537.20] okay so again we have to get requests
+[541.84] and we have the 200 okay response
+[543.52] everything looks pretty well by the way
+[546.16] but the only thing missing is as you
+[548.48] know we have set a header to the
+[550.08] response so this is the response headers
+[552.64] we have and we don't see the content
+[554.48] typed anywhere here
+[556.48] now
+[557.36] why did that happen
+[558.96] and there's again another thing which is
+[560.80] going on in the vs code in our console
+[563.20] so let's have a look at that
+[567.92] so if you see in the console our server
+[569.84] is not running and we have got an error
+[574.24] now this error says that cannot set
+[576.24] headers after they are sent to the
+[578.32] client
+[579.60] so
+[580.64] we have sent a header
+[582.72] we have sent response to the client and
+[585.44] then we have set a header for that
+[587.28] response so
+[588.48] that's completely invalid so that's what
+[590.80] i wanted to show you
+[593.68] now let's set this header before sending
+[595.68] the response
+[600.80] now in order to create
+[602.72] in order to send some json data i will
+[604.96] create a
+[606.16] javascript object
+[608.80] let's create this const variable again
+[611.84] so this is the javascript object
+[616.16] so this contains my name
+[620.24] which is aditya
+[623.44] my age
+[625.28] i'm 21 right now
+[628.80] and my channel
+[630.96] which is
+[633.52] brainstorm
+[634.88] codings okay this is the data we want to
+[637.36] send
+[640.32] now let's try to send this as it is
+[642.88] let's see what happens
+[647.84] okay
+[648.88] let's save this file
+[652.72] restart the server
+[655.28] okay it's running fine let's see what
+[657.12] happens in the browser
+[661.12] so i am in my browser
+[663.04] and i will refresh this page
+[666.24] and let's see what happens
+[671.12] so we get
+[672.64] an error here
+[675.04] let's see what's happening in in the
+[676.72] network tab
+[680.16] so we have the request headers uh but we
+[682.40] don't see the response headers
+[684.56] and
+[685.28] that means we are definitely sending a
+[687.12] request to the server but the server is
+[688.88] somehow not responding to our request
+[692.16] let's see what's going on in the vs code
+[694.72] maybe we get a we get a clue from the
+[697.20] console
+[701.04] so if you see again the server has
+[703.28] stopped listening on port 3000
+[706.64] and we have an error which says the
+[708.96] chunk argument must be of type string or
+[711.44] an instance of buffer
+[713.44] but it received an instance of object so
+[716.16] as you can see we have created this
+[717.76] javascript object
+[719.36] and we sent it as it is
+[722.00] so for sending the data if you want to
+[724.24] send json data first we have to convert
+[726.48] it
+[727.76] in
+[728.56] the type string
+[731.52] so let's convert it
+[733.36] let's create a new variable a new
+[735.68] constant variable
+[738.72] we have
+[740.64] this
+[742.40] string if i function which converts a
+[744.80] javascript object into a string
+[747.76] let's pass it
+[749.76] here as an argument
+[752.72] and now let's send this data variable
+[757.68] as a response so i have saved it
+[761.68] restart the server
+[764.72] let's see what we get
+[768.48] okay so let's refresh
+[772.56] and we see some changes in here
+[775.84] so we get to see that this is the json
+[778.40] data
+[782.48] we have the raw data as well so this is
+[785.28] our object we'll be converted into
+[787.92] string so this is the json data we have
+[790.08] and we have
+[791.36] some headers as well
+[793.28] so if you have a look at it we have the
+[795.04] content type as application slash
+[798.48] json
+[800.48] we can see the host which is local is
+[802.48] 3000
+[805.20] we can see the date
+[807.28] yeah and if we have a look at it here
+[810.00] in the localhost we get to see the same
+[811.84] thing so we have the content length we
+[813.68] have the content type we have the date
+[816.24] and all the request headers
+[820.48] so this is pretty well actually we get
+[822.72] to see it in pretty well manner
+[825.60] so this is how we send the json data
+[828.16] back to the server as a response
+[829.68] whenever we get a request now this is
+[832.32] kind of static server because it doesn't
+[836.08] verify the routes we haven't applied the
+[838.32] routing yet so it doesn't serve the
+[840.96] content based on the route which is
+[843.04] requested by the user so let's say that
+[845.84] we have
+[848.24] we have an application which contains
+[850.00] the home route
+[851.44] the login route and the dashboard route
+[854.00] so
+[854.80] if someone requires the home route so if
+[857.28] i do it here
+[860.40] if i request the home route
+[863.04] i get to see the same response again
+[865.36] even if the route has changed even if i
+[867.36] requested a different page
+[869.52] so
+[870.40] we'll do that in the next video i'll
+[872.08] show you how to do it
+[873.60] so for now i guess this is it but yeah
+[876.16] before that i will show you uh i will
+[878.48] explain the functions which we have used
+[881.36] in this video which is the create server
+[883.12] function and the listen function
+[886.00] so
+[886.96] let's have a look at it first
+[891.84] so this is the function we have used to
+[893.68] create the server
+[896.56] so if you see
+[897.84] this const server so this const is a
+[900.32] keyword to create a constant variable
+[903.20] the server is a variable name
+[906.48] then we have this http which is the name
+[909.28] of the module we have used and we have
+[911.12] extracted some functions
+[913.12] so this is the function we have used and
+[916.08] this function is part of the http module
+[920.08] so obviously this is the function name
+[921.92] create server
+[923.76] then this request ieq this is the
+[926.16] request parameter and this res is the
+[929.20] response parameter
+[932.48] and everything which we want to do with
+[935.60] the request this goes here
+[938.84] so
+[940.48] so the create server method includes
+[942.16] request and response parameters which
+[944.16] are supplied by node.js and the request
+[946.80] object can be used to get information
+[948.72] about the current http request so we can
+[951.12] get
+[952.16] the url we can get the request headers
+[955.04] and the data as well
+[957.36] which are associated with the request
+[960.16] and the response object can be used to
+[961.76] send a response for the current http
+[964.08] request so the response will be sent
+[966.80] based on the request we get
+[971.44] so this is how we have used this
+[973.28] function and these are the parts
+[976.32] such as these are the arguments
+[978.72] of this arrow function
+[983.84] so that's all for this video in my next
+[985.84] few videos i will show how do we manage
+[987.76] different routes and how do we serve the
+[990.16] html templates as well
+[992.08] so thank you so much for watching stay
+[994.24] tuned and i'll see you soon
+[997.06] [Music]
+[1013.76] you

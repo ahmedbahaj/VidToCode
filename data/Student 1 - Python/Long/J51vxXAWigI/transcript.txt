@@ -1,0 +1,566 @@
+[0.34] [Music]
+[5.44] welcome back to understanding python
+[7.68] my name is jake and today we'll be
+[9.84] building upon what we learned in the
+[11.44] previous video
+[12.88] this time instead of manually parsing
+[15.04] and validating cli
+[16.40] input we'll be using python's built-in
+[19.12] our parse
+[19.92] module as we go if you learned something
+[22.96] new
+[23.36] let me know by liking the video now
+[25.76] let's get started
+[27.76] in our last video we made a pizza
+[30.32] builder program
+[31.68] with a command line interface which we
+[33.84] see on the left hand side of the screen
+[36.56] in here we did have to define a few
+[38.48] helper functions
+[39.68] for us to process the input as well as
+[43.36] validate the input if you haven't
+[45.52] watched that video
+[46.40] i highly recommend you check it out
+[48.08] there will be a link in the top right of
+[49.84] the screen
+[50.72] now however today we're not going to be
+[53.76] manually validating input
+[55.76] or processing input we're going to be
+[58.08] using arg parse
+[59.68] we also won't have to define custom help
+[62.08] text
+[62.80] like this instead we're going to let arc
+[65.84] parse
+[66.40] do all that work for us we will borrow a
+[69.28] couple of things
+[70.24] from this pizza builder so we don't have
+[71.92] to do that same work again
+[74.16] let's keep our definitions for sizes and
+[76.40] crusts and pop them over here on the
+[78.16] right
+[78.56] which is what we'll be working in i also
+[81.68] want to keep the output
+[83.44] for build pizza to be approximately the
+[86.16] same
+[87.20] so we'll copy that helper function and
+[89.36] just pop that down in there
+[90.96] and that should be just about all we
+[92.48] need from the old pizza builder
+[94.56] so we'll just give ourselves a little
+[96.16] bit more room and go back up to the top
+[98.64] in order to use arc parse we are going
+[100.64] to just simply
+[102.00] import arc parse we'll leave all this
+[105.52] alone for now
+[106.64] and head down to the bottom or we'll
+[108.88] write our usual
+[110.24] if name is equal to main
+[113.44] statement and this is where we'll start
+[115.60] to define our
+[116.64] rpar cli the first thing we're going to
+[119.52] need
+[120.08] is to instantiate a parser object for
+[122.96] this
+[123.36] we'll say parser is equal to argparse
+[126.72] dot argument parser now we could be
+[129.20] perfectly fine
+[130.08] passing nothing into the argument parser
+[132.80] class
+[133.36] or it's init however if we want to have
+[136.32] a description
+[137.76] like we did with pizza builder where we
+[140.48] said
+[140.96] welcome to the pizza builder let's build
+[143.04] a pizza what we can do is simply copy
+[145.36] that
+[146.00] and over here where we call argument
+[148.24] parser
+[149.04] we'll set its description equal to
+[152.24] exactly that text this time let's be
+[154.64] slightly more excited by putting an
+[156.16] extra exclamation point now we have a
+[159.12] parser
+[160.16] object now there are a few things we can
+[162.32] do with this parser object
+[164.00] but when it comes to building a cli
+[165.92] we're mainly going to be focusing on
+[168.00] parser dot add argument
+[171.68] the add argument method itself can take
+[174.48] a number of arguments when you call it
+[176.80] it has a combination of positional and
+[179.68] keyword arguments
+[181.12] first we're going to tell it that the
+[183.04] name of this argument
+[184.40] is size by simply passing in a
+[186.96] positional argument with the string
+[189.52] size we can specify the data type
+[192.64] that we're expecting from the cli by
+[195.44] saying type
+[196.40] is equal to string meaning that anything
+[199.36] passed in
+[200.40] should be a string or can be converted
+[203.20] into a string
+[204.48] one of the great things about arc parts
+[206.64] is all the features that are built into
+[208.80] this
+[209.44] add argument method one of these which
+[212.00] you're going to be taking advantage of
+[213.44] today
+[214.32] is called choices with choices you can
+[217.36] specify
+[218.08] some kind of iterable which will make
+[220.08] sure that the user
+[221.36] only inputs values that are in
+[224.48] that iterable for our iterable we're
+[226.88] going to use the
+[227.84] sizes constant and specifically the
+[231.04] keys of that sizes constant so the
+[233.92] choices are going to be
+[235.44] s m l xl
+[238.96] and xxl if the user inputs
+[242.00] any value that is different from that
+[244.16] then arc parse is going to spit out a
+[246.24] warning
+[246.80] and let them know that that isn't an
+[248.32] invalid choice and give them a list of
+[250.64] the valid choices
+[252.40] final argument we're going to add is
+[254.72] some custom help text
+[256.40] and help text for size is size of
+[260.08] your pizza awesome so let's save that
+[263.92] and run it and see what happens
+[267.52] okay we've ran it and nothing happened
+[271.04] what happens if we're specified stretch
+[273.04] help nothing
+[274.64] how come this parser isn't working well
+[277.36] there's one
+[278.08] crucial thing that we need to do to
+[280.16] actually make all of this work
+[282.00] we need to tell it to actually parse the
+[284.16] arguments
+[285.84] so we'll store that as parsed args
+[288.88] is equal to parser dot
+[292.88] vars args notice that we're not passing
+[295.76] anything
+[296.32] in to parse args this is because by
+[299.60] default
+[300.72] parse args is going to parse sys.rgv
+[305.20] just like we did in our previous video
+[307.84] it will also ignore
+[309.20] that first entry of the sys.rgb argument
+[312.72] list
+[313.44] so it's only going to parse the parts
+[315.44] that are distinct
+[316.88] from saying pizzabuilder.pie let's save
+[320.16] this
+[320.96] and try it again
+[324.24] and we've printed something out let's
+[326.16] give ourselves some more room
+[328.32] and we see usage pizzabuilder.pie
+[332.40] dash h or dash help and then we see the
+[336.08] options that are available for size
+[338.64] sml excel and xxl
+[342.00] we also see our welcome message or
+[344.40] description
+[345.36] as well as the positional arguments here
+[347.92] which again repeats the
+[349.44] valid sizes as well as the help text
+[352.56] size of your pizza we also see something
+[355.36] really nice here
+[356.72] where we get the dash h and dash dash
+[359.76] help behavior
+[360.88] for free you don't have to do anything
+[363.76] for arc parts to include that for you
+[366.32] now you can turn that off if you want to
+[369.12] but for our usage
+[370.48] we're just going to leave it as is okay
+[373.44] so one argument down
+[375.04] let's go ahead and add another this one
+[378.08] is going to be the crust which is very
+[380.32] similar to what we did for size
+[382.48] so we'll copy and paste that change out
+[385.20] size
+[386.24] or crust rest and this will be
+[390.40] trusts dot keys and the help text for
+[393.44] this
+[394.16] will be type of pizza crust
+[398.48] okay we'll save that and see how it
+[400.56] looks
+[401.68] perfect so we now have a new positional
+[404.32] argument
+[405.60] the valid options are normal thin and
+[408.00] deep
+[409.20] we see type of pizza crust now in our
+[412.24] original pizza builder
+[413.84] you'll see that we have something
+[415.04] similar we have arguments
+[417.28] which were size and crust and we also
+[419.44] had options
+[421.12] now how do we add in these options to
+[423.76] the optional arguments
+[425.36] down here here's where we get into a
+[427.76] little bit of specifics
+[429.04] about those positional arguments we're
+[431.12] passing into
+[432.48] add argument i'll write out the
+[434.72] positional argument for extra cheese and
+[436.96] see if you can notice the difference
+[441.84] do you see it the difference between
+[445.60] these
+[446.32] is that extra cheese as a dash
+[449.84] dash in front of it you could also
+[452.40] optionally add a
+[453.92] dash c here one or both of these are
+[457.44] valid
+[458.08] for adding optional arguments to your
+[460.80] parser
+[461.52] so our parts will see these without the
+[463.84] dash as positional arguments
+[466.40] and these with a single or double dash
+[470.00] as optional arguments
+[473.12] this is very important to keep in mind
+[475.36] as these first two arguments
+[477.04] are implicitly required meaning that if
+[480.56] the user doesn't pass in a value for
+[482.72] those
+[483.52] they're going to get a warning however
+[486.40] for
+[486.72] these unless you make them required by
+[489.68] default
+[490.96] bypassing in required equals true
+[494.32] then a user doesn't have to pass in
+[496.64] values
+[497.36] for those arguments because they're
+[499.44] optional
+[500.80] for us we're going to take off the
+[502.16] required equals true because i want
+[504.16] people to make pizzas without having to
+[506.00] pass in
+[506.80] extra cheese and if you don't say
+[509.20] required is equal to true
+[511.20] is false by default
+[514.40] now again remembering back to our
+[516.24] previous video
+[517.60] extra cheese is what i called a flag
+[520.80] meaning if you pass in extra cheese
+[524.32] we would say that that value is true
+[527.12] otherwise
+[527.84] the value is false we can get the same
+[530.80] behavior for free
+[532.08] with arc parts by specifying the action
+[535.52] so there are a few different actions
+[537.12] that are available with arc parse
+[539.92] the one we're going to be using today is
+[542.00] called store
+[543.68] true meaning that if this argument is
+[547.20] passed in
+[548.48] or the dash c form it's going to store
+[550.96] the value of true
+[552.56] into extra cheese so this is how we get
+[556.08] our flag behavior
+[557.60] if someone runs it with extra cheese
+[560.48] extra cheese will be set to true
+[563.12] otherwise if they don't pass it in extra
+[566.00] cheese will be set to
+[567.44] false now if you're a big cheese lover
+[570.64] and you want extra cheese to be the
+[572.40] default you can reverse that behavior
+[575.60] by specifying store false
+[579.12] so if they don't pass in extra cheese
+[582.16] then it's going to say extra cheese is
+[583.92] equal to true
+[585.36] if they do say extra cheese then it's
+[588.32] going to say
+[589.44] extra cheese is equal to false because
+[591.84] it's storing the value of
+[593.12] false into extra cheese when this flag
+[596.48] is passed in
+[597.84] now extra cheese might be a bit long for
+[600.00] a variable name to work with
+[602.08] the extra we don't really need to have
+[604.32] that on there
+[605.44] so we can take advantage of another
+[607.28] feature of arc parse
+[609.12] which is setting guest or destination
+[612.48] is equal to cheese meaning that instead
+[615.76] of storing extra cheese
+[617.52] into a variable called extra underscore
+[620.08] cheese
+[620.72] it will store it into a variable called
+[623.20] cheese
+[624.00] and i'll show you where that variable
+[625.44] lives in just a few minutes
+[627.68] but for now let's add in some help text
+[632.08] also do the same thing real quick for
+[633.84] extra sauce
+[636.24] and we'll change that to a dash s now
+[639.12] while this is a few lines the line
+[640.88] length is getting a little unruly so
+[642.72] give me a minute to make the formatting
+[644.64] a little prettier
+[649.60] there we go that looks much better okay
+[652.32] so let's test this out a little bit more
+[654.40] i told you that it's going to store
+[656.56] things like extra cheese
+[658.40] extra sauce as well as size and crust
+[661.52] to variables that we'd be able to access
+[664.48] let's see
+[665.60] how we're going to access those let's
+[668.00] print out
+[669.20] what exactly parsed args is
+[672.24] and to illustrate the difference between
+[674.40] specifying a destination
+[676.48] we're going to comment out the
+[678.16] destination for sauce
+[680.48] let's save this first let's take a look
+[683.12] at the help text
+[683.92] make sure everything looks good good we
+[686.32] solve our positional arguments
+[688.32] and now we have the extra cheese and
+[691.44] extra sauce optional arguments now let's
+[694.64] actually pass in some values for this
+[697.60] for our size we'll go with large
+[701.12] and then the crust will say thin
+[704.32] this time we're going to pass in dash
+[707.36] c as well as dash
+[710.56] s remember that we now have the shorter
+[713.44] form
+[713.84] of these as well we could just have
+[716.72] easily have said
+[717.92] dash dash extra
+[721.52] sauce but for consistency we'll stay
+[724.56] with
+[725.20] dash s so you don't think that that is
+[727.76] affecting
+[728.80] the variable that's returned
+[732.00] we'll run this and we see what was
+[733.68] printed out is a namespace
+[736.00] object and in this object
+[739.68] we see it has attributes size is equal
+[743.04] to the string
+[744.80] l crust is equal to the string
+[748.08] thin cheese is set to true
+[751.76] and we see extra underscore sauce is
+[754.64] equal to true
+[756.08] perfect now if we were to revert this
+[759.76] change
+[760.40] so uncomment that give ourselves a
+[762.48] little bit more room and run it again
+[764.88] we now see instead of seeing extra sauce
+[767.84] we just see
+[769.12] sauce at this point you might be
+[771.36] thinking that we're missing
+[772.56] one crucial thing for our entire pizza
+[776.48] builder
+[777.60] and you're absolutely right we do not
+[780.16] have a way to specify
+[782.16] toppings so let's do that now parser
+[786.16] dot add argument this one is going to be
+[789.44] for consistency dash t
+[792.72] as well as dash dash toppings
+[796.80] you don't always have to give it that
+[798.40] shorthand as a matter of fact
+[800.00] i'm going to strip the shorthand from
+[802.24] extra cheese and extra sauce
+[805.52] because as a general rule if something
+[807.60] is a flag in my clies
+[809.68] i don't really like to have it as the
+[811.44] short form
+[812.72] some people do that's entirely personal
+[815.28] preference
+[816.48] but since toppings is not a flag
+[819.68] we're going to offer the dash t option
+[822.24] as well
+[823.52] so let's also give it good formatting
+[825.36] right out the bat
+[826.72] the type of our toppings should be
+[828.88] string
+[830.08] and now we're going to do something
+[832.00] really cool with our parse
+[834.64] we're going to say that n arcs
+[838.00] or the number of arguments is equal to
+[841.52] a plus in quotes when we specify a
+[845.52] plus for n args we're telling argparse
+[848.96] that you expect at least one argument
+[852.00] for toppings when passed in if you want
+[854.56] to allow people to pass in
+[856.48] zero or more you put a star
+[859.84] both of these will be collected into a
+[862.00] list of arguments passed into toppings
+[864.56] which is going to be helpful for our
+[866.32] processing later
+[867.84] additionally if you wanted them to pass
+[870.08] in specifically
+[871.60] three toppings say this is a three
+[873.76] topping pizza
+[875.12] all the time then you can pass in the
+[877.20] number three
+[878.80] or five or any other integer you can
+[881.76] think of
+[882.56] like an 18 topping pizza finally if you
+[885.36] want them to be able to pass
+[886.64] in multiple arguments but only consume
+[889.52] or only store one argument
+[891.92] you can add the question mark there but
+[894.00] we're going to keep it
+[895.20] as a plus so number args
+[898.56] is equal to plus or
+[901.76] a list of one or more toppings finally
+[904.96] let's add some help text
+[908.24] there we go we'll save it and see how
+[911.20] this looks with the help text
+[912.96] perfect welcome to pizzabuilder we have
+[915.68] our positional arguments
+[917.28] we have our optional arguments including
+[919.68] the free
+[921.44] help we also have toppings in there
+[924.16] let's run this through with our previous
+[925.68] example
+[926.56] and as expected since we passed in dash
+[928.96] c and dash
+[930.08] s which are no longer part of our extra
+[933.36] cheese and extra
+[934.64] sauce optional arguments it gives us a
+[937.28] nice warning here
+[938.56] it says error unrecognized arguments
+[941.84] dash c and dash s
+[944.88] this is the kind of input validation
+[946.72] that it's doing automatically
+[948.32] for us while we're testing bad cases
+[950.88] let's go ahead and not specify a value
+[953.04] for crust and we see
+[954.80] the following arguments are required
+[956.88] trust we get rid of that l there
+[959.68] we see the following arguments are
+[961.44] required size
+[962.80] and crust okay let's put that back
+[966.84] extra cheese
+[969.68] okay we see our namespace object course
+[972.96] size is large crust is thin toppings
+[976.08] is none cheese is true and
+[979.12] sauce is false now let's try adding some
+[982.32] toppings
+[983.44] see tea bacon
+[987.28] and let's try saying onion as well we
+[990.24] see we now have
+[991.20] under toppings a list including bacon
+[994.24] and onion if we just specify bacon
+[997.60] it's still a list so if we pass in
+[1000.64] nothing for toppings
+[1002.00] we get none otherwise if something is
+[1004.72] passed in
+[1005.60] we're going to get a list perfect we're
+[1009.12] now ready to plug this into our build
+[1011.20] pizza helper method okay our build piece
+[1013.84] is still going to accept an
+[1015.44] order this time instead of order being a
+[1018.00] dictionary
+[1019.20] it's going to be a namespace object
+[1022.08] meaning
+[1022.72] instead of saying order and then the key
+[1025.36] of size
+[1026.80] we can just put order dot size
+[1030.88] same thing for crust dot crust
+[1034.00] again since it's a namespace object and
+[1036.88] we know that if toppings aren't
+[1038.48] specified
+[1039.44] it's going to be none we can just have
+[1041.84] order
+[1042.72] dot toppings so if order dot toppings
+[1046.96] we know that order dot toppings would be
+[1049.68] a list
+[1051.28] because it is a truthy value or it's a
+[1053.92] list
+[1054.80] with some entries in it otherwise we're
+[1057.12] not going to add toppings to our pizza
+[1059.44] same thing with extra cheese this time
+[1062.32] instead of
+[1062.88] being extra cheese we can just say
+[1065.68] cheese
+[1067.04] because remember that we are storing
+[1069.28] this with a different destination
+[1072.00] destination being cheese which we also
+[1075.04] see down here in the namespace object
+[1078.16] so if order.cheese we're going to add in
+[1081.36] the extra cheese
+[1082.72] same thing with sauce beautiful it even
+[1086.00] looks better this way as well
+[1087.76] the last thing that we need to do is
+[1089.68] store the output of that
+[1092.16] as pizza call build pizza
+[1095.28] pass in our parsed arguments and finally
+[1098.80] print out
+[1099.84] the same message that we did in the
+[1101.60] previous video
+[1104.00] your pizza is
+[1107.68] pizza for now let's keep this little
+[1109.92] print statement in here
+[1111.20] just so we can see how everything is
+[1112.64] running clear our output
+[1115.20] and see how our previous order would
+[1117.60] look
+[1118.48] okay it says your pizza is large thin
+[1121.20] crust
+[1121.68] with bacon plus extra cheese awesome
+[1125.04] let's add back in the onions and then
+[1127.28] we'll change it up from a
+[1128.80] thin to a normal pizza
+[1133.12] and this one is going to be xxl here we
+[1135.92] go
+[1136.24] your pizza is extra extra large with
+[1138.24] bacon onion plus
+[1139.68] extra cheese and we see that this
+[1142.24] matches up with the values that were
+[1144.00] stored in the namespace object
+[1146.80] so now that we've verified that the
+[1149.12] namespace object works perfectly fine
+[1151.60] we'll get rid of that print statement
+[1153.52] and see the final
+[1154.64] output here nice and clean if we were to
+[1158.08] pass in some bad
+[1159.20] values here so instead of having one of
+[1162.24] the accepted sizes
+[1164.32] we'll pass in q we see
+[1168.16] that the argument size received an
+[1170.40] invalid choice
+[1172.32] the choice that was invalid was q
+[1175.36] and it's telling the user to choose from
+[1177.52] small medium large etc
+[1179.92] as you would expect the same thing is
+[1182.00] true
+[1182.96] with the crusts instead of saying a
+[1185.76] normal crust we'll say
+[1187.36] a weird crust again involved choice
+[1190.80] weird
+[1191.60] and here are the options that are
+[1193.68] actually available for us
+[1195.92] we accomplished all of this in just 61
+[1199.12] lines of code
+[1200.80] whereas our previous version took 88
+[1204.48] lines of code and this is also with
+[1206.72] quite a bit
+[1207.76] of extra formatting that isn't
+[1209.52] technically needed
+[1210.88] and could likely reduce our lines of
+[1212.64] code by 10 or more
+[1215.20] well that wraps up this video now that
+[1218.24] you understand how to use arc parse to
+[1220.24] write clis
+[1221.36] try writing some of your own what is
+[1223.68] your favorite trick with arc parse
+[1225.68] or is it something i showed today leave
+[1228.16] a comment down below
+[1229.36] to let me know as always today's code
+[1232.32] will be added to the understanding
+[1234.32] github repo so check the description for
+[1236.88] a link
+[1237.60] and of course if you have any questions
+[1239.92] or suggestions or topics you'd like me
+[1241.84] to cover
+[1242.88] leave a comment for me to keep up with
+[1245.12] this series
+[1246.00] please consider subscribing thanks for
+[1254.03] [Music]
+[1260.84] watching
+[1263.16] [Music]
+[1270.32] you

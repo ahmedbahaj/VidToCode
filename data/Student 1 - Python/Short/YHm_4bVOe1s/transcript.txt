@@ -1,0 +1,69 @@
+[4.84] hi I'm Joe James and in this video I'm
+[6.36] going to show you how to write a bubble
+[7.72] sort program in Python so let's review
+[10.44] real quickly in a very small list here
+[12.84] how the bubble sort Works starts by
+[14.84] comparing the first two items in the
+[16.64] list in this case three and two if three
+[18.96] is greater then they'll swap places it
+[21.76] compares the next two items if the item
+[23.68] on the left is greater than the one on
+[25.44] the right they have swap places in this
+[27.52] case they're not we compare the next two
+[30.08] items the four is greater than the one
+[32.24] they swap places now we'll start from
+[34.20] the beginning of the list again we
+[36.16] compare the first two items two and
+[38.08] three two is not greater so they don't
+[40.00] swap We compare the three and the one
+[42.04] the three is greater so they swap places
+[44.28] and we don't need to compare the three
+[46.08] and the four now because we know the
+[47.40] four is already the maximum number on
+[49.04] the list so we go back to the two and
+[50.56] the one the two is greater so we swap
+[52.72] places and now we're done with the sort
+[55.40] so we went through the list three times
+[57.40] we have a four item list we use a nested
+[59.76] Loop to solve this problem so our outer
+[62.16] loop let's say we use a loop variable I
+[65.28] will range from 0 to n minus one where n
+[68.16] is the number of items in the list so 0
+[70.40] to three and the inner loop J will go
+[74.04] from 0 to n-1 minus I because we know
+[78.84] that that last item in the list is
+[80.64] already sorted so let's see how we code
+[82.76] this in Python we'll start out by
+[84.92] defining a bubble sort function and
+[87.48] we'll accept an argument called my list
+[90.40] our outer for Loop for I in range 0 to n
+[94.84] length of my list is basically the
+[96.20] number of items in the list minus one
+[98.92] the inner for Loop J is in range zero to
+[101.76] length of my list minus1 minus I as we
+[104.84] explained in a previous slide and then
+[106.72] inside the inner loop we're going to
+[108.36] compare the item with the item on its
+[110.88] right if the item on the left is larger
+[113.92] than the item on the right then the swap
+[115.60] places and then we return the sorted
+[117.68] list we have a nested Loop we have a
+[119.92] comparison and swap so to use our bubble
+[122.28] sort function we'll create a list we'll
+[124.60] call it the list we'll throw half a
+[126.64] dozen items in there and unsorted order
+[129.08] and then to call the function we can say
+[131.24] print bubble sort the list so it'll
+[134.12] return the sorted list and then print it
+[135.64] out the bubble sort is a relatively slow
+[138.08] sorting algorithm so if you have only a
+[140.24] few items to sort let's say thousands or
+[142.64] tens of thousands the bubble sort will
+[144.48] work fine because it's simple and easy
+[146.20] to implement but if you have a lot of
+[148.24] elements to sort like million or more
+[150.84] you're much better off using a faster
+[152.56] sorting algorithm like merge sort that
+[154.68] wraps up our python bubble sort video
+[157.12] I'm Joe James thanks for watching
+[166.02] [Music]

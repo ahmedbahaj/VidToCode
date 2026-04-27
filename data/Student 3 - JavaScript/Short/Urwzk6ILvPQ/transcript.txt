@@ -1,0 +1,148 @@
+[0.24] array iteration I'm going to go through
+[3.08] eight methods to iterate through an
+[5.28] array to iterate means that you're going
+[7.76] through the array and you're doing
+[9.28] something with each item of the array uh
+[12.08] some some methods don't necessarily go
+[14.20] through each item but we'll get to that
+[15.80] most do the first one is for each let me
+[19.52] show you an example here so you can see
+[21.84] in the example I'm passing in the array
+[24.28] one 2 3 for each and for each is pretty
+[27.76] straightforward it just does something
+[30.00] for each item in the array so we pass in
+[32.84] we can pass in the item and we pass in
+[34.96] the index of the item in the array and
+[37.12] then for each in this example for each
+[38.60] item we're just going to console the log
+[40.44] and the index so if I run that we can
+[42.72] look in the console one 2 1 32 that's
+[46.48] just the item in the index the next way
+[48.96] to iterate is
+[50.68] map in map it takes the item that's from
+[55.12] the array it does something to it and
+[57.36] then puts a new thing back in that same
+[59.72] place place in the array so if we have
+[62.36] this array called three and there just
+[64.12] says 1 2 3 and now we are going to
+[67.64] assign it to doubled 3. map that's how
+[71.48] we're going to iterate and we're going
+[73.36] to return the item times two it's just
+[76.44] going to double each item so instead of
+[78.80] the array being one two three there's
+[80.72] going to be a new thing in place of each
+[82.48] item in the array if I run that you can
+[85.44] see at the bottom 2 4 6 it's all been
+[88.60] doubled next next up is filter filter is
+[92.12] going to take an array and it's going to
+[93.76] check each item in the array against
+[96.36] against some kind of condition to see if
+[98.28] it's true or false if it's true it's
+[100.92] going to put the item back in the array
+[102.68] if it's false it's not going to put the
+[104.12] item in the
+[105.12] array and each of these makes a brand
+[108.04] new array so we're going to pass in the
+[110.72] numbers 1 2 3 in filter and the
+[114.68] condition is item modulus 2 equals
+[116.64] equals equals z and for each of these
+[119.92] items is going to check to see if if
+[123.16] that's true and this is just a way to
+[124.92] find out even numbers so if we run
+[128.16] this you can see the bottom of the
+[130.32] console here um the only item is going
+[132.96] to put back into the array or into the
+[136.04] returned array is two uh it doesn't
+[138.92] actually put it back into the array it
+[140.88] because ins still is one two3 but evens
+[145.80] is now
+[147.72] two reduce and reduce we're going to
+[150.32] take an array and we're going to do
+[154.04] something and then pass the result to
+[156.52] the next iteration along with the next
+[159.28] item in the array so that's why we're
+[161.32] going to put result and an item in here
+[164.72] so the first time it it goes to the
+[167.40] array it's going to have a result and
+[169.72] it's going to send that result to the
+[171.68] next item to the next iteration and then
+[174.76] add an item the number at the end is
+[177.84] what the initial result is is going to
+[180.28] be if you don't put a number at the end
+[182.52] like this the initial result will be the
+[185.56] first item in the array so when it goes
+[188.12] through this it's the result is going to
+[190.04] be zero then we're going to add the
+[191.76] first item that's one and then it's
+[193.52] going to go through the item the array
+[195.24] again and the result is now one and it's
+[197.76] going to add the item two so 1 plus 2 is
+[201.00] three it's go going to go through again
+[202.76] the result is three it's going to add
+[204.08] three and that's going to be six and
+[206.80] before we run that I'm going to put
+[208.64] console
+[210.68] log
+[212.36] sum and let's see at the very end we get
+[217.04] six next up is sum sum you just check if
+[222.64] any item in the array so here's here's
+[224.24] all the items in the array has negative
+[226.88] numbers sum means does any item in the
+[230.56] entire array meet this condition so if
+[233.80] any item in the entire array meets a
+[235.72] condition is less than zero it's going
+[238.48] to be true if no items meet the
+[241.00] condition then it's going to be
+[242.88] false so you can see this is true
+[245.52] because one of the items in the array is
+[248.72] negative the next one is every and this
+[251.48] is kind of similar to sum but now every
+[254.88] number has to meet the condition so we
+[257.04] have the const all positive numbers we
+[258.68] pass in one two and three every and now
+[261.20] here's the call back function we're
+[262.48] going to run this function we're going
+[264.08] to pass in each item if each item is
+[267.20] more than zero then uh we're gonna put
+[272.16] true but also if we make just one item
+[275.20] negative when we run that we're going to
+[278.20] have false so it's either all or nothing
+[280.52] with this one okay next one we're going
+[283.16] to look at is
+[285.00] find find goes through every item in the
+[287.72] array and checks it against the
+[289.96] condition and if that's true it returns
+[292.68] that item so it's searching for a
+[294.84] specific item in in the array if we pass
+[298.32] in this array and in this array we have
+[300.40] a list of key value pairs ID is a ID is
+[303.08] B ID is C objects. fine we're going to
+[306.40] pass in this function with the item so
+[308.16] it's going to go through each item and
+[309.96] check to see if the ID equals equals
+[313.24] equals B and then if it finds that it's
+[316.84] going to return
+[319.92] it so it returned the whole thing ID B
+[325.16] if it doesn't find your item then it
+[326.96] will return
+[328.36] undefined and last one is find index
+[331.72] find index is pretty much just like find
+[334.72] everything in this code is the same
+[336.08] except we just add the word index here
+[338.36] and then instead of find it's find index
+[340.48] and then we're consoling find index so
+[343.96] instead of returning the actual item
+[346.28] it's going to return the index of the
+[348.20] item so this is index zero index one
+[351.88] index two and you can see that we're
+[355.52] looking for B and that's index one so if
+[358.12] I run that and you look at at the bottom
+[360.12] of the console you will see a one if it
+[364.20] does not find the index anywhere it will
+[366.76] return negative one well thanks for
+[369.76] watching and special thanks to Jordan
+[371.76] harband I use something that he wrote as
+[373.76] inspiration for this video and you can
+[375.32] see the link to that in the description
+[377.52] don't forget to subscribe and remember
+[379.80] use your code for good

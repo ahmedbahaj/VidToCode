@@ -1,0 +1,381 @@
+[0.11] [Music]
+[0.72] hello everyone I'm sure that you had
+[2.76] played the classic game of hangman
+[5.00] before well most likely you play this
+[7.20] game on paper well how about we change
+[9.76] things up a bit today we are going to be
+[12.40] creating a Hangman game in Python now
+[15.52] before we start coding make sure to
+[17.56] subscribe to NP station and give this
+[19.76] video a big thumbs up now let's get
+[23.56] coding things we know
+[26.76] [Music]
+[34.40] hey everyone so today we will be using
+[37.28] visual studio code to be typing our code
+[41.44] um python so um I'm sure that many of
+[44.56] you guys are super excited to create a
+[47.28] Hangman game on your computer you
+[49.76] probably have never played hangman on a
+[52.24] device before probably on just you know
+[54.56] with paper and pencil so today will be
+[57.24] you know something new but let's get
+[59.32] started first we'll go ahead and import
+[62.24] our random module now before we continue
+[65.68] typing the rest of our code I want to
+[67.68] make sure that you guys have Set uh your
+[70.68] coding language to python so in this
+[73.16] purple bar down below you can see it has
+[75.56] it says python here make sure that it
+[77.96] doesn't say plain text um sometimes it's
+[80.80] just like um Auto set to plain text so
+[84.00] you have to click on it and type in
+[85.92] Python to set in your coding language so
+[89.68] I I um did not see that you know I
+[91.60] wasn't sure how to do it when I first
+[93.12] downloaded visual studio so I just want
+[95.60] to make that clear to you guys on how to
+[97.88] do it but now that we're done with that
+[101.44] let's continue with our code so after we
+[105.12] have imported you know our random module
+[107.60] we'll need to go ahead and create a list
+[110.28] so this list um I'm going to go ahead
+[112.64] and call it animals so this list the
+[115.84] computer be will be selecting a random
+[118.16] word from this list to give the user you
+[120.96] know for the word to guess so you can
+[123.64] create any list you want um any category
+[126.80] I'll just do animals so um if you you
+[130.24] know want your game to be more
+[132.84] challenging you would go with a broader
+[135.72] like subject you could do like states of
+[138.40] the United States so that would be like
+[140.28] 50 um States or 50 objects in your list
+[144.16] that would be a very challenging game um
+[146.60] and you can do a very simple one like
+[148.56] colors right there's not that many
+[150.20] colors so it would be a little bit
+[152.04] easier for the player so I'll just go
+[154.88] ahead and create a list called animals
+[158.04] and let's see we'll put in some sort of
+[161.08] you know animals in
+[163.24] here we need to spell them correctly cuz
+[167.52] they will be the user will be
+[169.84] guessing the animals okay so we'll do
+[173.52] dolphin um
+[176.96] shark elephant
+[181.12] um what else
+[184.88] Rhino so I think I'll just leave it like
+[188.96] this for now and we can you know of
+[191.68] course come back to this later and we
+[193.28] can add in more animals or you know more
+[196.68] objects to our list okay so now what
+[199.24] we'll do is we'll create a variable
+[201.00] called word and it will be equal to
+[206.72] random um do choice and parentheses we
+[211.40] have that animals list
+[214.20] here right so um we we can also convert
+[218.08] this into a lowercase by doing do lower
+[221.12] so this line of code will tell the
+[223.16] computer it's just creating a variable
+[225.24] code word and it's timeing the computer
+[227.24] to select a random choice right random
+[230.44] do Choice a random Choice from our
+[233.20] animals list so choose any of these
+[237.80] um objects here
+[241.64] okay so now after this we will need to
+[245.04] go ahead and create a list called guess
+[249.84] correctly and it just be like empty
+[254.20] here and then we'll have guested
+[257.64] incorrectly like
+[259.33] [Music]
+[261.76] this so um we um this is basically just
+[265.92] I mean we're creating two list here so
+[268.28] whatever the player gets correct ly it
+[270.44] the computer will add it into the guess
+[271.88] correctly list and whatever letter the
+[274.20] player guess incorrectly it will put it
+[276.08] into this list sh forward now we will
+[279.56] need to assign you know the amount of
+[281.36] tries the player will have to actually
+[283.88] guess the word so we'll create a
+[286.24] variable called tries and it'll be equal
+[288.16] to six so the player will have six
+[290.12] chances to guess the word correctly and
+[292.80] what we'll do we'll create a v um yeah
+[295.20] variable called hangman count and it
+[298.16] will be equal to1
+[300.88] now what we need to do is while tries is
+[304.60] greater than zero right so while the
+[308.08] tries are greater than zero we'll need
+[310.20] to do four letter in
+[313.40] word just like this and then we'll
+[315.84] create a if statement so if letter in
+[322.00] guest so it'll be in the guest
+[325.56] correctly then we'll put um we'll add on
+[328.80] to our output
+[330.16] by doing plus equals and we'll add that
+[333.00] letter to our
+[334.76] output just like
+[336.96] this now let's see it's saying it's not
+[340.04] defined so oh I forgot one line of code
+[344.08] here so after this while tries we need
+[347.12] to put in a output is equal to blank sh
+[351.72] there we go forgot to define or yeah
+[354.84] Define our output variable okay so now
+[358.04] that that's fixed we'll create a lse
+[361.04] statement here and it'll be equal to
+[363.72] Output plus
+[366.28] equals
+[368.16] um like a underscore just like this so
+[373.20] basically what this will do is it's
+[375.12] checking if that you know player has
+[377.44] guessed a letter that is actually in the
+[379.04] word so if it has guessed a letter that
+[381.52] is in the guess correctly list then it
+[384.40] will add that letter to our output and
+[387.16] if it's not it will just remain the same
+[389.80] with that blank space as the letter okay
+[393.80] so after this we need to make sure to
+[398.00] exit out make sure you're outside of
+[400.36] that for Loop here we'll add in a if
+[403.60] output is equal
+[406.00] to word our word our word variable we
+[410.48] will need to break the
+[416.00] program okay there you go so um you know
+[419.64] if the player actually guesss the word
+[421.48] correctly then it will break the program
+[425.28] and because you know the game is over so
+[428.68] now now that we're done with this we
+[431.08] need to actually put in you know the
+[433.00] print statements right so we need to
+[435.32] give in you know how to play uh for the
+[438.52] user what to do next and all that sort
+[440.84] of stuff so we'll put in um tell the
+[444.20] reader to guess the word right and then
+[447.20] we'll also have a
+[450.04] print out you know the output
+[454.12] here I'll take off the space cuz we've
+[456.80] already included it inside and we need
+[459.68] another print function so it'll be um
+[462.40] tries right and then uh we'll continue
+[465.64] on with that sentence so we'll say like
+[470.04] chances
+[471.96] left something like that so this will
+[475.16] basically go to that tries uh variable
+[477.88] that we have here and it will print out
+[479.84] the number of tries we have
+[482.12] left so I think that's yep that's right
+[487.28] so now what we'll do is we'll create a
+[490.08] variable called guess and it will be
+[492.36] equal to input right dot
+[497.14] [Music]
+[499.60] lower so we do input do lower just like
+[503.32] this and we'll need to create an if step
+[506.64] a if statement so we um if guess in
+[510.64] guessed
+[513.00] correctly or
+[515.88] guess
+[519.52] in guessed
+[523.00] incorrectly so this is a kind of
+[526.00] confusing thing right here but what it's
+[529.32] doing is um we're checking if the player
+[532.40] has actually already guessed that letter
+[534.44] so if they have if that uh if statement
+[537.64] is satisfied then we'll need to to tell
+[539.88] the user that they've already guessed
+[541.64] out letter so we can say you know
+[544.88] already guessed and then we need to tell
+[548.40] the user what letters are guessed so
+[551.00] we'll put in that guess variable here
+[553.92] okay now what we need to do is putting
+[555.96] an LF so LF guess in word so if the
+[561.12] letter that the player's guess is
+[562.68] actually in the word then we need to
+[564.76] congratulate the player you know we'll
+[566.96] say like awesome job
+[571.20] uh we can say like you
+[574.20] guessed correct or a correct
+[579.16] letter something like this you know to
+[582.00] tell the player that they've guessed it
+[584.04] correctly now we also need to add in an
+[586.92] L statement so this will be used if the
+[589.68] player has actually not guessed a
+[591.76] correct letter so say like sorry you
+[595.08] have guessed um a wrong letter
+[601.00] just like this okay now what we'll need
+[604.48] to do is we'll create a thing here
+[608.40] called
+[610.36] hangman count right and then it will be
+[613.36] equal to hangman count and we'll need to
+[617.20] add one and here uh we'll bring in that
+[621.56] Tri variable again and what we need to
+[624.00] do is we need to do minus one because
+[626.80] each time the player guesses a word
+[629.96] the computer needs to decrease the tries
+[632.72] by one because we need we'll start off
+[635.44] with six chances and then it'll go to 5
+[637.96] 4 3 2 1 as the player guesses each
+[640.36] letter okay so now that we're done with
+[643.44] that we'll put in our guest in correctly
+[646.12] here and we'll do dot append and we'll
+[648.52] use that um guess variable in the
+[651.44] parenthesis there and now we need to
+[655.72] exit out here put in an if tries is
+[659.72] greater than zero so that means you know
+[663.48] if the tries are still greater than zero
+[666.16] so if the user still has more chances to
+[668.68] guess um but they have guessed the word
+[671.76] already then we'll say you guessed it
+[675.32] right or say you guess the word right or
+[680.36] you guess the word um you guess the word
+[685.00] and you
+[686.40] win there we go but then we'll also need
+[689.36] an L statement right so if the chice is
+[691.60] actually equal to one and they haven't
+[694.28] guessed the word correctly yet then
+[696.04] we'll say sorry um you guessed the wrong
+[702.88] letter so we can just say like try
+[707.16] again just like
+[710.36] this okay so after this we'll actually
+[713.44] need to put in another line of code down
+[715.92] here and it will say um we we'll have to
+[720.64] put print out our hangman
+[725.12] count so make sure to type this in here
+[728.88] as well and now what we need to do is
+[732.60] we'll go ahead and run this and let's
+[735.12] see okay so it says guess the word we
+[738.40] have um these blanks here so let's see 1
+[740.84] 2 3 okay so seven letters are in this
+[743.92] word and it says six chances left
+[746.20] awesome so far so good let's guess the
+[748.64] letter e
+[749.84] okay so it says awesome job you get the
+[751.72] correct letter and it is place that e at
+[754.96] the end here that is awesome how about a
+[758.24] okay that is also correct um is it
+[762.68] elephant nope it is not elephant oh
+[766.20] actually look I forgot I had already
+[769.00] guessed the letter e so it says already
+[771.84] guessed e that is amazing okay
+[775.08] R oh that is also a correct letter um
+[780.20] I'm not even able
+[782.28] to guess this t Okay so it says that I T
+[789.60] is not one of the letters in this word
+[791.28] so it says sorry you have guessed a
+[792.72] wrong letter so I have no idea oh so G
+[797.72] is actually the correct letter so you
+[799.36] can see that is probably giraffe so
+[802.00] giraffe and two FS okay awesome job you
+[805.96] guessed the correct letter and um you
+[808.20] guessed your right and you win that is
+[810.76] fantastic um so this is still not a
+[814.32] Hangman game though right because we
+[817.56] don't have our actual hangman in here
+[820.32] right we need hangman the drawing right
+[822.80] so what we'll do that is our next part
+[825.92] we'll create a list here we get like
+[828.64] hangman uh one and um we'll do
+[833.32] equals and I don't know why that
+[836.44] happened okay so we'll create this you
+[839.68] know
+[841.68] blank brackets here there we go so once
+[845.52] you click enter let we need to put in
+[848.32] three uh you know double quotes like
+[851.68] this and we need to put in that image of
+[855.88] our um hangman so to do that we'll just
+[859.40] put in these thing like plus signs cck
+[864.00] enter tab
+[870.40] like this and then we can put in like
+[872.44] two or three equal signs and then we'll
+[875.24] end that here and then
+[878.32] comma and then again we'll put in three
+[882.64] double quotes like
+[885.56] this okay so we're done with the first
+[888.52] image now let's just copy this and paste
+[891.96] it um and of course we'll need to add
+[896.60] in that
+[899.20] the head here so we'll
+[903.48] need like just like this you need to fix
+[906.16] a few things make sure
+[907.88] to pay attention to that okay again copy
+[913.72] this part I'll paste it down here and
+[917.00] then we'll need to put in that upper
+[920.52] body and we
+[923.20] can put in the arm
+[927.29] [Music]
+[929.80] so this is a little tough okay so we're
+[933.96] done with the third one you can see we
+[935.88] have like that string that the head is
+[937.84] attached to we'll have the head the
+[940.40] upper body and one arm so far so good
+[944.04] let's again copy and paste it here and
+[947.28] we'll add in the second
+[949.56] arm make sure to fix
+[953.20] that now we need to put in the
+[956.36] legs right so
+[960.00] that and we'll
+[964.56] put enter
+[967.72] here oh
+[971.96] nope okay so for the legs we'll need to
+[975.68] just enter this a few times so I have
+[978.00] some space so we'll put in that first
+[980.48] leg here and we'll need to copy
+[984.60] it place it down here and the last one
+[988.36] will be
+[989.92] oops will be that leg over here so now
+[993.96] we are done um let's make sure to close
+[996.68] those three double quots we have and as
+[1000.36] you can see we have our full hangman
+[1003.16] from just this empty without the Hang
+[1006.96] without the man to the head to the first
+[1010.44] arm the two arms one leg and two legs
+[1013.84] that is awesome so now that we've done
+[1017.28] that we'll go back down here to this
+[1019.16] print
+[1020.28] function and in the um parenthesis we'll
+[1023.80] need to add
+[1025.48] in
+[1027.52] hangman one and then in square brackets
+[1030.72] we'll put in hangman count right so this
+[1034.36] will actually make sure that our hangman
+[1037.12] will actually appear on the screen if we
+[1039.68] guess a letter wrong so let's see this
+[1043.20] is the final run let's see how this
+[1045.04] turns
+[1046.92] out okay guess the word word um let's
+[1050.04] see e oh so it turns out e is not in
+[1053.92] this um word so it says sorry I've gu
+[1056.36] the wrong letter and look at that it has
+[1058.36] printed out our image down here that is
+[1062.12] awesome so it says five chances left um
+[1065.72] let's say
+[1066.88] a oh a is also a wrong letter um
+[1073.44] maybe D oh so D is the correct letter as
+[1078.16] you see it's the first letter in the
+[1079.64] word um P I don't know oh oh it's
+[1084.76] dolphin yep so l p is already there so
+[1088.96] if you put p in again it will say
+[1090.88] already guess P so h i and then n great
+[1096.72] job everyone says awesome job you
+[1098.56] guessed the correct letter and you
+[1100.64] guessed it right and you win that is
+[1104.84] fantastic um so guys poat yourself on
+[1108.36] the back you actually created a handman
+[1111.40] project in Python that is super cool go
+[1114.28] ahead and show this to your family and
+[1115.72] friends they'll be very impressed with
+[1117.52] you and you can play this game with your
+[1121.00] family or friends and let me know what
+[1123.72] they thought of it maybe put in the
+[1125.52] comments Below on what your list is you
+[1128.28] know what your category is I'll be very
+[1131.04] um happy to hear back from you all but I
+[1133.20] hope you enjoyed this project if you did
+[1135.52] give this video video a big thumbs up
+[1137.92] and don't forget to subscribe to NP
+[1140.64] station but that's all for today
+[1142.36] everyone keep reading keep coding and
+[1144.88] stay safe
+[1151.36] [Music]
+[1168.96] oh
+[1171.45] [Music]

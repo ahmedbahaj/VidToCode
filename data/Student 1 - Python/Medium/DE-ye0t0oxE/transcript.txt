@@ -1,0 +1,283 @@
+[3.47] welcome back aliens my name is 720 and
+[6.24] let's continue the series on Python in
+[8.70] the last video we have worked on linear
+[10.71] search light so we were having the list
+[12.27] and out of that list we want to search
+[14.22] for a particular element so the element
+[16.47] is there we will it will say found and
+[18.42] it will also show the location right or
+[20.97] the position of it if the limit is not
+[23.25] that would simply be not found so linear
+[25.38] search is good right but then what if
+[27.33] you have a list of slated thousand
+[29.31] values and the kind official searching
+[31.14] for is on let's say after eight hundred
+[33.84] values so you're missing so much of time
+[35.70] too so as you're the least length
+[37.77] increases it will increase the time as
+[40.05] well so do we have a better way and yes
+[42.90] we have one more search technique which
+[44.91] is a binary search how that works
+[47.85] so before continues - search you have to
+[50.10] understand in binary search all the
+[51.99] values have to be sorted okay so
+[54.33] normally when you work with linear
+[55.35] search it's not composite to have the
+[57.60] values sorted we can have values in any
+[60.21] order but in case of binary search you
+[62.04] have to make sure that your values are
+[63.57] sorted
+[64.32] that means if I provide initial values
+[66.63] example be operating values like this
+[68.19] right so we will change it we will have
+[70.23] a value which is sorted right so let's
+[71.91] say 4 comma 7 comma 8 comma 12 comma 45
+[76.35] comma 99 so let's say we have this value
+[78.39] so we have six values I want to search
+[80.25] for a particular value so if you're
+[81.54] going for a linear search here we will
+[83.04] going for binary search now how that
+[84.36] works so let's imagine we have at least
+[86.19] here right and if you want to search for
+[87.72] an element what you will do is you will
+[89.34] first specify the lower bound and the
+[91.83] upper bound okay so as you can see the
+[94.02] first value is a lower bound here so the
+[95.73] first value itself is a lower bound and
+[97.20] the last value is the upper bound you
+[99.48] can say first or last but then let's go
+[101.79] with this word an audio so L is the
+[103.98] first index and U is the last index once
+[106.59] you have assigned this thing the next
+[107.85] time you have to do is you have to find
+[109.20] a mid index now how do you find a mid
+[111.57] index as name suggests made it should be
+[113.91] a mid point of this lower and upper
+[115.71] right so you would simply say lower plus
+[117.21] upper / - you will get mid value now
+[120.12] anyway you say mid value so in this case
+[121.68] you can see we caught the mid value
+[122.79] third right so the element B let's say
+[124.62] okay so before going ahead let me find
+[126.24] elements
+[127.62] I won't just search 45 okay so if you
+[130.56] want to search 45 so you can see if we
+[132.57] got the mid-body right so what's up mid
+[134.22] value so the index value for 4 is 0 the
+[136.71] next value for 99 is 5 so if it's low
+[139.14] plus 5 is 5 and 5 divided by 2 is 2
+[141.18] right so we are doing integer division
+[143.16] area right we are not doing flow
+[144.51] division so we are doing into division
+[146.10] so it will give you 2 so the value at
+[148.02] index value - so basically your mid is 2
+[150.18] now so the value at that index is 8
+[153.18] right so now we got 8 as the mid value
+[156.03] the next step is you have to check the
+[157.98] mid value which you have God is matching
+[160.17] with the element which is searching for
+[161.40] the element we are searching for is 45
+[163.38] right so it's not matching now the next
+[166.29] step would be you have to change your
+[168.03] lower bound or upper bound for the next
+[170.28] iteration you have to change your lower
+[171.45] bound or upper bound now which one to
+[173.07] change for this you have to check the
+[175.29] value you're searching for is smaller or
+[177.51] bigger than the mid value if the value
+[180.06] is smaller change your upper bound that
+[182.73] means you will simply say the mid value
+[185.37] is the new upper bound if your value is
+[188.12] greater than the mid value so the mid
+[190.50] value here is 8 right and the values
+[192.45] which are searching for is 45 so now you
+[194.43] have to change your lower bound so what
+[196.95] you will do is so the lower bound now it
+[199.77] will to the mid value so U of M
+[201.99] becomes L right so instead of having a
+[204.39] big reach time you've got a small list
+[205.71] right so the so the D start with 8 and
+[207.78] it ends at 99 now you've got a new lower
+[210.57] and the upper value so what you will do
+[212.16] you will again find a mid value so
+[213.78] that's what you do every time so your
+[215.61] lower plus upper so what is your lower
+[217.41] lower is basically two and your point is
+[219.60] 5 2 plus 5 is 7 7 divided by 2 is 3
+[223.08] right so now 12 becomes your new mid
+[225.84] value is it matching I get the same
+[227.82] thing it's not matching right we are
+[229.08] searching for 45 now you have to change
+[231.39] your lower value a kid because 45 is
+[233.64] bigger than 12 so you will shift your
+[236.52] lower value to 12 now so it 12 is the
+[238.95] lower value and 99 is upper value so
+[240.99] what you will do now is you will simply
+[242.85] say meet again the lower value is 3 the
+[245.70] upper value is 5 submit becomes 4 and at
+[248.43] 4 we have 45 right so now you will check
+[250.53] and you've got the value now you might
+[252.45] be thinking oh is it a good way of doing
+[254.46] that and they are
+[255.73] because in the initial level you are
+[258.07] skipping some values you are not
+[259.21] checking all the values if your list is
+[261.46] big it will skip a lot of values which
+[263.65] are not checking okay so you will
+[265.27] improve the speed as well the only thing
+[267.31] is you have to the values which you are
+[269.53] taking should be sorted let's implement
+[270.97] this with a code now so what you're
+[272.71] going to do is let's keep the same code
+[274.51] we have the list of values here let's
+[276.31] search for 45 and so we are saying
+[277.99] search least we are passing the list we
+[279.88] are passing and what you to change
+[281.44] something right we have to change logic
+[282.73] here so let me remove the entire stuff
+[284.68] this is something which will change
+[285.97] right now the first thing is you have to
+[287.62] make sure the lower bound upper bound
+[288.58] right so you will say L is equal to zero
+[290.95] so you always start L be zero and you
+[292.75] will say u which is the upper bound so n
+[294.73] is lower bound use upper bound upper
+[296.68] bound will be the length of the added
+[298.42] right so you will say length of the
+[300.28] least minus one because it should be one
+[302.77] less than this stuff now once you got
+[304.36] the lower and upper let's apply a loop
+[307.00] this time again I will go with a while
+[309.07] loop know till what point you have to
+[311.02] reach there so you have to start by two
+[312.70] scenarios one the moment you found the
+[314.83] value and second your lower bound should
+[317.56] not be greater than upper bound okay
+[319.27] that happens they have to stop it so
+[320.98] your lower bound should be always less
+[322.87] than or equal to the upper bound okay
+[325.81] should be less than or equal to okay
+[326.77] should not be greater than equal to and
+[328.12] then you have to also stop at the the
+[330.01] moment you find the value right so let's
+[331.87] do that data so in this value update you
+[333.70] have to find the mid value now right so
+[335.08] once we got lower once we got up every
+[338.02] time you have to find the mid value so
+[339.97] you will take mid is equal to how do you
+[341.92] find made it it's lower plus upper by 2
+[343.87] right so you will say lower plus upper I
+[346.45] have to say / - so you will keep the
+[348.16] same bracket now you want a integer
+[350.50] division right you don't want a normal
+[352.06] division so you will double slash which
+[353.92] we are done before double slash will
+[355.36] give you into the division and we've got
+[357.43] mean value now you will check if the mid
+[359.59] value so mini index so if you have to
+[361.48] find the value for the mid index right
+[363.10] and the way you do that is by saying
+[364.54] list of maiden if this is matching with
+[367.78] the value of which are searching for
+[369.04] witches and our job is done right you
+[371.47] will simply print found in fact I also
+[373.69] want to mention the position right so
+[375.01] you will say pause is equal to made
+[376.87] because that's the position you were
+[378.25] looking for or what pause becomes a
+[380.17] local variable right so let's make it
+[381.37] global variable here we are saving that
+[383.35] position as well and then you have to do
+[385.06] one
+[385.42] thing we simply have to say big right
+[387.43] that's very important or we can simply
+[389.14] return true why I am using semicolon
+[391.87] everywhere that's it once you've got the
+[393.49] money it was simply turn true otherwise
+[395.14] what if the value is not there so you
+[397.81] will go for else if the value is not
+[399.82] matching in else if you do some extra
+[401.59] stuff which is you have to say if now
+[404.47] you have to change your lower bound
+[405.58] upper bound right because if you
+[406.57] remember if your mid value is not
+[408.01] matching with the value which are
+[409.09] searching for you have to change your
+[410.11] lower bound or the upper bound which one
+[412.36] to change depend upon the value is
+[414.22] greater than the mid value also more
+[415.66] than the width value so you will check
+[417.31] list of mid is smaller if it is smaller
+[421.48] than the mid value you have to go you
+[423.52] have to change upper bound right so you
+[424.96] will say if that is smaller than the
+[426.94] value which is searching for which is
+[428.41] and change the lower bound and in the
+[431.41] other case you have to change the upper
+[432.67] bound now let's see that works I feel
+[434.92] something is wrong but let's verify so
+[436.60] whatever we do is I will simply run this
+[437.95] code it was you can see that it says
+[439.84] found at five is it right 4 7 8 12 and
+[443.26] 545 that's great right and let me just
+[445.57] do it for some other value now let's say
+[447.52] maybe 7 and you can see if you're
+[450.34] searching for 7 it will still work you
+[452.83] can see it says 2 and if you have a
+[454.60] bigger list as well let me just add some
+[456.94] more values to here so doesn't matter
+[458.68] how big value you're searching for and
+[460.75] let me search for 1 0 9 8 7 nice the
+[464.38] moment you search for this I don't this
+[466.21] you can see it says at 9 position is it
+[467.92] right 1 2 3 4 5 6 7 8 9 that's great so
+[472.96] this is how you do a binary search so
+[474.82] just to repeat just to reiterate what we
+[476.53] are doing here is so we got the lower
+[478.21] bound we got the upper bound and then
+[479.92] you are finding the mid value so Meatwad
+[482.17] is basically the addition of lower bound
+[483.82] upper bound / - okay
+[485.98] now once you've got the mid value you
+[487.39] have to compare that bit value with the
+[489.01] value which are searching for if it is
+[490.48] matching that's great so he's not
+[492.10] matching in that snare you will again
+[494.44] find a new mid value but before finding
+[496.51] a new menu where you have to change your
+[497.77] lower bound or the upper bound so
+[499.06] because you have to reduce the size of
+[500.26] the array or the list right so depend
+[502.21] upon is it it belongs to right inside or
+[504.28] left hand side you will change it so
+[505.57] that's how it works but then if you have
+[506.65] not done for something which is not
+[508.15] there example if I search for 10 and you
+[510.10] can see we don't have 10 it should bring
+[511.81] not found right it is not printing
+[513.22] anything so at the end here you have to
+[515.68] it
+[515.93] on false because ultimately you are
+[518.00] working with true and false and don't
+[519.98] use semicolon because I work on the
+[521.75] languages which they use semicolon there
+[523.52] let's ignore that oh it's still not
+[525.47] working is still not say is not found is
+[527.57] it we have to do plus one mixer for the
+[529.61] lower bound you have to shift to the mid
+[531.56] plus one for the upper bound because see
+[534.26] if it is not available then why you have
+[536.27] to be when check one wait now right bit
+[537.74] is done so you have to say L is equal to
+[540.20] mid plus one but for upper bound you
+[542.15] have to say minus one because they have
+[543.29] to skip that mid value right I guess
+[545.48] that's the issue that so on this code or
+[547.28] you can see it's a is not found that's
+[548.66] great so we got the output this is how
+[550.52] you do one is search okay so watch this
+[552.62] video once again and to practice that's
+[554.60] how you will improve your skills so I
+[556.79] hope you are enjoying this is let me
+[558.71] know the comments section and do
+[559.91] subscribe for further videos

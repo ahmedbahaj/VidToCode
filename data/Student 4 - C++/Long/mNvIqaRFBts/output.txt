@@ -8,93 +8,58 @@ ___|___|___
    |   |  
    |   |   
 Current Player is X
-Enter r c from 0-2 for row and column: 1 1 
+Enter r c from 0-2 for row and column: 0 0
    |   |   
-   |   |  
-___|___|___
-   |   |   
-   | X |  
+ X |   |  
 ___|___|___
    |   |   
    |   |  
-   |   |   
-Current Player is O
-Enter r c from 0-2 for row and column: 2 2
+___|___|___
    |   |   
    |   |  
-___|___|___
-   |   |   
-   | X |  
-___|___|___
-   |   |   
-   |   | O
-   |   |   
-Current Player is X
-Enter r c from 0-2 for row and column: 0 2
-   |   |   
-   |   | X
-___|___|___
-   |   |   
-   | X |  
-___|___|___
-   |   |   
-   |   | O
-   |   |   
-Current Player is O
-Enter r c from 0-2 for row and column: 2 0
-   |   |   
-   |   | X
-___|___|___
-   |   |   
-   | X |  
-___|___|___
-   |   |   
- O |   | O
-   |   |   
-Current Player is X
-Enter r c from 0-2 for row and column: 2 1 
-   |   |   
-   |   | X
-___|___|___
-   |   |   
-   | X |  
-___|___|___
-   |   |   
- O | X | O
    |   |   
 Current Player is O
 Enter r c from 0-2 for row and column: 0 1
    |   |   
-   | O | X
+ X | O |  
+___|___|___
+   |   |   
+   |   |  
+___|___|___
+   |   |   
+   |   |  
+   |   |   
+Current Player is X
+Enter r c from 0-2 for row and column: 11  1 1
+   |   |   
+ X | O |  
 ___|___|___
    |   |   
    | X |  
 ___|___|___
    |   |   
- O | X | O
-   |   |   
-Current Player is X
-Enter r c from 0-2 for row and column: 1 2
-   |   |   
-   | O | X
-___|___|___
-   |   |   
-   | X | X
-___|___|___
-   |   |   
- O | X | O
+   |   |  
    |   |   
 Current Player is O
-Enter r c from 0-2 for row and column: 1 0
+Enter r c from 0-2 for row and column: 1 2
    |   |   
-   | O | X
+ X | O |  
 ___|___|___
    |   |   
- O | X | X
+   | X | O
 ___|___|___
    |   |   
- O | X | O
+   |   |  
    |   |   
 Current Player is X
-Enter r c from 0-2 for row and column: 0 0 
-Tie!
+Enter r c from 0-2 for row and column: 2 2
+   |   |   
+ X | O |  
+___|___|___
+   |   |   
+   | X | O
+___|___|___
+   |   |   
+   |   | X
+   |   |   
+PlayerX is the winner!

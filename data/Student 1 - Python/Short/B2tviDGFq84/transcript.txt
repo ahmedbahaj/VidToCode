@@ -1,0 +1,70 @@
+[0.16] in this video we're going to make a
+[1.84] number guessing game in python
+[4.24] our program will randomly generate a
+[6.48] number between 1 and 100 and we'll ask
+[9.52] the user to guess the number
+[11.60] if they guess too low we'll tell them to
+[13.60] guess higher if they guess too high
+[15.92] we'll tell them to guess lower and if
+[17.84] they get it right we'll let them know
+[19.60] and stop the game the first thing we'll
+[21.36] do is import the random module that's
+[23.92] going to help us to generate the random
+[25.76] number then we'll assign to the variable
+[27.76] number the random number we'll say
+[30.08] random dot rand int with the arguments 1
+[33.68] and 100. so the rand in function is
+[36.80] going to generate a random number
+[38.88] between 1 and 100 and we'll assign the
+[41.68] return value to the number variable next
+[44.40] we'll make a variable called guess and
+[46.16] we'll set it equal to zero
+[47.84] guess is going to store the guesses that
+[49.76] the user makes
+[51.12] next we'll have a while loop and the
+[52.64] while loop is going to continue so long
+[54.56] as guess
+[55.60] doesn't equal number
+[57.04] so so long as the user hasn't guessed it
+[59.04] right we're going to continue
+[61.36] next will prompt the user to enter their
+[62.96] guess so we'll say guess is equal to int
+[67.20] input
+[68.40] enter guess
+[70.08] so the user is going to be prompted with
+[71.52] the text enter guess
+[73.20] they're going to enter a guess and the
+[74.80] input function is going to return the
+[76.08] string that they've entered
+[78.16] int
+[79.04] is going to take that string and convert
+[80.80] it to an int
+[81.92] and we're going to store the result into
+[83.36] guess
+[84.32] next we'll look at the guess if the
+[86.32] guess
+[87.60] is lower than the number
+[89.68] the user needs to guess higher so we're
+[92.24] going to print
+[93.52] guess higher
+[95.28] otherwise
+[96.48] if the guess is higher than the number
+[99.84] the user needs to guess lower so we're
+[101.60] going to print guess lower
+[103.84] otherwise the only possibility is that
+[106.24] they got it correct
+[107.52] and in that case we'll print out
+[109.76] u1
+[111.12] so we can save this and try our game out
+[113.68] so we'll run a game
+[116.08] and it says enter guess i'll try 50.
+[118.56] it says guess higher i'll try 75 guess
+[121.28] lower i'll try 65 guess higher i'll try
+[124.24] 70 guess higher i'll try 73 higher 74
+[129.28] and i won
+[130.48] so this is how we can make a simple
+[132.08] number guessing game in python checkout
+[134.32] portfolio courses dot com where we'll
+[136.08] help you build a portfolio that will
+[137.44] impress employers
+[143.60] you

@@ -1,0 +1,16 @@
+run:
+Number Guessing Game
+Guess a number between 1-100
+Enter a guess: 21
+TOO LOW! Try again
+Enter a guess: 4
+TOO LOW! Try again
+Enter a guess: 45
+TOO LOW! Try again
+Enter a guess: 6
+TOO LOW! Try again
+Enter a guess: 5
+TOO LOW! Try again
+Enter a guess: 4
+TOO LOW! Try again
+Enter a guess: 

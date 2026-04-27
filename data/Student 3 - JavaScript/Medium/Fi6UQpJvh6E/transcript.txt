@@ -1,0 +1,141 @@
+[0.72] hello viewers how are you all
+[3.60] welcome back to another video guys today
+[6.40] we are going to discuss
+[8.48] file system object in javascript
+[11.84] so let me create a file guys
+[20.56] the first operation we'll see in file is
+[23.12] a read operation
+[25.28] for read we have to take a property
+[29.44] fs in javascript
+[35.68] this variable will get all the
+[37.20] properties which have
+[38.88] file system object let us see what are
+[41.84] the properties present in
+[43.12] fs if i click on fs
+[47.12] we have write file write watch
+[50.80] read file
+[54.08] and link truncate
+[59.28] these all other properties present in
+[61.36] office
+[62.48] the first let us read the file
+[66.16] so let's write read file so what are the
+[72.24] tax parameters
+[75.36] first parameter is the path the second
+[78.56] parameter
+[79.44] is options which is encoding
+[83.84] third parameter is a callback function
+[87.92] which checks error and data as a buffer
+[92.64] so let us take one one parameters so
+[95.28] first
+[95.76] here i want to read the file which i
+[99.60] created in the last video read excel.js
+[109.12] youtube will be the formatting
+[113.04] now i need a function which could
+[116.16] recognize if the file is not read it
+[119.20] should throw an
+[119.92] error or if the file is red it should
+[123.28] print
+[123.68] the data let me write the function
+[133.36] first parameter will be error second
+[136.24] parameter is data
+[139.20] so open bracket close
+[142.80] i want to print the data here
+[156.72] let me copy the file let me read the
+[158.64] command
+[167.12] now we can see on the screen that it
+[169.52] printed
+[170.80] what and all present in the read
+[174.08] dot order present in the read excel dot
+[176.56] yes
+[177.44] let me open the file this is the content
+[180.16] present
+[180.64] in the reader.excel js so
+[184.16] this file is now able to rotate dot it
+[187.36] excel.s let us move to the second
+[190.64] operation
+[191.60] second method is frequently used
+[195.28] fs dot
+[198.80] right
+[205.28] so now if the file is not there it will
+[208.96] create the file
+[210.08] or the file is there it will delete the
+[212.72] existing data
+[214.24] and will write the data which you're
+[215.84] going to
+[217.44] give in this function
+[229.68] first parameter will be
+[233.12] the path or the file name
+[236.16] second will be the data what you are
+[238.00] going to write
+[239.20] so i just want to write a simple
+[256.64] file created the third parameter is a
+[259.36] callback function as it will be the same
+[261.52] with root file
+[262.96] so let me write the call by function
+[269.04] function questionnaire area
+[274.64] open bracket plus plugin
+[302.56] i'm just writing data saved so it should
+[305.76] now
+[306.48] able to create it should not be able to
+[308.48] create write.js file
+[310.80] with the content this console.log
+[313.60] statement inside it
+[315.60] and it this should copy pop up here this
+[318.72] should come up in
+[320.16] the console let me run this
+[328.96] this was a previous hit file input
+[333.68] and this data is saved is printed from
+[336.48] write file
+[337.76] and you can see here right file is
+[340.00] created
+[340.96] let me click on write file
+[344.08] now console.log file created statement
+[347.44] is there
+[348.88] now what if i want
+[352.48] what if i don't want um i don't want to
+[355.76] just write file
+[356.80] i want to update something there is
+[359.68] another function
+[361.76] called open
+[365.20] file so it takes the same arguments
+[370.64] so let me execute it
+[389.12] now it created
+[392.80] data but it came in the other line
+[396.56] it appends the data at the end so
+[400.00] we'll just save this file
+[408.40] if you want bulk comment it is uh
+[410.96] control
+[411.60] m sorry control
+[415.92] slash it will comment and everything now
+[419.44] i just want to delete this right file so
+[422.56] we don't have something called dated
+[425.68] so we have something called unlink
+[429.28] and it takes the path and the callback
+[432.24] function
+[433.68] so let me specify the path
+[436.72] and write
+[439.84] dot js
+[443.36] it will take an argument function
+[448.84] function now
+[452.24] the error is the
+[455.44] parameter now let me
+[459.20] write up a practical bracket console.log
+[472.00] file delete
+[480.32] let me run it
+[484.72] it typed file deleted now we we are not
+[488.16] able to see
+[489.36] the right file we have now learned three
+[492.00] concepts
+[493.60] read file write file open file and
+[496.64] unlink these are the phone may four main
+[499.84] methods
+[500.96] which will be used in file system
+[502.80] objects
+[504.00] of javascript code will be in the
+[507.44] description guys if you
+[509.52] if you have doubts please mention in the
+[511.04] comments below
+[514.32] if you like the video please click on
+[515.92] like if you are a new viewer please
+[517.60] click on subscribe
+[518.96] till then take care have a great day bye

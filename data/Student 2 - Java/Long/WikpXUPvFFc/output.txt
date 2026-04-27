@@ -1,11 +1,37 @@
-enter 1 for 2 for paper and 3 for scissors
+run:
+Enter 1 for 2 for paper and 3 for scissors
 1
-Tie. no points will be awarded
-enter 1 for 2 for paper and 3 for scissors
-2
-Tie. no points will be awarded
-enter 1 for 2 for paper and 3 for scissors
-3
-Cpu chose rock and u have lost this round
+Cpu chose paper and u have lost this round
 CPU score: 1
  User score: 0
+Enter 1 for 2 for paper and 3 for scissors
+2
+Cpu chose rock and u have won this round
+CPU score: 1
+ User score: 1
+Enter 1 for 2 for paper and 3 for scissors
+2
+Tie. no points will be awarded
+Enter 1 for 2 for paper and 3 for scissors
+
+3
+Enter 1 for 2 for paper and 3 for scissors
+3
+Tie. no points will be awarded
+Enter 1 for 2 for paper and 3 for scissors
+2
+Tie. no points will be awarded
+Enter 1 for 2 for paper and 3 for scissors
+3
+Enter 1 for 2 for paper and 3 for scissors
+1
+Tie. no points will be awarded
+Enter 1 for 2 for paper and 3 for scissors
+1
+Cpu chose scissors and u have lost this round
+CPU score: 1
+ User score: 2
+congrats you have won best 2 out of 3
+CPU score: 1
+ User score: 2
+BUILD SUCCESSFUL (total time: 35 seconds)

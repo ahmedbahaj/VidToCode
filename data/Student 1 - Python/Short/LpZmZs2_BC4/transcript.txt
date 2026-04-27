@@ -1,0 +1,111 @@
+[0.00] hey what's going on everybody it's bro
+[1.92] hope you're doing well and in this video
+[3.60] we're going to be reading a
+[4.88] file in python so sit back relax
+[7.92] and enjoy the show
+[11.28] if you find this video helpful please
+[12.88] remember to like
+[14.32] comment and subscribe your support will
+[16.72] help keep this channel running
+[18.64] welcome back guys and gals in this video
+[20.96] i'm going to explain how we can read the
+[22.64] contents of a file using python
+[24.96] so we'll probably need some sort of file
+[26.96] to work with i created a plain text file
+[29.44] called
+[30.36] test.txt it's a plain text file and all
+[33.28] this says
+[33.92] is omg you can read this have a nice day
+[37.68] like comment and subscribe so what i
+[40.08] would like to do is to read
+[41.28] the contents of that file line by line
+[43.68] and printed to the console window and
+[45.44] here's how
+[46.08] and honestly we only need two lines of
+[47.68] code to do this so
+[49.60] what we'll do is type with open then
+[52.40] within the open function
+[53.92] list the name of your file or the file
+[57.28] path this file of mine is within my
+[59.60] project folder
+[60.64] so i only need to list the file name if
+[63.20] this was someplace else you'll probably
+[65.28] need
+[65.92] the file path so let's say this was on
+[68.88] my desktop
+[69.76] well i'll probably need to list the file
+[72.00] path of where that file is located
+[74.24] and i'll need to use double backslashes
+[76.80] because that's the escape sequence for a
+[79.04] backslash
+[79.84] but since this file is within my project
+[82.08] folder i only need to list the file name
+[84.64] so with open then the name of your file
+[87.60] or the file path
+[89.44] as file then what we're going to do
+[93.20] is print file
+[96.32] dot read and that is it so
+[99.36] let's test it and it works omg
+[102.88] you can read this have a nice day like
+[105.20] comment and subscribe
+[106.64] so this will actually close files
+[109.44] automatically
+[110.32] after opening them so that's kind of
+[112.08] convenient and let's just test that
+[113.92] theory
+[114.56] so i'm going to print file dot
+[117.84] closed if my file is in fact closed this
+[120.80] will print
+[121.52] true if it's still open this will print
+[123.52] false
+[124.64] so normally when you read a file it's
+[126.88] normally open and you need to close it
+[128.72] manually
+[129.44] but if you write your program this way
+[131.60] with open
+[132.64] this will close the file automatically
+[134.64] for you so
+[135.92] using with open will close any files
+[138.48] automatically for you
+[139.76] after they've been opened however this
+[142.24] does not
+[142.80] catch and handle any exceptions that
+[145.12] might occur
+[145.92] like if we cannot locate this file so
+[148.24] let's say that i mistyped the extension
+[150.80] for this file
+[151.84] let's say that i type in test.tx
+[155.28] that's kind of funny because tx is the
+[157.44] abbreviation for
+[158.48] texas it's a texas file so this will
+[161.44] cause
+[162.00] a file not found error and this will
+[164.56] interrupt
+[165.20] the flow of our program and we would
+[167.04] probably like to prevent that
+[168.48] so what we could do is write a try and
+[170.88] an accept block
+[171.92] so we will try all of this code if we
+[174.24] cannot find
+[175.12] this file we can handle this exception
+[177.84] file not
+[178.56] found error so we'll place all of this
+[180.56] code within the try block
+[182.08] then if an exception happens we will
+[184.00] catch that exception
+[185.44] except we would like to catch any file
+[188.40] not found air
+[189.44] exceptions and let's handle this by
+[192.08] printing
+[194.32] that file was not found
+[198.80] so if i were to run this again we will
+[201.52] catch and handle this exception and this
+[203.60] will not interrupt the normal flow of
+[205.60] our program
+[206.80] well everybody that's how to open and
+[208.96] read a file in python
+[210.96] if you'd like a copy of all this code i
+[212.88] will post this in the comment section
+[214.48] down below
+[215.28] but yeah that's how to open and read a
+[217.60] file using python

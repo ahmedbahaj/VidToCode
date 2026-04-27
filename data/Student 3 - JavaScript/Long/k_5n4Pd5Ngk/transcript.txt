@@ -1,0 +1,598 @@
+[0.32] in this video you will learn how to
+[2.08] transform a loop-based algorithm so that
+[4.64] it uses recursion instead of a loop
+[6.96] you will then learn how to cache the
+[8.40] results of this recursive algorithm
+[10.80] using memorization to greatly simplify
+[13.60] the time complexity of the newly made
+[15.36] recursive algorithm
+[16.88] so that you can get a good grasp of
+[18.64] these principles we will be using two
+[20.80] examples throughout the tutorials
+[22.40] runtime
+[23.60] those algorithms will be the ubiquitous
+[25.84] fibonacci
+[26.72] and factorial algorithms respectively
+[30.00] both of them are classic algorithms that
+[32.08] work well with the focus of this
+[33.44] tutorial
+[34.40] due to their list like nature it also
+[37.28] means that this tutorial will be easily
+[39.20] translatable into other languages
+[41.52] so for this tutorial i'll be using
+[43.36] javascript
+[44.64] but you shouldn't have any trouble
+[46.00] translating it into your own language of
+[47.92] choice because these algorithms are so
+[49.52] widely covered
+[50.40] but before we begin with the development
+[52.08] process it is important that we first
+[54.48] cover the basics so that everyone can be
+[56.64] on the same page
+[57.60] before the main tutorial begins now
+[60.08] there's a lot of confusion over what
+[61.76] recursion is but all it is is getting a
+[64.00] function to call itself
+[65.92] because of this it is useful for the
+[67.68] same things that loops
+[69.12] are useful for that is carrying out lots
+[72.00] repeated tasks
+[73.84] in fact there is nothing that we can do
+[75.52] with loops that we can't do with
+[76.96] recursion and vice versa
+[78.88] that being said recursion can be nicer
+[81.12] to use in certain scenarios and loops
+[83.44] because of its multiplying nature this
+[86.16] makes recursion an app choice when
+[87.92] traversing through a tree because when
+[89.84] visually graphed
+[91.04] the way that recursive algorithms
+[92.80] operate is very similar to the structure
+[94.80] of tree data structures
+[96.64] for example if we called a function
+[98.96] that's inside chord itself twice
+[100.80] recursively
+[102.16] then from the single function call two
+[104.88] more function calls of the same function
+[106.96] will be triggered
+[108.40] then from these two children function
+[110.64] calls
+[111.52] two more function calls will be called
+[113.28] from each one giving us four function
+[115.68] calls from two
+[117.20] these four function calls will then
+[118.72] multiply to call eight more function
+[120.56] calls and so on and so forth
+[122.88] the tree will continue to grow and grow
+[124.88] until what is known as a base cases met
+[127.60] this is simply an if condition inside of
+[129.92] the function
+[130.96] that prevents any more recursive
+[132.48] function calls from being invoked
+[134.72] all recursive functions need a base case
+[137.52] it is not an option
+[138.88] if it is missing then the call stack
+[140.96] which is where the language manages
+[142.64] function calls
+[143.68] will gets overrun by an unabating influx
+[146.56] of recursive functions
+[147.92] leading to a stack overflow which is bad
+[150.32] news for us because it means application
+[152.16] crash
+[152.80] so we have a function here that calls
+[154.48] itself it will not do
+[156.08] anything unless we call it so we will we
+[158.96] have just caused stack overflow for the
+[160.72] aforementioned reasons
+[162.24] this function will be called and called
+[164.00] with no end in sight until application
+[166.16] crashes
+[166.96] from not being able to handle this many
+[168.88] functions being called at the same time
+[170.96] the solution as previously stated is to
+[173.60] include a base case
+[175.20] to do this we will create a variable
+[177.04] that will be incremented on each
+[178.48] function core
+[179.44] but before the function calls itself it
+[182.08] is important in order for the base case
+[183.92] to work that the variable is incremented
+[186.00] before the function calls itself the
+[187.76] base case will be the counter
+[189.36] being greater than four therefore the
+[191.60] function will only be called a total of
+[193.60] five
+[194.00] times for the fifth time the return
+[196.00] keyword will be met and the function
+[197.52] will be exited out of before
+[199.36] it has managed to call itself again for
+[201.20] the sixth time
+[202.72] as you can see we can now run our code
+[204.80] free of any errors
+[206.48] if we wanted to return a value though
+[208.24] like a string in this case
+[210.00] then you would currently be unable to as
+[212.56] you can see we are hitting run but are
+[214.32] not seeing our value in the console like
+[216.32] you would if it was being returned
+[218.08] the reason for this is because the core
+[219.76] stack works by piling functions on top
+[221.84] of each other
+[222.96] this means that the most recent function
+[225.20] the one that actually returns a string
+[227.60] will end up as the uppermost function on
+[229.60] the core stack with the very first
+[231.28] function
+[232.08] the one that started the recursion cycle
+[234.00] at the very bottom
+[235.68] functions inside of the core stack are
+[237.52] waiting to be called
+[238.80] when they are called they will be
+[240.32] removed one at a time starting with the
+[242.56] uppermost function
+[243.92] and working downwards until every
+[245.60] function is cleared so whilst
+[247.52] uppermost function may return a value
+[249.68] its value is soon negated because
+[251.76] it is the first one to be wiped off the
+[253.60] core stack along with its value
+[255.60] before all of the other functions are
+[257.12] called because the uppermost and final
+[259.12] function is the only one that returns a
+[260.88] value
+[261.60] when we get to the bottom function there
+[263.44] is nothing to return and so ultimately
+[265.44] nothing is returned to the console
+[267.60] the solution is to make each function
+[269.84] return the recursive function
+[271.60] that it in self invokes this will give
+[274.32] the bottom most functions something to
+[276.08] return
+[276.96] that something will be the chain of
+[278.24] functions that ultimately lead to the
+[280.08] hello world string
+[281.52] meaning that if all is going well it
+[283.28] should end up as the final value
+[284.80] returned
+[285.60] as you could see we are getting back the
+[287.36] string so things are working as they
+[289.12] should
+[290.08] as for memorization that refers to the
+[292.72] practice of caching a function's return
+[294.72] value
+[295.52] when its output is determined by its
+[297.36] input parameters
+[298.80] this will mean that if our input
+[300.64] parameters are the same as the prior
+[302.32] function core
+[303.36] then our function won't actually perform
+[305.12] any new operations
+[306.72] all it would do is fetch the previously
+[308.48] calculated value and return that
+[310.24] instead as you can imagine this is a
+[312.56] huge saver
+[313.60] on time complexity it means that we
+[316.24] won't have to calculate anything that we
+[318.16] haven't previously calculated
+[320.32] as you can imagine for things like the
+[322.08] fibonacci sequence
+[323.76] this is extremely useful because the
+[325.76] sequence itself is constant
+[328.08] meaning the first 10 items will always
+[329.92] be the same therefore we will only use
+[332.40] processing power to calculate new items
+[334.72] in the sequence
+[335.84] and not waste those resources on
+[337.68] calculating the first couple of items
+[339.84] that we would otherwise be calculating
+[341.60] over and over again
+[343.68] so here we have a function coupled with
+[345.52] an object that will store the function's
+[347.20] cache data
+[348.56] the purpose of this function is to
+[350.16] merely add 10 to whatever value
+[352.00] was passed into the function and then
+[353.84] return that value
+[355.04] we have passed in 10 until gotten 20
+[357.20] return
+[358.08] this particular 10 plus 10 calculation
+[360.80] will only occur on the first time that i
+[362.72] run this function
+[364.00] the next time i run it this if condition
+[365.84] will be met and the value returned will
+[367.76] come straight from memory
+[368.96] already pre-calculated for us if i was
+[371.36] to change the value of n however
+[373.36] i'm passing new data into this function
+[376.08] then you would calculate a new value
+[378.08] because we have yet to pass five into
+[380.08] the function the problem with this
+[381.76] current example is the fact that i'm
+[383.52] storing data in global scope
+[385.28] unnecessarily
+[386.80] this is bad practice because global
+[388.56] scope should only be used when it is
+[390.56] really necessary to do so
+[392.24] which it isn't here the solution is to
+[394.72] use a javascript closure
+[396.64] closures in javascript allow us to make
+[398.56] global scope data private
+[400.72] we have obviously made some changes but
+[402.88] as you can see things are still working
+[404.64] fine like they were before
+[406.08] for starters memorization is now no
+[408.72] longer a function
+[410.32] it is a variable that is assigned to a
+[412.64] function
+[413.76] it is important that we write the
+[415.44] function as we do
+[416.80] wrapped in parentheses and with a pair
+[418.56] of parentheses at the end
+[420.24] this will call the function immediately
+[421.92] on initial document load
+[423.36] we want this behavior because that is
+[425.04] the time where all global scope
+[426.64] variables get initialized
+[428.56] if this function wasn't initialized on
+[430.48] initial document load
+[431.84] then it would cease to behave like a
+[433.28] javascript closure so
+[435.04] on initial document load this anonymous
+[437.04] function will be called
+[438.40] cache will be initialized and the return
+[440.32] keyword will be met
+[442.00] this keyword will assign this nested
+[443.92] function to the value of the
+[445.28] memorization constant
+[447.36] therefore when we call memorization here
+[450.00] we are actually calling the nested
+[451.52] function
+[452.08] not this parent function the special
+[454.40] thing about it
+[455.44] is that this nested function can have
+[457.84] access to data declared inside of this
+[459.92] parent function
+[461.04] when no other parts of the application
+[462.96] can thus a closure has been made
+[465.20] with theory out of the way it is time to
+[467.20] begin working on the algorithms
+[469.20] we will start with the fibonacci
+[470.80] sequence the first version will be made
+[473.12] using a standard loop
+[474.40] without recursion or memorization you
+[477.52] could think
+[478.00] of this as the iterative method it is
+[480.08] the most common way of creating the
+[481.60] algorithm
+[482.40] with theory out of the way it is time to
+[484.56] begin working on the algorithms
+[486.72] we will start with the fibonacci
+[488.24] sequence the first version will be made
+[490.40] using a standard loop without recursion
+[492.88] or memorization
+[494.64] you could think of this as the iterative
+[496.72] method it is the most common way of
+[498.80] creating an algorithm
+[500.24] oh by the way if you are wondering what
+[502.32] ide i am currently using
+[504.40] it is called replit it is useful because
+[506.88] it gives us a handy javascript console
+[509.28] easily accessible on the right of the
+[511.04] screen it also gives me an easy way to
+[513.20] share code with others
+[514.80] in particular the code for this project
+[517.28] which the link to it will be posted in
+[519.12] the description box below if you want to
+[520.80] play around with it for yourself
+[523.92] we will write out the start of the
+[525.28] fibonacci sequence for reference
+[527.52] remember every number is the sum of the
+[529.76] previous two numbers in the sequence
+[532.64] this end parameter will be the index of
+[534.96] the number
+[535.76] in the fibonacci sequence that we want
+[537.84] returned
+[539.20] these two are self-explanatory the
+[541.20] fibonacci sequence will always start
+[543.04] with these two values
+[545.44] we will ensure that they are returned if
+[547.36] the user has requested them
+[550.24] as for the other indexes they will be
+[552.32] dealt with iteratively
+[553.76] in this loop the parameter n has to be
+[556.00] at least two in order for this loop to
+[557.76] run
+[558.48] two translates to the third item in the
+[560.56] fibonacci sequence
+[562.00] the first item that isn't covered by
+[563.76] these two variables
+[565.12] hence why this is the first item to be
+[567.12] generated via this loop
+[568.96] the answer is generated from the sum of
+[571.36] the previous two numbers
+[573.20] and then the previous two numbers are
+[575.12] updated to move the sequence along
+[577.60] so that another number can be calculated
+[579.76] on another iterative cycle
+[582.00] okay now to give you a quick
+[583.12] demonstration just to prove that it does
+[584.88] work
+[585.52] we'll get the seventh item from the
+[587.28] fibonacci sequence
+[589.36] yep so we've got about 13 so as you
+[591.44] could see zero
+[592.48] because we start counting at zero one
+[594.48] two three
+[595.52] four five six seven this is the value
+[598.40] that we do want returns that's good
+[600.32] so now we go on to the more interesting
+[602.00] stuff because it's time to create the
+[603.44] recursive
+[604.00] algorithm we'll get rid of this because
+[605.84] we don't need it anymore and then we'll
+[607.52] say
+[608.08] function n being less than two will
+[610.48] serve as our base case
+[611.76] as well as being part of the algorithm
+[613.92] this is because the first two items in
+[616.08] the sequence
+[617.36] 0 and 1 are always the same as the index
+[620.88] values anyway
+[622.56] therefore if those indexes were
+[624.16] requested then we can simply return the
+[626.16] index as the value
+[627.52] furthermore if this condition is met
+[629.92] then their method will be ended here
+[631.60] because this return keyword we met
+[633.68] therefore we won't have a chance to
+[635.60] invoke another function
+[636.80] because the method just ends here so
+[638.56] therefore it's our base case
+[641.04] this is the completed function as you
+[643.20] can tell it is a lot simpler than the
+[644.88] iterative method
+[646.32] that being said it can be harder to wrap
+[648.24] your head around than the iterative
+[649.68] version
+[650.32] so allow me to explain essentially what
+[652.80] is happening here is a tree-like
+[654.40] structure that is being created
+[656.64] each function will call itself twice and
+[658.72] return the sum of both
+[660.00] of those function invokes this means
+[662.16] that by the time our bottom most
+[663.60] function is removed from the stack
+[665.44] the fibonacci number that we requested
+[667.60] will be returned
+[668.88] take this example where we requested the
+[671.12] index of 7 from the sequence
+[673.20] using the recursive algorithm the bottom
+[676.24] most function on the stack which is also
+[678.24] the one that starts the recursive cycle
+[680.56] will invoke two more functions these can
+[683.20] be thought of as child nodes on a tree
+[685.68] since one of them is one index less than
+[687.68] the requested index
+[689.20] and the other is two indexes less than
+[691.12] the requested index
+[692.64] they will hold the following fibonacci
+[694.48] values since we requested the fibonacci
+[696.96] number
+[697.60] at the index of seven these nodes will
+[700.08] continue sprouting off child nodes
+[702.32] until we get to these leaf nodes here
+[704.72] these leaf nodes will either hold the
+[706.48] fibonacci numbers at position one or two
+[709.20] that is because of our base case it
+[711.44] prevented any function of an index of
+[713.44] zero or one from evoking itself again
+[715.92] instead we made it return its own end
+[717.68] parameter because we know that the first
+[719.52] two items in the fibonacci sequence
+[721.84] match their indexes zero and one
+[723.84] respectively
+[724.88] these two values zero and one are
+[726.88] essential for this recursion cycle to
+[728.72] work properly
+[730.00] the final value returned will work off
+[732.00] of their values
+[733.52] each of the parent nodes will calculate
+[735.44] the return values starting from the
+[737.04] bottom up
+[738.08] so by the time you get to the uppermost
+[739.68] function the function that will return
+[741.44] the final value
+[742.56] will have a value that represents the
+[744.32] fibonacci number at the index requested
+[747.20] so just to demonstrate to you that this
+[749.04] will work we will do the same one
+[750.64] we will request seven again and
+[752.32] hopefully we should get the same value
+[753.92] at 13.
+[755.60] yes as you can see it's working well but
+[757.60] the problem with this function is it's
+[759.28] extremely bad and some time complexity
+[761.68] you see if we wanted the number held in
+[763.76] the fibonacci sequence at
+[765.44] index seven then after that we wanted
+[767.92] the number held in the sequence at
+[769.68] index eight then we would have to
+[771.28] calculate all previous seven numbers
+[773.68] just to see this new number at the index
+[776.00] of eight this is extremely wasteful not
+[778.16] to mention makes things almost
+[779.68] impossible to work out
+[781.04] when it comes to calculating numbers
+[782.80] that are in the higher end of the
+[784.08] fibonacci sequence
+[785.44] you see currently this recursive
+[787.20] algorithm has a time complexity of 2 to
+[789.84] the power of n
+[791.04] which is right up here in this red zone
+[792.96] on the bigger complexity chart
+[795.04] the reason for this is because unlike
+[797.04] loops where each operation happens
+[799.20] sequentially one after the other
+[800.88] our current recursive algorithm is
+[802.64] felting off two more function cores for
+[804.56] every function call
+[806.00] this means stacks upon stacks of
+[807.60] functions getting piled on top of each
+[809.60] other
+[810.16] all meant to be happening at the same
+[811.60] time the more numbers we are calculating
+[814.32] the heavier demand will be
+[815.92] as you can imagine memorization will do
+[818.16] wonders to the type of a cursive
+[819.92] algorithm that we're currently dealing
+[821.44] with
+[822.00] in fact it will reduce the time
+[823.52] complexity to all the way down here
+[825.92] which is called linear time so here is
+[828.00] how it works
+[829.84] like with before we will set up our
+[831.52] closure so that this cache object
+[833.84] can only be accessed by our algorithm
+[837.12] so if he gets this first else block
+[838.96] because there's no key value pair
+[840.64] on the cache object and the desired
+[842.64] index is not less than two
+[844.72] then we will calculate our desired
+[846.56] fibonacci sequence number
+[848.32] but as soon as we do its value will be
+[851.36] stored and indexed inside of this cache
+[853.60] object
+[854.48] this saves up on time complexity at a
+[856.88] slight cost
+[857.68] of some added memory complexity since we
+[860.00] have to store more data in memory now
+[862.00] because once a fibonacci sequence number
+[864.08] has been calculated
+[865.44] we will never have to calculate it again
+[868.00] even if its value is needed elsewhere
+[870.00] in this tree-like structure in fact a
+[872.08] lot of this tree structure can now be
+[873.84] crossed out as you can see
+[875.60] there are now no repeated calculations
+[877.76] in this tree
+[878.72] we only need one the rest can be crossed
+[881.12] out because we can just access the value
+[882.96] for memory with all of this finished we
+[885.44] end up with our recursive fibonacci
+[887.28] sequence algorithm
+[888.56] with a time complexity of linear time so
+[891.12] we'll run it again
+[892.32] it should still work as you can see it
+[894.88] is working
+[896.08] and we'll remove it because we're now
+[897.52] going to move on and by this point you
+[899.44] should be getting hang of recursion and
+[901.20] memorization
+[902.48] we will go through one more example so
+[904.56] that you can see these concepts being
+[906.24] used in a different scenario
+[907.84] that scenario in question will be this
+[909.60] factorial algorithm
+[911.52] again if you don't know what factorial
+[913.28] is as represented in maths by the
+[915.28] exclamation mark
+[916.48] then it is just the sum of all the
+[918.16] integers multiplied together
+[919.76] starting from our chosen number and
+[921.60] ending at one
+[923.12] we will be going through this algorithm
+[924.80] quicker than the previous one because
+[926.32] there is less to it
+[927.44] but as you can see this end parameter
+[929.92] will have to hold a value that is
+[931.44] greater than one
+[932.48] for this loop to be called if it isn't
+[934.72] then the value returned
+[935.92] will be one by default and yes
+[938.16] apparently zero factorial is one for
+[940.24] some reason
+[941.04] but we have made it like this because a
+[943.36] number multiplied by one
+[944.80] isn't going to affect its final value we
+[947.12] only want the sum of it being multiplied
+[948.96] by all numbers starting from two
+[950.88] and going up to the number itself and
+[953.04] this syntax
+[954.08] here is shorthand for
+[957.20] itself times by eye just in case you're
+[960.00] wondering
+[960.96] but it's probably better to write it how
+[962.96] it was before just because it's a lot
+[965.20] quicker that way we will be implementing
+[967.28] the memorized algorithm and the
+[968.88] recursive algorithm
+[970.08] at the same time for this one you should
+[972.00] already have a basic understanding of
+[973.60] how they work
+[974.40] but don't worry we will go over them one
+[976.72] more time
+[977.60] although i will say beforehand that
+[979.52] memorization is less beneficial for this
+[981.76] algorithm
+[982.64] in comparison to the fibonacci algorithm
+[985.60] that is because the time complexity for
+[987.36] this algorithm is already linear time
+[989.60] as we are not recursively calling more
+[991.36] than one function
+[992.64] like you were previously with the
+[993.92] fibonacci algorithm
+[996.16] the memorization works in a similar vein
+[998.40] to what we have done previously so i
+[1000.08] won't mention it this time
+[1001.76] as for recursion is concerned the base
+[1004.72] case
+[1005.28] is met when n is equal to 2. we do this
+[1008.16] because 2 factorial is simply two
+[1010.56] if we requested a larger number though
+[1012.48] then when the base case is met
+[1014.08] the function below the uppermost
+[1015.52] function will now have a number to work
+[1017.60] off of which is the number two this
+[1020.00] function will have an end parameter of
+[1021.76] three
+[1022.48] because of the way that we have designed
+[1024.08] the algorithm to subtract 1
+[1025.84] by n's value on each new function invoke
+[1028.32] therefore
+[1028.88] this function directly below will turn 6
+[1031.68] because 2 times 3 is 6
+[1033.68] and 3 factorial is also 6. if we have
+[1036.32] requested a number larger than three
+[1037.84] factorial
+[1038.88] then there will be at least one more
+[1040.40] function below the function
+[1042.24] in the stack these functions will
+[1044.08] continue working out their values
+[1046.00] until all functions are removed and a
+[1047.84] finite value is returned
+[1049.44] so again one more time we're just going
+[1051.04] to check to see if this works
+[1052.64] so we'll try out three and then we'll
+[1054.24] click run and yes as you can see it is
+[1056.88] working
+[1057.60] try out a larger number five page in 20
+[1061.20] again you can lock this up but that is
+[1062.48] correct
+[1063.12] we've now reached the end of the video i
+[1065.12] hope that you have a clear understanding
+[1066.64] of how recursion and memorization
+[1069.04] to very important topics work if you
+[1071.36] still don't understand or have any
+[1072.88] queries regarding the two algorithms
+[1074.56] that we have covered in this video
+[1076.32] then please don't hesitate to post his
+[1078.08] comments down in the comments box below
+[1080.24] it would be my pleasure to answer any
+[1081.76] questions that you might have
+[1083.52] likewise you would be doing me a huge
+[1085.12] favor if you considered liking and
+[1086.56] subscribing
+[1087.44] any help that you would be able to give
+[1088.88] me would be greatly appreciated
+[1090.72] anyway i hope that you have a great day
+[1092.40] and peace out

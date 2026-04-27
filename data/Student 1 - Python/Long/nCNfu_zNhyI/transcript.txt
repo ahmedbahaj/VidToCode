@@ -1,0 +1,519 @@
+[0.08] we will be discussing a very popular
+[2.64] must short algorithm in this video
+[4.72] as usual we'll go through some theory
+[7.04] first then we'll implement
+[8.64] more short in python and in the end we
+[10.96] will have an
+[12.08] interesting exercise for you to practice
+[14.40] on
+[15.68] let's say you have two sorted arrays
+[18.00] like this
+[18.88] and you want to merge them into one
+[22.16] single sorted array now you will be like
+[25.68] why are we talking about two sorted
+[27.60] areas the whole goal
+[29.60] of sorting algorithm is to take unsorted
+[33.20] array
+[34.24] and create a sorted array out of it
+[35.92] right well
+[37.84] hold on your thought we'll get to that
+[40.08] later
+[41.20] for now just think you have two sorted
+[43.84] array
+[44.64] you want to create one single sorted
+[46.96] array out of it
+[48.32] how can you do that just pause this
+[50.32] video and think about it
+[51.44] it's actually quite simple
+[54.48] so you start with the
+[57.60] first element in each of this array you
+[60.72] compare them
+[62.40] the smaller one is 4 so you put that
+[65.60] smaller element into your sorted array
+[68.88] then you keep the pointer at 7 as is
+[73.44] and in the second array which is on the
+[75.36] right hand side you have moved your
+[77.12] pointer to next element which is 9.
+[80.24] now you compare 9 with 17 which one is
+[83.20] smaller
+[84.08] well 9 so you put nine here
+[87.12] and after you put that into sorted array
+[89.36] you move the pointer so now you're at
+[91.20] 25.
+[92.96] now you compare 17 with 25 which one is
+[95.92] smaller
+[96.72] well 17 you put 17 here
+[99.76] and now you move the pointer on the left
+[102.56] array
+[103.20] so now you are at 21. you again compare
+[106.24] 21 and 25
+[107.68] put 21 here you keep on doing that and
+[110.88] you get
+[111.92] this nicely sorted array so what we
+[115.36] learnt
+[116.40] is if we have two sorted arrays creating
+[119.52] a single sorted array out of it
+[121.52] is very easy so now
+[125.28] let's go back to our original problem
+[127.52] which is
+[129.12] we have totally random unsorted array
+[132.64] how can you short this using the concept
+[136.16] that we just learned
+[138.08] okay let's try this out okay just for
+[141.20] an experiment we divide this into two
+[144.96] arrays so we take first four elements
+[147.28] next four elements
+[148.88] make it half and half if you have nine
+[151.52] elements you can do four and five
+[153.12] doesn't matter
+[155.36] then now you have two arrays and you try
+[158.48] to merge them
+[160.72] but well i cannot merge them easily
+[163.84] using the techniques i just learned
+[165.68] because
+[167.52] these two arrays are not sorted
+[171.44] so then what if i try to divide them
+[174.64] again
+[176.96] now can i merge this 2138 with 2917
+[182.48] i still cannot because these two are is
+[185.84] also
+[186.64] still not sorted 21 38 is sorted but 29
+[190.00] and 17 is not sorted
+[192.32] all right so then you move to the next
+[195.84] step which is
+[197.20] you still divide them you might have
+[200.48] known about divide and conquer and using
+[202.96] recursion
+[204.00] and that's exactly what we're doing here
+[207.76] now we have all the arrays with only one
+[211.04] element
+[211.52] this array has only 21 this has 38 and
+[214.16] so on
+[215.28] now can we merge them well yes now we
+[218.80] can because
+[220.56] an array with single element is already
+[222.96] sorted
+[224.40] so now we can use our technique that we
+[226.72] learned initially
+[228.80] and merge them so let's take this
+[232.40] eight arrays that we have although they
+[235.68] have single ml element they're
+[237.52] still arrays arrays with single element
+[242.00] now we go back take 21 and 38
+[245.76] and try to merge them well we can merge
+[248.56] them using the techniques that we learnt
+[250.48] initially same thing with 729 it looks
+[254.32] like this
+[254.88] 425 looks like this 932 looks like this
+[259.04] then you go to the next step so see now
+[261.28] you when you merge these two arrays 21
+[263.36] 38 and 1729
+[266.00] these two are already sorted
+[269.12] so you can merge them using the
+[272.08] technique that we learned and it looks
+[273.52] like this
+[275.04] similar thing is happening here and then
+[278.16] you sort these two
+[279.68] as well into the array
+[283.04] so now you realize that by divide and
+[285.76] conquer
+[286.72] we sorted our original array
+[289.92] easily yay i know what
+[293.60] is the wire and conquer
+[297.04] okay the time complexity of this
+[299.36] algorithm is
+[300.16] order of n log n
+[303.44] if you want to know how we arrived at
+[305.92] that complexity i would suggest you
+[308.48] read this article on khan academy um
+[311.76] our original divide operation is order
+[314.00] of one because it's a constant time
+[316.56] then the combined step is order of n
+[319.68] and then um the actual
+[323.60] merging and merging part uh is uh
+[327.60] merging and sorting them is n log n
+[330.00] total
+[330.96] so just read through it you will get an
+[332.72] idea
+[334.00] now merge sort is an important algorithm
+[336.56] because it is used by
+[338.00] python sort function so when you call
+[340.96] sort
+[342.08] built-in function in python it uses a
+[345.12] technique called tim short
+[346.56] which is a hybrid algorithm that uses
+[350.00] merge shot and insertion shot so you
+[352.96] realize that merge sort is
+[355.12] quite important it gives you a very good
+[358.32] time complexity we saw like
+[359.84] things like bubble shot takes order of n
+[362.48] square which is
+[363.68] a lot of time whereas merge short takes
+[366.88] only n log n
+[368.72] which is quite fast let's go get into
+[371.92] python coding now
+[373.76] first thing i will do is write a code to
+[376.40] merge
+[376.96] loose sorted arrays so i have written
+[380.08] this
+[380.72] empty function and i'm passing two
+[383.36] sorted arrays
+[384.32] so let's finish this function first then
+[386.88] we will write the code for merge short
+[389.60] so as we saw already that we are taking
+[393.12] two
+[393.76] sorted errors and creating a third array
+[397.12] so i'm just gonna
+[398.00] call it sorted list and i will
+[401.04] return that whenever that sorted list is
+[403.76] prepared so here we'll be writing that
+[405.52] code
+[407.36] the knee the thing you need to do is
+[411.20] first get the length of
+[414.88] both the list uh a and b
+[420.32] okay and then you will
+[423.76] iterate through both the list until you
+[426.24] reach
+[426.80] end of either of them so you will say
+[429.52] while
+[430.16] i is length
+[433.20] you know we just have two pointers i is
+[435.52] equal to
+[436.80] j is equal to zero
+[440.64] and you will say length of b
+[443.76] you're doing this because you want to
+[446.40] stop
+[447.36] whenever you reach the end of
+[450.88] either of the list
+[454.32] now you first check the
+[458.88] you compare the element from both the
+[460.72] list right so you say
+[462.40] if a of i
+[465.44] is less than or equal to b of j which is
+[468.32] in the second list
+[470.08] you have a element which is higher than
+[471.84] the first list
+[473.12] so now you will put this particular
+[476.32] element in a shorted list so you'll see
+[478.80] sorted list
+[480.56] dot append and append you put
+[484.32] a of i
+[487.44] and then you of course increment i
+[490.56] right because you are inserting element
+[494.16] to sorter list from a
+[495.76] that's why you are only incrementing i
+[497.76] you are not incrementing j
+[499.52] because your j pointer is still static
+[503.76] if you look at our presentation you see
+[506.00] if you are inserting 9 from the second
+[507.84] list
+[508.24] you're not touching your pointer from
+[510.16] the first list
+[511.68] so whichever list you insert the element
+[514.40] from you only
+[515.36] move the pointer of that so right now
+[517.92] this is i
+[519.36] this is j
+[523.60] in the else you find that the element in
+[526.72] the other list
+[527.92] is less than this first list so you will
+[531.12] now
+[531.52] put that element in your sorted list so
+[534.40] you will say
+[535.04] append b of j
+[539.12] guess what you need to do here well you
+[541.44] need to increment j
+[545.44] all right so i think the logic
+[548.64] is kind of done we iterated through both
+[551.04] the list
+[552.48] and from each of the lists we are
+[553.84] maintaining the pointers which is inj
+[557.20] and you compare the element one by one
+[559.84] and whichever element is less you put it
+[562.00] into
+[562.40] sorted list and you return that so let's
+[565.60] execute and see what happens
+[569.20] okay so looks like it worked 5 7 8
+[572.40] 9 12 45 51 oh i see 56 missing
+[578.24] any guess on why this happened
+[581.52] well i think what happened was we
+[583.60] reached the end
+[584.56] here okay so let's see this condition
+[588.48] so we reach the end and when you reach
+[590.88] the end
+[592.56] just because you have end condition this
+[595.20] for loop will
+[596.08] exit you can also have scenario like
+[599.52] this
+[602.80] and see you will now miss all those
+[605.12] elements
+[605.84] after this for loop exits you will miss
+[607.92] all these three elements
+[609.76] so we need to run one time
+[613.36] loop on both the list actually so what
+[616.64] that loop will do is
+[619.20] so you will say okay after i have exited
+[622.32] this loop which means
+[624.24] either this was true or this was true
+[628.24] if this is true then i need to iterate
+[630.72] through rest of the elements from this
+[632.24] list
+[632.64] and just directly append them
+[636.00] so i will say i is less than
+[639.60] length of a sorted list
+[644.56] dot pen uh
+[647.76] a of i and then i'm incrementing my i
+[651.92] and you want to run the same loop for
+[654.16] the another list which is
+[656.00] your b so here you will say b
+[660.24] this is b of j of course and here you
+[663.68] are incrementing
+[664.96] j i hope you're getting the point if you
+[668.80] don't just put a breakpoint in your
+[670.40] pyjama
+[671.36] and run it i'm using pycharm zen mode
+[674.48] that's why you don't see any distraction
+[676.32] here
+[679.44] all right so we have the function ready
+[682.00] which can merge
+[682.96] two sorted list now
+[686.32] we need to give our real list
+[689.60] so i'll remove this and i will
+[694.16] give an unsorted array for shorting
+[698.08] and i will probably write a function
+[699.76] called merge sort okay
+[703.84] so i need to implement that function the
+[706.16] utility function that we needed
+[708.00] to merge two shorted arrays we already
+[710.32] have that
+[711.12] so now we are writing merge short
+[713.44] function
+[715.52] and okay let's let's think about it what
+[718.64] we need to write here
+[721.52] so this will be a recursive function as
+[724.56] you already saw in the presentation
+[726.64] and for any recursive function you need
+[729.36] to
+[729.68] first take care of the exit condition
+[733.68] the exit condition was whenever we have
+[736.96] array of size 1 you want to exit correct
+[741.12] so you will say if length of
+[744.32] array is less than equal to one
+[748.40] let's say it is one or zero it's an
+[750.24] empty list
+[751.52] then you want to return that list
+[754.88] so this merge short function is
+[756.32] returning the
+[758.32] new sorted list and if that is not the
+[762.16] case
+[762.96] then you find the mid element because
+[764.48] you divide the array into two parts
+[766.88] left and right and in python this is
+[769.60] super easy
+[770.96] once you have the middle element you can
+[772.72] use the indexing
+[774.80] if you don't know about indexing in
+[776.24] python basics follow my python
+[778.00] basic tutorials you get an idea
+[781.44] and you get left and right
+[784.72] right is elements starting from mid
+[788.08] all the way till end if you don't
+[789.52] specify anything here it means it's end
+[791.60] if you say six it is gonna be go
+[794.72] going till five okay
+[799.60] now what i will do is
+[803.12] see i need to call you know we need to
+[806.40] call merge short function
+[808.16] on both the left and right array this is
+[811.20] how we call it in a recursive manner
+[814.08] and once you get call merge short on
+[817.92] left
+[819.36] you get a shorted left array so i will
+[822.40] store it in
+[823.68] left and i will say right is equal to
+[827.12] my short right and once you get
+[830.64] left and right both are sorted then of
+[833.28] course
+[833.68] you call merge to shorter list so left
+[837.12] and right and you return that
+[841.36] because mars short by default
+[844.48] it returns a sorted array so once you
+[847.44] have shorted array
+[850.00] let's say two shorted array when you
+[851.44] merge this guy is also returning it
+[854.96] hence you need to return this as well
+[858.40] and let's try it out
+[861.68] okay mid is not defined let's see okay
+[864.96] submit is nothing but the length of an
+[868.32] array
+[869.52] divided by two now if you just do one
+[872.08] divide it will go you
+[873.20] give you floating number so if you do
+[874.96] this it will give you
+[877.60] the um integer number
+[883.04] see my list is sorted now
+[886.72] you can see 3 7 10 15
+[889.92] yep so this worked although this worked
+[895.20] this required creating uh new arrays all
+[898.72] the time
+[899.36] you see you are creating new array then
+[901.84] you return it
+[903.28] so it's not optimal in terms of space
+[905.92] complexity
+[907.52] so what if you can do everything in line
+[910.56] in your original
+[911.60] array itself well then that might be an
+[914.80] efficient version of
+[918.16] the merge short so let's do
+[922.08] that so in that what we're planning to
+[925.52] do is
+[926.00] basically something like i don't have to
+[929.36] return anything see
+[930.56] if i do this
+[935.12] and if i print array it should be sorted
+[937.52] so your sorting array in line
+[940.64] so for doing that
+[943.84] uh we need to stop returning things
+[947.36] first of all
+[948.88] so here i am returning these two
+[952.32] shorted list so instead of
+[956.80] creating a new list i'll let me remove
+[959.44] that
+[960.48] what if i pass
+[962.61] [Music]
+[963.76] the original list here so see i have
+[966.72] passed
+[967.36] original list in my array so let's start
+[970.80] with
+[971.20] my short function first so here in my
+[974.40] short first of all if the size of array
+[978.08] is 1
+[978.88] i don't want to do anything it is
+[981.84] already sorted
+[982.72] so let's not do anything and then
+[987.12] here also let's remove this
+[991.92] because when you call the merge shot
+[994.80] function
+[995.84] it is shorting this left and right array
+[999.60] in line
+[1001.04] and once you have these two arrays you
+[1003.20] can just merge them
+[1006.00] so now let's come to merge to shorted
+[1008.72] list
+[1009.28] here i will pass an array
+[1012.48] because i don't have sorted list and i
+[1014.56] need some place to put my
+[1016.80] shorted elements so i will do array here
+[1021.84] and then
+[1025.60] see here i was putting appending them to
+[1029.20] the sorted list so
+[1030.80] the depending thing is gone so here
+[1034.56] um maybe i need to create
+[1037.60] a new index called k this is the index
+[1041.20] into the sorted array which is
+[1044.24] a rr here
+[1047.52] so instead of appending it to shorter
+[1049.44] list what you can do is
+[1051.28] you can say array of k
+[1054.56] is equal to a of i so i'm just replacing
+[1058.00] this line this line require me to create
+[1059.84] a new list
+[1060.48] i don't want to create new list to save
+[1062.08] my space so i'm just using the original
+[1064.84] array
+[1066.96] and here
+[1070.00] i will do the same thing where i will
+[1072.56] assign
+[1073.12] b of j to something what is that array
+[1075.60] of k
+[1077.68] okay and in both the cases you want to
+[1080.00] increment a
+[1081.20] because your your appending element to
+[1085.12] your final list
+[1086.08] all the time okay
+[1090.08] you will do similar thing here as well
+[1092.72] so here you'll do
+[1096.00] assignment from array a
+[1099.04] and then increment
+[1102.40] e same thing here
+[1109.68] and increment k
+[1114.40] and you don't return anything because
+[1116.96] the
+[1117.44] inline array itself is shorted
+[1120.56] okay so it's the same code as previous
+[1123.04] one i'm just optimizing my memory usage
+[1127.36] right click run and you see the array is
+[1130.80] shorted now usually you want to run
+[1133.04] couple of test cases
+[1134.56] to make sure it is working for all the
+[1136.72] edge cases and so on
+[1138.56] so i always have this habit of writing
+[1140.48] different test cases
+[1142.32] and i will do for array in test cases so
+[1146.00] it will
+[1146.56] take one array one by one
+[1150.48] and then it will print it
+[1155.36] wow so that worked you see
+[1159.20] check each of this list they are all
+[1161.20] sorted i tried empty list
+[1163.44] list with one element a list that is
+[1166.72] reverse sorted list that that is already
+[1169.60] shorted in a correct order
+[1171.60] and a random list and it is passing all
+[1174.32] the test cases
+[1175.60] so hooray good job our merge short
+[1178.88] program is done now let's move on to an
+[1181.28] exercise
+[1184.80] i'm gonna provide a link of this
+[1187.20] exercise
+[1188.00] in the video description below so make
+[1190.32] sure you check
+[1191.44] the video description for the link of
+[1193.44] this exercise as well as the code we
+[1195.20] covered in the video
+[1197.12] what you have to do is you have list of
+[1199.44] elements which are like json objects
+[1202.24] and these people are marathon runners by
+[1204.40] the way these people
+[1205.36] are from our discord community they are
+[1207.36] mostly admins on discord community
+[1209.92] so thanks vedandraja vignesh in my for
+[1213.04] your awesome contribution
+[1215.12] uh we want to modify more short
+[1218.48] functions so that
+[1220.08] it takes a key and
+[1223.20] based on that key it will short so for
+[1225.60] example if you say time hours
+[1227.84] then it will short by time hours so you
+[1229.92] see
+[1231.20] 3 2.5 1.5
+[1234.88] and 1. here it is in descending order so
+[1237.44] you are also specifying descending equal
+[1239.44] to true
+[1240.64] but if you say sort by name
+[1244.08] then it will short by name see c comes
+[1246.32] first in the alphabet and r and so on
+[1248.96] and if you don't specify any argument
+[1250.56] here for descending it is
+[1252.40] false by default so do this exercise it
+[1256.08] should be fun
+[1257.20] um doing exercise is the most important
+[1259.60] thing friends i keep on saying this if
+[1262.08] you just watch video
+[1263.52] it won't be useful so trust me you do
+[1265.92] the exercise
+[1267.28] and you don't click on solution directly
+[1269.68] okay you know what's gonna happen if you
+[1271.52] don't
+[1272.00] click it directly you have to put your
+[1274.96] afford
+[1276.08] you have to try it out and after that
+[1279.12] you tally your answer with my answer
+[1282.32] thank you very much for watching i hope
+[1284.32] you are enjoying this data structure and
+[1286.64] algorithm tutorial series in python i
+[1290.00] have a complete playlist
+[1291.92] for all data structures and algorithms
+[1294.96] so go check it out they all have
+[1296.88] exercises
+[1298.88] thanks once again bye

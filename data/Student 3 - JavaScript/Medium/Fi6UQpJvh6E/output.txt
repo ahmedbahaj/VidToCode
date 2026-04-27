@@ -1,3 +1,4 @@
+$ node index.js 
 undefined
 File Deleted
 Data is saved

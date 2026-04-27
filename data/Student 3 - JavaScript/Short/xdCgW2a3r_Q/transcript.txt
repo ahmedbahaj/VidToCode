@@ -1,0 +1,140 @@
+[1.36] in this video let's take a look at the
+[3.36] solution for bubble sort
+[6.96] back here in replit let's begin by
+[9.60] defining the function signature
+[14.40] function bubble sort
+[19.44] and this will have one parameter
+[22.24] arr which represents the array to sort
+[26.96] for example
+[28.56] if we have an array of five numbers and
+[32.08] we pass that array into the bubble sort
+[34.32] function and then log that array to the
+[36.80] console
+[38.72] we should see the elements sorted in
+[40.64] ascending order
+[43.12] now what do we know about bubble sort
+[46.16] we know that we start at the first
+[48.24] element in the array and compare
+[50.72] adjacent elements till we reach the last
+[53.28] element
+[55.04] that sounds like a loop
+[57.20] let's begin with that
+[60.72] for let i is equal to zero
+[63.92] i less than array dot length minus one
+[70.16] i plus plus and curly braces
+[74.56] within the loop body we compare the
+[76.88] element with the adjacent element and
+[79.28] swap them if they're out of order
+[82.40] so if array of i
+[85.60] is greater than array of i plus 1
+[90.48] swap them using a temporary variable
+[94.40] so let temp
+[96.08] is equal to array of i
+[99.12] array of i
+[100.96] is equal to array of i plus one
+[105.20] array of i plus one
+[107.68] is equal to tem
+[110.48] these three lines swap two values and
+[113.28] it's pretty helpful if you can remember
+[115.20] it
+[116.80] one thing you might have noticed is we
+[118.72] stopped at array dot length minus one
+[122.08] since we compare i with i plus one
+[125.76] in our slide
+[128.24] you can see 4 is compared with 20 and
+[132.00] that is effectively our last element
+[135.12] there is no need to compare 20 with an
+[137.28] element outside the array
+[140.80] all right with this for loop we are now
+[142.96] making one pass of the elements in the
+[145.60] array
+[147.04] next we implement the logic to check if
+[150.08] we should repeat this loop
+[152.96] and what is the check
+[154.88] well if elements have been swapped
+[157.28] repeat the comparison
+[160.08] to keep track of that let's create a
+[162.08] variable
+[165.04] the variable name is swapped
+[168.64] now we are going to wrap the for loop
+[170.72] with a while loop
+[172.48] to be more precise a do while loop
+[182.72] to determine if an array is sorted or
+[185.52] not we have to go through the elements
+[187.76] at least once
+[189.52] and that is a perfect use case for a
+[191.84] do-while loop
+[193.52] so wrap with do
+[195.60] and
+[196.84] while now then what is the condition to
+[200.00] repeat this comparison
+[202.96] if the elements are swapped
+[207.12] so while swapped is true
+[209.68] keep running the for loop
+[212.40] but how are we changing this swapped
+[214.72] value
+[216.56] well at the beginning of do while
+[219.52] set swapped
+[221.20] is equal to false
+[223.76] and then within the for loop if you are
+[226.40] swapping the elements
+[228.40] set swapped is equal to true
+[233.76] and with that we have implemented bubble
+[236.16] sort
+[237.60] let me summarize the code
+[239.76] we begin by going through the array at
+[242.56] least once
+[244.40] we check if any adjacent elements are
+[246.80] out of order
+[248.96] if they're not we exit the do while loop
+[251.84] since the array is already sorted
+[255.36] if we did swap elements we go through
+[258.00] the array again to make sure there is no
+[260.64] more swapping required
+[263.60] if we encounter a swap repeat the
+[266.08] process
+[267.44] if you don't encounter a swap the array
+[270.00] has been sorted
+[272.40] i would recommend you trace this code
+[276.24] with the slide we have here and that
+[278.80] will give you a much better
+[280.16] understanding
+[283.04] all right let's verify by running the
+[284.80] code
+[286.96] we see the sorted array
+[289.36] our code works as expected
+[293.12] what i would like you to do is take a
+[294.96] pen and paper
+[296.40] and trace the function for a different
+[298.72] array
+[299.76] perhaps once for a sorted array and once
+[303.12] for a reverse sorted array where the
+[305.44] elements are in descending order
+[308.08] that will really help you cement bubble
+[310.24] sort algorithm in your mind
+[314.16] all right next it's time to determine
+[316.24] the big o of our bubble sort function
+[320.08] pause for a minute and determine the big
+[322.24] o
+[324.56] here is the cheat sheet which can be
+[326.48] used as a guide
+[328.88] pause now or let's estimate the big o
+[331.36] together
+[334.48] our function contains two
+[336.84] loops a for loop that is nested inside
+[341.84] a do-while loop
+[344.24] from our cheat sheet it is pretty
+[346.40] evident that the big o is quadratic time
+[349.52] complexity
+[354.72] big o is equal to o of n squared
+[360.56] as the number of elements in the array
+[362.24] increases
+[364.24] the number of comparison increases by
+[366.80] square of the number
+[369.92] quadratic time complexity isn't great
+[372.48] for sorting
+[374.48] but for now i hope you were able to
+[376.48] understand the bubble sort algorithm
+[379.60] thank you for watching make sure to
+[381.44] subscribe to the channel and i'll see
+[383.20] you in the next video

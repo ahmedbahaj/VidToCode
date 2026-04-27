@@ -1,12 +1,14 @@
 Enter Guess (1-100): 50
 Guess higher!
-Enter Guess (1-100): 80
-Guess higher!
-Enter Guess (1-100): 90
-Guess lower!
-Enter Guess (1-100): 85
+Enter Guess (1-100): 75
 Guess higher!
 Enter Guess (1-100): 87
 Guess higher!
+Enter Guess (1-100): 94
+Guess lower!
+Enter Guess (1-100): 91
+Guess lower!
+Enter Guess (1-100): 89
+Guess lower!
 Enter Guess (1-100): 88
 You won!

@@ -1,0 +1,362 @@
+[0.24] hey guys my name is kaushik and welcome
+[1.68] back to let code in this video we're
+[3.36] going to learn the
+[5.12] very easiest
+[6.96] searching technique called binary search
+[10.40] it's a technique which works on the
+[11.84] divide and conquer approach it is used
+[14.40] to search for any element in a sorted
+[16.80] array the time complexity is o of login
+[21.20] if you do not know about the time
+[22.48] complexity or the space complexity
+[24.88] probably
+[25.92] you can skip that part i will cover that
+[27.84] in upcoming videos
+[29.76] so let us understand with the very basic
+[31.92] concept
+[33.12] so divide and conquer in the sense like
+[34.72] first we have to find the mid and once
+[36.56] we find the mid we have to traverse
+[38.56] through the left hand side or the right
+[40.16] hand side of the array
+[41.84] for example let's say that
+[43.68] x equal to
+[45.60] uh
+[46.40] 89 okay so we are going to find the uh
+[48.72] 89 as our value the index we are going
+[51.36] to get the index of this 89
+[54.08] now 89 is within the portion of
+[57.52] index of phi right so first of all we
+[59.84] have to find the mid uh so the formula
+[62.80] is very simple we have to say like low
+[65.36] plus high
+[66.88] and
+[67.68] by two okay so this is the formula so
+[70.32] what is my low low is basically the zero
+[72.80] and high is my eight correct so zero
+[75.68] plus eight which is eight and we have to
+[77.84] divide by two so two fours are eight
+[80.64] and
+[81.52] four is my mid note okay so the mid will
+[84.24] be four now if you see x is basically
+[88.24] like 89 correct and the mid is 69
+[92.88] so of course 69 is lesser than 89 so do
+[96.48] we have to traverse to the left or the
+[98.24] right of course we have to go to the
+[99.92] right right
+[101.36] so if we have to traverse through the
+[102.80] right hand side then what we have to is
+[104.56] we have to make a change on the low and
+[106.88] high
+[107.68] now your low will become the previous
+[110.32] mid plus one that is
+[112.16] four plus one 5 and high is your 8 the
+[115.36] already like we have this value right so
+[117.68] 5 plus 8 by 2 that will become our
+[122.32] mid now okay so what is 5 plus 8 13 and
+[126.00] by 2 right those so 2 6 are 12 and we
+[129.36] have a remainder of 1 okay so the new
+[131.92] mid is now 6.
+[134.64] so in the 6 what we have in the 6 we
+[136.40] have like 100 now x is what 89 89 is
+[140.00] lesser than 100 so if it's lesser than
+[142.08] we have to traverse through the left
+[143.44] hand side so if it's left hand side what
+[145.36] we have to do we have to again find the
+[147.76] mid
+[148.72] and now here what will happen in the
+[150.56] sense like
+[153.12] so
+[155.04] low plus high by 2 is the formula
+[157.36] correct so what is slow low here is
+[159.76] basically our phi
+[161.92] and since we are traversing
+[164.00] to the left hand side in this case we
+[165.68] are traveling traveling uh traversing
+[167.68] through the right hand side so we have
+[168.96] said like mid plus 1 now we have to go
+[172.16] like
+[173.68] mid minus 1 okay so that is 6 minus 1
+[176.88] which will be eventually 5 right so 5
+[179.60] plus 5 by 2 okay which is like
+[183.12] 10 by 2 and here it's like 5 okay so
+[189.20] we got this mid as now 5 and x is 89 and
+[193.44] we have find the value now of course we
+[195.68] are traversing the left hand side and
+[197.04] the right right hand side and we are
+[198.80] updating the mid and we are getting the
+[200.40] value but of course we have to stop it
+[202.08] right so if the array of
+[205.68] mid
+[206.80] equals to
+[208.24] x then we'll just stop the execution
+[211.12] okay so i hope you are able to
+[213.60] understand the concept let me give you a
+[215.12] quick recap one more time okay so we'll
+[218.08] take the x and then we'll find the mid
+[220.96] so if it's lesser than
+[223.28] if x is lesser than mid we'll go to the
+[225.84] left hand side where we have to say like
+[229.20] uh your low will be this value and here
+[231.68] your high will be like
+[233.36] mid minus 1
+[235.60] and if it's going to be right hand side
+[237.28] then we have to select mid plus 1 and
+[239.36] you have to take the high value okay now
+[241.60] let us understand the same in the code
+[245.20] so i'm going to take the same array now
+[246.96] let us write a function called binary
+[250.48] search
+[252.80] and as an argument we have to pass the
+[254.80] array and then of course we need the low
+[257.12] the high and the x value with the help
+[259.84] of low and high we can find the mid
+[261.60] right so to find the mid it's going to
+[263.52] be very simple formula like we can say
+[265.92] like
+[266.80] low plus high
+[269.76] by 2 okay but of course we know that in
+[272.16] javascript this is going to return us in
+[273.92] the decimal format we want that in a
+[275.84] whole number so we'll say like math dot
+[278.08] floor and then we'll use the same
+[279.68] formula okay so we are able to find the
+[281.60] mid
+[282.40] now we have to write the condition so
+[284.72] whenever we are going to use the
+[285.92] recursion of course we have to know from
+[288.96] where we have to get out of it so in our
+[291.36] case in this example like when the array
+[293.36] of mid and the x is going to be same we
+[296.24] are going to get out right so here i can
+[298.32] say like
+[299.36] if
+[300.56] array of mid
+[303.60] equals to x
+[305.68] then we can simply say like return
+[308.48] the index that is nothing but the mid
+[311.04] okay so for example let's say that we
+[313.20] are going to find this 69 which is my
+[315.44] middle of the array so if array of mid
+[317.76] that is like 0 1 2 3 and 4 array of 4
+[322.64] that is 69 and we are going to find the
+[324.72] x that is also 69 so we'll just return
+[327.04] okay
+[327.92] but if not let's
+[330.00] see how to traverse the left hand side
+[331.52] or the right hand side okay
+[333.36] okay now let us understand like whether
+[334.96] we have to go to the left hand side or
+[336.24] the right hand side okay so for that i'm
+[338.32] going to write another if condition and
+[340.16] here i'm going to say like if x is
+[342.00] lesser than array of mid
+[344.40] then what we will do then we'll just
+[345.92] simply call the binary search the
+[348.24] recursive function again and here we
+[350.72] have to pass our source array and then
+[353.20] of course the low low is basically it's
+[354.96] going to be the same the zeroth position
+[357.76] but what will happen to your mid mid
+[359.76] should be like your not the high value
+[362.00] it should be like mid minus one okay and
+[364.80] of course the x value that we are going
+[366.32] to find
+[367.36] find okay and in the else part we are
+[370.08] going to say like return
+[372.48] the same concept like binary search we
+[374.24] are calling the recursive function again
+[376.00] with the same array and here it should
+[378.40] be like mid plus one and then it's going
+[380.88] to be my high
+[383.12] and then the x to find okay
+[385.68] this is fine we are pretty much done
+[387.68] with this algorithm okay let me explain
+[389.76] you one more time okay so first of all
+[391.52] we will try to find the mid if the array
+[393.68] of mid equals to the value that we are
+[395.76] going to find we'll just simply return
+[398.00] or else if the x okay let's let's
+[400.64] consider that we are going to find the
+[402.80] uh let's write that okay so const
+[408.40] i'm going to call the function and this
+[410.56] is my original array and the low is fast
+[413.44] it will be like zero and the high is
+[415.76] basically the length of the array minus
+[418.64] one and x we are going to find let's say
+[420.96] that we are going to find the 45 okay
+[423.36] now let's log this
+[425.20] so here i can select found
+[427.84] and some string concatenation like we
+[430.24] can say like
+[431.92] um
+[434.24] x is
+[435.68] in the
+[436.88] index of
+[439.52] this value okay now let's go and run
+[441.84] this
+[442.72] so here i'm going to say like node then
+[444.56] followed by binary search dot js okay so
+[446.96] here you can see like we got the portion
+[448.56] is
+[449.44] 3 in 3 we have this 45 okay
+[452.00] so here we are checking for the mid this
+[454.48] part is clear now this part let's focus
+[456.56] okay so here x is what x is 45 and what
+[459.76] is the mid mid is basically low plus
+[462.00] high by 2 that will be like around
+[465.68] yeah initially it will be like 69 that
+[467.76] is the
+[468.72] fourth position okay so in that time
+[471.04] what we'll do we'll just take the low
+[472.88] since we are traversing of course like x
+[475.36] this is lesser than this one so of
+[477.20] course we have to traverse through the
+[478.72] left hand side so i'll call the same
+[480.56] like low will be your zero and mid minus
+[482.96] one is what the 69 minus
+[485.60] this one that is
+[487.44] fourth ah third one right so third one
+[489.52] it will go to this one okay
+[491.36] just to make it more easier to you i'm
+[493.76] going to run this in the visualizer okay
+[496.64] i'll leave the link in the description
+[498.00] you can check it out okay so here
+[500.80] if i click on this next you can see like
+[502.32] this is our initial array like 0 to 8
+[504.64] and the value we can see okay so first
+[506.96] of all it is going to call this binary
+[508.72] search uh here you can see the red color
+[511.04] arrow okay so first of all it will try
+[512.96] to find the mid okay what is mid mid is
+[514.88] basically my 4 which is like 16 9
+[518.08] and then we have this low which is 0 and
+[521.44] high is 85 okay
+[523.52] now what will happen it will check like
+[525.12] array of mid array of mid is what 69 and
+[527.52] the value we are going to find is 45 so
+[529.52] of course this if condition won't be
+[531.44] satisfied so it will go to this
+[533.28] particular if condition right so if i
+[535.04] click on next you can see like
+[537.28] so here you can select this in the if
+[538.72] condition now the middle is 4 and the x
+[540.80] is 45 low and high we already know okay
+[543.28] so is the condition satisfied yes the
+[545.44] condition is satisfied because x is 45
+[547.60] and the mid value array of made okay
+[550.72] don't go with the position you have to
+[552.16] check with the value so 45 is lesser
+[554.56] than 69 so it will come to this binary
+[556.56] search now okay so recursive again we
+[558.56] are going getting into the same function
+[560.96] here again we will find the mid so mid
+[562.80] is what mid is one now okay one is
+[565.68] basically what 13 and the value we are
+[567.60] going to find is the 45 so it will
+[569.60] traverse to the right hand side so in
+[571.76] this case what will happen it will not
+[573.92] satisfied within the safe condition so
+[575.84] it will go to the else part right so it
+[577.60] will go to the else part
+[579.20] now if you see the mid is basically like
+[583.04] 2
+[584.08] and the low is become 2 and the high is
+[586.72] 3 okay again the same the condition
+[589.44] won't be satisfied so it will go to the
+[591.12] next one
+[592.48] and x x is what x is basically our
+[596.08] 45 and array of mid right array of 2 is
+[599.44] 23 okay is this matching no so it will
+[602.08] again go to the else part so here we
+[604.56] have the binary search it will go inside
+[606.56] that again it will try to find the low
+[608.40] and
+[609.52] mid high right so what is low low is now
+[612.48] three and high is also three and mid is
+[615.12] also three okay in this scenario like
+[618.08] array of mid and x both are same so it
+[620.96] will just return the value okay in this
+[623.28] way we will come out of the
+[625.76] um
+[627.60] recursion okay so that's it and here you
+[629.84] can see in the console log that
+[632.88] where is the console log
+[636.32] yeah so the x is in in the index of
+[638.64] three okay so that's it pretty much easy
+[640.72] i hope you are able to understand the
+[642.00] same code it's very easy actually if you
+[644.64] understood this concept it's very easy
+[646.56] so first of all we'll find the mid value
+[649.04] and then we'll check if the
+[651.44] x is lesser than mid if it's lesser than
+[654.48] mid we have to update the low and high
+[656.88] so low will be your first element and
+[659.12] your high will be
+[660.88] mid minus one okay and if it's greater
+[663.68] than same concept your low will become
+[665.84] like mid plus one and your high will be
+[668.32] the last index okay
+[670.64] binary search always works if the given
+[673.68] array is sorted or else it don't work
+[676.32] and of course
+[677.52] what will happen if i give something
+[679.04] wrong for example let's say that we have
+[680.56] given 44 which is not
+[683.60] in the array right so if i try to run
+[685.68] this it will throw me error okay so here
+[687.84] you can see like
+[688.96] maximum call stack size exit because the
+[691.52] recursion is keeps on running we are not
+[693.68] able to find the uh value right so it
+[696.64] will just
+[697.68] uh call the stack size exit and it will
+[700.24] throw an error right so to fix this what
+[702.72] we can do is we can check like if
+[705.36] low is lesser than high
+[708.88] then we can say like return
+[710.72] and we can simply say like uh element
+[713.60] not font something like that any message
+[715.60] is fine okay in this case what will
+[718.00] happen in the sense let me just run and
+[720.72] show you
+[721.68] you can see like we got the message like
+[723.36] element not font okay
+[725.44] so
+[726.16] what is this basically low and height in
+[727.76] the sense like let me console log that
+[729.76] for you to understand low comma high
+[733.28] okay now let's go and run one more time
+[736.08] okay so here you can select basically
+[738.48] the low is my zero and eight is my
+[740.96] height okay so
+[742.56] the value is not there so that's why
+[744.56] like
+[745.28] uh it's saying element not found
+[747.60] let's say that we are going to find the
+[749.28] 10 which is in the array and that will
+[751.52] be in the position of
+[757.52] uh sorry this should be like low is
+[759.12] greater than high okay my bad let me run
+[761.68] this one more time yeah so here you can
+[763.68] see like it's in the position of zero
+[765.92] and here we are going to make this like
+[768.08] 44 which is not in the array so now we
+[771.12] can see like it will try to find like
+[772.88] multiple like zero eight low this is my
+[775.20] low this is my high this my low this is
+[776.88] my height right and then in the final
+[779.68] like when there is like three and three
+[781.92] that is like
+[783.12] it should be like
+[784.64] this scenario right so if the value is
+[786.64] same then we'll get that one but in our
+[789.28] case
+[790.48] the high is becoming the next one that
+[792.96] is lower so we are saying like element
+[795.52] not found okay so that's it pretty much
+[798.56] very simple i think you can just execute
+[800.48] and check
+[801.60] yourself if you have any queries feel
+[803.20] free to ask me in the comments
+[804.88] bye see you

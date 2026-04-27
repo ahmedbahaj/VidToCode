@@ -1,0 +1,258 @@
+[0.24] hey how's it going everybody in this
+[2.20] video we'll be going over how to handle
+[4.56] errors and exceptions in Python by
+[7.12] learning how these Tri accept blocks
+[9.28] work now these Tri accept blocks can be
+[11.52] confusing to people who aren't familiar
+[13.08] with them because they can actually have
+[14.80] a lot of different sections like we have
+[16.44] this try except else and finally so
+[20.04] let's take a look at exactly what's
+[21.60] going on here and how we can use these
+[24.16] now a lot of the time we're just going
+[25.68] to use these first two try and accept so
+[28.56] for now I'm going to go ahead and
+[30.04] comment out this else and finally so
+[33.08] first of all why would we even need a
+[34.76] try and accept Block in the first place
+[37.24] um well let's run some code that throws
+[39.40] an error and it might give us a uh
+[41.76] better idea of why we need this so I'm
+[43.80] going to try to open up a file here if
+[45.68] we look in the current folder that I'm
+[47.48] in we have this testore file.txt let's
+[51.36] try to open that up and let's
+[53.72] accidentally leave off the underscore so
+[55.96] if I do test file.txt without the
+[58.76] underscore now now if I run this you can
+[61.64] see that we get this long traceback eror
+[64.60] here now this is useful for us as
+[67.32] developers because it gives us a lot of
+[68.96] useful information we have this line
+[70.68] number here and file not found error and
+[74.04] exactly what happened but uh if we get
+[76.76] an error like this we wouldn't want
+[78.36] something like this to be displayed to
+[80.56] the people who are using our software so
+[83.16] if we can anticipate uh sections of our
+[85.68] code that uh might throw an error or an
+[88.12] exception then we can use use these try
+[90.36] and accept blocks to handle them in the
+[92.12] way that we want so what I'm going to do
+[94.00] here is I'm going to move the code that
+[95.52] threw the air into this uh triy section
+[99.84] here and within this accept block I'm
+[103.36] just going to print an error and an
+[107.56] exclamation point actually let me make
+[109.68] this a little bit more detailed I'm
+[110.92] going to say uh sorry this file does not
+[116.44] exist so now if I run this code uh you
+[119.48] can see that we receive our custom error
+[121.80] instead of the uh that longer more
+[125.04] verbose error that python gave us before
+[127.92] so what exactly is going on here so
+[129.48] what's going on is that within our Tri
+[132.08] block we're going to try to run some
+[135.04] code and this throws an exception right
+[138.28] here so then if it throws an exception
+[140.92] then we go to our accept and then it's
+[143.44] going to print out this line here now
+[146.28] this exception here is kind of vague um
+[149.44] now if if you remember when we ran this
+[151.36] code outside of the tri accept block we
+[153.72] got a file not found error and we
+[156.64] actually want to be as specific as
+[158.24] possible when we catch catch our
+[159.80] exceptions because the goal of the tri
+[162.32] accepts isn't to just get around all of
+[165.12] the exceptions and errors that we could
+[167.36] could run into uh it's meant to catch
+[169.72] the errors that we expect and handle
+[171.48] them properly so this General exception
+[173.84] here it's not only going to uh catch
+[176.72] file not found errors it's also going to
+[178.84] catch a lot of other different problems
+[180.76] that we could run into um so for example
+[183.20] here if I was to make this the correct
+[186.08] file name and then uh a line underneath
+[189.80] here let's just make a bad assignment so
+[192.44] I'll say VAR equals bad VAR and if I run
+[196.56] this you can see that we get the exact
+[198.76] same thing it hits this exception and
+[200.76] then it says sorry this file does not
+[203.00] exist let me fix this little typo here
+[206.28] so what happened here is within our Tri
+[208.16] block uh this code actually ran
+[210.88] successfully and this is what threw the
+[213.08] exception but that's not clear right now
+[214.84] because this is too General so what I'm
+[216.68] going to do is I'm going to change this
+[219.04] to a uh catch a file file not found
+[223.88] error so now if I save and run this now
+[227.24] you can see that we get the regular
+[229.28] python Trace back which is a good thing
+[232.04] so what happened here is it came in and
+[233.60] it opened up this file and that was the
+[235.40] error that we were trying to catch and
+[237.40] then this was an unexpected exception
+[239.52] here here and uh you can see here that
+[242.72] it is a name error and we're only
+[245.52] catching file not found errors so it
+[248.20] didn't get caught and it didn't execute
+[250.44] this um code here and instead it just
+[253.04] printed out the default python traceback
+[256.16] now if we do want to catch more General
+[257.64] exceptions then we can actually add
+[259.80] another except um below this and so if I
+[263.32] say um accept an exception and then
+[266.80] within here I'm just going to print uh
+[270.16] let's see I'll just print sorry
+[271.92] something went
+[275.08] wrong now if you do handle multiple
+[277.56] exceptions like this uh be sure that you
+[279.84] are putting the more specific exceptions
+[282.60] at the top and the more general ones uh
+[285.28] the further that you go down because if
+[287.32] I was to put this General exception here
+[289.56] at the top then it's always going to hit
+[291.80] that one first and it'll never get to
+[293.56] the file not found error now currently
+[295.80] we're printing out some custom messages
+[297.80] here but if I wanted uh to just print
+[300.28] out the exception that it threw then I
+[302.80] can just do as and you can name this
+[304.80] whatever I'm just going to say as e then
+[306.80] I can print out e and I can also do this
+[308.80] for the file not found error too so I'll
+[310.60] do as e and instead of this custom
+[314.04] message I will print out e and if I run
+[316.80] that you can see that it comes down to
+[320.00] this exception here and instead of
+[322.40] printing out a custom message it prints
+[324.24] out the exception that we hit which is
+[326.72] the bad far is not defined so if I just
+[330.48] get rid of this line of code and then
+[333.60] run that then it runs successfully if I
+[336.04] give this a bad file name and run that
+[338.28] you can see that it says error number
+[339.72] two no such file a directory uh and then
+[343.00] the file name okay so that's a quick
+[345.04] look at the try accept blocks now what's
+[347.20] the deal with the else and finally
+[349.44] blocks down here um so first let's start
+[351.68] out with the else and we'll uncomment
+[353.92] this now what the else does is it runs
+[356.56] code uh that needs to be executed if the
+[359.28] tri dry Clause doesn't raise an
+[361.76] exception so so for example here let's
+[364.68] say that this didn't run an exception
+[367.08] here so I'm going to make this the
+[368.64] correct file name and now I'm just going
+[371.36] to print out the contents here and then
+[375.16] I'm also going to close the file so I'll
+[377.92] do an f. close so if I run this our try
+[382.28] isn't going to throw an exception
+[384.24] because we have the correct file name
+[386.00] here and then since it doesn't throw an
+[388.20] exception it's going to execute the code
+[390.44] that's within the else Clause so it
+[392.40] prints out the contents of the file and
+[394.12] then it closes the file if I open up
+[396.12] this file here you can see that it just
+[397.64] says test file contents and that's
+[399.72] exactly what got printed out down here
+[401.92] now you might wonder why we just didn't
+[403.64] put this in our Tri block so we could
+[405.56] move this up here and just execute this
+[408.36] underneath and if it throws an exception
+[411.12] then uh hopefully it's one that will
+[413.24] catch anyway now you could do that but
+[415.84] like I was saying earlier that we want
+[417.64] to be specific about what it is that
+[419.84] we're actually trying to catch here so
+[422.16] if I move this code up here then um then
+[425.96] it may throw an exception and we may
+[427.88] catch that exception but it may be
+[429.76] something that we weren't trying to
+[431.40] catch and it may just be an accident so
+[433.24] it's better to just go ahead and put
+[434.88] that in the else clause or to uh just
+[438.04] put it after the uh Tri block Al
+[440.80] together okay so now we come to our
+[443.56] finely claw um so like I was saying the
+[446.60] else Clause only runs if we don't throw
+[449.64] an exception but the finally runs no
+[453.00] matter what happens whether the code is
+[455.24] successful or whether we throw an
+[456.80] exception so this is useful for making
+[459.20] sure that you release certain resources
+[461.56] regardless of what happened in the tri
+[463.60] accept uh so for example say you are
+[465.84] working with a database or something
+[468.24] like that uh then this would be an area
+[471.00] where you could close down the database
+[473.24] at this step so I'm just going to put in
+[475.52] a print statement here and I'm just
+[477.20] going to say that I am
+[480.40] executing the finally so you can see if
+[483.56] I run this then it runs our else clause
+[487.28] and then it also executes our finally
+[489.72] and now if uh within our try if I make
+[492.68] something that's going to throw an
+[494.08] exception and then I run this you can
+[496.52] see that it throws our exception but it
+[499.92] also still executes our finally so again
+[503.08] that's a way that you can um make sure
+[505.40] that you properly close down certain
+[507.56] things so like you know uh closing down
+[509.88] a database or something like that
+[511.36] something that needs to be done
+[512.96] regardless if the code is successful or
+[515.32] not okay so we're just about done but
+[517.64] the last thing that I wanted uh you to
+[519.48] know about exceptions is that you can
+[521.48] actually raise exceptions on your own if
+[523.84] you need to do that so it doesn't have
+[525.68] to be something that python would have
+[528.04] caught on its own um so for example here
+[531.56] uh I have this corrupt file.txt so if I
+[535.44] open up this
+[537.36] corruptor file.txt
+[539.88] now there's nothing actually wrong with
+[541.44] this file but I'm just kind of using it
+[542.80] for this example um so I want to raise
+[546.04] my own exception here so I'm going to
+[547.96] say if f. name is equal to and I'm going
+[552.48] to say corrupt file.txt so I'll copy
+[555.92] that and paste it in there now uh now
+[558.56] I'm going to raise an exception manually
+[561.40] so to do that it's easy as saying raise
+[564.08] and then the exception that you want to
+[565.36] raise so I'll just raise this General
+[567.48] exception here so if I save that and if
+[570.48] I run that so I tried to print this
+[572.52] exception but it just doesn't have any
+[573.92] details here so I'll just put in an
+[576.56] error with an exclamation point so if I
+[578.88] run that again you can see that this
+[580.76] line did raise this exception so then it
+[583.64] went down to where uh this except line
+[586.00] where we were handling that exception
+[587.52] and it printed out the error so this
+[589.52] allows us to manually raise exceptions
+[591.84] so if I was to comment out that line and
+[594.92] run the code now you can see that it did
+[597.64] uh the correct thing that it would have
+[599.40] done normally so it opened up the file
+[601.60] and it came down here and printed out
+[603.16] the contents and closed the file the
+[604.80] contents of the file it just says corrup
+[606.44] file and then it ran our finally Clause
+[610.24] so that about does it for this video uh
+[612.20] hopefully it gave you a large overview
+[614.16] of exception handling and gave you some
+[616.72] ideas of how you can use this in your
+[618.60] projects if you do have any questions
+[620.72] just ask in the comment section below uh
+[623.08] be sure to subscribe for future videos
+[625.12] and thank you all for watching

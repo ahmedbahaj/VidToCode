@@ -1,0 +1,213 @@
+[0.24] [Music]
+[3.60] hi there and welcome back to 355 code
+[5.68] today we will be doing another
+[8.16] javascript beginner tutorial
+[10.64] and today we're going to be building a
+[12.80] dice roll game using pure javascript
+[16.40] we're going to be using prompt and alert
+[18.24] so if you're familiar with those great
+[20.08] if not make sure to check out our other
+[22.08] videos and of course subscribe to our
+[24.80] channel so that you see more videos like
+[26.80] this one so let's dive right in first of
+[29.52] all what we're going to want to do is
+[31.20] get a user input to start our game
+[35.52] so to do that we're going to use the
+[37.28] prompt and we're just going to create a
+[39.36] very
+[40.16] simple prompt
+[42.88] asking
+[45.28] start
+[46.80] okay question mark that'll be our
+[48.56] starting uh question and
+[51.92] depending on the answer that we get here
+[53.84] we're gonna start our game so let's say
+[56.48] if
+[59.28] this prompt uh the answer to this prompt
+[62.48] will be equal to roll
+[64.96] okay that means our user typed in roll
+[67.20] then we are gonna roll the dice okay
+[70.24] and basically everything that's going to
+[71.60] go into here is what's going to happen
+[73.84] after uh we roll the dice so
+[77.36] under here what we're going to do is
+[78.96] we're going to create the function that
+[80.64] actually rolls the dice so let's call
+[82.56] this function
+[84.84] uh roll the dice
+[87.52] okay i'm choosing very simple names here
+[90.00] and here is basically um
+[91.96] [Music]
+[93.28] what we're gonna uh
+[96.00] do when we uh get the prompt roll
+[99.12] so just to check that everything is
+[100.80] working let's just put in a simple alert
+[103.12] here
+[104.16] um
+[105.44] we're going to alert roll
+[107.20] and here we're going to put our function
+[110.24] roll the dice
+[111.68] and now
+[113.36] run the code start
+[115.36] let's say roll
+[117.20] okay
+[118.24] roll great this is working let's try
+[120.40] another word that's not roll
+[122.48] no
+[124.08] okay nothing happens great okay so our
+[126.40] first step is done and basically now we
+[129.04] need to
+[130.00] actually roll the dice so what is
+[132.24] rolling the dice we're going to give a
+[133.52] random number between one to six
+[136.56] so in order to get a random number in
+[138.56] javascript we need to use math dot
+[142.16] random
+[143.44] okay
+[144.32] and
+[145.84] this will uh give us a random number
+[148.80] between zero and one
+[151.20] okay so basically what we're going to
+[153.84] want to do
+[154.96] is
+[156.40] multiply this by 6
+[159.92] okay
+[161.36] so now it's going to give us random
+[162.88] numbers between
+[164.88] 0 and 6
+[167.20] and
+[168.08] we're going to add 1. okay so this
+[171.04] basically gives us now random numbers
+[172.88] between 1 and 7.
+[175.28] but it can also include
+[177.44] decimal numbers so let's show you what
+[179.60] it looks like so
+[182.88] let's run our code
+[184.64] and start roll
+[189.20] and uh nothing happened so this should
+[191.84] go under a return uh sorry i didn't put
+[194.48] this in an alert
+[196.96] that was our problem
+[198.40] so we didn't tell the function to alert
+[200.80] this
+[201.60] and run
+[203.04] roll
+[204.40] and
+[206.40] we got a random number but we have lots
+[208.56] of uh numbers after the decimal point
+[210.56] and that is not like dice we just want a
+[212.72] whole number so what we're going to need
+[214.40] to use is something called math.floor
+[218.16] and basically that rounds
+[220.00] uh
+[220.80] the number down
+[222.32] so basically if i add math.floor here
+[224.72] around the map that random
+[227.28] then if i run our code
+[229.92] roll
+[231.76] excellent four okay whole number let's
+[234.24] do it one more time
+[236.08] roll
+[237.28] five perfect
+[239.04] um so
+[241.04] our game is pretty much complete we have
+[242.72] a dice rolling game the problem is that
+[245.36] uh we need to run our code each time in
+[247.84] between rolling let's say we want to
+[249.28] have a game where the person can
+[251.12] continue rolling until they decide they
+[253.20] don't want to roll the dice anymore
+[255.20] so let's
+[256.81] [Music]
+[258.08] add another prompt
+[260.56] okay right after our alert and ask play
+[263.60] again
+[268.88] okay and then
+[271.84] right after uh right uh sorry after we
+[274.32] play again
+[276.64] if
+[278.08] this prompt
+[279.92] is equal to
+[283.04] yes
+[285.44] okay then we're going to do something
+[287.28] and
+[288.72] if it's no
+[292.08] okay so i'm just going to copy this
+[293.52] piece of code right here
+[295.76] and
+[296.80] put that right over here
+[299.04] and if this is no
+[300.96] then we're going to do something else
+[304.00] okay
+[306.24] so
+[306.96] if
+[308.32] the person wants to play again
+[310.56] basically what we need to do is just
+[313.52] call our roll the dice function again
+[316.40] okay and then it'll just keep on going
+[317.76] in a loop until the person says no
+[320.64] and if the person says no then we will
+[323.60] just alert
+[328.08] you next time
+[333.28] okay
+[335.92] and
+[337.44] let's try running our code
+[340.00] so start yes roll okay four
+[343.44] excellent play again
+[345.68] yes
+[346.80] okay
+[347.76] two
+[349.20] okay
+[350.56] play again
+[351.68] no
+[356.24] after looking at our code basically
+[357.92] what's happening here is that we are
+[359.92] calling the prompt twice so we each time
+[362.88] it enters the if statement it calls the
+[364.80] prompt so what we want to do is actually
+[367.92] call the prompt outside the if statement
+[370.56] so we're going to
+[372.48] just
+[374.24] declare let's say here
+[376.16] a variable so let
+[378.88] play again
+[381.84] equal
+[382.96] and that's going to be equal to whatever
+[384.96] the result is from our prompt
+[387.68] um
+[388.64] and i'm assuming that you know what
+[390.88] variables are if you're not sure then
+[392.96] you can check out some of our other
+[394.16] videos
+[396.08] and now instead of checking
+[399.76] if the prompt is equal to yes by calling
+[402.72] the prompt we're just going to
+[405.36] use play
+[406.84] again okay
+[408.80] and basically what that means is that
+[410.32] we're actually only going to prompt once
+[413.20] and then each time we are only going to
+[416.64] compare the result
+[418.80] with uh
+[420.32] what we have in our if statement so
+[422.80] let's try running that code
+[425.52] start
+[426.48] roll excellent
+[428.56] play again
+[430.24] yes
+[431.36] okay
+[432.24] play again
+[433.36] no
+[434.32] and see you next time perfect so our
+[436.64] code is working now and
+[438.96] in about five minutes you just built a
+[441.68] very simple uh dice rolling game using
+[445.12] pure javascript
+[446.96] um if you like this video please give it
+[449.12] a like please subscribe to our channel
+[451.36] so we can share more great simple
+[454.80] uh javascript content with you and the
+[457.76] code
+[458.88] uh will be in the description below so
+[462.24] see you next time
+[466.97] [Music]

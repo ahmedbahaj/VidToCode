@@ -1,0 +1,286 @@
+[0.00] hello folks in this video we will make one
+to-do list like this using only HTML CSS
+[5.52] and JS I will be making a series of this
+on how to make the same app using react
+[9.96] how to add databases authentication and more so
+without wasting any time let's get right into it
+[19.92] so as usual I have opened my vs code and I have
+linked the style.css and script.js file and I have
+[25.50] one H1 tag with to-do list heading so now first
+of all I will create one input container where
+[31.44] I will put my inputs so I will keep the class
+name as input container and it will be a tips
+[37.86] and inside I will have one input tag and the type
+is text let's enter the faceholder as enter to
+[44.64] do and also let's give an ID let's name it
+as input to do and now we have one button
+[54.00] and let's uh give the name
+let's give the ID as add to do
+[59.40] and let's only give one plus over here yeah it's
+fine so now I will add one to do container and
+[67.20] let's give the class name as container and here I
+will have my to-do's so I will have a div with the
+[73.68] class name of to-do and there will be many more
+to-do's like this so inside one to do first of all
+[79.02] let's give what is our to-do so Let's uh
+give what the to-do as write JavaScript code
+[87.60] so this is how to do and now let's
+also give some actions that can be
+[94.14] performed so let's give one tip with a
+classroom of actions and the actions are
+[98.34] first of all there will be one input
+and the type this time will be check box
+[103.38] so we have one checkbox like this that is my task
+complete or not and also I will add one button
+[111.84] and this will be the delete button yeah so our
+one to do is complete so now let's add another
+[117.90] to do and so I'll simply copy paste and this
+time instead of write JavaScript let's write
+[123.96] something else that's right right python
+code yeah so our basic HTML is complete but
+[131.28] this doesn't look good naturally so we will add
+some Styles so first of all in the body section
+[136.44] as I always do I will change the font family to
+something else let's give it this one yeah it's
+[142.08] much better and now let's change the background
+color to something different let's give wheat yeah
+[150.18] and now first of all let's enter our heading
+and we will write text align Center in short TSE
+[157.68] and now in the input container I have
+to keep everything in the center as well
+[162.60] so first of all I'll do display of flex because
+the Xbox is much easier to handle and I'll give
+[169.38] the display like Flex direction is column and uh
+that's not all and I will give align item Center
+[179.22] yeah now this looks good and let's also give
+some Gap gap of 10 pixels yeah and now inside
+[188.88] my input so we have the input container and
+inside the input container I have my input
+[195.12] and I can identify it like this input container
+Arrow input so I want to make it more Broad and
+[202.50] as well as mortal so I can simply do it like this
+let's change the width to let's say 250 pixels
+[210.36] uh let's give it more let's give it 300 pixels
+and let's change the height to uh 30 pixel
+[219.42] yeah now this is good and let's also
+increase the font size to 1.25 RM
+[225.00] yeah now this looks much better to me and now
+in the same way like I identified the input
+[233.34] I will identify the input
+container and the button inside it
+[237.60] and let's also give it some width of let's
+say 40 pixel and height also have 40 pixel
+[245.22] let's also add the Border radius of 20 pixels
+so that it becomes round next let's keep some
+[252.24] font size too let's also change it to 1.5
+REM let's Also let's make it bigger 1.5 yeah
+[260.28] this is much better and let's also change the
+background color to I'll keep it cold yeah now
+[267.90] we have our to do container like where we
+have our to-do's so that is named as container
+[275.52] if I am not mistaken and here first of all I'll
+give a border of 2 pixel solid black to understand
+[281.82] where my container is so now we can see so now
+I will also give one margin top of let's say
+[287.94] 15 pixel yeah now this is good so now I will go to
+my to do individual tutor and give display of flex
+[296.22] and the next thing I'll give is align item Center
+to Center my checkbox and button vertically
+[303.06] and next thing I'll do is justify content
+space between yeah now this is align correctly
+[308.34] and now I will also add one border of two pixel
+solid red to check where my individual to-do's are
+[314.70] so I want to give some Gap in between so I
+will go back to my container and I will do
+[319.44] something I will do display of flex display
+flex and next thing is Flex deduction column
+[328.38] column and lastly I want to give some gap of
+let's say 5 pixel yeah and now in the Border
+[334.38] after border I will also give some widths to my
+todos so that when I change the screen it doesn't
+[341.28] occupy the whole screen so let's give the width
+as let's say 500 pixels and as we can see there
+[347.52] is some issue and the issue is it looks aligned
+to the left let's change it to 400 and yeah it's
+[352.14] aligned to the left and to fix this uh we can
+simply give align item Center at the container
+[358.80] yeah now this is good so after a bit I also
+want the font size to be improved in in the
+[365.88] individual to do so I will make font size
+as let's say 1.2 REM and this is much better
+[372.90] and now I want some padding on the left and right
+so I can simply write zero pixel and then 5 pixel
+[379.44] so this zero pixel padding is for the top and
+bottom and this five is for the left and right
+[384.42] so yeah now this looks much better to me and
+uh lastly I want to give some border radius of
+[390.72] let's say let's set in pixel and lastly
+let's give a background color of orange
+[398.70] yeah let's remove the Border yeah now the
+tutors look good and also let's remove the
+[402.96] Border in the container yeah so now after the
+tutu I want to give some styles to the buttons
+[410.76] after individual to do so I will go to actions
+and inside actions I will go to the button
+[418.86] and first of all let's change the font
+family because buttons operate differently
+[424.50] so let's change this and give this family
+and then comes let's give some width Let's
+[433.14] uh give the width as 75 pixel and height of uh 30
+pixel let's also give you background color of red
+[442.26] and the font color of white let's also
+change the Border color to dark gray
+[451.44] yeah lastly let's improve the font size
+to 1.1 RM it's uh it looks too big 1.05 RM
+[459.78] and let's also give a border radius of let's
+give 10 pixel yeah and also Let's uh give some
+[468.36] distance in between the check box and the button
+so let's give some more margin left as let's say
+[473.94] 10 pixel yeah this looks good now so I will go
+to my JavaScript and here first of all I have
+[481.38] to write a code to identify my dom sections so
+I'll start with the input to do and I will write
+[486.90] document get element by ID of input to do because
+that was my ID next comes is my add to do button
+[496.50] so const add 22 equals to document gate
+element by ID off add to do and lastly
+[504.24] I have my input container and let's name it as
+to do container and this one doesn't have an ID
+[511.14] so either I can give an ID or I can simply
+write query selector and I can give the class
+[517.50] so my Doms are identification is done so now we
+have to understand in which case we want to add
+[525.06] the to-do's so whatever we text we have here
+and when we click on this plus button that to
+[530.10] do should be added so we can simply write add to
+do dot add event listener and the event is Click
+[538.14] and whenever this event is clicked
+what we want to do we want to
+[544.68] let's say run one function and that function is
+display to do so we have to create a function
+[551.82] over here of display to do and this display to
+do function is tasked with the displaying the
+[559.02] truth let's give written right now and uh to
+give you an example how we can get the text of
+[564.84] the to-do's so let's do something like this let's
+do whenever we are clicking this button instead
+[571.32] not instant we are also displaying the input 2.
+value so whatever we will get here let's see so
+[581.40] let's uh write some to-do Let's uh write SQL query
+and now let me click on plus as you can see we can
+[588.90] get this text SQL query so now instead of logging
+in the console what we want is we want this to be
+[595.74] locked we want this to be displayed as a to-do so
+what can be done for that and that is very simple
+[603.72] we have to write inside this display to function
+and also one last thing we've asked to do and that
+[608.76] is after we are calling this display to function
+we have to remove whatever the text is over here
+[613.86] so we have to remove it by this thing so let's
+give something www and now this is removed
+[619.68] so now let's come inside the display to
+do function and what do we have to do here
+[624.60] basically we have to create a to-do like this we
+have to create a to-do like this in the display
+[629.64] total function as JavaScript code so let's start
+by doing writing that so I will do let to do
+[636.24] equals to document get element not get element
+document.createelement and this to do is a div
+[645.66] and this to do dim also has a class and so to
+add that class I will do to do Dot classlist.net
+[654.54] and this class is to do and next thing is I have
+the to-do text which is my to-do value and this
+[664.26] to-do text is another element and this element
+is p so create element and this element is V
+[672.00] and what is the to-do text inside
+so we can simply write to do text
+[679.02] dot inner text and this inner text is my input
+to dot value whatever we saw few minutes ago
+[688.38] and so now if I log this uh to do text
+Dot value we will get the same thing
+[694.38] so let's test it out so I will do right SQL
+query and when we click on Plus we can see it
+[703.62] is undefined and why this is undefined because
+it should be inert X naught value inner text
+[711.00] so now let's just write the same
+thing once again write SQL query
+[717.42] and if you click on plus we can say write SQL
+query over here so now let's uh try to append this
+[723.66] thing over here so we have to add few more things
+and the next thing we have to add is to do actions
+[729.36] and this is another document.createelement and
+this one is another div and this one also has a
+[737.94] class and so we'll write to do actions dot class
+list dot end and this one is actions next thing
+[745.92] we have is my inputs so I will do that checkbox
+and this one is document dot create element and
+[757.44] this one is an input so now in this case I want to
+add the attributes to the input so I will not use
+[763.38] last list what I will use instead is checkbox.set
+attribute and now we have two arguments the first
+[769.92] argument is what is my attribute so my attribute
+is type and the second argument is what is the
+[775.68] name of the attribute and that is checkbox in
+this case so now this one is done and lastly
+[780.96] we have my delete button so delete button will be
+another document Dot document dot create element
+[792.48] and this one is a button and this delete button
+also has some text so I will write delete button
+[799.02] dot in our text and this one is delete and lastly
+this delete button also has some attributes
+[807.06] so delete BTN dot set attribute and this
+attribute is what we have um let's check it out
+[817.80] oh we had no attributes so let's just remove
+it yeah so now everything that we had inside
+[824.34] our to-do has been created as JavaScript code and
+now this need to be appended so how can we append
+[829.92] that so first of all inside my tutu actions I have
+my input checkbox unlike and my delete button so
+[838.14] I will do to do actions.appan child and the first
+thing is check box and the next thing is basically
+[845.10] my delete button so and this input these two do
+actions is also another child of the tutu so for
+[855.42] the to do I have two more child 7 and the first
+child is my to do text so I will do to do text and
+[864.90] this should be happen child not happened append
+child and the next one is to do dot append child
+[873.12] and the next one is two to actions yeah and
+lastly the studio need to be appended inside
+[879.06] my turo container so I will do to do container dot
+append child and I will append the to-do so yeah
+[888.90] so our code is done so now let's test it out
+so write SQL query and if you click on ADD as
+[896.34] we can see my to-do is getting added but now
+there are some issues over here and uh when
+[901.74] we are adding one empty to do it is still
+adding those things and that can be simply
+[907.68] simply fixed by writing something like this and
+that is if input to do dot value is not null not
+[916.56] null is not an empty string only then you do
+this thing and now when we click on an empty
+[922.86] nothing is happening and this is fine and lastly
+we also have to add the delete functionality and
+[928.68] that can simply be done here and that is that
+this delete button also should be having one
+[933.18] event listener so we will add one event listener
+and the event listener is click and so when we are
+[939.24] clicking on this what should be happening so we
+have created one to do and this to do should be
+[944.88] removed all right so this is very simple so we
+will simply write to The Container dot remove
+[951.12] child and what we want to remove we want to remove
+the to-do now we cannot remove the default to lose
+[957.24] because these are coming from HTML so instead what
+we can do is we can either delete or comment it
+[961.92] out so let's comment it out and now we can add the
+to-do's by ourselves so we can write write JS code
+[971.52] and next let's write write Python and then
+write write SQL so we have added three to-do's
+[981.36] we can also click on the check box and uncheck
+and we can also remove the tutus so yeah our
+[988.08] basic tutuapp is ready I will leave a GitHub
+repo link of this app in the paint comment
+[992.16] below and in the future videos I'll be adding
+one database and also authentication and also
+[997.38] build the project using react in the same
+repository so thanks for watching bye bye

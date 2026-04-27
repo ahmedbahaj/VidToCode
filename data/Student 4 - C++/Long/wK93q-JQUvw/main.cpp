@@ -2,53 +2,115 @@
 #include <list>
 using namespace std;
 
-class YouTubeChannel {
+// Object oriented programming.
+// Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+
+class YouTubeChannel
+{
 private:
 	string Name;
-	int SubscribersCount;
+	int SubscriberCount;
 	list<string> PublishedVideoTitles;
+
 protected:
 	string OwnerName;
+	int ContentQuality;
+
 public:
-	YouTubeChannel(string name, string ownerName) {
+	YouTubeChannel(string name, string ownername)
+	{
 		Name = name;
-		OwnerName = ownerName;
-		SubscribersCount = 0;
+		OwnerName = ownername;
+		SubscriberCount = 0;
+		ContentQuality = 0;
 	}
-	void GetInfo() {
-		cout << "Name: " << Name << endl;
-		cout << "OwnerName: " << OwnerName << endl;
-		cout << "SubscribersCount: " << SubscribersCount << endl;
-		cout << "Videos: " << endl;
-		for (string videoTitle : PublishedVideoTitles) {
-			cout << videoTitle << endl;
+
+	void GetInfo()
+	{
+		cout
+			<< "Name: " << Name << endl
+			<< "OwnerName: " << OwnerName << endl
+			<< "SubscriberCount: " << SubscriberCount << endl
+			<< "PublishedVideoTitles: " << endl;
+		for (string VideoTitles : PublishedVideoTitles)
+		{
+			cout << VideoTitles << endl;
 		}
 	}
-	void Subscribe() {
-		SubscribersCount++;
+
+	void Subscribe()
+	{
+		SubscriberCount++;
 	}
-	void Unsubscribe() {
-		if (SubscribersCount > 0)
-			SubscribersCount--;
+
+	void UnSubscribe()
+	{
+		if (SubscriberCount > 0)
+			SubscriberCount--;
 	}
-	void PublishVideo(string title) {
+
+	void PublishVideo(string title)
+	{
 		PublishedVideoTitles.push_back(title);
 	}
+
+	void CheckAnalytics()
+	{
+		if (ContentQuality < 5)
+			cout << Name << " has bad quality content." << endl;
+		else
+			cout << Name << " has great quality content." << endl;
+	}
 };
 
-class CookingYouTubeChannel : public YouTubeChannel {
+// Derived Class, Inheriting from YouTubeChannel.
+class CookingYouTubeChannel : public YouTubeChannel
+{
 public:
-	CookingYouTubeChannel(string name, string ownerName):YouTubeChannel(name, ownerName) {
+	CookingYouTubeChannel(string Name, string OwnerName) : YouTubeChannel(Name, OwnerName)
+	{
 
 	}
-	void Practice() {
-		cout << OwnerName << " is practicing cooking, learning new recipes, experimenting with spices..." << endl;
+
+	void Practice()
+	{
+		cout << OwnerName << " is Practicing cooking, learning new recipes, experimenting with spices..." << endl;
+		ContentQuality++;
 	}
 };
- 
+
+class SingersYouTubeChannel : public YouTubeChannel
+{
+public:
+	SingersYouTubeChannel(string Name, string OwnerName) : YouTubeChannel(Name, OwnerName)
+	{
+
+	}
+
+	void Practice()
+	{
+		cout << OwnerName << " is taking singing classes, learning new songs, learning how to dance..." << endl;
+		ContentQuality++;
+	}
+};
+
 int main()
 {
-	CookingYouTubeChannel cookingYouTubeChannel("Amy's Kitchen", "Amy");
+	CookingYouTubeChannel CookingYTChannel("Amy's Kitchen", "Amy");
+	SingersYouTubeChannel SingersYTChannel("JohnSings", "John");
+
+	CookingYTChannel.Practice();
+	SingersYTChannel.Practice();
+	SingersYTChannel.Practice();
+	SingersYTChannel.Practice();
+	SingersYTChannel.Practice();
+	SingersYTChannel.Practice();
+
+	YouTubeChannel* YT1 = &CookingYTChannel;
+	YouTubeChannel* YT2 = &SingersYTChannel;
+
+	YT1->CheckAnalytics();
+	YT2->CheckAnalytics();
 
 	system("pause>0");
 }

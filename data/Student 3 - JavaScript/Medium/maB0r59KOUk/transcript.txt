@@ -1,0 +1,195 @@
+[0.12] hey what's going on everybody in this
+[1.68] video we're going to create a number
+[3.36] guessing game using JavaScript so why
+[5.44] don't you go ahead and sit back relax
+[7.76] and enjoy the show all right let's get
+[9.64] started everybody so the first thing
+[11.28] that we're going to need is to set the
+[12.76] minimum and the maximum numbers in our
+[14.52] number guessing game so we'll create two
+[17.32] constants const minum for the
+[21.60] minimum I will set my minimum to be one
+[24.36] but feel free to pick a different number
+[25.88] if you would like then a maximum const
+[29.20] Maxum
+[30.52] I will set my maximum to be 100 so what
+[33.52] we got to do is generate a random number
+[35.68] between our minimum and our maximum
+[38.28] inclusively so let's create another
+[40.64] constant const answer then we'll
+[44.36] generate a random number between one and
+[46.56] 100 our minimum and our maximum to do
+[49.04] that we can type math.
+[51.76] random the random method of math will
+[54.36] generate a random number between zero
+[56.32] and one we will multiply this by within
+[59.48] a set of parentheses the range between
+[62.08] our maximum minus our
+[65.08] minimum then add plus
+[67.40] one let's see what we have so far just
+[70.24] to test everything I'm going to
+[73.32] console.log our
+[76.88] answer okay let's inspect go to console
+[80.12] here's my answer currently 56 point and
+[83.12] then a bunch of decimal places after I
+[85.52] will round our answer by enclosing this
+[88.04] equation with math. to round
+[91.88] down okay let's see what we get again 39
+[96.00] 899 20 71 27 17 46 okay that seems like
+[101.20] it's working what if we have a higher
+[104.20] minimum let's say between 50 and
+[109.64] 100 well I have 7 22 43 numbers that are
+[114.16] below our minimum so if we have a
+[116.60] minimum besides one I will add to the
+[119.84] the end of this equation our minimum
+[122.80] again okay let's see if that works so if
+[125.24] I need a random number between 50 and
+[127.12] 100 this equation should work 97 80 79
+[132.68] 52 all right that seems like it's
+[134.64] working so this is the equation you'll
+[136.80] need to generate a random number between
+[138.76] your minimum that you set and your
+[140.44] maximum but let's change our minimum
+[142.44] back to one and make sure our maximum is
+[145.04] 100 all right let's move on to step two
+[148.40] we'll create a variable name attempts to
+[151.04] keep track of the attempts it takes a
+[152.60] user I will set attempts to be zero and
+[156.44] let
+[158.04] guess I will declare this variable but
+[160.44] not assign it quite yet we'll take care
+[162.04] of that later I will also create a
+[164.52] Boolean variable named running and I
+[166.96] will set this to be
+[168.48] true the reason that we have the Boolean
+[170.88] variable running is so that we can exit
+[173.60] the game when it's over we'll set
+[175.24] running to equal false so to keep the
+[177.96] game running we'll use a while loop
+[180.88] while running equals true now if this is
+[184.32] a Boolean variable you don't necessarily
+[186.32] need this portion equals true you can
+[189.64] just set this to be while
+[191.84] running while this Boolean is true keep
+[195.00] the game going then when we want to exit
+[197.80] the game we will set running to equal
+[201.40] false so that will be at the
+[203.96] end now we need to accept some user
+[206.48] input I'll do this with the window
+[208.68] prompt we will set our guest to equal
+[213.84] window.
+[215.64] prompt I'll use a template
+[219.08] literal guess a
+[221.72] number
+[223.60] between I'll add a
+[225.60] placeholder our
+[228.16] minimum through add another placeholder
+[231.96] our
+[233.24] maximum all right to test this I'm going
+[235.92] to
+[238.68] console.log
+[240.48] the type of
+[242.32] guess as well as what guess is there's
+[244.84] something I need to show you guess I
+[246.84] number between one and 100 I'll guess
+[248.96] something right in the middle 50 let's
+[251.60] inspect go to console so my user input
+[254.56] of 50 is a string data type we'll need
+[257.04] to convert it to a number for
+[260.28] comparisons so after we get our guess
+[263.44] let's reassign it and typ cast it as a
+[266.52] number
+[268.44] type let's let's try that again guess a
+[270.92] number between 1 and 100 I'll type 50
+[273.84] okay inspect console we have our guess
+[277.16] of 50 and it's a number data type what
+[279.76] if you were to type in something that
+[281.28] wasn't a number like a string of
+[283.52] characters such as
+[285.52] Pizza here's the
+[288.32] result if you type cast some characters
+[290.92] that are non-numeric you know the number
+[293.12] 0 through 9 you'll end up with not a
+[295.68] number Pizza can't be converted to a
+[297.96] number unfortunately I will delete this
+[300.56] line of code we no longer need it I'll
+[302.92] add an if statement there's a function
+[305.20] to check to see if something is not a
+[307.12] number is not a number
+[310.52] function if our guess is not a number if
+[314.36] this evaluates to be true let's add an
+[317.32] alert window.
+[321.24] alert please enter a valid
+[326.44] number guess a number between 1 and 100
+[329.16] What if I type
+[330.60] pizza please enter a valid number now
+[333.92] what if somebody types in a guess that's
+[335.88] below our minimum or above our maximum
+[338.80] I'll add an else if
+[340.44] statement else if our guess is below our
+[346.00] minimum or our guess is above our
+[352.60] maximum will window. alert please enter
+[356.04] a valid number again guess a number
+[358.88] between 1 and 100 what if I type in 150
+[362.04] that's above our maximum please enter a
+[364.24] valid
+[365.04] number please enter a number between 1
+[367.32] and
+[368.76] 1001 please enter a valid number if the
+[371.96] user's guess is a number and it's
+[375.20] between our range between the minimum
+[376.96] and the
+[379.28] maximum we'll execute an L statement if
+[382.44] they reach the L statement that means
+[384.04] they have a valid number we'll increase
+[386.40] our attempts variable by one attempts
+[389.16] Plus plus to increment
+[392.76] it if the
+[395.72] guess if the guess is less than the
+[399.36] answer then will window.
+[404.68] alert too low try
+[412.04] again else if the guess is greater than
+[416.92] the
+[418.08] answer will window.
+[421.32] alert to high try again if the guess
+[425.56] isn't lower than the answer and the
+[427.72] guess isn't higher than the answer that
+[429.76] means the guess must equal the answer
+[432.60] within an else
+[434.68] statement we'll congratulate the user
+[437.08] they have the right answer
+[438.92] window.
+[442.52] alert
+[445.52] correct the
+[448.08] answer was
+[450.48] and I should probably use a template
+[452.12] literal for this if we're inserting
+[454.56] variables the
+[458.20] answer we'll let the user know how many
+[460.32] attempts it took it took
+[464.36] you the variable
+[466.96] attempts then the word
+[472.16] attempts at the end of our lse statement
+[474.52] we'll move running equals false to
+[477.08] within the lse statement at the end to
+[479.08] ex at the game we no longer want to play
+[481.80] once we have the correct answer all
+[483.88] right and this should work let's try it
+[486.68] guess a number between 1 and 100 I'll
+[489.04] guess something right in the middle 50
+[491.44] too low try again okay so the answer is
+[494.36] between 50 and 100 75 too high so it's
+[499.12] between 50 and
+[500.44] 75
+[502.28] 62 too
+[504.80] low
+[506.40] 68 too high so it's between 62 and
+[511.68] 68
+[513.36] 65 too
+[515.56] high 63 too
+[518.88] low
+[520.56] 64 yeah correct the answer was 64 it
+[523.84] took you seven attempts and we can exit
+[527.48] all right everybody so that is a number
+[529.52] guessing game in
+[532.44] JavaScript

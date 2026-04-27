@@ -1,0 +1,366 @@
+[0.00] all right what's up guys and welcome
+[0.96] back to my channel now today's video
+[2.60] we're going to learn how to code a to-do
+[4.52] list app in Python if you are looking
+[6.52] forward to it go ahead and hit that like
+[8.00] button and without further Ado let's
+[9.60] just hop right into the video all right
+[11.28] so first I'm going to go ahead and open
+[12.72] up my python environment here I use
+[14.92] replit which is just a really nice
+[16.60] online um python or whatever language
+[19.32] editor you can use whatever environment
+[21.44] you want obviously um and I'm just going
+[23.36] to create the project and call it um
+[25.64] to-do list app python all right guys the
+[28.76] first thing we're going to do once our
+[30.16] environment is loaded up here just
+[31.68] create a array and call it tasks and
+[35.28] then we're going to create a main method
+[37.20] here so if double uncore name double
+[39.76] underscore is equal to and then quotes
+[42.36] here double uncore main double
+[44.64] underscore and then go ahead and add
+[47.32] that colon there so we have our main
+[49.16] method here for Python and let's just
+[51.24] begin to create the logic that will
+[53.40] actually operate the app so we're going
+[55.12] to say create a loop to run the app and
+[58.56] before that we're going to have a
+[60.00] welcome statement so we're going to just
+[62.00] um say welcome to the to-do list app the
+[66.44] smiley face and then we're going to have
+[68.84] a while loop that just is always true
+[71.80] that way it runs infinitely until we
+[73.44] tell it to stop and then we're just
+[75.24] going to start out by listing out some
+[77.44] menu options here so we're just going to
+[79.16] print a a new line character here and
+[81.72] obviously I know I could keep typing
+[83.36] afterwards but I I just like to put
+[85.44] stuff on separate lines cuz it just
+[87.16] looks a little cleaner to me do whatever
+[89.04] you'd like but we're going to going to
+[90.12] start out with a um a new line character
+[92.72] then we're going to say please select
+[94.96] one oops select one of the following
+[99.04] options and then this other line here
+[101.08] we're just going to have a bunch of Dash
+[103.32] lines so that we have a nice little like
+[106.20] um menu option and it just looks clean
+[108.68] and then we're going to have four total
+[110.64] task options so what I'm going to do is
+[112.44] just say print and then put the number
+[115.00] one and then closing quotes and this and
+[117.92] then I'm just going to go ahead and copy
+[119.44] this item here I'm going to paste this a
+[121.60] couple more times two three four our
+[125.12] first option is going to be add a new
+[127.64] task our second option is going to be
+[129.92] delete a task our third option is going
+[132.88] to be list tasks and then our fourth
+[135.68] option is going to be quit all right now
+[137.56] that we've actually listed out the menu
+[139.20] options let's just go ahead and collect
+[141.64] some input from the user so we're going
+[142.96] to say choice is equal to input and then
+[146.52] we're going to say enter your choice
+[151.00] with a little carrot symbol that way
+[153.40] that they kind of feel like it's a
+[155.16] console type thing or you know what we
+[157.04] could do a in space as well doesn't
+[158.92] matter which one you guys can do
+[160.56] whatever you'd like now next thing we're
+[162.04] going to do is just go ahead and create
+[164.52] the if and else statements to run the
+[167.24] app based on what the user put so
+[169.48] obviously we're expecting them to put 1
+[171.16] two 3 or four um we're just using this
+[174.12] input um function which will return a
+[176.96] string so that's what we need to keep in
+[178.92] mind when building these if statements
+[180.96] so we're going to say if the choice is
+[183.44] equal to the number one then we're going
+[186.12] to do one thing and then have an else if
+[188.32] so if the choice is equal to
+[191.64] two then we're going to do another thing
+[195.12] then another one so if the choice is
+[196.72] equal to three yeah I mean you guys get
+[199.20] it at this point we can just keep going
+[201.80] here
+[202.72] so number four do another thing and then
+[206.68] if they happen to do anything else but 1
+[209.00] 2 3 or four
+[210.40] what we should do is say else and then
+[212.80] just go ahead and print a simple error
+[214.32] statement so we're going to say invalid
+[216.20] input
+[217.72] please try again and because this isn't
+[220.28] a loop it's going to just loop again and
+[222.32] then they can go ahead and try again so
+[224.28] now let's actually fill up our if
+[226.28] statements here and the first one so if
+[229.00] the choice is number one and we go up
+[230.92] here we notice that it's going to say
+[233.00] add a new task and what I want to do is
+[234.92] just go ahead and call functions for
+[236.68] each one of these if and else statements
+[238.92] so we're just going to to have a
+[240.20] function called add task and we're just
+[242.76] going to call that and then that'll be
+[244.44] in charge of collecting the input you
+[246.32] know modifying the necessary variables
+[248.00] and stuff um for Choice number two we're
+[249.68] going to have delete task and that's
+[251.88] going to do the same thing you know
+[253.12] collect all all the necessary things
+[255.16] number three we're going to list tasks
+[258.08] and then number four we're just going to
+[259.52] have a simple break we want it to break
+[261.60] right out of this Loop here and then
+[263.12] ultimately end the game or sorry and end
+[265.60] the app not the game so the last thing
+[267.24] we need to do here before we go ahead
+[269.00] and write all our functions is if we do
+[272.68] hit number four and they break out of
+[275.24] the loop I feel like it's a good idea to
+[277.96] just have like a goodbye statement or
+[279.92] something so we're just going to say
+[282.16] print and then goodbye and why don't we
+[284.96] just put some emoes in here we're going
+[286.80] to wave our hand we're going to wave our
+[288.88] hands to the users so we're going to say
+[290.28] goodbye if they happen to select Choice
+[292.68] number four so we're going to have a
+[294.24] couple lines of space up here and then
+[296.00] we're going to say def add task and then
+[300.60] create a or put a CO in here and then
+[302.60] what we're going to do is we're going to
+[303.76] say task is equal to input and we're
+[306.92] going to say please enter a task that
+[310.28] you want to complete with a colon and a
+[312.04] space then once we are done collecting
+[315.08] the task from the user we're going to
+[316.88] just go ahead and take our tasks um
+[319.00] array from above and then go ahead and
+[321.08] append our new task that we just got
+[324.04] from the user and then one more thing we
+[325.72] need to do in here um I just like to
+[327.68] print out just kind of like a little
+[329.60] confirmation type deal so we're going to
+[331.40] say hey and make sure to put the F in
+[333.72] front of the string so that we can
+[335.08] insert variables into it um we're going
+[336.92] to say task and then put in these
+[340.20] brackets here T and then closing
+[342.68] brackets so task whatever has been added
+[346.52] to the list man this this intellisense
+[349.08] is getting pretty accurate um so far but
+[352.00] also we should put single quotes around
+[354.68] task that way that it's just really
+[357.12] stands out compared to the rest of the
+[358.96] sentence and whatever they entered in
+[361.00] will appear here in single quotes all
+[363.16] right next up let's just go ahead and
+[365.20] create our deletion of tasks and we call
+[368.16] that delete task down here so let's just
+[370.68] go ahead and do that and open up these
+[373.20] parentheses and have a colon so the
+[375.68] first thing we want to do inside of
+[377.12] delete task is probably just list the
+[380.20] tasks that are um currently in the task
+[382.96] array since we eventually plan on coding
+[386.08] a list tasks function I think it would
+[388.80] be best to just call that right here so
+[390.76] we're going to call that function which
+[392.60] we still have to write then we're going
+[394.04] to have a try and an accept block here
+[398.56] and the reason I'm doing this is because
+[400.76] there is a chance that the input we're
+[402.40] about to collect um is invalid and could
+[405.56] break things in case that happens I'm
+[408.08] just going to have this little um catch
+[410.48] here and it just say invalid input
+[412.64] that's you know that way the user can
+[414.04] kind of just try again after that so the
+[416.04] first thing we're going to do inside of
+[417.20] this Tri block here is our task to
+[420.40] delete is going to be equal to an
+[423.12] integer and then our input thing from
+[426.92] earlier so we're going to call input and
+[430.84] or let's let's back it up so we're going
+[432.52] to first list the tasks that are out
+[434.48] there then we want the user to provide
+[437.72] us some sort of number cuz once we have
+[440.36] our tasks we're going to say like hey
+[441.96] task number one is you know go get the
+[444.24] groceries number two is take out the
+[446.16] garbage so we expect some sort of number
+[448.72] so not only we need to prompt them for
+[450.68] input with this input function but then
+[453.28] once that happens we need to cast it to
+[455.20] an integer that way we can access that
+[458.08] index in the array and then delete it so
+[460.28] now that we have that out of the way um
+[461.92] what we want to say in here is choose
+[465.08] the number of the task you want to
+[468.12] delete with a colon in a space or you
+[470.72] know what if we could probably simplify
+[472.76] this is quite a long statement here so
+[475.12] we're going to say um enter why don't we
+[477.44] just say enter the number that way it's
+[479.72] just simple and easy to understand then
+[482.64] the first thing we should do is go ahead
+[484.84] and check if the number they provided so
+[487.80] obviously at this point if they provided
+[490.08] an invalid number it would have already
+[491.92] hit the accept block and then you know
+[494.36] we would have to do this again so at
+[496.60] this point we don't need to check for
+[497.92] anything fancy but what we do need to
+[499.80] check is if the task to delete integer
+[503.44] that they provided is greater than the
+[506.00] length of tasks and if that's so
+[508.84] obviously it's not inside of the tasks
+[512.00] array and that could throw another error
+[513.64] so we want to just go ahead and you know
+[516.16] check for that right off the bat and
+[518.08] actually now that I'm thinking through
+[519.32] it what we really should do is make sure
+[522.24] that it's less than the length of tasks
+[526.32] that way um anything between zero and
+[529.04] the length of the tasks array will just
+[531.16] go ahead and process and then anything
+[532.76] outside of that we're going to go ahead
+[534.92] and just fire off an error so we're
+[536.68] going to say else and then we're going
+[538.28] to say print with an F in front of the
+[540.36] double quotes and we're going to say
+[541.76] task and then put the variable so task
+[545.52] task to delete and we'll put a little
+[548.12] hashtag in front of it so that we know
+[549.72] that the number it's a number and task
+[552.80] number to delete was not found and then
+[556.24] appear it so inside of this if statement
+[558.48] here what we're going to want to do is
+[560.12] just go ahead and say tasks. pop and
+[564.44] then task to delete so this do pop
+[568.24] function here is going to allow us to
+[569.92] specify the index of what we want to
+[572.04] delete so if I'm saying you know if I
+[574.60] print out my list and item number two is
+[576.64] what I want to delete we're going to
+[577.96] collect two and we're going to say hey
+[580.08] go ahead and remove index number two
+[581.80] from the array and then once that's done
+[584.32] we can go ahead and just print out like
+[585.96] a little confirmation thing we're going
+[587.52] to say task and then once again task to
+[591.28] delete has been removed with a period
+[594.88] and guys one more check that we can
+[596.64] actually do is not only should it it be
+[599.60] less than the length of tasks but it
+[601.72] should also be greater than or equal to
+[603.52] zero that way that they don't provide
+[605.04] any sort of negative numbers here so
+[606.92] we're going to say if the task to delete
+[610.04] is greater than or equal to zero and the
+[613.52] task to delete is less than that then we
+[615.56] can go ahead and process it and you know
+[617.60] if it's anything else then we want to go
+[619.08] ahead and just say that it was not found
+[621.44] so it's going to wrap up our delete task
+[624.40] um function here now right above it why
+[626.24] don't we create another function called
+[628.60] list tasks and this will be in charge of
+[631.28] printing out all the tasks that live
+[633.32] inside of the array currently so the
+[635.24] first thing we should do is just check
+[637.16] if anything's actually in the array so
+[638.84] we're going to say hey if not tasks so
+[641.88] if it's still null or blank or whatever
+[644.48] we're just going to say print there are
+[647.48] no tasks currently but in this else here
+[650.56] if there are tasks we want to go ahead
+[652.72] and start printing out each one so first
+[655.36] we're going to have a little print line
+[656.88] here and we're going to say current
+[658.48] tasks with a colon then we're going to
+[661.08] say for index um index is the number of
+[665.56] the of the loop that we're currently in
+[668.08] because you know most for Loops you tell
+[669.56] it where to start and end and in Python
+[672.80] there's a couple different ways to do a
+[674.12] for Loop but since we want to keep that
+[676.48] number you know usable for our code
+[678.72] later we want to say index and then
+[680.96] we're going to say space task in and
+[684.80] then enumerate and then tasks and this
+[687.88] enumerate function will will allow us to
+[690.36] go through the list and not only access
+[693.48] each individual task but then we can
+[695.96] also have that index for where it lives
+[698.52] in here and all we're going to do is
+[700.32] just have a print line here and then put
+[702.88] F in the double quotes so we're going to
+[705.20] first say task and then the pound symbol
+[709.00] and then in quotes or sorry in Brackets
+[711.44] here we're going to first put our index
+[713.24] and then we're going to do a dot in a
+[716.32] space and then the name of the task
+[719.16] itself so ultimately when this prints
+[721.48] out stuff it should look something like
+[723.48] this it should be like you know it
+[725.64] should be task number one dot and then
+[729.20] like you know take out the groceries or
+[732.32] something like that so that that way it
+[734.72] will just look nice and clean and easy
+[736.80] to read for our user all right guys at
+[739.04] this point our program is done so let's
+[741.96] just go ahead and run it and make sure
+[743.60] that everything is working as expected
+[745.68] so we're just going to go ahead and
+[746.84] click the Run button here welcome to our
+[749.44] to-do list app please select one of the
+[751.40] following options um obviously we don't
+[753.52] have any tasks in there at this point so
+[755.84] and just to make sure we can press
+[757.12] number three so we're going to list our
+[759.84] tasks and we see there are no tasks
+[762.08] currently so now it you notice it
+[764.20] reprints the menu um why don't we just
+[766.48] add something new um you know let's see
+[769.48] uh we want to go to the grocery store so
+[775.04] now we see that that worked successfully
+[777.64] you know it's been added to the list if
+[779.28] we print out our list we notice that
+[781.96] task zero is go to the grocery store we
+[785.12] won't modify the code here in this video
+[787.16] but if you guys want you can say you
+[789.72] know plus one in in your list function
+[792.84] or wherever if you'd rather start at one
+[794.84] than zero but I'm perfectly fine with
+[796.44] zero so I'm just going to leave it for
+[797.72] now but if you want to go ahead and
+[800.40] delete a task let's select number two so
+[803.48] we have um you know our current task
+[805.84] here task number zero is to go to the
+[808.00] grocery store so why don't we select
+[809.88] number zero and now if we list our
+[812.60] things again we notice there's no tasks
+[815.32] so it successfully removed it from the
+[816.88] array and that's good and now the final
+[818.88] thing to test is our quit function so
+[821.52] let's just go ahead and press number
+[822.84] four and we notice it exits it or it
+[825.72] exits out of the loop and it says
+[827.36] goodbye so there we have it we have a
+[829.16] fully working to-do this app and I hope
+[831.16] that you guys learned something and
+[832.24] enjoy this video comment down below any
+[834.72] you know thoughts or suggestions for the
+[836.36] next video and with that being said
+[838.24] thank you guys for for watching and I
+[839.96] will see you in the next
+[843.06] [Music]
+[855.16] one
