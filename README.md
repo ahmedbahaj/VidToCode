@@ -90,8 +90,9 @@ VidToCode/
 │       ├── train.py
 │       └── run.py
 │
-├── evaluation/                            # Phase 3 — metrics & results
-│   ├── evaluate.py                        # CodeBLEU, similarity, unit test runner
+├── eval/                                  # Phase 3 — evaluation methodology & scripts
+│   ├── README.md                          # CS and CodeBLEU definitions, split, comparison table
+│   ├── evaluate.py                        # Evaluation runner (CS + CodeBLEU)
 │   └── results/                           # Output logs and score tables
 │
 ├── notebooks/                             # Exploratory analysis & visualizations
