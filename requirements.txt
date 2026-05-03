@@ -1,4 +1,9 @@
-# Dependencies for notebooks/eda.ipynb (stdlib: os, json, re — not listed)
+# EDA (notebooks/eda.ipynb)
 pandas>=2.1.0
 numpy>=1.26.0
 matplotlib>=3.8.0
+
+# Inference (approaches 1 & 2) — install llama-cpp-python with Metal on Apple Silicon:
+#   CMAKE_ARGS="-DGGML_METAL=on" pip install llama-cpp-python
+llama-cpp-python>=0.3.22
+huggingface_hub>=1.13.0
