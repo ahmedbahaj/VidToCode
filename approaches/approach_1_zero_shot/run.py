@@ -51,11 +51,23 @@ def discover_samples() -> list[dict]:
     return samples
 
 
+N_CTX = 32768
+MAX_OUTPUT_TOKENS = 2048
+# reserve tokens for prompt template overhead and output
+MAX_TRANSCRIPT_TOKENS = N_CTX - MAX_OUTPUT_TOKENS - 64
+
+
 def run_inference(llm: Llama, transcript: str) -> str:
+    # truncate transcript if it would overflow the context window
+    tokens = llm.tokenize(transcript.encode())
+    if len(tokens) > MAX_TRANSCRIPT_TOKENS:
+        tokens = tokens[:MAX_TRANSCRIPT_TOKENS]
+        transcript = llm.detokenize(tokens).decode(errors="replace")
+
     prompt = PROMPT_TEMPLATE.format(transcript=transcript)
     response = llm(
         prompt,
-        max_tokens=2048,
+        max_tokens=MAX_OUTPUT_TOKENS,
         temperature=0.0,
         stop=["Transcript:", "---"],
     )
@@ -71,7 +83,7 @@ def main():
 
     llm = Llama(
         model_path=str(MODEL_PATH),
-        n_ctx=8192,
+        n_ctx=N_CTX,
         n_gpu_layers=-1,  # offload all layers to Metal GPU
         verbose=False,
     )
