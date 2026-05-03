@@ -8,7 +8,7 @@ Most prior work extracts code visually (from screenshots or screencasts). VidToC
 **Supervisors:** Dr. Mohammed Alahmadi  
 **Institution:** University of Jeddah — Software Construction, 2026
 
---
+---
 
 ## Project Phases
 
