@@ -1,6 +1,0 @@
-[
-  {
-    "narration": "Define a class named Addition with three overloaded methods: add(int n1, int n2), add(int n1, int n2, int n3), and add(double n1, double n2, double n3, double n4).",
-    "intent": "implementation"
-  }
-]

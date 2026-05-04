@@ -1,6 +1,0 @@
-[
-  {
-    "narration": "Linear search is a simple algorithm used to find the position of a target value in a list by checking each element one by one starting from the first until the target is found or the end of the list is reached.",
-    "intent": "explanation"
-  }
-]

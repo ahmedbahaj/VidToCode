@@ -30,9 +30,20 @@ Your task:
 watching"), sponsor segments, subscribe/like requests, music tags, \
 and any off-topic chatter that is not about the code.
 
-2. SEGMENT the remaining content into logical chunks. Each chunk should \
-be one coherent action — a single coding step, one concept, or one \
-debugging action. Do not combine multiple unrelated steps.
+2. SEGMENT the remaining content into FINE-GRAINED chunks. Each chunk \
+should describe ONE specific coding step or concept. Be detailed — \
+a typical 5-minute video should produce 8-15 segments, a 15-minute \
+video should produce 20-40 segments. Do NOT summarize the entire \
+video into 1-2 broad statements.
+
+For example, do NOT write:
+  "Implement a bubble sort algorithm"
+Instead, write separate segments like:
+  "Define a function called bubbleSort that takes myList as a parameter"
+  "Create an outer for loop: for i in range(len(myList) - 1)"
+  "Create an inner for loop: for j in range(len(myList) - 1 - i)"
+  "Compare myList[j] with myList[j+1], if left is greater then swap them"
+  "Return the sorted list"
 
 3. CLASSIFY each chunk with exactly one intent:
    - "implementation" — the narrator describes code to write \
