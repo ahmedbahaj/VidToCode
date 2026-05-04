@@ -34,5 +34,6 @@ htmlcov/
 Thumbs.db
 
 models/Qwen3.5-4B-Q6_K.gguf
+models/Qwen3.5-27B-Q4_K_M.gguf
 models/.cache
 .claude/
