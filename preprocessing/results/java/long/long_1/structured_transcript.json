@@ -1,6 +1,62 @@
 [
   {
-    "narration": "Define a class named Addition that contains three overloaded methods: add(int n1, int n2), add(int n1, int n2, int n3), and add(double n1, double n2, double n3, double n4).",
+    "narration": "Define a class named Addition. Inside the class, create a method add that takes two integer arguments n1 and n2 and returns their sum.",
     "intent": "implementation"
+  },
+  {
+    "narration": "Create a second method named add that takes three integer arguments n1, n2, and n3 and returns their sum.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a third method named add that takes four double arguments n1, n2, n3, and n4 and returns their sum.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Instantiate an object of the Addition class and call the add method with two integer arguments 10 and 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a new instance of the Addition class and call the add method with three integer arguments 5, 6, and 5.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create another instance of the Addition class and call the add method with four double arguments 8, 9, 2, and 3.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print the results of the three add methods to the console.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that method overloading allows multiple methods with the same name but different parameters, resolved at compile time.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Define a parent class named ClassA with a void method show that prints 'This is A'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a child class named ClassB that extends ClassA and overrides the show method to print 'This is B'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Instantiate an object of ClassB and call the show method.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Comment out the show method in ClassA to demonstrate that the child class method is executed at runtime.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Explain that method overriding allows a child class to provide a specific implementation of a method already defined in the parent class, resolved at runtime.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that the super keyword can be used to access the parent class method while overriding.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Summarize that polymorphism in Java includes compile-time behavior via method overloading and runtime behavior via method overriding.",
+    "intent": "explanation"
   }
 ]
