@@ -7,3 +7,8 @@ matplotlib>=3.8.0
 #   CMAKE_ARGS="-DGGML_METAL=on" pip install llama-cpp-python
 llama-cpp-python>=0.3.22
 huggingface_hub>=1.13.0
+
+# Inference (Approach 3) - CodeGen2.5 requires transformers and PyTorch
+transformers>=4.38.0
+torch>=2.0.0
+accelerate>=0.27.0
