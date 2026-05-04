@@ -1,10 +1,10 @@
 {
   "source_file": "approaches/approach_1_zero_shot/results.json",
-  "total_samples": 33,
-  "cs_scored": 19,
-  "cs_overall": 0.2982456140350877,
-  "codebleu_scored": 33,
-  "codebleu_mean": 0.4124379821748314,
+  "total_samples": 36,
+  "cs_scored": 21,
+  "cs_overall": 0.2698412698412698,
+  "codebleu_scored": 36,
+  "codebleu_mean": 0.43186423696173387,
   "per_sample": [
     {
       "id": "cpp/long/long_1",
@@ -71,7 +71,7 @@
         "is_browser": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpdcys2xce/main.cpp:56:21: error: only virtual member functions can be marked 'override'\n   56 |     void practice() override {\n      |                     ^~~~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpdcys2xce/main.cpp:68:1: error: expected ')'\n   68 | };\n      | ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpdcys2xce/main.cpp:63:74: note: to match this '('\n   63 |     SingersYoutubeChannel(string name, string ownerName) : YoutubeChannel(name, explains the concept of polymorphism using a base class and two derived classes. The base class, YoutubeChannel, defines common properties and methods, while the derived classes, CookingYoutubeChannel and SingersYoutubeChannel, provide specific implementations for the practice method. The video demonstrates how polymorphism allows different objects to have the same method name but different behavior. It also shows how pointers to the base class can be used to invoke methods ",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpqd_apitr/main.cpp:56:21: error: only virtual member functions can be marked 'override'\n   56 |     void practice() override {\n      |                     ^~~~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpqd_apitr/main.cpp:68:1: error: expected ')'\n   68 | };\n      | ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpqd_apitr/main.cpp:63:74: note: to match this '('\n   63 |     SingersYoutubeChannel(string name, string ownerName) : YoutubeChannel(name, explains the concept of polymorphism using a base class and two derived classes. The base class, YoutubeChannel, defines common properties and methods, while the derived classes, CookingYoutubeChannel and SingersYoutubeChannel, provide specific implementations for the practice method. The video demonstrates how polymorphism allows different objects to have the same method name but different behavior. It also shows how pointers to the base class can be used to invoke methods ",
         "output_match": false
       },
       "codebleu_score": 0.4031882900559416,
@@ -360,13 +360,13 @@
         "output_match": false,
         "note": "Interactive sample \u2014 requires stdin, skipped"
       },
-      "codebleu_score": 0.6102959627573493,
+      "codebleu_score": 0.625602085206329,
       "codebleu_details": {
-        "codebleu": 0.6102959627573493,
+        "codebleu": 0.625602085206329,
         "ngram_match_score": 0.5697212464289411,
         "weighted_ngram_match_score": 0.5857483188861706,
         "syntax_match_score": 0.8571428571428571,
-        "dataflow_match_score": 0.42857142857142855
+        "dataflow_match_score": 0.4897959183673469
       }
     },
     {
@@ -385,13 +385,13 @@
         "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
         "output_match": false
       },
-      "codebleu_score": 0.40123900316031635,
+      "codebleu_score": 0.40985969281548873,
       "codebleu_details": {
-        "codebleu": 0.40123900316031635,
+        "codebleu": 0.40985969281548873,
         "ngram_match_score": 0.12178234578438014,
         "weighted_ngram_match_score": 0.30081292415131483,
         "syntax_match_score": 0.5961538461538461,
-        "dataflow_match_score": 0.5862068965517241
+        "dataflow_match_score": 0.6206896551724138
       }
     },
     {
@@ -433,16 +433,16 @@
         "is_browser": false,
         "status": "runtime_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5m4aljsa/main.js:15\n  cache = {};\n        ^\n\nTypeError: Assignment to constant variable.\n    at /private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5m4aljsa/main.js:15:9\n    at Object.<anonymous> (/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5m4aljsa/main.js:22:2)\n    at Module._compile (node:internal/modules/cjs/loader:1829:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)\n    at Module.load (node:internal/modules/cjs/loader:1552:32)\n    at Module._load (node:internal/modules/cjs/loader:1354:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpvwrb4jvi/main.js:15\n  cache = {};\n        ^\n\nTypeError: Assignment to constant variable.\n    at /private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpvwrb4jvi/main.js:15:9\n    at Object.<anonymous> (/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpvwrb4jvi/main.js:22:2)\n    at Module._compile (node:internal/modules/cjs/loader:1829:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)\n    at Module.load (node:internal/modules/cjs/loader:1552:32)\n    at Module._load (node:internal/modules/cjs/loader:1354:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.9.0\n",
         "output_match": false
       },
-      "codebleu_score": 0.2724158253496669,
+      "codebleu_score": 0.2757942037280453,
       "codebleu_details": {
-        "codebleu": 0.2724158253496669,
+        "codebleu": 0.2757942037280453,
         "ngram_match_score": 0.10762789605927092,
         "weighted_ngram_match_score": 0.11737844068243204,
         "syntax_match_score": 0.5538461538461539,
-        "dataflow_match_score": 0.3108108108108108
+        "dataflow_match_score": 0.32432432432432434
       }
     },
     {
@@ -458,7 +458,7 @@
         "is_browser": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpqfy1ct69/main.js:20\n<think>\n^\n\nSyntaxError: Unexpected token '<'\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp7kdm6cxn/main.js:20\n<think>\n^\n\nSyntaxError: Unexpected token '<'\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
       "codebleu_score": 0.38975802078095884,
@@ -483,7 +483,7 @@
         "is_browser": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmphy85dodk/main.js:26\n        console.log('File appended');\n                                     \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpc519ss9z/main.js:26\n        console.log('File appended');\n                                     \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
       "codebleu_score": 0.4240366847115544,
@@ -534,7 +534,7 @@
         "is_browser": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpy_hym2d8/main.js:1\nconst arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52,  content\n                                                                                                                                                                                                                               \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpye9z6e30/main.js:1\nconst arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52,  content\n                                                                                                                                                                                                                               \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
       "codebleu_score": 0.25158523935555926,
@@ -585,16 +585,16 @@
         "is_browser": false,
         "status": "runtime_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpxrv0fpl4/main.js:2\nfor (const [item, index] of arr1) {\n                       ^\n\nTypeError: .for is not iterable\n    at Object.<anonymous> (/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpxrv0fpl4/main.js:2:24)\n    at Module._compile (node:internal/modules/cjs/loader:1829:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)\n    at Module.load (node:internal/modules/cjs/loader:1552:32)\n    at Module._load (node:internal/modules/cjs/loader:1354:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpi8ta858a/main.js:2\nfor (const [item, index] of arr1) {\n                       ^\n\nTypeError: .for is not iterable\n    at Object.<anonymous> (/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpi8ta858a/main.js:2:24)\n    at Module._compile (node:internal/modules/cjs/loader:1829:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)\n    at Module.load (node:internal/modules/cjs/loader:1552:32)\n    at Module._load (node:internal/modules/cjs/loader:1354:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.9.0\n",
         "output_match": false
       },
-      "codebleu_score": 0.2925262072164931,
+      "codebleu_score": 0.2795053738831597,
       "codebleu_details": {
-        "codebleu": 0.2925262072164931,
+        "codebleu": 0.2795053738831597,
         "ngram_match_score": 0.16960906002249754,
         "weighted_ngram_match_score": 0.17716519489203986,
         "syntax_match_score": 0.5629139072847682,
-        "dataflow_match_score": 0.2604166666666667
+        "dataflow_match_score": 0.20833333333333334
       }
     },
     {
@@ -689,7 +689,7 @@
         "is_browser": false,
         "status": "runtime_error",
         "stdout": "Original: []\nSorted: []\n\nOriginal: [1]\nSorted: [1]\n\nOriginal: [5, 4, 3, 2, 1]\n",
-        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpvqqrb_nq/main.py\", line 60, in <module>\n    test_merge_sort()\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpvqqrb_nq/main.py\", line 55, in test_merge_sort\n    merge_sort_in_place(arr)\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpvqqrb_nq/main.py\", line 40, in merge_sort_in_place\n    merge_sort_in_place(arr[:mid])\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpvqqrb_nq/main.py\", line 42, in merge_sort_in_place\n    merge_sorted_arrays(arr[:mid], arr[mid:], arr)\nTypeError: merge_sorted_arrays() takes 2 positional arguments but 3 were given\n",
+        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp724d0kwy/main.py\", line 60, in <module>\n    test_merge_sort()\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp724d0kwy/main.py\", line 55, in test_merge_sort\n    merge_sort_in_place(arr)\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp724d0kwy/main.py\", line 40, in merge_sort_in_place\n    merge_sort_in_place(arr[:mid])\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp724d0kwy/main.py\", line 42, in merge_sort_in_place\n    merge_sorted_arrays(arr[:mid], arr[mid:], arr)\nTypeError: merge_sorted_arrays() takes 2 positional arguments but 3 were given\n",
         "output_match": false
       },
       "codebleu_score": 0.42130196133337,
@@ -767,7 +767,7 @@
         "is_browser": false,
         "status": "runtime_error",
         "stdout": "(True, 4)\n(True, 1)\n",
-        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpmnn0jlph/main.py\", line 24, in <module>\n    print(binary_search(arr, [1, 2, 3, 4, 5, 6, 7, 8, 9]))\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpmnn0jlph/main.py\", line 13, in binary_search\n    elif arr[mid] < target:\nTypeError: '<' not supported between instances of 'int' and 'list'\n",
+        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp9_5iirq8/main.py\", line 24, in <module>\n    print(binary_search(arr, [1, 2, 3, 4, 5, 6, 7, 8, 9]))\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp9_5iirq8/main.py\", line 13, in binary_search\n    elif arr[mid] < target:\nTypeError: '<' not supported between instances of 'int' and 'list'\n",
         "output_match": false
       },
       "codebleu_score": 0.30496636908745206,
@@ -818,7 +818,7 @@
         "is_browser": false,
         "status": "runtime_error",
         "stdout": "",
-        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpigbpx_xv/main.py\", line 1, in <module>\n    with open(\"test.txt\") as file:\nFileNotFoundError: [Errno 2] No such file or directory: 'test.txt'\n",
+        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp0uyypikh/main.py\", line 1, in <module>\n    with open(\"test.txt\") as file:\nFileNotFoundError: [Errno 2] No such file or directory: 'test.txt'\n",
         "output_match": false
       },
       "codebleu_score": 0.49997352700961023,
@@ -848,13 +848,89 @@
         "expected_preview": "['a', 'b', 'c', 'd', 'e', 'f']",
         "actual_preview": "[1, 2, 3, 4]"
       },
-      "codebleu_score": 0.368821965577096,
+      "codebleu_score": 0.381321965577096,
       "codebleu_details": {
-        "codebleu": 0.368821965577096,
+        "codebleu": 0.381321965577096,
         "ngram_match_score": 0.14783829020276099,
         "weighted_ngram_match_score": 0.16744957210562306,
         "syntax_match_score": 0.56,
+        "dataflow_match_score": 0.65
+      }
+    },
+    {
+      "id": "java/medium/medium_1",
+      "language": "java",
+      "is_interactive": false,
+      "is_browser": false,
+      "generated_code_length": 1030,
+      "reference_code_length": 950,
+      "cs_score": 0,
+      "cs_details": {
+        "is_interactive": false,
+        "is_browser": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.6624091035279418,
+      "codebleu_details": {
+        "codebleu": 0.6624091035279418,
+        "ngram_match_score": 0.6127863114777186,
+        "weighted_ngram_match_score": 0.6561483482480838,
+        "syntax_match_score": 0.7807017543859649,
         "dataflow_match_score": 0.6
+      }
+    },
+    {
+      "id": "java/medium/medium_2",
+      "language": "java",
+      "is_interactive": true,
+      "is_browser": false,
+      "generated_code_length": 1080,
+      "reference_code_length": 1111,
+      "cs_score": null,
+      "cs_details": {
+        "is_interactive": true,
+        "is_browser": false,
+        "status": "skipped_interactive",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "note": "Interactive sample \u2014 requires stdin, skipped"
+      },
+      "codebleu_score": 0.669090975524893,
+      "codebleu_details": {
+        "codebleu": 0.669090975524893,
+        "ngram_match_score": 0.39422090592590053,
+        "weighted_ngram_match_score": 0.47777406413483686,
+        "syntax_match_score": 0.8543689320388349,
+        "dataflow_match_score": 0.95
+      }
+    },
+    {
+      "id": "java/medium/medium_3",
+      "language": "java",
+      "is_interactive": false,
+      "is_browser": false,
+      "generated_code_length": 394,
+      "reference_code_length": 482,
+      "cs_score": 0,
+      "cs_details": {
+        "is_interactive": false,
+        "is_browser": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.5783746826509504,
+      "codebleu_details": {
+        "codebleu": 0.5783746826509504,
+        "ngram_match_score": 0.4887568420938474,
+        "weighted_ngram_match_score": 0.5100097456528113,
+        "syntax_match_score": 0.921875,
+        "dataflow_match_score": 0.39285714285714285
       }
     }
   ]
