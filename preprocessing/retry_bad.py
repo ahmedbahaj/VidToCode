@@ -17,7 +17,13 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 OUTPUT_DIR = Path(__file__).parent / "results"
 
 TARGETS = {
-    "java/long/long_1": 15,   # 300-line transcript, expect at least 15 segments
+    "cpp/short/short_3": 3,         # 119 lines, currently 2 segs
+    "cpp/long/long_2": 10,          # 515 lines, currently 2 segs
+    "java/short/short_1": 3,        # 229 lines, currently 2 segs
+    "java/medium/medium_1": 6,      # 405 lines, currently 4 segs
+    "java/long/long_2": 10,         # 446 lines, currently 6 segs
+    "javascript/short/short_2": 3,  # 148 lines, currently 2 segs
+    "python/short/short_3": 3,      # 69 lines, currently 2 segs
 }
 
 def main():
