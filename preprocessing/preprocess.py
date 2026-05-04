@@ -169,14 +169,39 @@ def main():
 
         # Parse and validate
         try:
-            structured = parse_json_response(raw_output)
-            if not isinstance(structured, list):
+            parsed = parse_json_response(raw_output)
+            if not isinstance(parsed, list):
                 raise ValueError("Response is not a JSON array")
-            for entry in structured:
+
+            # Auto-fix and filter entries
+            structured = []
+            valid_intents = {"implementation", "explanation", "debugging", "refactoring"}
+            for entry in parsed:
+                if not isinstance(entry, dict):
+                    continue
+
+                # Fix typo'd narration keys (e.g. "narruse", "narrar")
+                if "narration" not in entry:
+                    narr_key = next((k for k in entry if k.startswith("narr")), None)
+                    if narr_key:
+                        entry["narration"] = entry.pop(narr_key)
+
+                # Skip entries missing required keys
                 if "narration" not in entry or "intent" not in entry:
-                    raise ValueError(f"Missing keys in entry: {entry}")
-                if entry["intent"] not in ("implementation", "explanation", "debugging", "refactoring"):
-                    raise ValueError(f"Invalid intent: {entry['intent']}")
+                    continue
+
+                # Fix invalid intents — default to "explanation"
+                if entry["intent"] not in valid_intents:
+                    entry["intent"] = "explanation"
+
+                # Keep only the two required keys
+                structured.append({
+                    "narration": entry["narration"],
+                    "intent": entry["intent"],
+                })
+
+            if not structured:
+                raise ValueError("No valid entries after filtering")
         except (json.JSONDecodeError, ValueError) as e:
             print(f"FAILED ({e})")
             failed.append({"id": sample_id, "error": str(e), "raw_output": raw_output[:500]})
