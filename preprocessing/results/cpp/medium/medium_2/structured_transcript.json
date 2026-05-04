@@ -1,0 +1,74 @@
+[
+  {
+    "narration": "Define show_balance(double balance) function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define deposit() and withdraw(double balance) functions.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In main(), declare double balance = 0 and int choice = 0.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Display 'Enter your choice' prompt with asterisk decorations.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement switch statement with cases 1-4 and default.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Case 1: call show_balance(balance) and break.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Case 2: balance += deposit(); break.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Case 3: balance -= withdraw(balance); break.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Wrap switch logic in do-while loop: while (choice != 4).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Return 0 from deposit() and withdraw() functions.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Compile and test program. Verify do-while loop works.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Implement show_balance function: display balance with 2 decimal places.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Include <iomanip> header and use std::setprecision(2) with std::fixed.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement deposit function: declare local variable amount, prompt user, read input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In deposit function: if (amount > 0) return amount; else return 0.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement withdrawal function: declare local variable amount, prompt user, read input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In withdrawal function: if (amount < 0) return 0; else return amount.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add std::cin.clear() and std::cin.flush() after input to handle invalid characters.",
+    "intent": "implementation"
+  }
+]

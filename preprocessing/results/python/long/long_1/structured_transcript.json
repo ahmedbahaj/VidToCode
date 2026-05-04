@@ -1,0 +1,54 @@
+[
+  {
+    "narration": "Import argparse module and define the main entry point.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Instantiate an ArgumentParser object with a description.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a positional argument for pizza size with type string and choices from the sizes constant.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add custom help text for the size argument.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Parse command line arguments using parser.parse_args().",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a positional argument for pizza crust with type string and choices from the crusts constant.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an optional flag argument for extra cheese using store_true action and destination cheese.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an optional flag argument for extra sauce using store_true action and destination sauce.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an optional argument for toppings with nargs='+' to accept one or more values.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Update the build_pizza helper function to accept a namespace object instead of a dictionary.",
+    "intent": "refactoring"
+  },
+  {
+    "narration": "Access pizza attributes from the namespace object (size, crust, cheese, sauce, toppings).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print the final pizza order message using the parsed arguments.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Test the CLI with valid and invalid inputs to verify argument validation.",
+    "intent": "debugging"
+  }
+]

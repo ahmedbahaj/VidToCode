@@ -1,0 +1,6 @@
+[
+  {
+    "narration": "Bubble sort works by comparing adjacent items in a list and swapping them if they are in the wrong order.",
+    "intent": "explanation"
+  }
+]

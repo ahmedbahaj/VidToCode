@@ -1,0 +1,34 @@
+[
+  {
+    "narration": "Explain the concept of merge sort by describing how to merge two sorted arrays into one sorted array.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain the divide and conquer approach to sorting an unsorted array by recursively dividing it into smaller sorted subarrays and merging them.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Implement a function to merge two sorted arrays by comparing elements and appending the smaller one to a result list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Fix the merge function to handle remaining elements after one array is exhausted by appending them directly.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Implement the merge sort algorithm using recursion to divide the array and merge sorted subarrays.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Refactor the merge sort implementation to sort in-place without creating new arrays to optimize space complexity.",
+    "intent": "refactoring"
+  },
+  {
+    "narration": "Test the merge sort implementation with various edge cases including empty lists, single elements, reverse sorted, and random lists.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement a modified merge sort function that takes a key and a descending flag to sort JSON objects based on specific attributes.",
+    "intent": "implementation"
+  }
+]

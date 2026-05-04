@@ -1,0 +1,10 @@
+[
+  {
+    "narration": "Explain the File System Object in JavaScript.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Describe the parameters for fs.readFile: path, options (encoding), and callback function.",
+    "intent": "explanation"
+  }
+]

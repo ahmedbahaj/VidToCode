@@ -1,0 +1,10 @@
+[
+  {
+    "narration": "Explain that arrays are a special structure in Java used to store multiple values, unlike variables which store a single value.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Demonstrate how to create a written array by specifying the data type, using square brackets, and assigning a name.",
+    "intent": "implementation"
+  }
+]

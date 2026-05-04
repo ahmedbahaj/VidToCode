@@ -1,0 +1,74 @@
+[
+  {
+    "narration": "Initialize userScore and cpuScore variables to 0.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an infinite while loop (while true) to handle game rounds.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt user to enter 1 for rock, 2 for paper, 3 for scissors.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Import java.util.Scanner and create a Scanner object named scan.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Read user input using scan.nextInt() and store in userChoice.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Import java.util.Random and create a Random object named rand.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Generate random CPU choice using rand.nextInt(3) + 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use if-else if statements to handle all game scenarios.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check for ties: if cpuChoice equals userChoice, display tie message.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If user picks 1 (rock) and CPU picks 2 (paper), user loses round.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If user picks 1 (rock) and CPU picks 3 (scissors), user wins round.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If user picks 2 (paper) and CPU picks 3 (scissors), user loses round.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If user picks 3 (scissors) and CPU picks 1 (rock), user wins round.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "After each round, update scores and display current scores using printf.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if either score reaches 2 to break the infinite loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If user wins best two out of three, display congratulations message.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If CPU wins best two out of three, display loss message.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Ensure all brackets are properly closed.",
+    "intent": "implementation"
+  }
+]
