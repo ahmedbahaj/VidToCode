@@ -83,12 +83,15 @@ VidToCode/
 │
 ├── approaches/                            # Phase 3 — one folder per approach
 │   ├── approach_1_zero_shot/              # Raw transcript → LLM → code
-│   │   └── run.py
+│   │   ├── run.py
+│   │   └── results.json
 │   ├── approach_2_structured/             # Structured transcript → LLM → code
-│   │   └── run.py
+│   │   ├── run.py
+│   │   └── results.json
 │   └── approach_3_finetune/               # Structured → docstring → fine-tuned CodeGen2
 │       ├── train.py
-│       └── run.py
+│       ├── run.py
+│       └── results.json
 │
 ├── eval/                                  # Phase 3 — evaluation methodology & scripts
 │   ├── README.md                          # CS and CodeBLEU definitions, split, comparison table
@@ -136,3 +139,29 @@ Each raw transcript segment will be transformed into a structured JSON record:
 ```
 
 **Intent labels:** `implementation` · `explanation` · `debugging` · `refactoring`
+
+---
+
+## `results.json` Format
+
+Each approach's `run.py` produces a `results.json` file in the same directory. The file is a JSON array of objects, one per sample:
+
+```json
+[
+  {
+    "id": "cpp/long/long_1",
+    "language": "cpp",
+    "generated_code": "#include <iostream>\nusing namespace std;\n...",
+    "reference_code": "#include <iostream>\n#include <string>\n..."
+  }
+]
+```
+
+| Field | Type | Description |
+|---|---|---|
+| `id` | `string` | Sample identifier in `{language}/{tier}/{name}` format (e.g. `python/short/short_3`) |
+| `language` | `string` | Programming language: `python`, `cpp`, `java`, or `javascript` |
+| `generated_code` | `string` | Raw LLM output (may contain markdown fences, `<think>` blocks, etc.) |
+| `reference_code` | `string` | Ground truth source code from `data/{id}/<source>.<ext>` |
+
+There should be **36 entries** (one per video in the dataset). The evaluation script (`evaluation/evaluate.py`) reads this file and computes CS + CodeBLEU.

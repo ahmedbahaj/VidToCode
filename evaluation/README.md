@@ -66,10 +66,95 @@ Result: **24 train, 12 test.** No validation set — 12 test samples is already 
 
 ## Practical Issue: Interactive Outputs
 
-Some videos have programs that require user input at runtime (e.g. a number guessing game). These cannot be evaluated by simply running the code and diffing against `output.txt`.
+Some videos have programs that require user input at runtime (e.g. a number guessing game, a calculator, a to-do list app). These cannot be evaluated by simply running the code and diffing against `output.txt`.
 
-Two options per interactive sample:
-- **Pre-feed inputs via stdin** — pipe a fixed sequence of inputs and verify the output matches
-- **Skip output matching** — fall back to CodeBLEU only, and mark the sample as `interactive` in the results table
+The evaluation script handles this in three tiers:
 
-All 36 samples should be tagged as `standard` or `interactive` before running the evaluation script.
+| Tier | Handling | Samples |
+|---|---|---|
+| **Deterministic stdin** | Pre-feed known inputs via stdin and compare output | `cpp/long/long_1`, `cpp/long/long_2`, `cpp/medium/medium_2`, `cpp/medium/medium_3`, `java/short/short_2`, `python/medium/medium_1` |
+| **CLI arguments** | Pass argparse arguments instead of stdin | `python/long/long_1` |
+| **Random-seeded** | Skipped — output depends on RNG, cannot match `output.txt` | `cpp/short/short_1`, `java/long/long_3`, `java/medium/medium_2`, `python/short/short_1`, `python/long/long_2` |
+| **Browser-based** | Skipped — uses DOM APIs (`getElementById`, `prompt`, `alert`) | `javascript/long/long_1`, `javascript/medium/medium_2`, `javascript/short/short_1` |
+
+---
+
+## `results_evaluation.json` Format
+
+Running `evaluate.py` on a `results.json` file produces a `results_evaluation.json` in the same directory. The file has the following structure:
+
+### Top-level fields
+
+```json
+{
+  "source_file": "approaches/approach_1_zero_shot/results.json",
+  "total_samples": 36,
+  "cs_scored": 28,
+  "cs_overall": 0.2619,
+  "codebleu_scored": 36,
+  "codebleu_mean": 0.4308,
+  "per_sample": [ ... ]
+}
+```
+
+| Field | Type | Description |
+|---|---|---|
+| `source_file` | `string` | Path to the input `results.json` |
+| `total_samples` | `int` | Total number of samples in the input |
+| `cs_scored` | `int` | Number of samples that received a CS score (not skipped) |
+| `cs_overall` | `float` | Aggregate CS: `sum(scores) / (3 × cs_scored)` — range 0 to 1 |
+| `codebleu_scored` | `int` | Number of samples that received a CodeBLEU score |
+| `codebleu_mean` | `float` | Mean CodeBLEU across scored samples — range 0 to 1 |
+
+### Per-sample entry
+
+Each element in the `per_sample` array has the following fields:
+
+```json
+{
+  "id": "cpp/medium/medium_3",
+  "language": "cpp",
+  "is_skipped": false,
+  "is_browser": false,
+  "stdin_fed": true,
+  "generated_code_length": 412,
+  "reference_code_length": 824,
+  "cs_score": 2,
+  "cs_details": {
+    "is_skipped": false,
+    "is_browser": false,
+    "stdin_fed": true,
+    "status": "success",
+    "stdout": "Enter an integer: Found at index: 5\n",
+    "stderr": "",
+    "output_match": false,
+    "expected_preview": "Enter an integer: \n67\nThe number 67 was found...",
+    "actual_preview": "Enter an integer: Found at index: 5"
+  },
+  "codebleu_score": 0.6829,
+  "codebleu_details": {
+    "codebleu": 0.6829,
+    "ngram_match_score": 0.4928,
+    "weighted_ngram_match_score": 0.5388,
+    "syntax_match_score": 0.8000,
+    "dataflow_match_score": 0.9000
+  }
+}
+```
+
+| Field | Type | Description |
+|---|---|---|
+| `id` | `string` | Sample identifier (`{language}/{tier}/{name}`) |
+| `language` | `string` | `python`, `cpp`, `java`, or `javascript` |
+| `is_skipped` | `bool` | `true` if the sample was skipped for CS (random-seeded game) |
+| `is_browser` | `bool` | `true` if the sample uses browser DOM APIs |
+| `stdin_fed` | `bool` | `true` if stdin or CLI args were pre-fed for this sample |
+| `generated_code_length` | `int` | Character count of the cleaned generated code |
+| `reference_code_length` | `int` | Character count of the reference code |
+| `cs_score` | `int\|null` | Compilation Score: 0–3, or `null` if skipped |
+| `cs_details.status` | `string` | One of: `parse_error`, `runtime_error`, `timeout`, `success`, `skipped_random`, `skipped_browser`, `unavailable` |
+| `cs_details.stdout` | `string` | Captured stdout (truncated to 1000 chars) |
+| `cs_details.stderr` | `string` | Captured stderr (truncated to 1000 chars) |
+| `cs_details.output_match` | `bool` | `true` if stdout exactly matches `output.txt` |
+| `codebleu_score` | `float\|null` | CodeBLEU score (0–1), or `null` if computation failed |
+| `codebleu_details` | `object` | Breakdown: `ngram_match_score`, `weighted_ngram_match_score`, `syntax_match_score`, `dataflow_match_score` |
