@@ -82,14 +82,13 @@ VidToCode/
 │       └── test.json
 │
 ├── approaches/                            # Phase 3 — one folder per approach
-│   ├── approach_1_zero_shot/              # Raw transcript → LLM → code
+│   ├── approach_1_zero_shot/              # Raw transcript → Qwen2.5-27B → code
 │   │   ├── run.py
 │   │   └── results.json
-│   ├── approach_2_structured/             # Structured transcript → LLM → code
+│   ├── approach_2_structured/             # Structured transcript → Qwen2.5-27B → code
 │   │   ├── run.py
 │   │   └── results.json
-│   └── approach_3_finetune/               # Structured → docstring → fine-tuned CodeGen2
-│       ├── train.py
+│   └── approach_3_codegen2/               # Raw transcript → CodeGen2.5 → code
 │       ├── run.py
 │       └── results.json
 │
@@ -115,13 +114,13 @@ Three approaches are evaluated against each other, each isolating a single varia
 
 | # | Input | Model | What it answers |
 |---|---|---|---|
-| 1 | Raw transcript | LLM (zero-shot) | Can an LLM go directly from noisy narration to code? |
-| 2 | Structured / annotated transcript | LLM (zero-shot) | Does the Phase 2 preprocessing actually help? |
-| 3 | Structured transcript → LLM-generated docstring | Fine-tuned CodeGen2 | Does the teacher-student setup improve over zero-shot? |
+| 1 | Raw transcript | Qwen2.5-27B (zero-shot) | Can a general-purpose LLM go directly from noisy narration to code? |
+| 2 | Structured / annotated transcript | Qwen2.5-27B (zero-shot) | Does the Phase 2 preprocessing actually help? |
+| 3 | Raw transcript | CodeGen2.5-7B (zero-shot) | How does a specialized code-generation model compare against a general-purpose LLM on raw narration? |
 
-- **1 vs 2** isolates the value of the annotation and cleaning pipeline
-- **2 vs 3** isolates whether fine-tuning CodeGen2 adds anything on top of zero-shot
-- Approach 3 requires the train/test split; approaches 1 and 2 are evaluated on all 36 samples
+- **1 vs 2** isolates the value of the annotation and cleaning pipeline (Preprocessing impact)
+- **1 vs 3** isolates the impact of the model architecture (General LLM vs Code-specific LLM)
+- All approaches are evaluated on the full set of 36 samples.
 
 ---
 
