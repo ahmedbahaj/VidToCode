@@ -48,10 +48,13 @@ and be precise about code elements (variable names, operators, types).
 
 Output ONLY a valid JSON array. Each element is an object with exactly \
 two keys: "narration" (string) and "intent" (string). \
-Do not wrap in markdown fences. Do not add any explanation.
+Do not wrap in markdown fences. Do not add any explanation. Do not think.
 
 Transcript:
 {transcript}
+
+JSON:
+[
 """
 
 N_CTX = 32768
@@ -159,9 +162,10 @@ def main():
             prompt,
             max_tokens=MAX_OUTPUT_TOKENS,
             temperature=0.0,
-            stop=["Transcript:", "---"],
+            stop=["Transcript:", "---", "]"],
         )
-        raw_output = response["choices"][0]["text"].strip()
+        # Prepend '[' since we primed the prompt with it, and append ']' since it's a stop token
+        raw_output = "[" + response["choices"][0]["text"].strip() + "]"
 
         # Parse and validate
         try:
