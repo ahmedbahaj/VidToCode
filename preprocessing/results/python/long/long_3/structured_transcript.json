@@ -1,0 +1,46 @@
+[
+  {
+    "narration": "Define a function called merge_two_sorted_arrays that takes two sorted arrays as parameters.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize two pointers, i for the first array and j for the second array, both set to zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use a while loop to iterate as long as either pointer has not reached the end of its respective array.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Compare the elements at the current pointers. If the element from the first array is less than or equal to the element from the second array, append the first element to the result list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Increment the first pointer and continue the loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the element from the second array is smaller, append it to the result list and increment the second pointer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Handle the remaining elements from either array after one array is exhausted by appending them directly to the result list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a recursive function called merge_sort that takes an array as a parameter.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the array has one or fewer elements. If so, return the array as it is already sorted.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Calculate the middle index of the array to divide it into left and right halves.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Recursively call merge_sort on the left half of the array.",
+    "intent": "implementation"
+  }
+]

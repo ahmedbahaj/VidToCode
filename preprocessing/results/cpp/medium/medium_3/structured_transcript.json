@@ -1,0 +1,78 @@
+[
+  {
+    "narration": "Explain the precondition that the array must be sorted for binary search to work.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain how binary search cuts the search space in half on every comparison.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain how to update the low value if the search value is greater than the midpoint.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain how to update the high value if the search value is less than the midpoint.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Walk through the binary search algorithm on a small sorted array of eight elements.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain the time complexity of binary search as log base 2 n.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain the performance benefit of doubling the search space only adds one comparison.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Copy the main function body from a linear search program into the binary search program.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the binary search function with an int return type and parameters for array, size, and search value.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize the low variable to zero and the high variable to size minus one.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Calculate the midpoint by adding low and high and dividing by two using integer division.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Compare the search value with the value at the midpoint index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the search value is equal to the midpoint value, return the midpoint index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the search value is greater than the midpoint value, update low to mid plus one.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the search value is less than the midpoint value, update high to mid minus one.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Wrap the comparison and update logic in a while loop that continues while low is less than or equal to high.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Return negative one if the search value is not found in the array.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Build and run the binary search program to test the implementation.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Test the binary search function with a value that exists in the array.",
+    "intent": "debugging"
+  }
+]

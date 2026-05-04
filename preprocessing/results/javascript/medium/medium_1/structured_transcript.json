@@ -1,0 +1,34 @@
+[
+  {
+    "narration": "Define a function readExcel that takes error and data parameters, prints data to console if successful, or logs error if file not found.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Execute fs.readFile('read-excel.js', null, readExcel) to read the file and verify its content is displayed in the console.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement fs.writeFile('write.js', 'data saved', writeFileCallback) to create a new file with specific content.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Demonstrate that fs.writeFile overwrites existing file content by writing 'data saved' to write.js.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Describe fs.openFile as an alternative method that appends data to the end of an existing file instead of overwriting it.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Implement fs.openFile('write.js', 'new data', openFileCallback) to demonstrate file appending behavior.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that fs.unlink takes the file path and a callback function to remove a file from the filesystem.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Implement fs.unlink('write.js', unlinkCallback) to delete the previously created file.",
+    "intent": "implementation"
+  }
+]

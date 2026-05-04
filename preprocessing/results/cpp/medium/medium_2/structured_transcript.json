@@ -1,0 +1,14 @@
+[
+  {
+    "narration": "Define a function called showBalance that takes a double balance parameter and returns a double.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "string",
+    "intent": "explanation"
+  },
+  {
+    "narration": "...",
+    "intent": "explanation"
+  }
+]

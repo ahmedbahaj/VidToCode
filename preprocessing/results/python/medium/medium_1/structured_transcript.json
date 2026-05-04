@@ -1,0 +1,14 @@
+[
+  {
+    "narration": "Define a function called add_task that takes no parameters and prompts the user for a new task. Append the new task to the tasks array and print a confirmation message using an f-string.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a function called delete_task that uses a try-except block to handle invalid input. Prompt the user for the index of the task to delete and validate that the index is within the range of the tasks array.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a function called list_tasks that checks if the tasks array is empty. If not, iterate through the tasks using a for loop and print each task with its index.",
+    "intent": "implementation"
+  }
+]

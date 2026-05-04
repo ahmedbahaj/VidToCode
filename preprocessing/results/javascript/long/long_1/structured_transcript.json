@@ -1,0 +1,26 @@
+[
+  {
+    "narration": "Define an input container div with class 'input-container' containing an input field of type 'text' with ID 'input-todo' and a button with ID 'add-todo'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a to-do container div with class 'todo-container' containing multiple to-do items, each represented by a div with class 'todo'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside each to-do div, include a checkbox input of type 'checkbox' and a button with text 'Delete'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In the body, set the font-family to a custom value and change the background-color to 'wheat'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Apply 'text-align: center' to the H1 heading.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the 'input-container' to 'display: flex', 'flex-direction: column', and 'align-items: center'.",
+    "intent": "implementation"
+  }
+]
