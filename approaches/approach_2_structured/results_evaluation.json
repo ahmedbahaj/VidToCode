@@ -4,7 +4,7 @@
   "cs_scored": 28,
   "cs_overall": 0.38095238095238093,
   "codebleu_scored": 36,
-  "codebleu_mean": 0.4476769857767347,
+  "codebleu_mean": 0.44625045923509643,
   "per_sample": [
     {
       "id": "cpp/long/long_1",
@@ -21,7 +21,7 @@
         "stdin_fed": true,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps9ug5gfr/main.cpp:21:25: warning: missing terminating '\"' character [-Winvalid-pp-token]\n   21 |                 cout << \"\n      |                         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps9ug5gfr/main.cpp:21:25: error: expected expression\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps9ug5gfr/main.cpp:21:26: error: expected '}'\n   21 |                 cout << \"\n      |                          ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps9ug5gfr/main.cpp:20:24: note: to match this '{'\n   20 |             if (i < 2) {\n      |                        ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps9ug5gfr/main.cpp:21:26: error: expected '}'\n   21 |                 cout << \"\n      |                          ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps9ug5gfr/main.cpp:18:37: note: to match this '{'\n   18 |         for (int i = 0; i < 3; i++) {\n      |                                  ",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpq0c80jjk/main.cpp:21:25: warning: missing terminating '\"' character [-Winvalid-pp-token]\n   21 |                 cout << \"\n      |                         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpq0c80jjk/main.cpp:21:25: error: expected expression\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpq0c80jjk/main.cpp:21:26: error: expected '}'\n   21 |                 cout << \"\n      |                          ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpq0c80jjk/main.cpp:20:24: note: to match this '{'\n   20 |             if (i < 2) {\n      |                        ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpq0c80jjk/main.cpp:21:26: error: expected '}'\n   21 |                 cout << \"\n      |                          ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpq0c80jjk/main.cpp:18:37: note: to match this '{'\n   18 |         for (int i = 0; i < 3; i++) {\n      |                                  ",
         "output_match": false
       },
       "codebleu_score": 0.1917310331939358,
@@ -48,16 +48,16 @@
         "stdin_fed": true,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpgvxflvvg/main.cpp:11:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]\n   11 |     int myArray[size];\n      |                 ^~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpgvxflvvg/main.cpp:11:17: note: read of non-const variable 'size' is not allowed in a constant expression\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpgvxflvvg/main.cpp:8:9: note: declared here\n    8 |     int size = 0;\n      |         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpgvxflvvg/main.cpp:23:25: error: redefinition of 'i'\n   23 |     for (int i = 0; int i < size; i++) {\n      |                         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpgvxflvvg/main.cpp:23:14: note: previous definition is here\n   23 |     for (int i = 0; int i < size; i++) {\n      |              ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpgvxflvvg/main.cpp:23:25: error: variable declaration in condit",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprclk297h/main.cpp:11:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]\n   11 |     int myArray[size];\n      |                 ^~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprclk297h/main.cpp:11:17: note: read of non-const variable 'size' is not allowed in a constant expression\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprclk297h/main.cpp:8:9: note: declared here\n    8 |     int size = 0;\n      |         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprclk297h/main.cpp:23:25: error: redefinition of 'i'\n   23 |     for (int i = 0; int i < size; i++) {\n      |                         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprclk297h/main.cpp:23:14: note: previous definition is here\n   23 |     for (int i = 0; int i < size; i++) {\n      |              ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprclk297h/main.cpp:23:25: error: variable declaration in condit",
         "output_match": false
       },
-      "codebleu_score": 0.4061218468927902,
+      "codebleu_score": 0.4112238877091167,
       "codebleu_details": {
-        "codebleu": 0.4061218468927902,
+        "codebleu": 0.4112238877091167,
         "ngram_match_score": 0.18980687879762637,
         "weighted_ngram_match_score": 0.2914334010132329,
         "syntax_match_score": 0.6942675159235668,
-        "dataflow_match_score": 0.4489795918367347
+        "dataflow_match_score": 0.46938775510204084
       }
     },
     {
@@ -219,7 +219,7 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp576cl29_/main.cpp:6:9: error: redefinition of 'slices'\n    6 |     int slices;\n      |         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp576cl29_/main.cpp:5:9: note: previous definition is here\n    5 |     int slices = 5;\n      |         ^\n1 error generated.\n",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpp0is4rhf/main.cpp:6:9: error: redefinition of 'slices'\n    6 |     int slices;\n      |         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpp0is4rhf/main.cpp:5:9: note: previous definition is here\n    5 |     int slices = 5;\n      |         ^\n1 error generated.\n",
         "output_match": false
       },
       "codebleu_score": 0.523857776959513,
@@ -309,13 +309,13 @@
         "expected_preview": "run:\n5\nBUILD SUCCESSFUL (total time: 0 seconds)",
         "actual_preview": "Element found at index: 3"
       },
-      "codebleu_score": 0.4448174680046516,
+      "codebleu_score": 0.43971542718832507,
       "codebleu_details": {
-        "codebleu": 0.4448174680046516,
+        "codebleu": 0.43971542718832507,
         "ngram_match_score": 0.3031146987218951,
         "weighted_ngram_match_score": 0.3591311484969181,
         "syntax_match_score": 0.7088607594936709,
-        "dataflow_match_score": 0.40816326530612246
+        "dataflow_match_score": 0.3877551020408163
       }
     },
     {
@@ -337,13 +337,13 @@
         "output_match": false,
         "note": "Random-seeded program \u2014 output is non-deterministic"
       },
-      "codebleu_score": 0.5724393822377809,
+      "codebleu_score": 0.5550480778899549,
       "codebleu_details": {
-        "codebleu": 0.5724393822377809,
+        "codebleu": 0.5550480778899549,
         "ngram_match_score": 0.3490350476646881,
         "weighted_ngram_match_score": 0.36430614400053324,
         "syntax_match_score": 0.9242424242424242,
-        "dataflow_match_score": 0.6521739130434783
+        "dataflow_match_score": 0.5826086956521739
       }
     },
     {
@@ -360,11 +360,11 @@
         "is_browser": false,
         "stdin_fed": false,
         "status": "success",
-        "stdout": "993542 827761 425974 564763 219090 917775 705143 901202 680726 358123 \n219090 358123 425974 564763 680726 705143 827761 901202 917775 993542 \n",
+        "stdout": "358074 797570 796392 15203 625107 421883 701780 402631 529623 183609 \n15203 183609 358074 402631 421883 529623 625107 701780 796392 797570 \n",
         "stderr": "",
         "output_match": false,
         "expected_preview": "run:\nBefore:\n468574\n981556\n326191\n168933\n28349\n828185\n438183\n69456\n265461\n354779\n\nAfter:\n28349\n69456\n168933\n265461\n326191\n354779\n438183\n468574\n828185\n981556\nBUILD SUCCESSFUL (total time: 0 seconds)",
-        "actual_preview": "993542 827761 425974 564763 219090 917775 705143 901202 680726 358123 \n219090 358123 425974 564763 680726 705143 827761 901202 917775 993542"
+        "actual_preview": "358074 797570 796392 15203 625107 421883 701780 402631 529623 183609 \n15203 183609 358074 402631 421883 529623 625107 701780 796392 797570"
       },
       "codebleu_score": 0.6177650406071294,
       "codebleu_details": {
@@ -418,7 +418,7 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpax15mbu0/A.java:17: error: incompatible types: int cannot be converted to boolean\n        for (int i = 1; 100; i++) {\n                        ^\n1 error\n",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5rfb2seq/A.java:17: error: incompatible types: int cannot be converted to boolean\n        for (int i = 1; 100; i++) {\n                        ^\n1 error\n",
         "output_match": false
       },
       "codebleu_score": 0.6335640677431604,
@@ -474,7 +474,7 @@
         "stdin_fed": true,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp0x74ieo2/Calculator.java:9: error: cannot find symbol\n        Scanner SC = new Scanner(System.in);\n        ^\n  symbol:   class Scanner\n  location: class Calculator\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp0x74ieo2/Calculator.java:9: error: cannot find symbol\n        Scanner SC = new Scanner(System.in);\n                         ^\n  symbol:   class Scanner\n  location: class Calculator\n2 errors\n",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpmf5z9_y8/Calculator.java:9: error: cannot find symbol\n        Scanner SC = new Scanner(System.in);\n        ^\n  symbol:   class Scanner\n  location: class Calculator\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpmf5z9_y8/Calculator.java:9: error: cannot find symbol\n        Scanner SC = new Scanner(System.in);\n                         ^\n  symbol:   class Scanner\n  location: class Calculator\n2 errors\n",
         "output_match": false
       },
       "codebleu_score": 0.5476270899833862,
@@ -501,7 +501,7 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp0ytgh8at/Main.java:10: error: duplicate class: Main\npublic class Main {\n       ^\n1 error\n",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwdz717ml/Main.java:10: error: duplicate class: Main\npublic class Main {\n       ^\n1 error\n",
         "output_match": false
       },
       "codebleu_score": 0.3170082801960224,
@@ -561,13 +561,13 @@
         "expected_preview": "(No Output)",
         "actual_preview": "Counter: 5\nAdd 10 (5): 15\nAdd 10 (5): 15\nFibonacci Iterative (10): 55\nFibonacci Recursive (10): 55\nFibonacci Memoized (10): 55\nFactorial Iterative (5): 120\nFactorial Recursive (5): 120\nFactorial Memoized (5): 120"
       },
-      "codebleu_score": 0.3349378457727386,
+      "codebleu_score": 0.3180459538808467,
       "codebleu_details": {
-        "codebleu": 0.3349378457727386,
+        "codebleu": 0.3180459538808467,
         "ngram_match_score": 0.1284216421361452,
         "weighted_ngram_match_score": 0.24293057255564085,
         "syntax_match_score": 0.6846153846153846,
-        "dataflow_match_score": 0.28378378378378377
+        "dataflow_match_score": 0.21621621621621623
       }
     },
     {
@@ -585,16 +585,16 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpy8xq9deq/main.js:17\nconst http = require('http');\n      ^\n\nSyntaxError: Identifier 'http' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpn4g32t70/main.js:17\nconst http = require('http');\n      ^\n\nSyntaxError: Identifier 'http' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
-      "codebleu_score": 0.42394585827131104,
+      "codebleu_score": 0.41468659901205174,
       "codebleu_details": {
-        "codebleu": 0.42394585827131104,
+        "codebleu": 0.41468659901205174,
         "ngram_match_score": 0.10375949992818966,
         "weighted_ngram_match_score": 0.11128319241631368,
         "syntax_match_score": 0.74,
-        "dataflow_match_score": 0.7407407407407407
+        "dataflow_match_score": 0.7037037037037037
       }
     },
     {
@@ -611,11 +611,11 @@
         "is_browser": false,
         "stdin_fed": false,
         "status": "success",
-        "stdout": "File deleted successfully\nFile written successfully\nFile appended successfully\n",
+        "stdout": "File deleted successfully\nFile appended successfully\nFile written successfully\n",
         "stderr": "",
         "output_match": false,
         "expected_preview": "$ node index.js \nundefined\nFile Deleted\nData is saved\nData is saved",
-        "actual_preview": "File deleted successfully\nFile written successfully\nFile appended successfully"
+        "actual_preview": "File deleted successfully\nFile appended successfully\nFile written successfully"
       },
       "codebleu_score": 0.42338089631108367,
       "codebleu_details": {
@@ -669,7 +669,7 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpu2bjn63h/main.js:28\nlet arr = [2, 3, 4, 10, 40];\n    ^\n\nSyntaxError: Identifier 'arr' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpa6pzlo8e/main.js:28\nlet arr = [2, 3, 4, 10, 40];\n    ^\n\nSyntaxError: Identifier 'arr' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
       "codebleu_score": 0.3518187038998877,
@@ -724,16 +724,16 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpij6odg67/main.js:28\nconst numbers = [1, 2, 3, 4, 5];\n      ^\n\nSyntaxError: Identifier 'numbers' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmptu0qh55g/main.js:28\nconst numbers = [1, 2, 3, 4, 5];\n      ^\n\nSyntaxError: Identifier 'numbers' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
-      "codebleu_score": 0.2347165738889111,
+      "codebleu_score": 0.2269040738889111,
       "codebleu_details": {
-        "codebleu": 0.2347165738889111,
+        "codebleu": 0.2269040738889111,
         "ngram_match_score": 0.01609830241957758,
         "weighted_ngram_match_score": 0.09453951631487473,
         "syntax_match_score": 0.39072847682119205,
-        "dataflow_match_score": 0.4375
+        "dataflow_match_score": 0.40625
       }
     },
     {
@@ -751,7 +751,7 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpt2ul4kgw/main.js:282\n  document.createProcessingInstruction(\"a\n                                       ^^\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpigyf0hm1/main.js:282\n  document.createProcessingInstruction(\"a\n                                       ^^\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
       "codebleu_score": 0.45206818206463895,
@@ -920,7 +920,7 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5biqxrdf/main.py\", line 235\n    print(f\"Target {target\n                          ^\nSyntaxError: EOL while scanning string literal\n\n",
+        "stderr": "  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp4kzyl32p/main.py\", line 235\n    print(f\"Target {target\n                          ^\nSyntaxError: EOL while scanning string literal\n\n",
         "output_match": false
       },
       "codebleu_score": 0.22854221380976747,
@@ -975,7 +975,7 @@
         "stdin_fed": false,
         "status": "runtime_error",
         "stdout": "",
-        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmphxd9stdh/main.py\", line 1, in <module>\n    with open('test.txt') as file:\nFileNotFoundError: [Errno 2] No such file or directory: 'test.txt'\n",
+        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpv3iqj575/main.py\", line 1, in <module>\n    with open('test.txt') as file:\nFileNotFoundError: [Errno 2] No such file or directory: 'test.txt'\n",
         "output_match": false
       },
       "codebleu_score": 0.7374847664022188,
