@@ -1,0 +1,10 @@
+[
+  {
+    "narration": "Define a try-except block to handle errors and exceptions in Python.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Comment out the else and finally blocks for now.",
+    "intent": "implementation"
+  }
+]

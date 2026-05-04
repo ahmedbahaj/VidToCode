@@ -1,0 +1,106 @@
+[
+  {
+    "narration": "Define a function named rollDice that takes no parameters.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an outer for loop: for i in range(len(myList) - 1)",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Welcome to the JavaScript beginner tutorial where we will build a dice roll game using pure JavaScript.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The game will use the prompt and alert functions for user interaction.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "First, create a prompt asking the user to start the game.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the user input is equal to 'roll' to begin the game.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the input is 'roll', call the rollDice function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the rollDice function to generate a random number between 1 and 6.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use Math.random() to generate a number between 0 and 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Multiply the result by 6 to get a number between 0 and 6.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add 1 to the result to get a number between 1 and 7.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use Math.floor() to round the number down to a whole integer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Alert the result of the roll to display it to the user.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Test the code by entering 'roll' in the prompt.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "If the result is not displayed, add an alert statement inside the function.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Run the code again to verify the alert works correctly.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "If the result contains decimals, use Math.floor() to ensure a whole number.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Test the code again to confirm the result is a whole number.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Add a second prompt asking the user if they want to play again.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the user input is equal to 'yes' to continue the game.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the input is 'no', alert the user that they can play again next time.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Refactor the code to call the prompt once outside the if statement.",
+    "intent": "refactoring"
+  },
+  {
+    "narration": "Store the prompt result in a variable named playAgain.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Compare the playAgain variable to 'yes' instead of calling the prompt repeatedly.",
+    "intent": "refactoring"
+  },
+  {
+    "narration": "Test the refactored code to ensure the game loops correctly.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "The dice roll game is now complete using pure JavaScript.",
+    "intent": "explanation"
+  }
+]

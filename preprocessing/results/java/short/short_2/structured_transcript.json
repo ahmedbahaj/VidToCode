@@ -1,0 +1,14 @@
+[
+  {
+    "narration": "Define variables: operator, N1, N2, and result (initialized to 0).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use Scanner class to read user input for operator, N1, and N2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implementation of switch case logic for calculator operations.",
+    "intent": "implementation"
+  }
+]

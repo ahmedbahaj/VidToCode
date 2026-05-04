@@ -1,0 +1,74 @@
+[
+  {
+    "narration": "Define a class named A with a public void show method that prints 'hi' 10 times using a for loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a class named B with a public void show method that prints 'hello' 10 times using a for loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an object of class A and assign it to a variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an object of class B and assign it to a variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the show method on both objects sequentially.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that the main method pauses while a thread executes its show method.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that the main method resumes only after the show method completes.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that to run methods in parallel, the classes must extend the Thread class.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Extend class A to inherit from Thread.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Extend class B to inherit from Thread.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that calling start() on a Thread object creates a new thread and begins execution.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Call the start() method on both thread objects to begin execution.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that calling start() internally invokes the run() method.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that the scheduler allows multiple threads to run in parallel by time-sharing CPU cores.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Increase the loop count to 100 to observe parallel execution more clearly.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that the output shows interleaved 'hi' and 'hello' prints due to parallel execution.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that the OS scheduler decides which thread gets CPU time based on available cores.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Summarize how to create multiple threads using the Thread class and start() method.",
+    "intent": "explanation"
+  }
+]

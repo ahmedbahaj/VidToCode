@@ -1,0 +1,50 @@
+[
+  {
+    "narration": "Define a function called binarySearch that takes an array, low, high, and x as parameters.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Calculate the mid index using the formula (low + high) / 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use Math.floor to ensure the mid index is a whole number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the array at the mid index equals the target value x.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the mid value equals x, return the mid index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If x is less than the mid value, recursively call binarySearch with low unchanged and high set to mid - 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If x is greater than the mid value, recursively call binarySearch with low set to mid + 1 and high unchanged.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a base case to return 'element not found' if low is greater than high.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Run the binarySearch function with the target value 45 to test the algorithm.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Observe the console log output showing the index where the target value is found.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Run the binarySearch function with a target value that does not exist in the array to test error handling.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Fix the error by adding a check for low > high to return 'element not found' instead of a stack overflow.",
+    "intent": "refactoring"
+  }
+]

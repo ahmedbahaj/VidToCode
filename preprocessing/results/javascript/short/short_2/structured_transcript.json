@@ -1,0 +1,10 @@
+[
+  {
+    "narration": "Define an array named one23 containing the elements 1, 2, and 3.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain the concept of array iteration.",
+    "intent": "explanation"
+  }
+]
