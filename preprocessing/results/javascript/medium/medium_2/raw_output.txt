@@ -1,0 +1,15 @@
+[{
+    "narration": "Set minimum and maximum constants for the game.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Generate a random number between min and max using Math.random() multiplied by range and added one.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Round the random number to an integer.",
+    "intent": "implementation"
+  },
+  {
+    ...
+  }]

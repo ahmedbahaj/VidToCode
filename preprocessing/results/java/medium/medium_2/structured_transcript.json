@@ -1,0 +1,66 @@
+[
+  {
+    "narration": "Import java.util.Random and java.util.Scanner classes.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a Random object and a Scanner object to accept user input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define an integer variable 'guess' to store the user's input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define an integer variable 'attempts' to track the number of attempts.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Generate a random number between 1 and 10 using the Random object's nextInt method.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Test the random number generation to ensure it works correctly.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Create a welcome message prompting the user to guess a number between 1 and 10.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement a do-while loop that continues while the user's guess does not equal the random number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt the user to enter a guess and store it in the 'guess' variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Increment the 'attempts' variable by 1 after each guess.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an if-else statement to provide feedback if the guess is too low, too high, or correct.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Display the correct number and the total number of attempts after the loop ends.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Close the Scanner object.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Test the game with numbers between 1 and 10.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Refactor the code to make the range flexible by using variables 'min' and 'max' instead of hardcoded numbers.",
+    "intent": "refactoring"
+  },
+  {
+    "narration": "Update the print statement to use format specifiers for dynamic range display.",
+    "intent": "implementation"
+  }
+]

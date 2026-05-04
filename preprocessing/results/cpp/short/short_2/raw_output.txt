@@ -1,0 +1,10 @@
+[{
+    "narration": "The main point of variables is to store some value for us and then we can use that value throughout our program.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "First copy this example and then I'll explain each piece.",
+    "narration": "Alright so we created a variable with the name or identifier of slices think of like slices of pizza here obviously and we assign it the value 5 so this equal symbol is actually called the assignment operator and it's how we store a value inside of a variable.",
+    "intent": "implementation"
+  },
+  ...]

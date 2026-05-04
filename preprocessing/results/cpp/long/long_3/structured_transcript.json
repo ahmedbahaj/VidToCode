@@ -1,0 +1,66 @@
+[
+  {
+    "narration": "Define a base class 'YouTubeChannel' with private properties: name, subscribers, count, publishedVideoTitles, and protected property: ownerName.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement public methods: constructor, getInfo, subscribe, unsubscribe, and publishVideo in the YouTubeChannel base class.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a derived class 'CookingYouTubeChannel' that inherits from YouTubeChannel.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a second derived class 'SingersYouTubeChannel' that inherits from YouTubeChannel.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement a 'practice' method in SingersYouTubeChannel that describes taking singing classes, learning new songs, and learning to dance.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Instantiate a CookingYouTubeChannel object named 'amy' and a SingersYouTubeChannel object named 'john'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Invoke the 'practice' method on both the CookingYouTubeChannel and SingersYouTubeChannel objects.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Observe that 'amy' is practicing cooking and 'john' is practicing singing, demonstrating polymorphism.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Add a protected property 'contentQuality' to the YouTubeChannel base class, initialized to zero in the constructor.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Modify the 'practice' method in both derived classes to increment the 'contentQuality' property.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement a 'checkAnalytics' method in the YouTubeChannel base class that checks content quality.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In 'checkAnalytics', if contentQuality is less than 5, output a message indicating bad quality; otherwise, output a message indicating great quality.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a pointer of type YouTubeChannel named 'youtubeOne' and assign the address of the CookingYouTubeChannel object to it.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a pointer of type YouTubeChannel named 'youtubeTwo' and assign the address of the SingersYouTubeChannel object to it.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Invoke the 'checkAnalytics' method using the pointers 'youtubeOne' and 'youtubeTwo'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Observe that 'amy's kitchen' has bad quality content and 'john sings channel' has great content, demonstrating polymorphism with pointers.",
+    "intent": "explanation"
+  }
+]

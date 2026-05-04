@@ -1,0 +1,8 @@
+[{
+    "narration": "The narrator introduces the topic of the File System Object in JavaScript.",
+    "intent": "explanation"
+  },
+  ...
+  {
+    "removed filler"
+  }]

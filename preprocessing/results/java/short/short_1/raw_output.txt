@@ -1,0 +1,14 @@
+[{
+    "narration": "Explain that arrays are a special structure in Java used to store multiple values, unlike variables which store a single value.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Demonstrate creating a string array named 'friends' by specifying the type, using square brackets, and initializing it with three string values: 'Jim', 'Karen', and 'Kevin'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that arrays use zero-based indexing, where the first element is at index 0, the second at index 1, and the third at index 2.",
+    "intent": "explanation"
+  },
+  {
+    "nappation": "Show how to access individual elements in an array using square brackets and an index, such as friends[0]

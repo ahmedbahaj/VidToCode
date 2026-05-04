@@ -1,0 +1,189 @@
+[{
+    "narration": "Transform a loop-based algorithm to use recursion instead of a loop.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Cache the results of the recursive algorithm using memorization to simplify time complexity.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Use two examples: runtime and factorial algorithms.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Recursion is a function calling itself, useful for repeated tasks like loops.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Recursion is preferable for traversing tree data structures due to its structure.",
+    "intent": "explanation"
+  },
+  {
+    "narrata": "Recursion creates a tree-like structure of function calls.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "A base case is an if condition that prevents further recursive calls.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "All recursive functions require a base case to avoid stack overflow.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Without a base case, the call stack overruns, causing a stack overflow crash.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Include a base case to prevent stack overflow.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Increment a counter variable before the function calls itself to define the base case.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the base case when the counter is greater than four.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Return a value from the recursive function to propagate it up the call stack.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Make each function return the recursive function it invokes.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Memorization caches a function's return value based on input parameters.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "If input parameters are the same, return the previously calculated value from memory.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Memorization reduces time complexity by avoiding redundant calculations.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Use a closure to store cache data privately instead of global scope.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize the closure on initial document load to ensure proper behavior.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement the iterative Fibonacci algorithm using a standard loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The iterative method is the most common way to create the Fibonacci algorithm.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The Fibonacci sequence starts with 0 and 1, where each number is the sum of the previous two.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The parameter n represents the index of the number to return.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The loop runs when n is at least two, generating numbers iteratively.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The loop calculates the next number as the sum of the previous two and updates the variables.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The recursive Fibonacci algorithm uses a base case when n is less than two.",
+    "intent": "implementation"
+  },
+ 
+  {
+    "narration": "The base case returns the index value for n less than two.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The recursive algorithm calls itself twice for each function invocation.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Each function call returns the sum of both function invocations.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The recursive algorithm creates a tree-like structure of function calls.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Leaf nodes hold the base case values of 0 or 1.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Parent nodes calculate return values starting from the bottom up.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The recursive Fibonacci algorithm has a time complexity of 2 to the power of n.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The recursive algorithm is inefficient due to repeated calculations.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Implement the memorized recursive Fibonacci algorithm using a closure.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the desired index is not less than two and not in the cache.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Calculate the Fibonacci number and store it in the cache object.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The memorized algorithm reduces time complexity to linear time.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The factorial algorithm is the sum of all integers multiplied together from the chosen number down to one.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The base case for factorial is when n is equal to 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The function subtracts 1 from n's value on each new function invoke.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The factorial algorithm returns a finite value once all functions are removed from the stack.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Implement the memorized and recursive factorial algorithm.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Memorization is less beneficial for the factorial algorithm compared to Fibonacci.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The factorial algorithm already has linear time complexity.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The factorial algorithm recursively calls only one function.",
+    "intent": "explanation"
+  },
+  {
+    "": "",
+    ""
+  }]

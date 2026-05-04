@@ -88,8 +88,13 @@ def discover_samples():
 
 def parse_json_response(text):
     """
-    Try to extract a valid JSON array from the LLM response.
-    Handles <think> blocks, markdown fences, and other junk.
+    Extract a valid JSON array from LLM output, handling common issues:
+    - <think> blocks
+    - Markdown fences
+    - Duplicate keys in objects
+    - Unterminated strings (truncated output)
+    - Trailing commas
+    - Invalid control characters
     """
     import re
     text = text.strip()
@@ -110,7 +115,49 @@ def parse_json_response(text):
     if start != -1 and end != -1 and end > start:
         text = text[start:end + 1]
 
-    return json.loads(text)
+    # Fix 1: Remove trailing commas before ] or }
+    text = re.sub(r',\s*([\]\}])', r'\1', text)
+
+    # Fix 2: Remove control characters (except newlines and tabs)
+    text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', ' ', text)
+
+    # Try parsing as-is first
+    try:
+        return json.loads(text, strict=False)
+    except json.JSONDecodeError:
+        pass
+
+    # Fix 3: Handle unterminated strings / truncated output
+    # Find the last complete object (ending with })
+    last_complete = text.rfind('}')
+    if last_complete != -1:
+        truncated = text[:last_complete + 1]
+        # Close the array
+        if not truncated.rstrip().endswith(']'):
+            truncated = truncated.rstrip().rstrip(',') + ']'
+        # Ensure it starts with [
+        if not truncated.lstrip().startswith('['):
+            truncated = '[' + truncated
+        try:
+            return json.loads(truncated, strict=False)
+        except json.JSONDecodeError:
+            pass
+
+    # Fix 4: Extract individual objects with regex as last resort
+    objects = []
+    # Match { ... } blocks
+    for m in re.finditer(r'\{[^{}]*\}', text):
+        try:
+            obj = json.loads(m.group(), strict=False)
+            if isinstance(obj, dict):
+                objects.append(obj)
+        except json.JSONDecodeError:
+            continue
+
+    if objects:
+        return objects
+
+    raise json.JSONDecodeError("Could not parse any JSON objects", text, 0)
 
 
 def main():
@@ -139,17 +186,20 @@ def main():
         language = sample["language"]
         transcript = sample["transcript_path"].read_text().strip()
 
-        # Determine output path: preprocessed/{lang}/{tier}/{name}/structured_transcript.json
+        # Determine output path
         out_dir = OUTPUT_DIR / sample_id
         out_file = out_dir / "structured_transcript.json"
 
-        # Skip if already processed
+        # Skip if already successfully processed (json exists)
         if out_file.exists():
             print(f"  [{sample_id}] already exists, skipping")
             success += 1
             continue
 
-        print(f"  [{sample_id}] preprocessing ...", end=" ", flush=True)
+        # Retry indicator if raw_output.txt exists but no json
+        is_retry = (out_dir / "raw_output.txt").exists()
+        retry_tag = " (retry)" if is_retry else ""
+        print(f"  [{sample_id}] preprocessing{retry_tag} ...", end=" ", flush=True)
 
         # Truncate transcript if needed
         tokens = llm.tokenize(transcript.encode())
