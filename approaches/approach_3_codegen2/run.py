@@ -65,8 +65,19 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Using device: {device}")
     
+    # --- MONKEY PATCH FOR TOKENIZER BUG ---
+    # Salesforce/codegen25-7b-instruct custom tokenizer passes `add_special_tokens` to super().__init__
+    # which conflicts with the base class method in transformers >= 4.34.0.
+    import transformers.tokenization_utils_base as tu_base
+    original_init = tu_base.PreTrainedTokenizerBase.__init__
+    def patched_init(self, **kwargs):
+        kwargs.pop("add_special_tokens", None)
+        original_init(self, **kwargs)
+    tu_base.PreTrainedTokenizerBase.__init__ = patched_init
+    # --------------------------------------
+
     # Load tokenizer
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, trust_remote_code=True)
     
     # Use float16 if on CUDA to save memory, otherwise float32
     dtype = torch.float16 if device == "cuda" else torch.float32
@@ -74,7 +85,8 @@ def main():
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_ID,
         torch_dtype=dtype,
-        device_map="auto" if device == "cuda" else None
+        device_map="auto" if device == "cuda" else None,
+        trust_remote_code=True
     )
 
     samples = discover_samples()
