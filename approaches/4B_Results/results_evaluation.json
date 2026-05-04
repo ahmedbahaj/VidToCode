@@ -1,0 +1,1004 @@
+{
+  "source_file": "approaches/approach_2_structured/results.json",
+  "total_samples": 36,
+  "cs_scored": 28,
+  "cs_overall": 0.19047619047619047,
+  "codebleu_scored": 36,
+  "codebleu_mean": 0.31766809603702195,
+  "per_sample": [
+    {
+      "id": "cpp/long/long_1",
+      "language": "cpp",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": true,
+      "generated_code_length": 719,
+      "reference_code_length": 2821,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": true,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprghoa7t1/main.cpp:20:21: error: use of undeclared identifier 'exact'\n   20 |     for (int i = 0; exact; i++) {\n      |                     ^~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprghoa7t1/main.cpp:30:14: error: expected expression\n   30 |     board[0][;\n      |              ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprghoa7t1/main.cpp:30:14: error: expected ']'\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprghoa7t1/main.cpp:30:13: note: to match this '['\n   30 |     board[0][;\n      |             ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprghoa7t1/main.cpp:30:15: error: expected '}'\n   30 |     board[0][;\n      |               ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmprghoa7t1/main.cpp:8:12: note: to match this '{'\n    8 | int main() {\n      |            ^\n4 errors generated.\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.1629383871037438,
+      "codebleu_details": {
+        "codebleu": 0.1629383871037438,
+        "ngram_match_score": 0.012532403444226728,
+        "weighted_ngram_match_score": 0.04831744712617669,
+        "syntax_match_score": 0.4524421593830334,
+        "dataflow_match_score": 0.13846153846153847
+      }
+    },
+    {
+      "id": "cpp/long/long_2",
+      "language": "cpp",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": true,
+      "generated_code_length": 895,
+      "reference_code_length": 1077,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": true,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_chnpwk9/main.cpp:30:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]\n   30 |     int arr[size];\n      |             ^~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_chnpwk9/main.cpp:30:13: note: read of non-const variable 'size' is not allowed in a constant expression\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_chnpwk9/main.cpp:27:9: note: declared here\n   27 |     int size;\n      |         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_chnpwk9/main.cpp:44:18: error: use of undeclared identifier 'C'\n   44 |     for (int i = C++\n      |                  ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_chnpwk9/main.cpp:44:21: error: expected ';' in 'for' statement specifier\n   44 |     for (int i = C++\n      |                     ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_chnpwk9/main.cpp:44:21: error: expected expression\n/var/folders/yd/ryrz1z9x75g4bbww6",
+        "output_match": false
+      },
+      "codebleu_score": 0.4046773008208251,
+      "codebleu_details": {
+        "codebleu": 0.4046773008208251,
+        "ngram_match_score": 0.1173176833201114,
+        "weighted_ngram_match_score": 0.12858507254345677,
+        "syntax_match_score": 0.7197452229299363,
+        "dataflow_match_score": 0.6530612244897959
+      }
+    },
+    {
+      "id": "cpp/long/long_3",
+      "language": "cpp",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 674,
+      "reference_code_length": 2339,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpqcghszm7/main.cpp:30:57: error: expected '}'\n   30 |             cout << \"Channel has great content\" << endl;\n      |                                                         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpqcghszm7/main.cpp:7:22: note: to match this '{'\n    7 | class YouTubeChannel {\n      |                      ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpqcghszm7/main.cpp:30:57: error: expected '}'\n   30 |             cout << \"Channel has great content\" << endl;\n      |                                                         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpqcghszm7/main.cpp:29:16: note: to match this '{'\n   29 |         } else {\n      |                ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpqcghszm7/main.cpp:30:57: error: expected '}'\n   30 |             cout << \"Channel has great content\" << endl;\n      |                                                         ^\n/va",
+        "output_match": false
+      },
+      "codebleu_score": 0.13356213143617524,
+      "codebleu_details": {
+        "codebleu": 0.13356213143617524,
+        "ngram_match_score": 0.013287076431098537,
+        "weighted_ngram_match_score": 0.04800721907781875,
+        "syntax_match_score": 0.3300970873786408,
+        "dataflow_match_score": 0.14285714285714285
+      }
+    },
+    {
+      "id": "cpp/medium/medium_1",
+      "language": "cpp",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 617,
+      "reference_code_length": 635,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpantl6q6g/main.cpp:23:13: error: no member named 'phone' in 'Phone'; did you mean 'Phone'?\n   23 | void Phone::phone::receiveCall() {\n      |      ~~~~~~~^~~~~\n      |             Phone\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpantl6q6g/main.cpp:4:7: note: 'Phone' declared here\n    4 | class Phone {\n      |       ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpantl6q6g/main.cpp:23:13: error: no member named 'phone' in 'Phone'; did you mean 'Phone'?\n   23 | void Phone::phone::receiveCall() {\n      |      ~~~~~~~^~~~~\n      |             Phone\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpantl6q6g/main.cpp:4:7: note: 'Phone' declared here\n    4 | class Phone {\n      |       ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpantl6q6g/main.cpp:30:35: warning: implicit conversion from 'double' to 'int' changes value from 6.5 to 6 [-Wliteral-conversion]\n   30 |     Phone myPhone2(\"Samsung S24\", 6.5);\n      |         ",
+        "output_match": false
+      },
+      "codebleu_score": 0.4357611307375454,
+      "codebleu_details": {
+        "codebleu": 0.4357611307375454,
+        "ngram_match_score": 0.23368262012556895,
+        "weighted_ngram_match_score": 0.26298509123040975,
+        "syntax_match_score": 0.5507246376811594,
+        "dataflow_match_score": 0.6956521739130435
+      }
+    },
+    {
+      "id": "cpp/medium/medium_2",
+      "language": "cpp",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": true,
+      "generated_code_length": 934,
+      "reference_code_length": 1851,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": true,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp885lqsnm/main.cpp:33:9: error: no member named 'flush' in 'std::istream'\n   33 |     cin.flush();\n      |     ~~~ ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp885lqsnm/main.cpp:36:17: error: expected expression\n   36 |         return  <end>\n      |                 ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp885lqsnm/main.cpp:36:22: error: expected expression\n   36 |         return  <end>\n      |                      ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp885lqsnm/main.cpp:36:22: error: expected '}'\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp885lqsnm/main.cpp:35:21: note: to match this '{'\n   35 |     if (amount < 0) {\n      |                     ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp885lqsnm/main.cpp:36:22: error: expected '}'\n   36 |         return  <end>\n      |                      ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp885lqsnm/main.cpp:26:33: note: to match",
+        "output_match": false
+      },
+      "codebleu_score": 0.14580804085490906,
+      "codebleu_details": {
+        "codebleu": 0.14580804085490906,
+        "ngram_match_score": 0.07068204978431218,
+        "weighted_ngram_match_score": 0.07848417956938998,
+        "syntax_match_score": 0.21978021978021978,
+        "dataflow_match_score": 0.21428571428571427
+      }
+    },
+    {
+      "id": "cpp/medium/medium_3",
+      "language": "cpp",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": true,
+      "generated_code_length": 951,
+      "reference_code_length": 941,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": true,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpnvnsg_3b/main.cpp:42:45: error: expected '}'\n   42 |         cout << \"Element not found\" << endl;\n      |                                             ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpnvnsg_3b/main.cpp:41:12: note: to match this '{'\n   41 |     } else {\n      |            ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpnvnsg_3b/main.cpp:42:45: error: expected '}'\n   42 |         cout << \"Element not found\" << endl;\n      |                                             ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpnvnsg_3b/main.cpp:24:12: note: to match this '{'\n   24 | int main() {\n      |            ^\n2 errors generated.\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.6442263928299368,
+      "codebleu_details": {
+        "codebleu": 0.6442263928299368,
+        "ngram_match_score": 0.4576708871879478,
+        "weighted_ngram_match_score": 0.5219717320301372,
+        "syntax_match_score": 0.6881720430107527,
+        "dataflow_match_score": 0.9090909090909091
+      }
+    },
+    {
+      "id": "cpp/short/short_1",
+      "language": "cpp",
+      "is_skipped": true,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 476,
+      "reference_code_length": 474,
+      "cs_score": null,
+      "cs_details": {
+        "is_skipped": true,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "skipped_random",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "note": "Random-seeded program \u2014 output is non-deterministic"
+      },
+      "codebleu_score": 0.4910481728978842,
+      "codebleu_details": {
+        "codebleu": 0.4910481728978842,
+        "ngram_match_score": 0.29190127184766057,
+        "weighted_ngram_match_score": 0.2885194899193149,
+        "syntax_match_score": 0.5087719298245614,
+        "dataflow_match_score": 0.875
+      }
+    },
+    {
+      "id": "cpp/short/short_2",
+      "language": "cpp",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 145,
+      "reference_code_length": 159,
+      "cs_score": 2,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "success",
+        "stdout": "5\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "6",
+        "actual_preview": "5"
+      },
+      "codebleu_score": 0.27356522122761234,
+      "codebleu_details": {
+        "codebleu": 0.27356522122761234,
+        "ngram_match_score": 0.2740762248236947,
+        "weighted_ngram_match_score": 0.28685132675342134,
+        "syntax_match_score": 0.3333333333333333,
+        "dataflow_match_score": 0.2
+      }
+    },
+    {
+      "id": "cpp/short/short_3",
+      "language": "cpp",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 904,
+      "reference_code_length": 824,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpz2jpni5c/main.cpp:28:6: error: use of undeclared identifier 'explanation'\n   28 |     [explanation] The linear search algorithm checks each element in the list sequentially until the target is found or the end is reached.\n      |      ^~~~~~~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpz2jpni5c/main.cpp:28:19: error: expected body of lambda expression\n   28 |     [explanation] The linear search algorithm checks each element in the list sequentially until the target is found or the end is reached.\n      |                   ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpz2jpni5c/main.cpp:30:25: error: expected '}'\n   30 |     [explanation] string\n      |                         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpz2jpni5c/main.cpp:25:12: note: to match this '{'\n   25 |     } else {\n      |            ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpz2jpni5c/main.cpp:30:25: error: expected '}'\n  ",
+        "output_match": false
+      },
+      "codebleu_score": 0.3484849150285525,
+      "codebleu_details": {
+        "codebleu": 0.3484849150285525,
+        "ngram_match_score": 0.06293732448885594,
+        "weighted_ngram_match_score": 0.0888880986262064,
+        "syntax_match_score": 0.37254901960784315,
+        "dataflow_match_score": 0.8695652173913043
+      }
+    },
+    {
+      "id": "java/long/long_1",
+      "language": "java",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 1827,
+      "reference_code_length": 2370,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.3157584634140599,
+      "codebleu_details": {
+        "codebleu": 0.3157584634140599,
+        "ngram_match_score": 0.09836352757819591,
+        "weighted_ngram_match_score": 0.10865984458443076,
+        "syntax_match_score": 0.5348837209302325,
+        "dataflow_match_score": 0.5211267605633803
+      }
+    },
+    {
+      "id": "java/long/long_2",
+      "language": "java",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 468,
+      "reference_code_length": 722,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.3607173319078183,
+      "codebleu_details": {
+        "codebleu": 0.3607173319078183,
+        "ngram_match_score": 0.25074843426203225,
+        "weighted_ngram_match_score": 0.28124515066709666,
+        "syntax_match_score": 0.6455696202531646,
+        "dataflow_match_score": 0.2653061224489796
+      }
+    },
+    {
+      "id": "java/long/long_3",
+      "language": "java",
+      "is_skipped": true,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 1626,
+      "reference_code_length": 2795,
+      "cs_score": null,
+      "cs_details": {
+        "is_skipped": true,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "skipped_random",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "note": "Random-seeded program \u2014 output is non-deterministic"
+      },
+      "codebleu_score": 0.4117305668812037,
+      "codebleu_details": {
+        "codebleu": 0.4117305668812037,
+        "ngram_match_score": 0.300625214072522,
+        "weighted_ngram_match_score": 0.3595601188892713,
+        "syntax_match_score": 0.7171717171717171,
+        "dataflow_match_score": 0.26956521739130435
+      }
+    },
+    {
+      "id": "java/medium/medium_1",
+      "language": "java",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 1264,
+      "reference_code_length": 950,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.3539686321228519,
+      "codebleu_details": {
+        "codebleu": 0.3539686321228519,
+        "ngram_match_score": 0.11841544175848408,
+        "weighted_ngram_match_score": 0.17127825002577096,
+        "syntax_match_score": 0.5877192982456141,
+        "dataflow_match_score": 0.5384615384615384
+      }
+    },
+    {
+      "id": "java/medium/medium_2",
+      "language": "java",
+      "is_skipped": true,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 1163,
+      "reference_code_length": 1111,
+      "cs_score": null,
+      "cs_details": {
+        "is_skipped": true,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "skipped_random",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "note": "Random-seeded program \u2014 output is non-deterministic"
+      },
+      "codebleu_score": 0.5423046269256282,
+      "codebleu_details": {
+        "codebleu": 0.5423046269256282,
+        "ngram_match_score": 0.30200561708362583,
+        "weighted_ngram_match_score": 0.39601547961565087,
+        "syntax_match_score": 0.7378640776699029,
+        "dataflow_match_score": 0.7333333333333333
+      }
+    },
+    {
+      "id": "java/medium/medium_3",
+      "language": "java",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 1801,
+      "reference_code_length": 482,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.5362045851841897,
+      "codebleu_details": {
+        "codebleu": 0.5362045851841897,
+        "ngram_match_score": 0.09676867033155566,
+        "weighted_ngram_match_score": 0.39179967040520325,
+        "syntax_match_score": 0.90625,
+        "dataflow_match_score": 0.75
+      }
+    },
+    {
+      "id": "java/short/short_1",
+      "language": "java",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 200,
+      "reference_code_length": 252,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.3321866056359176,
+      "codebleu_details": {
+        "codebleu": 0.3321866056359176,
+        "ngram_match_score": 0.2270087133803259,
+        "weighted_ngram_match_score": 0.2571998940372942,
+        "syntax_match_score": 0.5588235294117647,
+        "dataflow_match_score": 0.2857142857142857
+      }
+    },
+    {
+      "id": "java/short/short_2",
+      "language": "java",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": true,
+      "generated_code_length": 2039,
+      "reference_code_length": 1108,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": true,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.4470977145191466,
+      "codebleu_details": {
+        "codebleu": 0.4470977145191466,
+        "ngram_match_score": 0.1161099879527551,
+        "weighted_ngram_match_score": 0.2586754279469606,
+        "syntax_match_score": 0.780952380952381,
+        "dataflow_match_score": 0.6326530612244898
+      }
+    },
+    {
+      "id": "java/short/short_3",
+      "language": "java",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 532,
+      "reference_code_length": 455,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.4601937656826727,
+      "codebleu_details": {
+        "codebleu": 0.4601937656826727,
+        "ngram_match_score": 0.15508645198767815,
+        "weighted_ngram_match_score": 0.2884737566316068,
+        "syntax_match_score": 0.6730769230769231,
+        "dataflow_match_score": 0.7241379310344828
+      }
+    },
+    {
+      "id": "javascript/long/long_1",
+      "language": "javascript",
+      "is_skipped": false,
+      "is_browser": true,
+      "stdin_fed": false,
+      "generated_code_length": 1044,
+      "reference_code_length": 2318,
+      "cs_score": null,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": true,
+        "stdin_fed": false,
+        "status": "skipped_browser",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "note": "Browser-based JavaScript \u2014 cannot run with Node.js"
+      },
+      "codebleu_score": 0.10913470456478806,
+      "codebleu_details": {
+        "codebleu": 0.10913470456478806,
+        "ngram_match_score": 0.00672096317232006,
+        "weighted_ngram_match_score": 0.013067617230368955,
+        "syntax_match_score": 0.32950191570881227,
+        "dataflow_match_score": 0.087248322147651
+      }
+    },
+    {
+      "id": "javascript/long/long_2",
+      "language": "javascript",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 2063,
+      "reference_code_length": 1164,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp3s7nvkw8/main.js:80\n  cache[count]\n              \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.17428122941153512,
+      "codebleu_details": {
+        "codebleu": 0.17428122941153512,
+        "ngram_match_score": 0.004977452068433857,
+        "weighted_ngram_match_score": 0.010442683872924855,
+        "syntax_match_score": 0.43846153846153846,
+        "dataflow_match_score": 0.24324324324324326
+      }
+    },
+    {
+      "id": "javascript/long/long_3",
+      "language": "javascript",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 205,
+      "reference_code_length": 608,
+      "cs_score": 1,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "timeout",
+        "stdout": "",
+        "stderr": "Process timed out",
+        "output_match": false
+      },
+      "codebleu_score": 0.22460736410364676,
+      "codebleu_details": {
+        "codebleu": 0.22460736410364676,
+        "ngram_match_score": 0.013248748070920227,
+        "weighted_ngram_match_score": 0.034810337973296454,
+        "syntax_match_score": 0.48,
+        "dataflow_match_score": 0.37037037037037035
+      }
+    },
+    {
+      "id": "javascript/medium/medium_1",
+      "language": "javascript",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 954,
+      "reference_code_length": 462,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpf0cs_80n/main.js:28\nreadExcel);\n         ^\n\nSyntaxError: Unexpected token ')'\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.3641658478735308,
+      "codebleu_details": {
+        "codebleu": 0.3641658478735308,
+        "ngram_match_score": 0.004499562702827631,
+        "weighted_ngram_match_score": 0.012847589475056187,
+        "syntax_match_score": 0.6615384615384615,
+        "dataflow_match_score": 0.7777777777777778
+      }
+    },
+    {
+      "id": "javascript/medium/medium_2",
+      "language": "javascript",
+      "is_skipped": false,
+      "is_browser": true,
+      "stdin_fed": false,
+      "generated_code_length": 742,
+      "reference_code_length": 871,
+      "cs_score": null,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": true,
+        "stdin_fed": false,
+        "status": "skipped_browser",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "note": "Browser-based JavaScript \u2014 cannot run with Node.js"
+      },
+      "codebleu_score": 0.42680776927356034,
+      "codebleu_details": {
+        "codebleu": 0.42680776927356034,
+        "ngram_match_score": 0.2124675718776472,
+        "weighted_ngram_match_score": 0.25804379897424423,
+        "syntax_match_score": 0.5157894736842106,
+        "dataflow_match_score": 0.7209302325581395
+      }
+    },
+    {
+      "id": "javascript/medium/medium_3",
+      "language": "javascript",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 426,
+      "reference_code_length": 538,
+      "cs_score": 2,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "success",
+        "stdout": "2\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "0 8\n0 3\n2 3\n3 3\n3 2\nX is in the index of: Element not found!",
+        "actual_preview": "2"
+      },
+      "codebleu_score": 0.4197140111542611,
+      "codebleu_details": {
+        "codebleu": 0.4197140111542611,
+        "ngram_match_score": 0.3740184175854759,
+        "weighted_ngram_match_score": 0.3889157468594403,
+        "syntax_match_score": 0.6140350877192983,
+        "dataflow_match_score": 0.3018867924528302
+      }
+    },
+    {
+      "id": "javascript/short/short_1",
+      "language": "javascript",
+      "is_skipped": false,
+      "is_browser": true,
+      "stdin_fed": false,
+      "generated_code_length": 298,
+      "reference_code_length": 450,
+      "cs_score": null,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": true,
+        "stdin_fed": false,
+        "status": "skipped_browser",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "note": "Browser-based JavaScript \u2014 cannot run with Node.js"
+      },
+      "codebleu_score": 0.28127931382709237,
+      "codebleu_details": {
+        "codebleu": 0.28127931382709237,
+        "ngram_match_score": 0.042964324169924004,
+        "weighted_ngram_match_score": 0.0473481773184117,
+        "syntax_match_score": 0.4032258064516129,
+        "dataflow_match_score": 0.631578947368421
+      }
+    },
+    {
+      "id": "javascript/short/short_2",
+      "language": "javascript",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 2034,
+      "reference_code_length": 1215,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpt7qsb954/main.js:38\nconsole.log('\n            ^\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.1424588757356509,
+      "codebleu_details": {
+        "codebleu": 0.1424588757356509,
+        "ngram_match_score": 0.032760195316027994,
+        "weighted_ngram_match_score": 0.07239539592679632,
+        "syntax_match_score": 0.2980132450331126,
+        "dataflow_match_score": 0.16666666666666666
+      }
+    },
+    {
+      "id": "javascript/short/short_3",
+      "language": "javascript",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 272,
+      "reference_code_length": 404,
+      "cs_score": 2,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "success",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "[ -6, -2, 4, 8, 20 ]",
+        "actual_preview": ""
+      },
+      "codebleu_score": 0.31272824872417865,
+      "codebleu_details": {
+        "codebleu": 0.31272824872417865,
+        "ngram_match_score": 0.29603362305432734,
+        "weighted_ngram_match_score": 0.2976395528378622,
+        "syntax_match_score": 0.4807692307692308,
+        "dataflow_match_score": 0.17647058823529413
+      }
+    },
+    {
+      "id": "python/long/long_1",
+      "language": "python",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": true,
+      "generated_code_length": 401,
+      "reference_code_length": 1543,
+      "cs_score": 1,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": true,
+        "status": "runtime_error",
+        "stdout": "",
+        "stderr": "usage: main.py [-h] {small,medium,large} crust\nmain.py: error: argument size: invalid choice: 'm' (choose from 'small', 'medium', 'large')\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.17896184383697228,
+      "codebleu_details": {
+        "codebleu": 0.17896184383697228,
+        "ngram_match_score": 0.006458167535563786,
+        "weighted_ngram_match_score": 0.03899447097022001,
+        "syntax_match_score": 0.5328947368421053,
+        "dataflow_match_score": 0.1375
+      }
+    },
+    {
+      "id": "python/long/long_2",
+      "language": "python",
+      "is_skipped": true,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 2299,
+      "reference_code_length": 1373,
+      "cs_score": null,
+      "cs_details": {
+        "is_skipped": true,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "skipped_random",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "note": "Random-seeded program \u2014 output is non-deterministic"
+      },
+      "codebleu_score": 0.25305503415379793,
+      "codebleu_details": {
+        "codebleu": 0.25305503415379793,
+        "ngram_match_score": 0.05019835243245129,
+        "weighted_ngram_match_score": 0.09888309805135352,
+        "syntax_match_score": 0.6131386861313869,
+        "dataflow_match_score": 0.25
+      }
+    },
+    {
+      "id": "python/long/long_3",
+      "language": "python",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 696,
+      "reference_code_length": 850,
+      "cs_score": 2,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "success",
+        "stdout": "[1, 2, 3, 5, 8, 9]\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "[3, 7, 8, 10, 15, 23, 29, 98]\n[]\n[3]\n[2, 7, 8, 9]\n[1, 2, 3, 4, 5]",
+        "actual_preview": "[1, 2, 3, 5, 8, 9]"
+      },
+      "codebleu_score": 0.3075464341499358,
+      "codebleu_details": {
+        "codebleu": 0.3075464341499358,
+        "ngram_match_score": 0.15949520893735325,
+        "weighted_ngram_match_score": 0.17233679190890752,
+        "syntax_match_score": 0.5391304347826087,
+        "dataflow_match_score": 0.3592233009708738
+      }
+    },
+    {
+      "id": "python/medium/medium_1",
+      "language": "python",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": true,
+      "generated_code_length": 913,
+      "reference_code_length": 1315,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": true,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpguft1x73/main.py\", line 26\n    elif user provided:\n              ^\nSyntaxError: invalid syntax\n\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.31150934874538616,
+      "codebleu_details": {
+        "codebleu": 0.31150934874538616,
+        "ngram_match_score": 0.14067162348639342,
+        "weighted_ngram_match_score": 0.16552619930263776,
+        "syntax_match_score": 0.7045454545454546,
+        "dataflow_match_score": 0.23529411764705882
+      }
+    },
+    {
+      "id": "python/medium/medium_2",
+      "language": "python",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 1617,
+      "reference_code_length": 294,
+      "cs_score": 2,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "success",
+        "stdout": "This is the try block.\nCaught FileNotFoundError: File not found!\nCleanup code.\nThis is after the try-except-else-finally block.\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "First!\nExecuting Finally...\nEnd of program",
+        "actual_preview": "This is the try block.\nCaught FileNotFoundError: File not found!\nCleanup code.\nThis is after the try-except-else-finally block."
+      },
+      "codebleu_score": 0.2421241607371561,
+      "codebleu_details": {
+        "codebleu": 0.2421241607371561,
+        "ngram_match_score": 0.013061228039140782,
+        "weighted_ngram_match_score": 0.11847889317035307,
+        "syntax_match_score": 0.5869565217391305,
+        "dataflow_match_score": 0.25
+      }
+    },
+    {
+      "id": "python/medium/medium_3",
+      "language": "python",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 309,
+      "reference_code_length": 458,
+      "cs_score": 2,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "success",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "Not Found",
+        "actual_preview": ""
+      },
+      "codebleu_score": 0.20855172878727035,
+      "codebleu_details": {
+        "codebleu": 0.20855172878727035,
+        "ngram_match_score": 0.028542060953454733,
+        "weighted_ngram_match_score": 0.03135513030607089,
+        "syntax_match_score": 0.5294117647058824,
+        "dataflow_match_score": 0.24489795918367346
+      }
+    },
+    {
+      "id": "python/short/short_1",
+      "language": "python",
+      "is_skipped": true,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 547,
+      "reference_code_length": 343,
+      "cs_score": null,
+      "cs_details": {
+        "is_skipped": true,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "skipped_random",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "note": "Random-seeded program \u2014 output is non-deterministic"
+      },
+      "codebleu_score": 0.38530542546877034,
+      "codebleu_details": {
+        "codebleu": 0.38530542546877034,
+        "ngram_match_score": 0.17363221103059318,
+        "weighted_ngram_match_score": 0.2485418717968692,
+        "syntax_match_score": 0.8333333333333334,
+        "dataflow_match_score": 0.2857142857142857
+      }
+    },
+    {
+      "id": "python/short/short_2",
+      "language": "python",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 303,
+      "reference_code_length": 132,
+      "cs_score": 0,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmppwzhcaix/main.py\", line 6\n    myList[j], myList[j + 1] = myList[j + 1], myList[j]\n    ^\nSyntaxError: invalid syntax\n\n",
+        "output_match": false
+      },
+      "codebleu_score": 0.1875,
+      "codebleu_details": {
+        "codebleu": 0.1875,
+        "ngram_match_score": 0,
+        "weighted_ngram_match_score": 0,
+        "syntax_match_score": 0.0,
+        "dataflow_match_score": 0.75
+      }
+    },
+    {
+      "id": "python/short/short_3",
+      "language": "python",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 73,
+      "reference_code_length": 325,
+      "cs_score": 2,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "success",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "['a', 'b', 'c', 'd', 'e', 'f']",
+        "actual_preview": ""
+      },
+      "codebleu_score": 0.10608613157458786,
+      "codebleu_details": {
+        "codebleu": 0.10608613157458786,
+        "ngram_match_score": 0.01312188649187495,
+        "weighted_ngram_match_score": 0.1062226398064765,
+        "syntax_match_score": 0.18,
+        "dataflow_match_score": 0.125
+      }
+    }
+  ]
+}

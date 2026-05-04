@@ -1,0 +1,50 @@
+[
+  {
+    "narration": "Define a function called binarySearch that accepts an array and a key.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize an integer variable n for low, set its initial value to zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a variable hi whose initial value is the last index, calculated as length minus one.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a variable mid to zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Write a while loop that continues as long as low is less than or equal to high.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Calculate the midpoint using the formula: mid = (low + high) / 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the key value is equal to the element at the mid position. If so, return the index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the key value is less than the element at mid, set high to mid minus one.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the loop completes without finding the element, return -1 to indicate the key is not present.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that binary search requires the array to be sorted before performing the search.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that if the array is not sorted, one must first sort it using an algorithm like selection sort, insertion sort, or bubble sort.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that the best sorting algorithm has a time complexity of O(log n), making the overall complexity O(n log n) when sorting and searching.",
+    "intent": "explanation"
+  }
+]

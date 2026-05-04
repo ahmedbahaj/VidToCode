@@ -1,0 +1,158 @@
+[
+  {
+    "narration": "Define two integer variables: userScore and cpuScore, both initialized to 0.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an infinite while loop using 'while true' to handle game rounds.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a prompt asking the user to enter 1 for rock, 2 for paper, and 3 for scissors.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Import the java.util.Scanner class.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a Scanner object named 'scan' connected to System.in.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an integer variable 'userChoice' and assign it the value of scan.nextInt().",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Import the java.util.Random class.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Generate a random integer between 1 and 3 using rand.nextInt(3) + 1 and store it in 'cpuChoice'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use a series of if-else if statements to determine the winner of each round.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if cpuChoice equals userChoice to handle tie scenarios.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If it is a tie, print a message stating 'tie, no points will be awarded'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use else-if statements to check if userChoice is 1 (rock) or 2 (paper).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userChoice is 1, check if cpuChoice is 2 (paper) or 3 (scissors) to determine if the user lost or won.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userChoice is 1 and cpuChoice is 2, print 'cpu chose paper and you have lost this round' and increment cpuScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define two integer variables: userScore and cpuScore, both initialized to 0.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an infinite while loop using 'while true' to handle game rounds.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a prompt asking the user to enter 1 for rock, 2 for paper, and 3 for scissors.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Import the java.util.Scanner class.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a Scanner object named 'scan' connected to System.in.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an integer variable 'userChoice' and assign it the value of scan.nextInt().",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Import the java.util.Random class.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a Random object named 'rand' with no parameters.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Generate a random integer between 1 and 3 using rand.nextInt(3) + 1 and store it in 'cpuChoice'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use a series of if-else if statements to determine the winner of each round.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if cpuChoice equals userChoice to handle tie scenarios.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If it is a tie, print a message stating 'tie, no points will be awarded'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use else-if statements to check if userChoice is 1 (rock) or 2 (paper).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userChoice is 1, check if cpuChoice is 2 (paper) or 3 (scissors) to determine if the user lost or won.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userChoice is 1 and cpuChoice is 2, print 'cpu chose paper and you have lost this round' and increment cpuScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userChoice is 1 and cpuChoice is 3, print 'cpu chose scissors and you have won this round' and increment userScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userChoice is 2, check if cpuChoice is 1 (rock) or 3 (scissors) to determine if the user lost or won.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userChoice is 2 and cpuChoice is 1, print 'cpu chose rock and you have won this round' and increment userScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userChoice is 2 and cpuChoice is 3, print 'cpu chose scissors and you have lost this round' and increment cpuScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userChoice is 3, check if cpuChoice is 1 (rock) or 2 (paper) to determine if the user lost or won.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userChoice is 3 and cpuChoice is 1, print 'cpu chose rock and you have lost this round' and increment cpuScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userChoice is 3 and cpuChoice is 2, print 'cpu chose paper and you have won this round' and increment userScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if cpuScore or userScore equals 2 to determine the game winner.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If cpuScore equals 2, print 'sorry but you have lost best two out of three' and break the loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userScore equals 2, print 'congrats you have won best two out of three' and break the loop.",
+    "intent": "implementation"
+  }
+]

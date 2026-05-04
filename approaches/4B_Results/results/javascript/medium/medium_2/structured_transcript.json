@@ -1,0 +1,78 @@
+[
+  {
+    "narration": "Define two constants: minimum set to 1, and maximum set to 100.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Generate a random number between the minimum and maximum using Math.random().",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Multiply the result of Math.random() by (maximum - minimum) and add 1 to get a random number in the range.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use Math.round() to round the generated random number to an integer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a variable attempts initialized to 0 to track user attempts.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare a variable guess but do not assign it yet.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare a Boolean variable running and initialize it to true.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use a while loop that continues as long as running is true.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Accept user input using window.prompt() with a template literal asking for a number between the minimum and maximum.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Convert the user input guess from a string to a number using type coercion.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the user input is not a number using the isNaN() function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the input is not a number, display an alert asking for a valid number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use an else if statement to check if the guess is below the minimum or above the maximum.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is out of range, display an alert asking for a valid number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is a valid number within the range, increment the attempts variable by 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is less than the answer, display an alert saying 'too low, try again'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is greater than the answer, display an alert saying 'too high, try again'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess equals the answer, display an alert confirming the correct answer and the number of attempts taken.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set running to false to exit the game loop when the correct answer is found.",
+    "intent": "implementation"
+  }
+]

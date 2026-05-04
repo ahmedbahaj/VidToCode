@@ -1,0 +1,66 @@
+[
+  {
+    "narration": "Define variables: operator, n1, n2",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define variables: operator, n1, n2",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Display a menu of four operations: Add, Subtract, Multiply, and Divide using print statements.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a Scanner object to handle user input from the console.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt the user to choose an operator (1-4) using scanner.nextEnd() and store it in the operator variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt the user to enter the first number using scanner.nextEnd() and store it in n1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt the user to enter the second number using scanner.nextEnd() and store it in n2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement a switch statement using the operator variable to determine the calculation method.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In the case for operator 1 (Add), calculate the result by adding n1 and n2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In the case for operator 2 (Subtract), calculate the result by subtracting n2 from n1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In the case for operator 3 (Multiply), calculate the result by multiplying n1 and n2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In the case for operator 4 (Divide), calculate the result by dividing n1 by n2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Include a default case to handle invalid operator inputs by displaying an error message.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print the calculated result to the console.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that using integer variables for division results in integer truncation (e.g., 10/3 = 3).",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Suggest changing the result variable to double for accurate decimal division.",
+    "intent": "explanation"
+  }
+]

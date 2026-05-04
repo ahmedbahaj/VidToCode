@@ -1,0 +1,106 @@
+[
+  {
+    "narration": "Define a class A with a public void show method that prints 'Hi' 10 times using a for loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a class B with a public void show method that prints 'Hello' 10 times using a for loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an object for class A and assign it to a variable obj1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an object for class B and assign it to a variable obj2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the show method on both objects sequentially to verify standard execution.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that execution starts from the main method and creates objects in heap memory sequentially.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that the JVM executes the show method after creating objects, but blocks main until the method completes.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Extend both class A and class B to inherit from the Thread class to make them threads.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Compile and run the code to observe that threads still execute sequentially despite inheritance.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Invoke the start method on both thread objects to initiate execution in parallel.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that calling start creates a new thread and internally calls the run method, similar to starting a race.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Define a class A with a public void show method that prints 'Hi' 10 times using a for loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a class B with a public void show method that prints 'Hello' 10 times using a for loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an object for class A and assign it to a variable obj1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an object for class B and assign it to a variable obj2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the show method on both objects sequentially to verify standard execution.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that execution starts from the main method and creates objects in heap memory sequentially.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that the JVM executes the show method after creating objects, but blocks main until the method completes.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Extend both class A and class B to inherit from the Thread class to make them threads.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Compile and run the code to observe that threads still execute sequentially despite inheritance.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Invoke the start method on both thread objects to initiate execution in parallel.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that calling start creates a new thread and internally calls the run method, similar to starting a race.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Increase the loop iterations in the show methods to 100 to make parallel execution more visible.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that the OS scheduler manages thread execution by time-sharing on multi-core CPUs.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Describe how the scheduler allows multiple threads to execute concurrently, interleaving their iterations.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Conclude by summarizing how the Thread class enables parallel execution and mention optimizing output synchronization in the next video.",
+    "intent": "explanation"
+  }
+]

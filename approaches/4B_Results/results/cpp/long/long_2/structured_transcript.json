@@ -1,0 +1,78 @@
+[
+  {
+    "narration": "In the second part of the QuickSort tutorial, the focus shifts from theory to practical C++ implementation, emphasizing the importance of the first video for understanding the algorithm's underlying logic.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The tutorial begins with creating a boilerplate C++ program structure to serve as the foundation for writing the sorting algorithm.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "A size variable is created to determine the number of elements in the array, which is dynamically taken from user input using standard C++ syntax.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "A for loop iterates through the array to input each element's value into the user-defined array.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Before the sorting process, the array elements are printed in their initial unsorted state to show the input data.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The quicksort function is defined to take the array, the start index, and the end index as parameters.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The main function calls the quicksort function by passing the array, starting index 0, and the ending index size minus 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The quicksort function checks if the start index is less than the end index to prevent infinite recursion.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The quicksort function calls the partition function to determine the pivot index and perform the in-place partitioning.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The partition function is selected as the last element of the array and stored in a variable named pivot.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "A variable named P index tracks elements smaller than the pivot and is incremented during the comparison process.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "A for loop iterates through the array elements (excluding the pivot) to compare each with the pivot value.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If an element is smaller than the pivot, it is swapped with the element at the current P index position.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The P index is incremented after each successful swap to mark the boundary for smaller elements.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "After the loop, the pivot element is swapped with the element at the P index position to place it in its correct sorted location.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The partition function returns the final P index, which indicates where the pivot is placed and divides the array into two subarrays.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The quicksort function recursively calls itself for the left subarray (from start to P index minus 1) and the right subarray (from P index plus 1 to end).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The program is tested by entering a size of 5 and providing an unsorted array to verify the sorting functionality.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The quicksort function is tested with another set of input values to ensure the algorithm works correctly for various data sets.",
+    "intent": "implementation"
+  }
+]
