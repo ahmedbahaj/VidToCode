@@ -1,6 +1,62 @@
 [
   {
-    "narration": "Explain that an array is a data structure in Java used to store multiple values, unlike a variable which stores a single value.",
+    "narration": "Define a variable named friends of type string array.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Specify the data type of the array as string.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use square brackets to indicate array creation.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Give the array a name, for example 'friends'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize the array with values using curly brackets.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Separate multiple values in the array with commas.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Access individual elements using square brackets and an index.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Array indices start at 0.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Modify an element by assigning a new value to a specific index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use the length property to determine the number of elements in an array.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Create an array with a specified size using the 'new' keyword.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Populate the array by assigning values to specific indices.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Access the first element of the array.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Access the second element of the array.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Access the third element of the array.",
     "intent": "explanation"
   }
 ]
