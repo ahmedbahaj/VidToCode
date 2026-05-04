@@ -25,34 +25,42 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 TIMEOUT = 30  # seconds per compile/run step
 
-# Samples that require interactive user input at runtime.
-# These are skipped for the Compilation Score (CS) metric.
-INTERACTIVE_SAMPLES = {
-    # C++
-    "cpp/short/short_1",     # Number guessing game (random + cin)
-    "cpp/long/long_1",       # Tic-tac-toe (cin loop)
-    "cpp/long/long_2",       # QuickSort (cin for array size + elements)
-    "cpp/medium/medium_2",   # Banking program (menu + cin loop)
-    "cpp/medium/medium_3",   # Binary search (cin for search value)
-    # Java
-    "java/long/long_3",      # Rock-paper-scissors (Scanner + Random)
-    "java/short/short_2",    # Calculator (Scanner for operator + numbers)
-    "java/medium/medium_2",  # Number guessing game (Scanner + Random)
-    # JavaScript
-    "javascript/medium/medium_2",  # Number guessing game (window.prompt)
-    "javascript/short/short_1",    # Dice roll (prompt/alert)
-    # Python
-    "python/short/short_1",        # Number guessing game (input + random)
-    "python/long/long_2",          # Hangman (input loop)
-    "python/medium/medium_1",      # To-do list (input loop)
-    "python/long/long_1",          # Argparse pizza builder (CLI args)
+# Samples that are truly unskippable — depend on randomness or browser APIs.
+# Only these remain skipped for CS.
+SKIPPED_SAMPLES = {
+    # Random-seeded games: output depends on RNG, can't match output.txt
+    "cpp/short/short_1",           # Number guessing game (rand())
+    "java/long/long_3",            # Rock-paper-scissors (Random)
+    "java/medium/medium_2",        # Number guessing game (Random)
+    "python/short/short_1",        # Number guessing game (random)
+    "python/long/long_2",          # Hangman (random word)
 }
 
 # Browser-based JavaScript samples that use DOM APIs (can't run in Node.js)
 BROWSER_SAMPLES = {
     "javascript/long/long_1",      # DOM-based to-do app (getElementById, etc.)
-    "javascript/medium/medium_2",  # window.prompt / alert
-    "javascript/short/short_1",    # prompt / alert
+    "javascript/medium/medium_2",  # Number guessing game (window.prompt)
+    "javascript/short/short_1",    # Dice roll (prompt / alert)
+}
+
+# Pre-defined stdin inputs for interactive samples.
+# Extracted from the ground-truth output.txt files.
+STDIN_INPUTS = {
+    # C++
+    "cpp/long/long_1":       "0 0\n0 1\n1 1\n1 2\n2 2\n",         # Tic-tac-toe moves
+    "cpp/long/long_2":       "3\n17\n81\n3\n",                     # QuickSort: size=3, elements
+    "cpp/medium/medium_2":   "2\n100\n3\n50\n1\n4\n",             # Banking: deposit 100, withdraw 50, show, exit
+    "cpp/medium/medium_3":   "67\n",                               # Binary search: search for 67
+    # Java
+    "java/short/short_2":    "4\n10\n3\n",                         # Calculator: divide 10 / 3
+    # Python
+    "python/medium/medium_1": "4\n",                               # To-do list: quit immediately
+    "python/long/long_1":    None,                                  # Argparse — uses CLI args, see below
+}
+
+# CLI arguments for samples that use argparse instead of stdin.
+CLI_ARGS = {
+    "python/long/long_1":    ["m", "thin", "-t", "olives", "--extra-cheese"],
 }
 
 # ---------------------------------------------------------------------------
@@ -210,7 +218,7 @@ def get_ground_truth(sample_id):
 # Compilation & execution
 # ---------------------------------------------------------------------------
 
-def compile_and_run(code, language, stdin_input=None, timeout=TIMEOUT):
+def compile_and_run(code, language, stdin_input=None, timeout=TIMEOUT, cli_args=None):
     """
     Compile and run code in the given language.
 
@@ -226,7 +234,7 @@ def compile_and_run(code, language, stdin_input=None, timeout=TIMEOUT):
 
         try:
             if language == 'python':
-                return _run_python(code, tmpdir, stdin_input, timeout)
+                return _run_python(code, tmpdir, stdin_input, timeout, cli_args=cli_args)
             elif language == 'cpp':
                 return _run_cpp(code, tmpdir, stdin_input, timeout)
             elif language == 'java':
@@ -243,7 +251,7 @@ def compile_and_run(code, language, stdin_input=None, timeout=TIMEOUT):
             return 'parse_error', '', f'Unexpected error: {e}'
 
 
-def _run_python(code, tmpdir, stdin_input, timeout):
+def _run_python(code, tmpdir, stdin_input, timeout, cli_args=None):
     code_file = tmpdir / "main.py"
     code_file.write_text(code)
 
@@ -255,9 +263,10 @@ def _run_python(code, tmpdir, stdin_input, timeout):
     if result.returncode != 0:
         return 'parse_error', '', result.stderr
 
-    # Run
+    # Run (with optional CLI args for argparse-based scripts)
+    cmd = [sys.executable, str(code_file)] + (cli_args or [])
     result = subprocess.run(
-        [sys.executable, str(code_file)],
+        cmd,
         capture_output=True, text=True, timeout=timeout,
         input=stdin_input
     )
@@ -344,16 +353,18 @@ def _run_javascript(code, tmpdir, stdin_input, timeout):
 # Compilation Score (CS)
 # ---------------------------------------------------------------------------
 
-def compute_cs(code, language, expected_output, is_interactive=False, is_browser=False):
+def compute_cs(code, language, expected_output, is_skipped=False, is_browser=False,
+               stdin_input=None, cli_args=None):
     """
     Compute the Compilation Score (0–3) for a single sample.
 
     Returns (score: int | None, details: dict).
-    Score is None when the sample is skipped (interactive / browser / unavailable).
+    Score is None when the sample is skipped (random-seeded / browser / unavailable).
     """
     details = {
-        'is_interactive': is_interactive,
+        'is_skipped': is_skipped,
         'is_browser': is_browser,
+        'stdin_fed': stdin_input is not None or cli_args is not None,
         'status': None,
         'stdout': '',
         'stderr': '',
@@ -365,12 +376,14 @@ def compute_cs(code, language, expected_output, is_interactive=False, is_browser
         details['note'] = 'Browser-based JavaScript — cannot run with Node.js'
         return None, details
 
-    if is_interactive:
-        details['status'] = 'skipped_interactive'
-        details['note'] = 'Interactive sample — requires stdin, skipped'
+    if is_skipped:
+        details['status'] = 'skipped_random'
+        details['note'] = 'Random-seeded program — output is non-deterministic'
         return None, details
 
-    status, stdout, stderr = compile_and_run(code, language)
+    status, stdout, stderr = compile_and_run(
+        code, language, stdin_input=stdin_input, cli_args=cli_args,
+    )
     details['status'] = status
     details['stdout'] = stdout[:1000]
     details['stderr'] = stderr[:1000]
@@ -497,14 +510,17 @@ def main():
         if not reference_clean or len(reference_clean.strip()) < 10:
             reference_clean = gt_code
 
-        is_interactive = sample_id in INTERACTIVE_SAMPLES
+        is_skipped = sample_id in SKIPPED_SAMPLES
         is_browser = sample_id in BROWSER_SAMPLES
+        stdin_input = STDIN_INPUTS.get(sample_id)
+        cli_args = CLI_ARGS.get(sample_id)
 
         eval_entry = {
             'id': sample_id,
             'language': language,
-            'is_interactive': is_interactive,
+            'is_skipped': is_skipped,
             'is_browser': is_browser,
+            'stdin_fed': stdin_input is not None or cli_args is not None,
             'generated_code_length': len(generated_clean),
             'reference_code_length': len(reference_clean),
             'cs_score': None,
@@ -517,7 +533,8 @@ def main():
         if not args.skip_cs:
             cs, cs_details = compute_cs(
                 generated_clean, language, expected_output,
-                is_interactive=is_interactive, is_browser=is_browser,
+                is_skipped=is_skipped, is_browser=is_browser,
+                stdin_input=stdin_input, cli_args=cli_args,
             )
             eval_entry['cs_score'] = cs
             eval_entry['cs_details'] = cs_details
@@ -525,8 +542,9 @@ def main():
                 cs_scores.append(cs)
 
             status = cs_details.get('status', '?')
+            fed = ' [stdin fed]' if (stdin_input or cli_args) and cs is not None else ''
             if cs is not None:
-                print(f"  CS: {cs}/3  ({status})")
+                print(f"  CS: {cs}/3  ({status}){fed}")
                 if cs == 2:
                     print(f"    Expected: {cs_details.get('expected_preview', '')[:80]}")
                     print(f"    Actual:   {cs_details.get('actual_preview', '')[:80]}")
