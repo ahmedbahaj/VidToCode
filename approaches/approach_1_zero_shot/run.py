@@ -12,7 +12,7 @@ DATA_DIR = Path(__file__).parent.parent.parent / "data"
 LANG_EXTENSIONS = {
     "python": [".py"],
     "cpp": [".cpp", ".h"],
-    "java": [".java"],
+    "java": [".java", ".Java"],
     "javascript": [".js", ".html", ".css"],
 }
 
