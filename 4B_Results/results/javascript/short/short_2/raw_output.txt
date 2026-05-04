@@ -1,2 +1,0 @@
-[{
-    "narration": "Define an example array [1, 2, 3]

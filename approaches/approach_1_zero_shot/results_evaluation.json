@@ -2,9 +2,9 @@
   "source_file": "approaches/approach_1_zero_shot/results.json",
   "total_samples": 36,
   "cs_scored": 28,
-  "cs_overall": 0.2619047619047619,
+  "cs_overall": 0.21428571428571427,
   "codebleu_scored": 36,
-  "codebleu_mean": 0.43080108017280144,
+  "codebleu_mean": 0.42484774553828114,
   "per_sample": [
     {
       "id": "cpp/long/long_1",
@@ -21,7 +21,7 @@
         "stdin_fed": true,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpaqjnndp9/main.cpp:17:43: error: use of undeclared identifier 'stream'; did you mean 'strcat'?\n   17 |     cout << \"  \" << board[2][0] << \"|\" << stream << endl;\n      |                                           ^~~~~~\n      |                                           strcat\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:86:3: note: 'strcat' declared here\n   86 |                 strcat(char *_LIBC_UNSAFE_INDEXABLE __s1, const char *__s2)\n      |                 ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpaqjnndp9/main.cpp:17:43: warning: address of function 'strcat' will always evaluate to 'true' [-Wpointer-bool-conversion]\n   17 |     cout << \"  \" << board[2][0] << \"|\" << stream << endl;\n      |                                        ~~ ^~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpaqjnndp9/main.cpp:17:43: note: prefix with the address-of operator to silence this warning\n   17 |     cou",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpl5staxg7/main.cpp:17:43: error: use of undeclared identifier 'stream'; did you mean 'strcat'?\n   17 |     cout << \"  \" << board[2][0] << \"|\" << stream << endl;\n      |                                           ^~~~~~\n      |                                           strcat\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:86:3: note: 'strcat' declared here\n   86 |                 strcat(char *_LIBC_UNSAFE_INDEXABLE __s1, const char *__s2)\n      |                 ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpl5staxg7/main.cpp:17:43: warning: address of function 'strcat' will always evaluate to 'true' [-Wpointer-bool-conversion]\n   17 |     cout << \"  \" << board[2][0] << \"|\" << stream << endl;\n      |                                        ~~ ^~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpl5staxg7/main.cpp:17:43: note: prefix with the address-of operator to silence this warning\n   17 |     cou",
         "output_match": false
       },
       "codebleu_score": 0.3029413230820629,
@@ -48,7 +48,7 @@
         "stdin_fed": true,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpgoy3dwir/main.cpp:9:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]\n    9 |     int arr[size];\n      |             ^~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpgoy3dwir/main.cpp:9:13: note: read of non-const variable 'size' is not allowed in a constant expression\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpgoy3dwir/main.cpp:5:9: note: declared here\n    5 |     int size;\n      |         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpgoy3dwir/main.cpp:22:5: error: use of undeclared identifier 'quicksort'\n   22 |     quicksort(arr, 0, size - 1);\n      |     ^~~~~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpgoy3dwir/main.cpp:35:17: error: no matching function for call to 'partition'\n   35 |         int p = partition(arr, s, e);\n      |                 ^~~~~~~~~\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partition.h:81:1: n",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjy6dwxhh/main.cpp:9:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]\n    9 |     int arr[size];\n      |             ^~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjy6dwxhh/main.cpp:9:13: note: read of non-const variable 'size' is not allowed in a constant expression\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjy6dwxhh/main.cpp:5:9: note: declared here\n    5 |     int size;\n      |         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjy6dwxhh/main.cpp:22:5: error: use of undeclared identifier 'quicksort'\n   22 |     quicksort(arr, 0, size - 1);\n      |     ^~~~~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjy6dwxhh/main.cpp:35:17: error: no matching function for call to 'partition'\n   35 |         int p = partition(arr, s, e);\n      |                 ^~~~~~~~~\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partition.h:81:1: n",
         "output_match": false
       },
       "codebleu_score": 0.4757862989304069,
@@ -75,7 +75,7 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpq5rje9wx/main.cpp:56:21: error: only virtual member functions can be marked 'override'\n   56 |     void practice() override {\n      |                     ^~~~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpq5rje9wx/main.cpp:68:1: error: expected ')'\n   68 | };\n      | ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpq5rje9wx/main.cpp:63:74: note: to match this '('\n   63 |     SingersYoutubeChannel(string name, string ownerName) : YoutubeChannel(name, explains the concept of polymorphism using a base class and two derived classes. The base class, YoutubeChannel, defines common properties and methods, while the derived classes, CookingYoutubeChannel and SingersYoutubeChannel, provide specific implementations for the practice method. The video demonstrates how polymorphism allows different objects to have the same method name but different behavior. It also shows how pointers to the base class can be used to invoke methods ",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmplmybs8n3/main.cpp:56:21: error: only virtual member functions can be marked 'override'\n   56 |     void practice() override {\n      |                     ^~~~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmplmybs8n3/main.cpp:68:1: error: expected ')'\n   68 | };\n      | ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmplmybs8n3/main.cpp:63:74: note: to match this '('\n   63 |     SingersYoutubeChannel(string name, string ownerName) : YoutubeChannel(name, explains the concept of polymorphism using a base class and two derived classes. The base class, YoutubeChannel, defines common properties and methods, while the derived classes, CookingYoutubeChannel and SingersYoutubeChannel, provide specific implementations for the practice method. The video demonstrates how polymorphism allows different objects to have the same method name but different behavior. It also shows how pointers to the base class can be used to invoke methods ",
         "output_match": false
       },
       "codebleu_score": 0.4031882900559416,
@@ -93,27 +93,25 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 579,
+      "generated_code_length": 1915,
       "reference_code_length": 635,
-      "cs_score": 2,
+      "cs_score": 0,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "success",
-        "stdout": "Making call using iPhone X\nReceiving call using iPhone X\nMaking call using Google Pixel 2\nReceiving call using Google Pixel 2\n",
-        "stderr": "",
-        "output_match": false,
-        "expected_preview": "Making Call Using Iphone_X\nReceiving Call Using Iphone_X\n\nMaking Call Using Google Pixel 2 XL\nReceiving Call Using Google Pixel 2 XL",
-        "actual_preview": "Making call using iPhone X\nReceiving call using iPhone X\nMaking call using Google Pixel 2\nReceiving call using Google Pixel 2"
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpzw9ycvbp/main.cpp:34:1: error: unknown type name 'I'\n   34 | I cannot generate runnable C++ code based on this transcript because the transcript contains a critical syntax error that prevents the code from compiling.\n      | ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpzw9ycvbp/main.cpp:34:9: error: expected ';' after top level declarator\n   34 | I cannot generate runnable C++ code based on this transcript because the transcript contains a critical syntax error that prevents the code from compiling.\n      |         ^\n      |         ;\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpzw9ycvbp/main.cpp:48:7: error: redefinition of 'Phone'\n   48 | class Phone {\n      |       ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpzw9ycvbp/main.cpp:4:7: note: previous definition is here\n    4 | class Phone {\n      |       ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpzw9ycvbp/main.cpp:65:5: error: redefinition of 'main'\n",
+        "output_match": false
       },
-      "codebleu_score": 0.5300923560407025,
+      "codebleu_score": 0.5146722344754127,
       "codebleu_details": {
-        "codebleu": 0.5300923560407025,
-        "ngram_match_score": 0.40471622129148976,
-        "weighted_ngram_match_score": 0.41130537678436335,
+        "codebleu": 0.5146722344754127,
+        "ngram_match_score": 0.11156272480319945,
+        "weighted_ngram_match_score": 0.4253870826636686,
         "syntax_match_score": 0.6956521739130435,
-        "dataflow_match_score": 0.6086956521739131
+        "dataflow_match_score": 0.8260869565217391
       }
     },
     {
@@ -131,7 +129,7 @@
         "stdin_fed": true,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp2im9chqy/main.cpp:20:13: error: expected ';' after expression\n   20 |         main loop\n      |             ^\n      |             ;\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp2im9chqy/main.cpp:20:14: error: use of undeclared identifier 'loop'\n   20 |         main loop\n      |              ^~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp2im9chqy/main.cpp:20:18: error: expected '}'\n   20 |         main loop\n      |                  ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp2im9chqy/main.cpp:15:8: note: to match this '{'\n   15 |     do {\n      |        ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp2im9chqy/main.cpp:20:18: error: expected 'while' in do/while loop\n   20 |         main loop\n      |                  ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp2im9chqy/main.cpp:15:5: note: to match this 'do'\n   15 |     do {\n      |     ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp2im9c",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:20:13: error: expected ';' after expression\n   20 |         main loop\n      |             ^\n      |             ;\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:20:14: error: use of undeclared identifier 'loop'\n   20 |         main loop\n      |              ^~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:20:18: error: expected '}'\n   20 |         main loop\n      |                  ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:15:8: note: to match this '{'\n   15 |     do {\n      |        ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:20:18: error: expected 'while' in do/while loop\n   20 |         main loop\n      |                  ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:15:5: note: to match this 'do'\n   15 |     do {\n      |     ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57a",
         "output_match": false
       },
       "codebleu_score": 0.11849933527268874,
@@ -264,7 +262,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 697,
+      "generated_code_length": 6338,
       "reference_code_length": 2370,
       "cs_score": 0,
       "cs_details": {
@@ -273,16 +271,16 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpv4jwbua6/Addition.java:195: error: ')' or ',' expected\n        System.out.println(\"Addition of 10 and 2: \" + 1 named: \" + 12);\n                                                       ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpv4jwbua6/Addition.java:195: error: unclosed string literal\n        System.out.println(\"Addition of 10 and 2: \" + 1 named: \" + 12);\n                                                               ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpv4jwbua6/Addition.java:247: error: reached end of file while parsing\n        System.out.println(\"Addition of 8.0, 9.0, 2.0, and 3.0: \" + 22.0);\n                                                                          ^\n3 errors\n",
         "output_match": false
       },
-      "codebleu_score": 0.26409701825272125,
+      "codebleu_score": 0.3488437641043124,
       "codebleu_details": {
-        "codebleu": 0.26409701825272125,
-        "ngram_match_score": 0.0334741564512119,
-        "weighted_ngram_match_score": 0.0999965675040993,
-        "syntax_match_score": 0.5426356589147286,
-        "dataflow_match_score": 0.38028169014084506
+        "codebleu": 0.3488437641043124,
+        "ngram_match_score": 0.05616498907890362,
+        "weighted_ngram_match_score": 0.1479228089040192,
+        "syntax_match_score": 0.627906976744186,
+        "dataflow_match_score": 0.5633802816901409
       }
     },
     {
@@ -293,15 +291,17 @@
       "stdin_fed": false,
       "generated_code_length": 844,
       "reference_code_length": 722,
-      "cs_score": 0,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "Key not found: -1\nKey found at index: -1\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "run:\n5\nBUILD SUCCESSFUL (total time: 0 seconds)",
+        "actual_preview": "Key not found: -1\nKey found at index: -1"
       },
       "codebleu_score": 0.4748605403745738,
       "codebleu_details": {
@@ -355,7 +355,7 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpg36ifnal/ArrayTutorial.java:9: error: reached end of file while parsing\n        System.out.println(\"Third element: \" +\n                                              ^\n1 error\n",
         "output_match": false
       },
       "codebleu_score": 0.2860952071432299,
@@ -382,16 +382,16 @@
         "stdin_fed": true,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_fnom54x/Main.java:26: error: variable n2 might not have been initialized\n                result = n1 + n2;\n                              ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_fnom54x/Main.java:29: error: variable n2 might not have been initialized\n                result = n1 - n2;\n                              ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_fnom54x/Main.java:32: error: variable n2 might not have been initialized\n                result = n1 * n2;\n                              ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_fnom54x/Main.java:35: error: variable n2 might not have been initialized\n                result = n1 / n2;\n                              ^\n4 errors\n",
         "output_match": false
       },
-      "codebleu_score": 0.6102959627573493,
+      "codebleu_score": 0.625602085206329,
       "codebleu_details": {
-        "codebleu": 0.6102959627573493,
+        "codebleu": 0.625602085206329,
         "ngram_match_score": 0.5697212464289411,
         "weighted_ngram_match_score": 0.5857483188861706,
         "syntax_match_score": 0.8571428571428571,
-        "dataflow_match_score": 0.42857142857142855
+        "dataflow_match_score": 0.4897959183673469
       }
     },
     {
@@ -409,16 +409,16 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpz5yc1cva/LinearSearch.java:26: error: reached end of file while parsing\n}\n ^\n1 error\n",
         "output_match": false
       },
-      "codebleu_score": 0.40123900316031635,
+      "codebleu_score": 0.3926183135051439,
       "codebleu_details": {
-        "codebleu": 0.40123900316031635,
+        "codebleu": 0.3926183135051439,
         "ngram_match_score": 0.12178234578438014,
         "weighted_ngram_match_score": 0.30081292415131483,
         "syntax_match_score": 0.5961538461538461,
-        "dataflow_match_score": 0.5862068965517241
+        "dataflow_match_score": 0.5517241379310345
       }
     },
     {
@@ -427,7 +427,7 @@
       "is_skipped": false,
       "is_browser": true,
       "stdin_fed": false,
-      "generated_code_length": 66,
+      "generated_code_length": 91,
       "reference_code_length": 2318,
       "cs_score": null,
       "cs_details": {
@@ -440,13 +440,13 @@
         "output_match": false,
         "note": "Browser-based JavaScript \u2014 cannot run with Node.js"
       },
-      "codebleu_score": 0.27586206896551724,
+      "codebleu_score": 0.017961377253207848,
       "codebleu_details": {
-        "codebleu": 0.27586206896551724,
+        "codebleu": 0.017961377253207848,
         "ngram_match_score": 0,
         "weighted_ngram_match_score": 0,
-        "syntax_match_score": 0.10344827586206896,
-        "dataflow_match_score": 0.0
+        "syntax_match_score": 0.06513409961685823,
+        "dataflow_match_score": 0.006711409395973154
       }
     },
     {
@@ -464,16 +464,16 @@
         "stdin_fed": false,
         "status": "runtime_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpmp8ule4c/main.js:15\n  cache = {};\n        ^\n\nTypeError: Assignment to constant variable.\n    at /private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpmp8ule4c/main.js:15:9\n    at Object.<anonymous> (/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpmp8ule4c/main.js:22:2)\n    at Module._compile (node:internal/modules/cjs/loader:1829:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)\n    at Module.load (node:internal/modules/cjs/loader:1552:32)\n    at Module._load (node:internal/modules/cjs/loader:1354:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_qwgnmf7/main.js:15\n  cache = {};\n        ^\n\nTypeError: Assignment to constant variable.\n    at /private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_qwgnmf7/main.js:15:9\n    at Object.<anonymous> (/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_qwgnmf7/main.js:22:2)\n    at Module._compile (node:internal/modules/cjs/loader:1829:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)\n    at Module.load (node:internal/modules/cjs/loader:1552:32)\n    at Module._load (node:internal/modules/cjs/loader:1354:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.9.0\n",
         "output_match": false
       },
-      "codebleu_score": 0.2724158253496669,
+      "codebleu_score": 0.26565906859291016,
       "codebleu_details": {
-        "codebleu": 0.2724158253496669,
+        "codebleu": 0.26565906859291016,
         "ngram_match_score": 0.10762789605927092,
         "weighted_ngram_match_score": 0.11737844068243204,
         "syntax_match_score": 0.5538461538461539,
-        "dataflow_match_score": 0.3108108108108108
+        "dataflow_match_score": 0.28378378378378377
       }
     },
     {
@@ -482,25 +482,25 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 746,
+      "generated_code_length": 356,
       "reference_code_length": 608,
-      "cs_score": 0,
+      "cs_score": 1,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "parse_error",
+        "status": "runtime_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpf81ryn08/main.js:20\n<think>\n^\n\nSyntaxError: Unexpected token '<'\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp6x_z_8ad/main.js:17\nres.setHeader('Content-Type', 'application/json');\n^\n\nReferenceError: res is not defined\n    at Object.<anonymous> (/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp6x_z_8ad/main.js:17:1)\n    at Module._compile (node:internal/modules/cjs/loader:1829:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)\n    at Module.load (node:internal/modules/cjs/loader:1552:32)\n    at Module._load (node:internal/modules/cjs/loader:1354:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.9.0\n",
         "output_match": false
       },
-      "codebleu_score": 0.3990172800402181,
+      "codebleu_score": 0.38596378056813024,
       "codebleu_details": {
-        "codebleu": 0.3990172800402181,
-        "ngram_match_score": 0.14738500064905094,
-        "weighted_ngram_match_score": 0.190165600993303,
+        "codebleu": 0.38596378056813024,
+        "ngram_match_score": 0.13772597170298642,
+        "weighted_ngram_match_score": 0.18464766908805322,
         "syntax_match_score": 0.74,
-        "dataflow_match_score": 0.5185185185185185
+        "dataflow_match_score": 0.48148148148148145
       }
     },
     {
@@ -518,7 +518,7 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp36fc7f9d/main.js:26\n        console.log('File appended');\n                                     \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpyas9mdif/main.js:26\n        console.log('File appended');\n                                     \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
       "codebleu_score": 0.4240366847115544,
@@ -573,7 +573,7 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpu11g6ckg/main.js:1\nconst arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52,  content\n                                                                                                                                                                                                                               \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpcjfko6m4/main.js:1\nconst arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52,  content\n                                                                                                                                                                                                                               \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
       "codebleu_score": 0.25158523935555926,
@@ -619,25 +619,25 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 824,
+      "generated_code_length": 5218,
       "reference_code_length": 1215,
-      "cs_score": 1,
+      "cs_score": 0,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "runtime_error",
+        "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp1xja_1kc/main.js:2\nfor (const [item, index] of arr1) {\n                       ^\n\nTypeError: .for is not iterable\n    at Object.<anonymous> (/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp1xja_1kc/main.js:2:24)\n    at Module._compile (node:internal/modules/cjs/loader:1829:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)\n    at Module.load (node:internal/modules/cjs/loader:1552:32)\n    at Module._load (node:internal/modules/cjs/loader:1354:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp63zvs_mo/main.js:41\nconst arr1 = [1, 2, 3];\n      ^\n\nSyntaxError: Identifier 'arr1' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
-      "codebleu_score": 0.2847137072164931,
+      "codebleu_score": 0.2714604313359256,
       "codebleu_details": {
-        "codebleu": 0.2847137072164931,
-        "ngram_match_score": 0.16960906002249754,
-        "weighted_ngram_match_score": 0.17716519489203986,
+        "codebleu": 0.2714604313359256,
+        "ngram_match_score": 0.03514143715823808,
+        "weighted_ngram_match_score": 0.1857030475673628,
         "syntax_match_score": 0.5629139072847682,
-        "dataflow_match_score": 0.22916666666666666
+        "dataflow_match_score": 0.3020833333333333
       }
     },
     {
@@ -646,27 +646,25 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 293,
+      "generated_code_length": 5264,
       "reference_code_length": 404,
-      "cs_score": 2,
+      "cs_score": 0,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "success",
+        "status": "parse_error",
         "stdout": "",
-        "stderr": "",
-        "output_match": false,
-        "expected_preview": "[ -6, -2, 4, 8, 20 ]",
-        "actual_preview": ""
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmposhzyh0b/main.js:281\n        arr[i + 1] = temp;\n                          \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "output_match": false
       },
-      "codebleu_score": 0.49784202954203804,
+      "codebleu_score": 0.538256179127555,
       "codebleu_details": {
-        "codebleu": 0.49784202954203804,
-        "ngram_match_score": 0.4818065626444645,
-        "weighted_ngram_match_score": 0.5050366686458597,
+        "codebleu": 0.538256179127555,
+        "ngram_match_score": 0.03744170100718456,
+        "weighted_ngram_match_score": 0.5228228345075602,
         "syntax_match_score": 0.7692307692307693,
-        "dataflow_match_score": 0.23529411764705882
+        "dataflow_match_score": 0.8235294117647058
       }
     },
     {
@@ -675,23 +673,25 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": true,
-      "generated_code_length": 1996,
+      "generated_code_length": 1973,
       "reference_code_length": 1543,
-      "cs_score": 1,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": true,
-        "status": "runtime_error",
-        "stdout": "",
-        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5xj23tjt/main.py\", line 59, in <module>\n    parser.add_argument(\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/argparse.py\", line 1416, in add_argument\n    action = action_class(**kwargs)\nTypeError: __init__() got an unexpected keyword argument 'video'\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "Your pizza is m thin with extra cheese with olives crust\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "Your pizza is: Medium thin crust with olives plus extra cheese!!",
+        "actual_preview": "Your pizza is m thin with extra cheese with olives crust"
       },
-      "codebleu_score": 0.48628167948670575,
+      "codebleu_score": 0.49212591874459166,
       "codebleu_details": {
-        "codebleu": 0.48628167948670575,
-        "ngram_match_score": 0.2428575054802256,
-        "weighted_ngram_match_score": 0.30555868615080806,
+        "codebleu": 0.49212591874459166,
+        "ngram_match_score": 0.2539523981192078,
+        "weighted_ngram_match_score": 0.3178407505433693,
         "syntax_match_score": 0.6842105263157895,
         "dataflow_match_score": 0.7125
       }
@@ -739,7 +739,7 @@
         "stdin_fed": false,
         "status": "runtime_error",
         "stdout": "Original: []\nSorted: []\n\nOriginal: [1]\nSorted: [1]\n\nOriginal: [5, 4, 3, 2, 1]\n",
-        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpoit2glps/main.py\", line 60, in <module>\n    test_merge_sort()\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpoit2glps/main.py\", line 55, in test_merge_sort\n    merge_sort_in_place(arr)\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpoit2glps/main.py\", line 40, in merge_sort_in_place\n    merge_sort_in_place(arr[:mid])\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpoit2glps/main.py\", line 42, in merge_sort_in_place\n    merge_sorted_arrays(arr[:mid], arr[mid:], arr)\nTypeError: merge_sorted_arrays() takes 2 positional arguments but 3 were given\n",
+        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps67njwo4/main.py\", line 60, in <module>\n    test_merge_sort()\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps67njwo4/main.py\", line 55, in test_merge_sort\n    merge_sort_in_place(arr)\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps67njwo4/main.py\", line 40, in merge_sort_in_place\n    merge_sort_in_place(arr[:mid])\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps67njwo4/main.py\", line 42, in merge_sort_in_place\n    merge_sorted_arrays(arr[:mid], arr[mid:], arr)\nTypeError: merge_sorted_arrays() takes 2 positional arguments but 3 were given\n",
         "output_match": false
       },
       "codebleu_score": 0.42130196133337,
@@ -757,27 +757,25 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": true,
-      "generated_code_length": 1514,
+      "generated_code_length": 3042,
       "reference_code_length": 1315,
-      "cs_score": 2,
+      "cs_score": 0,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": true,
-        "status": "success",
-        "stdout": "\nPlease select one of the following options:\n----------------------------------------\n1. Add a new task\n2. Delete a task\n3. List tasks\n4. Quit\nEnter your choice: Goodbye \ud83d\udc4b\ud83d\udc4b\n",
-        "stderr": "",
-        "output_match": false,
-        "expected_preview": "Welcome to the to do list app :)\n\n\nPlease select one of the following options\n------------------------------------------\n1. Add a new task\n2. Delete a task\n3. List tasks\n4. Quit\nEnter your choice:",
-        "actual_preview": "Please select one of the following options:\n----------------------------------------\n1. Add a new task\n2. Delete a task\n3. List tasks\n4. Quit\nEnter your choice: Goodbye \ud83d\udc4b\ud83d\udc4b"
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpqie3yhgy/main.py\", line 52\n    </think>\n    ^\nSyntaxError: invalid syntax\n\n",
+        "output_match": false
       },
-      "codebleu_score": 0.5539896389755272,
+      "codebleu_score": 0.48185011175414005,
       "codebleu_details": {
-        "codebleu": 0.5539896389755272,
-        "ngram_match_score": 0.3931747720923212,
-        "weighted_ngram_match_score": 0.4462240690147789,
+        "codebleu": 0.48185011175414005,
+        "ngram_match_score": 0.1980410234587393,
+        "weighted_ngram_match_score": 0.45083892444908646,
         "syntax_match_score": 0.8863636363636364,
-        "dataflow_match_score": 0.49019607843137253
+        "dataflow_match_score": 0.39215686274509803
       }
     },
     {
@@ -786,27 +784,25 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 380,
+      "generated_code_length": 7056,
       "reference_code_length": 294,
-      "cs_score": 2,
+      "cs_score": 0,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "success",
-        "stdout": "Sorry, this file does not exist\nExecuting finally\n",
-        "stderr": "",
-        "output_match": false,
-        "expected_preview": "First!\nExecuting Finally...\nEnd of program",
-        "actual_preview": "Sorry, this file does not exist\nExecuting finally"
+        "status": "parse_error",
+        "stdout": "",
+        "stderr": "  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp66i_33hg/main.py\", line 73\n    finally:\n    ^\nSyntaxError: invalid syntax\n\n",
+        "output_match": false
       },
-      "codebleu_score": 0.35094541443584043,
+      "codebleu_score": 0.3627406752352226,
       "codebleu_details": {
-        "codebleu": 0.35094541443584043,
-        "ngram_match_score": 0.10629480219240392,
-        "weighted_ngram_match_score": 0.1416897541016824,
-        "syntax_match_score": 0.7391304347826086,
-        "dataflow_match_score": 0.4166666666666667
+        "codebleu": 0.3627406752352226,
+        "ngram_match_score": 0.006300660454539952,
+        "weighted_ngram_match_score": 0.16205334483417652,
+        "syntax_match_score": 0.782608695652174,
+        "dataflow_match_score": 0.5
       }
     },
     {
@@ -824,7 +820,7 @@
         "stdin_fed": false,
         "status": "runtime_error",
         "stdout": "(True, 4)\n(True, 1)\n",
-        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjh0raz2m/main.py\", line 24, in <module>\n    print(binary_search(arr, [1, 2, 3, 4, 5, 6, 7, 8, 9]))\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjh0raz2m/main.py\", line 13, in binary_search\n    elif arr[mid] < target:\nTypeError: '<' not supported between instances of 'int' and 'list'\n",
+        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpm8nogh6c/main.py\", line 24, in <module>\n    print(binary_search(arr, [1, 2, 3, 4, 5, 6, 7, 8, 9]))\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpm8nogh6c/main.py\", line 13, in binary_search\n    elif arr[mid] < target:\nTypeError: '<' not supported between instances of 'int' and 'list'\n",
         "output_match": false
       },
       "codebleu_score": 0.30496636908745206,
@@ -842,7 +838,7 @@
       "is_skipped": true,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 602,
+      "generated_code_length": 262,
       "reference_code_length": 343,
       "cs_score": null,
       "cs_details": {
@@ -855,11 +851,11 @@
         "output_match": false,
         "note": "Random-seeded program \u2014 output is non-deterministic"
       },
-      "codebleu_score": 0.5705804990372554,
+      "codebleu_score": 0.5816475057979791,
       "codebleu_details": {
-        "codebleu": 0.5705804990372554,
-        "ngram_match_score": 0.16387924217290095,
-        "weighted_ngram_match_score": 0.2851094206427871,
+        "codebleu": 0.5816475057979791,
+        "ngram_match_score": 0.23162698759784509,
+        "weighted_ngram_match_score": 0.2616297022607381,
         "syntax_match_score": 0.8333333333333334,
         "dataflow_match_score": 1.0
       }
@@ -870,23 +866,23 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 228,
+      "generated_code_length": 7192,
       "reference_code_length": 132,
-      "cs_score": 1,
+      "cs_score": 0,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "runtime_error",
+        "status": "parse_error",
         "stdout": "",
-        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpufeeto1h/main.py\", line 1, in <module>\n    with open(\"test.txt\") as file:\nFileNotFoundError: [Errno 2] No such file or directory: 'test.txt'\n",
+        "stderr": "  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpaux6l1az/main.py\", line 142\n    named file\n          ^\nSyntaxError: invalid syntax\n\n",
         "output_match": false
       },
-      "codebleu_score": 0.49997352700961023,
+      "codebleu_score": 0.48006682541867407,
       "codebleu_details": {
-        "codebleu": 0.49997352700961023,
-        "ngram_match_score": 0.08339775806898658,
-        "weighted_ngram_match_score": 0.12482968330278776,
+        "codebleu": 0.48006682541867407,
+        "ngram_match_score": 0.0025409540862806152,
+        "weighted_ngram_match_score": 0.12605968092174913,
         "syntax_match_score": 0.7916666666666666,
         "dataflow_match_score": 1.0
       }
@@ -911,13 +907,13 @@
         "expected_preview": "['a', 'b', 'c', 'd', 'e', 'f']",
         "actual_preview": "[1, 2, 3, 4]"
       },
-      "codebleu_score": 0.350071965577096,
+      "codebleu_score": 0.381321965577096,
       "codebleu_details": {
-        "codebleu": 0.350071965577096,
+        "codebleu": 0.381321965577096,
         "ngram_match_score": 0.14783829020276099,
         "weighted_ngram_match_score": 0.16744957210562306,
         "syntax_match_score": 0.56,
-        "dataflow_match_score": 0.525
+        "dataflow_match_score": 0.65
       }
     },
     {
@@ -928,23 +924,25 @@
       "stdin_fed": false,
       "generated_code_length": 1030,
       "reference_code_length": 950,
-      "cs_score": 0,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "30156 475283 122287 18156 582168 270504 780680 548151 624665 5086 \n5086 18156 30156 122287 270504 475283 548151 582168 624665 780680 \n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "run:\nBefore:\n468574\n981556\n326191\n168933\n28349\n828185\n438183\n69456\n265461\n354779\n\nAfter:\n28349\n69456\n168933\n265461\n326191\n354779\n438183\n468574\n828185\n981556\nBUILD SUCCESSFUL (total time: 0 seconds)",
+        "actual_preview": "30156 475283 122287 18156 582168 270504 780680 548151 624665 5086 \n5086 18156 30156 122287 270504 475283 548151 582168 624665 780680"
       },
-      "codebleu_score": 0.6624091035279418,
+      "codebleu_score": 0.6547167958356341,
       "codebleu_details": {
-        "codebleu": 0.6624091035279418,
+        "codebleu": 0.6547167958356341,
         "ngram_match_score": 0.6127863114777186,
         "weighted_ngram_match_score": 0.6561483482480838,
         "syntax_match_score": 0.7807017543859649,
-        "dataflow_match_score": 0.6
+        "dataflow_match_score": 0.5692307692307692
       }
     },
     {
@@ -990,7 +988,7 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmph4qw8vga/Main.java:21: error: reached end of file while parsing\n    public void run()\n                     ^\n1 error\n",
         "output_match": false
       },
       "codebleu_score": 0.5783746826509504,
