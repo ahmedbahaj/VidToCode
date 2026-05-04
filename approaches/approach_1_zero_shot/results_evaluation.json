@@ -2,9 +2,9 @@
   "source_file": "approaches/approach_1_zero_shot/results.json",
   "total_samples": 36,
   "cs_scored": 28,
-  "cs_overall": 0.21428571428571427,
+  "cs_overall": 0.5119047619047619,
   "codebleu_scored": 36,
-  "codebleu_mean": 0.42484774553828114,
+  "codebleu_mean": 0.5056035975530729,
   "per_sample": [
     {
       "id": "cpp/long/long_1",
@@ -12,7 +12,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": true,
-      "generated_code_length": 5020,
+      "generated_code_length": 473,
       "reference_code_length": 2821,
       "cs_score": 0,
       "cs_details": {
@@ -21,16 +21,16 @@
         "stdin_fed": true,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpl5staxg7/main.cpp:17:43: error: use of undeclared identifier 'stream'; did you mean 'strcat'?\n   17 |     cout << \"  \" << board[2][0] << \"|\" << stream << endl;\n      |                                           ^~~~~~\n      |                                           strcat\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:86:3: note: 'strcat' declared here\n   86 |                 strcat(char *_LIBC_UNSAFE_INDEXABLE __s1, const char *__s2)\n      |                 ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpl5staxg7/main.cpp:17:43: warning: address of function 'strcat' will always evaluate to 'true' [-Wpointer-bool-conversion]\n   17 |     cout << \"  \" << board[2][0] << \"|\" << stream << endl;\n      |                                        ~~ ^~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpl5staxg7/main.cpp:17:43: note: prefix with the address-of operator to silence this warning\n   17 |     cou",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5bs_z96f/main.cpp:19:17: warning: missing terminating '\"' character [-Winvalid-pp-token]\n   19 |         cout << \"\n      |                 ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5bs_z96f/main.cpp:19:17: error: expected expression\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5bs_z96f/main.cpp:19:18: error: expected '}'\n   19 |         cout << \"\n      |                  ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5bs_z96f/main.cpp:15:33: note: to match this '{'\n   15 |     for (int i = 0; i < 9; i++) {\n      |                                 ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5bs_z96f/main.cpp:19:18: error: expected '}'\n   19 |         cout << \"\n      |                  ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp5bs_z96f/main.cpp:4:12: note: to match this '{'\n    4 | int main() {\n      |            ^\n1 warning and 3 errors generated.\n",
         "output_match": false
       },
-      "codebleu_score": 0.3029413230820629,
+      "codebleu_score": 0.23285342542516232,
       "codebleu_details": {
-        "codebleu": 0.3029413230820629,
-        "ngram_match_score": 0.08179961922743088,
-        "weighted_ngram_match_score": 0.179560294417807,
-        "syntax_match_score": 0.6580976863753213,
-        "dataflow_match_score": 0.2923076923076923
+        "codebleu": 0.23285342542516232,
+        "ngram_match_score": 0.02368252856265003,
+        "weighted_ngram_match_score": 0.19594552947574886,
+        "syntax_match_score": 0.596401028277635,
+        "dataflow_match_score": 0.11538461538461539
       }
     },
     {
@@ -39,25 +39,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": true,
-      "generated_code_length": 1180,
+      "generated_code_length": 1148,
       "reference_code_length": 1077,
-      "cs_score": 0,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": true,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjy6dwxhh/main.cpp:9:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]\n    9 |     int arr[size];\n      |             ^~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjy6dwxhh/main.cpp:9:13: note: read of non-const variable 'size' is not allowed in a constant expression\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjy6dwxhh/main.cpp:5:9: note: declared here\n    5 |     int size;\n      |         ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjy6dwxhh/main.cpp:22:5: error: use of undeclared identifier 'quicksort'\n   22 |     quicksort(arr, 0, size - 1);\n      |     ^~~~~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpjy6dwxhh/main.cpp:35:17: error: no matching function for call to 'partition'\n   35 |         int p = partition(arr, s, e);\n      |                 ^~~~~~~~~\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partition.h:81:1: n",
-        "output_match": false
+        "status": "success",
+        "stdout": "Enter the size of the array: Enter 3 integers in any order: Before sorting: 17 81 3 \nAfter sorting: 3 17 81 \n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "Enter Size of array: \n33\nEnter 3 integers in any order: \n17\n81\n3\nBefore Sorting\n17 81 3 \nAfter Sorting\n3 17 81",
+        "actual_preview": "Enter the size of the array: Enter 3 integers in any order: Before sorting: 17 81 3 \nAfter sorting: 3 17 81"
       },
-      "codebleu_score": 0.4757862989304069,
+      "codebleu_score": 0.6336537478436612,
       "codebleu_details": {
-        "codebleu": 0.4757862989304069,
-        "ngram_match_score": 0.2327219262825158,
-        "weighted_ngram_match_score": 0.31308542984467513,
+        "codebleu": 0.6336537478436612,
+        "ngram_match_score": 0.31903304090814155,
+        "weighted_ngram_match_score": 0.42967268230063804,
         "syntax_match_score": 0.8471337579617835,
-        "dataflow_match_score": 0.5102040816326531
+        "dataflow_match_score": 0.9387755102040817
       }
     },
     {
@@ -66,25 +68,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 2774,
+      "generated_code_length": 2484,
       "reference_code_length": 2339,
-      "cs_score": 0,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmplmybs8n3/main.cpp:56:21: error: only virtual member functions can be marked 'override'\n   56 |     void practice() override {\n      |                     ^~~~~~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmplmybs8n3/main.cpp:68:1: error: expected ')'\n   68 | };\n      | ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmplmybs8n3/main.cpp:63:74: note: to match this '('\n   63 |     SingersYoutubeChannel(string name, string ownerName) : YoutubeChannel(name, explains the concept of polymorphism using a base class and two derived classes. The base class, YoutubeChannel, defines common properties and methods, while the derived classes, CookingYoutubeChannel and SingersYoutubeChannel, provide specific implementations for the practice method. The video demonstrates how polymorphism allows different objects to have the same method name but different behavior. It also shows how pointers to the base class can be used to invoke methods ",
-        "output_match": false
+        "status": "success",
+        "stdout": "Amy is practicing cooking and learning new recipes and experimenting with spices\nJohn is taking singing classes and learning new songs and learning how to dance\nJohn is taking singing classes and learning new songs and learning how to dance\nJohn is taking singing classes and learning new songs and learning how to dance\nJohn is taking singing classes and learning new songs and learning how to dance\nJohn is taking singing classes and learning new songs and learning how to dance\nAmy's Kitchen has bad quality content\nJohn Sings has great content\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "Amy is Practicing cooking, learning new recipes, experimenting with spices...\nJohn is taking singing classes, learning new songs, learning how to dance...\nJohn is taking singing classes, learning new songs, learning how to dance...\nJohn is taking singing classes, learning new songs, learning how to ",
+        "actual_preview": "Amy is practicing cooking and learning new recipes and experimenting with spices\nJohn is taking singing classes and learning new songs and learning how to dance\nJohn is taking singing classes and learning new songs and learning how to dance\nJohn is taking singing classes and learning new songs and l"
       },
-      "codebleu_score": 0.4031882900559416,
+      "codebleu_score": 0.4666145328528455,
       "codebleu_details": {
-        "codebleu": 0.4031882900559416,
-        "ngram_match_score": 0.10892643427855606,
-        "weighted_ngram_match_score": 0.14233384988922734,
-        "syntax_match_score": 0.6601941747572816,
-        "dataflow_match_score": 0.7012987012987013
+        "codebleu": 0.4666145328528455,
+        "ngram_match_score": 0.24257280728629793,
+        "weighted_ngram_match_score": 0.25318806022393664,
+        "syntax_match_score": 0.8252427184466019,
+        "dataflow_match_score": 0.5454545454545454
       }
     },
     {
@@ -93,25 +97,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 1915,
+      "generated_code_length": 616,
       "reference_code_length": 635,
-      "cs_score": 0,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpzw9ycvbp/main.cpp:34:1: error: unknown type name 'I'\n   34 | I cannot generate runnable C++ code based on this transcript because the transcript contains a critical syntax error that prevents the code from compiling.\n      | ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpzw9ycvbp/main.cpp:34:9: error: expected ';' after top level declarator\n   34 | I cannot generate runnable C++ code based on this transcript because the transcript contains a critical syntax error that prevents the code from compiling.\n      |         ^\n      |         ;\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpzw9ycvbp/main.cpp:48:7: error: redefinition of 'Phone'\n   48 | class Phone {\n      |       ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpzw9ycvbp/main.cpp:4:7: note: previous definition is here\n    4 | class Phone {\n      |       ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpzw9ycvbp/main.cpp:65:5: error: redefinition of 'main'\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "making call using iPhone X\nreceiving call using iPhone X\nmaking call using Google Pixel\nreceiving call using Google Pixel\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "Making Call Using Iphone_X\nReceiving Call Using Iphone_X\n\nMaking Call Using Google Pixel 2 XL\nReceiving Call Using Google Pixel 2 XL",
+        "actual_preview": "making call using iPhone X\nreceiving call using iPhone X\nmaking call using Google Pixel\nreceiving call using Google Pixel"
       },
-      "codebleu_score": 0.5146722344754127,
+      "codebleu_score": 0.7603852247827961,
       "codebleu_details": {
-        "codebleu": 0.5146722344754127,
-        "ngram_match_score": 0.11156272480319945,
-        "weighted_ngram_match_score": 0.4253870826636686,
-        "syntax_match_score": 0.6956521739130435,
-        "dataflow_match_score": 0.8260869565217391
+        "codebleu": 0.7603852247827961,
+        "ngram_match_score": 0.6059121553796711,
+        "weighted_ngram_match_score": 0.6240345408529624,
+        "syntax_match_score": 0.8985507246376812,
+        "dataflow_match_score": 0.9130434782608695
       }
     },
     {
@@ -120,7 +126,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": true,
-      "generated_code_length": 428,
+      "generated_code_length": 3964,
       "reference_code_length": 1851,
       "cs_score": 0,
       "cs_details": {
@@ -129,16 +135,16 @@
         "stdin_fed": true,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:20:13: error: expected ';' after expression\n   20 |         main loop\n      |             ^\n      |             ;\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:20:14: error: use of undeclared identifier 'loop'\n   20 |         main loop\n      |              ^~~~\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:20:18: error: expected '}'\n   20 |         main loop\n      |                  ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:15:8: note: to match this '{'\n   15 |     do {\n      |        ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:20:18: error: expected 'while' in do/while loop\n   20 |         main loop\n      |                  ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57az5e/main.cpp:15:5: note: to match this 'do'\n   15 |     do {\n      |     ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpwb57a",
+        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpyy068um6/main.cpp:96:5: error: redefinition of 'main'\n   96 | int main() {\n      |     ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpyy068um6/main.cpp:11:5: note: previous definition is here\n   11 | int main() {\n      |     ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpyy068um6/main.cpp:138:6: error: redefinition of 'showBalance'\n  138 | void showBalance(double balance) {\n      |      ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpyy068um6/main.cpp:53:6: note: previous definition is here\n   53 | void showBalance(double balance) {\n      |      ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpyy068um6/main.cpp:142:8: error: redefinition of 'deposit'\n  142 | double deposit() {\n      |        ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpyy068um6/main.cpp:57:8: note: previous definition is here\n   57 | double deposit() {\n      |        ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpyy068um6/main.",
         "output_match": false
       },
-      "codebleu_score": 0.11849933527268874,
+      "codebleu_score": 0.43760663621656537,
       "codebleu_details": {
-        "codebleu": 0.11849933527268874,
-        "ngram_match_score": 0.022118103876803047,
-        "weighted_ngram_match_score": 0.08649462182933651,
-        "syntax_match_score": 0.18681318681318682,
-        "dataflow_match_score": 0.17857142857142858
+        "codebleu": 0.43760663621656537,
+        "ngram_match_score": 0.17739350503867599,
+        "weighted_ngram_match_score": 0.46176930356384943,
+        "syntax_match_score": 0.45054945054945056,
+        "dataflow_match_score": 0.6607142857142857
       }
     },
     {
@@ -147,7 +153,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": true,
-      "generated_code_length": 797,
+      "generated_code_length": 888,
       "reference_code_length": 941,
       "cs_score": 2,
       "cs_details": {
@@ -155,19 +161,19 @@
         "is_browser": false,
         "stdin_fed": true,
         "status": "success",
-        "stdout": "Enter an integer: Found at index: 5\n",
+        "stdout": "Enter an integer: The number 67 was found at the element with index value of 5.\n",
         "stderr": "",
         "output_match": false,
         "expected_preview": "Enter an integer: \n67\nThe number 67 was found at the element with index 5",
-        "actual_preview": "Enter an integer: Found at index: 5"
+        "actual_preview": "Enter an integer: The number 67 was found at the element with index value of 5."
       },
-      "codebleu_score": 0.6829480104383965,
+      "codebleu_score": 0.6468564980386999,
       "codebleu_details": {
-        "codebleu": 0.6829480104383965,
-        "ngram_match_score": 0.5919200445692094,
-        "weighted_ngram_match_score": 0.6132346560309064,
+        "codebleu": 0.6468564980386999,
+        "ngram_match_score": 0.6652085594951932,
+        "weighted_ngram_match_score": 0.6910346369606815,
         "syntax_match_score": 0.7311827956989247,
-        "dataflow_match_score": 0.7954545454545454
+        "dataflow_match_score": 0.5
       }
     },
     {
@@ -176,7 +182,7 @@
       "is_skipped": true,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 633,
+      "generated_code_length": 540,
       "reference_code_length": 474,
       "cs_score": null,
       "cs_details": {
@@ -189,12 +195,12 @@
         "output_match": false,
         "note": "Random-seeded program \u2014 output is non-deterministic"
       },
-      "codebleu_score": 0.5215993336858809,
+      "codebleu_score": 0.6986759543590964,
       "codebleu_details": {
-        "codebleu": 0.5215993336858809,
-        "ngram_match_score": 0.3020679767949182,
-        "weighted_ngram_match_score": 0.34573286672053505,
-        "syntax_match_score": 0.43859649122807015,
+        "codebleu": 0.6986759543590964,
+        "ngram_match_score": 0.4959767070338702,
+        "weighted_ngram_match_score": 0.5618850051393571,
+        "syntax_match_score": 0.7368421052631579,
         "dataflow_match_score": 1.0
       }
     },
@@ -204,7 +210,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 250,
+      "generated_code_length": 252,
       "reference_code_length": 159,
       "cs_score": 2,
       "cs_details": {
@@ -212,19 +218,19 @@
         "is_browser": false,
         "stdin_fed": false,
         "status": "success",
-        "stdout": "5\n5\n10\n5\n",
+        "stdout": "6\n6\n6\n",
         "stderr": "",
         "output_match": false,
         "expected_preview": "6",
-        "actual_preview": "5\n5\n10\n5"
+        "actual_preview": "6\n6\n6"
       },
-      "codebleu_score": 0.37623686111282284,
+      "codebleu_score": 0.47685238285566284,
       "codebleu_details": {
-        "codebleu": 0.37623686111282284,
-        "ngram_match_score": 0.16476951418084101,
-        "weighted_ngram_match_score": 0.2957334858260058,
-        "syntax_match_score": 0.4444444444444444,
-        "dataflow_match_score": 0.6
+        "codebleu": 0.47685238285566284,
+        "ngram_match_score": 0.3157230363707331,
+        "weighted_ngram_match_score": 0.5361309394963627,
+        "syntax_match_score": 0.5555555555555556,
+        "dataflow_match_score": 0.5
       }
     },
     {
@@ -233,25 +239,23 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 519,
+      "generated_code_length": 428,
       "reference_code_length": 824,
-      "cs_score": 2,
+      "cs_score": 3,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
         "status": "success",
-        "stdout": "4\n-1\n",
+        "stdout": "4\n",
         "stderr": "",
-        "output_match": false,
-        "expected_preview": "4",
-        "actual_preview": "4\n-1"
+        "output_match": true
       },
-      "codebleu_score": 0.6875772410493097,
+      "codebleu_score": 0.6831113665945014,
       "codebleu_details": {
-        "codebleu": 0.6875772410493097,
-        "ngram_match_score": 0.40352016819733333,
-        "weighted_ngram_match_score": 0.4252201685489254,
+        "codebleu": 0.6831113665945014,
+        "ngram_match_score": 0.38665367646028787,
+        "weighted_ngram_match_score": 0.42422316246673736,
         "syntax_match_score": 0.9215686274509803,
         "dataflow_match_score": 1.0
       }
@@ -262,25 +266,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 6338,
+      "generated_code_length": 1019,
       "reference_code_length": 2370,
-      "cs_score": 0,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpv4jwbua6/Addition.java:195: error: ')' or ',' expected\n        System.out.println(\"Addition of 10 and 2: \" + 1 named: \" + 12);\n                                                       ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpv4jwbua6/Addition.java:195: error: unclosed string literal\n        System.out.println(\"Addition of 10 and 2: \" + 1 named: \" + 12);\n                                                               ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpv4jwbua6/Addition.java:247: error: reached end of file while parsing\n        System.out.println(\"Addition of 8.0, 9.0, 2.0, and 3.0: \" + 22.0);\n                                                                          ^\n3 errors\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "12\n16\n22.0\nThis is B\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "run:\n121622.0\nBUILD SUCCESSFUL (total time: 0 seconds)",
+        "actual_preview": "12\n16\n22.0\nThis is B"
       },
-      "codebleu_score": 0.3488437641043124,
+      "codebleu_score": 0.32537715991281846,
       "codebleu_details": {
-        "codebleu": 0.3488437641043124,
-        "ngram_match_score": 0.05616498907890362,
-        "weighted_ngram_match_score": 0.1479228089040192,
+        "codebleu": 0.32537715991281846,
+        "ngram_match_score": 0.06797146855867255,
+        "weighted_ngram_match_score": 0.12675695491179548,
         "syntax_match_score": 0.627906976744186,
-        "dataflow_match_score": 0.5633802816901409
+        "dataflow_match_score": 0.4788732394366197
       }
     },
     {
@@ -289,7 +295,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 844,
+      "generated_code_length": 705,
       "reference_code_length": 722,
       "cs_score": 2,
       "cs_details": {
@@ -297,19 +303,19 @@
         "is_browser": false,
         "stdin_fed": false,
         "status": "success",
-        "stdout": "Key not found: -1\nKey found at index: -1\n",
+        "stdout": "-1\n5\n",
         "stderr": "",
         "output_match": false,
         "expected_preview": "run:\n5\nBUILD SUCCESSFUL (total time: 0 seconds)",
-        "actual_preview": "Key not found: -1\nKey found at index: -1"
+        "actual_preview": "-1\n5"
       },
-      "codebleu_score": 0.4748605403745738,
+      "codebleu_score": 0.5555992666058287,
       "codebleu_details": {
-        "codebleu": 0.4748605403745738,
-        "ngram_match_score": 0.31444204299366685,
-        "weighted_ngram_match_score": 0.3920267266162276,
-        "syntax_match_score": 0.7848101265822784,
-        "dataflow_match_score": 0.40816326530612246
+        "codebleu": 0.5555992666058287,
+        "ngram_match_score": 0.4786196955220642,
+        "weighted_ngram_match_score": 0.49242113220323996,
+        "syntax_match_score": 0.8227848101265823,
+        "dataflow_match_score": 0.42857142857142855
       }
     },
     {
@@ -318,7 +324,7 @@
       "is_skipped": true,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 1829,
+      "generated_code_length": 2811,
       "reference_code_length": 2795,
       "cs_score": null,
       "cs_details": {
@@ -331,13 +337,99 @@
         "output_match": false,
         "note": "Random-seeded program \u2014 output is non-deterministic"
       },
-      "codebleu_score": 0.47120346661953993,
+      "codebleu_score": 0.5697177047034473,
       "codebleu_details": {
-        "codebleu": 0.47120346661953993,
-        "ngram_match_score": 0.30686084749488024,
-        "weighted_ngram_match_score": 0.34685947484625723,
-        "syntax_match_score": 0.8484848484848485,
-        "dataflow_match_score": 0.3826086956521739
+        "codebleu": 0.5697177047034473,
+        "ngram_match_score": 0.4698066773291859,
+        "weighted_ngram_match_score": 0.49918271855970214,
+        "syntax_match_score": 0.7272727272727273,
+        "dataflow_match_score": 0.5826086956521739
+      }
+    },
+    {
+      "id": "java/medium/medium_1",
+      "language": "java",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 978,
+      "reference_code_length": 950,
+      "cs_score": 2,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "success",
+        "stdout": "Before:\n723177\n903596\n480487\n20545\n207590\n604516\n87680\n113077\n312580\n576542\nAfter:\n20545\n87680\n113077\n207590\n312580\n480487\n576542\n604516\n723177\n903596\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "run:\nBefore:\n468574\n981556\n326191\n168933\n28349\n828185\n438183\n69456\n265461\n354779\n\nAfter:\n28349\n69456\n168933\n265461\n326191\n354779\n438183\n468574\n828185\n981556\nBUILD SUCCESSFUL (total time: 0 seconds)",
+        "actual_preview": "Before:\n723177\n903596\n480487\n20545\n207590\n604516\n87680\n113077\n312580\n576542\nAfter:\n20545\n87680\n113077\n207590\n312580\n480487\n576542\n604516\n723177\n903596"
+      },
+      "codebleu_score": 0.6837241647358088,
+      "codebleu_details": {
+        "codebleu": 0.6837241647358088,
+        "ngram_match_score": 0.7722367843421214,
+        "weighted_ngram_match_score": 0.7687327490950406,
+        "syntax_match_score": 0.7631578947368421,
+        "dataflow_match_score": 0.4307692307692308
+      }
+    },
+    {
+      "id": "java/medium/medium_2",
+      "language": "java",
+      "is_skipped": true,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 1184,
+      "reference_code_length": 1111,
+      "cs_score": null,
+      "cs_details": {
+        "is_skipped": true,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "skipped_random",
+        "stdout": "",
+        "stderr": "",
+        "output_match": false,
+        "note": "Random-seeded program \u2014 output is non-deterministic"
+      },
+      "codebleu_score": 0.7321089381141115,
+      "codebleu_details": {
+        "codebleu": 0.7321089381141115,
+        "ngram_match_score": 0.4795313544014302,
+        "weighted_ngram_match_score": 0.5917846569546923,
+        "syntax_match_score": 0.8737864077669902,
+        "dataflow_match_score": 0.9833333333333333
+      }
+    },
+    {
+      "id": "java/medium/medium_3",
+      "language": "java",
+      "is_skipped": false,
+      "is_browser": false,
+      "stdin_fed": false,
+      "generated_code_length": 465,
+      "reference_code_length": 482,
+      "cs_score": 2,
+      "cs_details": {
+        "is_skipped": false,
+        "is_browser": false,
+        "stdin_fed": false,
+        "status": "success",
+        "stdout": "Hi\nHi\nHi\nHello\nHello\nHi\nHi\nHello\nHi\nHello\nHi\nHello\nHi\nHello\nHi\nHi\nHello\nHello\nHi\nHi\nHello\nHello\nHello\nHello\nHi\nHi\nHello\nHello\nHello\nHello\nHi\nHi\nHi\nHi\nHi\nHi\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHi\nHi\nHi\nHi\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHi\nHi\nHi\nHi\nHi\nHi\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHello\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "run:\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHello\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHi\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHi\nH",
+        "actual_preview": "Hi\nHi\nHi\nHello\nHello\nHi\nHi\nHello\nHi\nHello\nHi\nHello\nHi\nHello\nHi\nHi\nHello\nHello\nHi\nHi\nHello\nHello\nHello\nHello\nHi\nHi\nHello\nHello\nHello\nHello\nHi\nHi\nHi\nHi\nHi\nHi\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\n"
+      },
+      "codebleu_score": 0.7538839743034249,
+      "codebleu_details": {
+        "codebleu": 0.7538839743034249,
+        "ngram_match_score": 0.48807455138415345,
+        "weighted_ngram_match_score": 0.6055863458295464,
+        "syntax_match_score": 0.921875,
+        "dataflow_match_score": 1.0
       }
     },
     {
@@ -346,25 +438,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 394,
+      "generated_code_length": 535,
       "reference_code_length": 252,
-      "cs_score": 0,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpg36ifnal/ArrayTutorial.java:9: error: reached end of file while parsing\n        System.out.println(\"Third element: \" +\n                                              ^\n1 error\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "Jim\nKaren\nKevin\n3\nMike\nMike\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "run:\nKaren\nBUILD SUCCESSFUL (total time: 0 seconds)",
+        "actual_preview": "Jim\nKaren\nKevin\n3\nMike\nMike"
       },
-      "codebleu_score": 0.2860952071432299,
+      "codebleu_score": 0.46341850410964575,
       "codebleu_details": {
-        "codebleu": 0.2860952071432299,
-        "ngram_match_score": 0.13297818013585355,
-        "weighted_ngram_match_score": 0.25510012742866267,
-        "syntax_match_score": 0.47058823529411764,
-        "dataflow_match_score": 0.2857142857142857
+        "codebleu": 0.46341850410964575,
+        "ngram_match_score": 0.20947801521367798,
+        "weighted_ngram_match_score": 0.36268339618288825,
+        "syntax_match_score": 0.8529411764705882,
+        "dataflow_match_score": 0.42857142857142855
       }
     },
     {
@@ -373,25 +467,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": true,
-      "generated_code_length": 1206,
+      "generated_code_length": 1081,
       "reference_code_length": 1108,
-      "cs_score": 0,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": true,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_fnom54x/Main.java:26: error: variable n2 might not have been initialized\n                result = n1 + n2;\n                              ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_fnom54x/Main.java:29: error: variable n2 might not have been initialized\n                result = n1 - n2;\n                              ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_fnom54x/Main.java:32: error: variable n2 might not have been initialized\n                result = n1 * n2;\n                              ^\n/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_fnom54x/Main.java:35: error: variable n2 might not have been initialized\n                result = n1 / n2;\n                              ^\n4 errors\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "1 is for ADD\n2 is for subtract\n3 is for multiply\n4 is for divide\nChoose operator\nEnter first number:\nEnter second number:\nResult is: 3\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "run:\n1 - Add\n2 - Subtract\n3 - Multiply\n4 - Divide\nChoose Operator: \n4\nEnter first number: \n10\nEnter second number: \n3\nResult is : 3\nBUILD SUCCESSFUL (total time: 17 seconds)",
+        "actual_preview": "1 is for ADD\n2 is for subtract\n3 is for multiply\n4 is for divide\nChoose operator\nEnter first number:\nEnter second number:\nResult is: 3"
       },
-      "codebleu_score": 0.625602085206329,
+      "codebleu_score": 0.6124158483210099,
       "codebleu_details": {
-        "codebleu": 0.625602085206329,
-        "ngram_match_score": 0.5697212464289411,
-        "weighted_ngram_match_score": 0.5857483188861706,
+        "codebleu": 0.6124158483210099,
+        "ngram_match_score": 0.5576236346303598,
+        "weighted_ngram_match_score": 0.6063254729393943,
         "syntax_match_score": 0.8571428571428571,
-        "dataflow_match_score": 0.4897959183673469
+        "dataflow_match_score": 0.42857142857142855
       }
     },
     {
@@ -400,25 +496,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 746,
+      "generated_code_length": 468,
       "reference_code_length": 455,
-      "cs_score": 0,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpz5yc1cva/LinearSearch.java:26: error: reached end of file while parsing\n}\n ^\n1 error\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "Element found in index 5",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "run:\nElement found in index 3 \nBUILD SUCCESSFUL (total time: 0 seconds)",
+        "actual_preview": "Element found in index 5"
       },
-      "codebleu_score": 0.3926183135051439,
+      "codebleu_score": 0.5152276781153877,
       "codebleu_details": {
-        "codebleu": 0.3926183135051439,
-        "ngram_match_score": 0.12178234578438014,
-        "weighted_ngram_match_score": 0.30081292415131483,
-        "syntax_match_score": 0.5961538461538461,
-        "dataflow_match_score": 0.5517241379310345
+        "codebleu": 0.5152276781153877,
+        "ngram_match_score": 0.19984917367559285,
+        "weighted_ngram_match_score": 0.3179580905100959,
+        "syntax_match_score": 0.75,
+        "dataflow_match_score": 0.7931034482758621
       }
     },
     {
@@ -427,7 +525,7 @@
       "is_skipped": false,
       "is_browser": true,
       "stdin_fed": false,
-      "generated_code_length": 91,
+      "generated_code_length": 3587,
       "reference_code_length": 2318,
       "cs_score": null,
       "cs_details": {
@@ -440,13 +538,13 @@
         "output_match": false,
         "note": "Browser-based JavaScript \u2014 cannot run with Node.js"
       },
-      "codebleu_score": 0.017961377253207848,
+      "codebleu_score": 0.44631133285082725,
       "codebleu_details": {
-        "codebleu": 0.017961377253207848,
-        "ngram_match_score": 0,
-        "weighted_ngram_match_score": 0,
-        "syntax_match_score": 0.06513409961685823,
-        "dataflow_match_score": 0.006711409395973154
+        "codebleu": 0.44631133285082725,
+        "ngram_match_score": 0.29985261425408705,
+        "weighted_ngram_match_score": 0.3324960111398104,
+        "syntax_match_score": 0.5287356321839081,
+        "dataflow_match_score": 0.6241610738255033
       }
     },
     {
@@ -455,25 +553,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 773,
+      "generated_code_length": 837,
       "reference_code_length": 1164,
-      "cs_score": 1,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "runtime_error",
-        "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_qwgnmf7/main.js:15\n  cache = {};\n        ^\n\nTypeError: Assignment to constant variable.\n    at /private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_qwgnmf7/main.js:15:9\n    at Object.<anonymous> (/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp_qwgnmf7/main.js:22:2)\n    at Module._compile (node:internal/modules/cjs/loader:1829:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)\n    at Module.load (node:internal/modules/cjs/loader:1552:32)\n    at Module._load (node:internal/modules/cjs/loader:1354:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.9.0\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "13\n13\n6\n120\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "(No Output)",
+        "actual_preview": "13\n13\n6\n120"
       },
-      "codebleu_score": 0.26565906859291016,
+      "codebleu_score": 0.1843587901877224,
       "codebleu_details": {
-        "codebleu": 0.26565906859291016,
-        "ngram_match_score": 0.10762789605927092,
-        "weighted_ngram_match_score": 0.11737844068243204,
-        "syntax_match_score": 0.5538461538461539,
-        "dataflow_match_score": 0.28378378378378377
+        "codebleu": 0.1843587901877224,
+        "ngram_match_score": 0.05483965366551351,
+        "weighted_ngram_match_score": 0.060765985255854256,
+        "syntax_match_score": 0.4461538461538462,
+        "dataflow_match_score": 0.17567567567567569
       }
     },
     {
@@ -482,25 +582,25 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 356,
+      "generated_code_length": 399,
       "reference_code_length": 608,
       "cs_score": 1,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "runtime_error",
+        "status": "timeout",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp6x_z_8ad/main.js:17\nres.setHeader('Content-Type', 'application/json');\n^\n\nReferenceError: res is not defined\n    at Object.<anonymous> (/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp6x_z_8ad/main.js:17:1)\n    at Module._compile (node:internal/modules/cjs/loader:1829:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)\n    at Module.load (node:internal/modules/cjs/loader:1552:32)\n    at Module._load (node:internal/modules/cjs/loader:1354:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v25.9.0\n",
+        "stderr": "Process timed out",
         "output_match": false
       },
-      "codebleu_score": 0.38596378056813024,
+      "codebleu_score": 0.48096599296992903,
       "codebleu_details": {
-        "codebleu": 0.38596378056813024,
-        "ngram_match_score": 0.13772597170298642,
-        "weighted_ngram_match_score": 0.18464766908805322,
-        "syntax_match_score": 0.74,
-        "dataflow_match_score": 0.48148148148148145
+        "codebleu": 0.48096599296992903,
+        "ngram_match_score": 0.14598392021126083,
+        "weighted_ngram_match_score": 0.19121338500178878,
+        "syntax_match_score": 0.92,
+        "dataflow_match_score": 0.6666666666666666
       }
     },
     {
@@ -509,7 +609,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 614,
+      "generated_code_length": 784,
       "reference_code_length": 462,
       "cs_score": 0,
       "cs_details": {
@@ -518,14 +618,14 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpyas9mdif/main.js:26\n        console.log('File appended');\n                                     \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp1mzvu1ve/main.js:19\n<think>\n^\n\nSyntaxError: Unexpected token '<'\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
-      "codebleu_score": 0.4240366847115544,
+      "codebleu_score": 0.4236305164053444,
       "codebleu_details": {
-        "codebleu": 0.4240366847115544,
-        "ngram_match_score": 0.009101257409351266,
-        "weighted_ngram_match_score": 0.019524113915499,
+        "codebleu": 0.4236305164053444,
+        "ngram_match_score": 0.0068931339214877525,
+        "weighted_ngram_match_score": 0.020107564178522285,
         "syntax_match_score": 0.7230769230769231,
         "dataflow_match_score": 0.9444444444444444
       }
@@ -536,7 +636,7 @@
       "is_skipped": false,
       "is_browser": true,
       "stdin_fed": false,
-      "generated_code_length": 784,
+      "generated_code_length": 885,
       "reference_code_length": 871,
       "cs_score": null,
       "cs_details": {
@@ -549,13 +649,13 @@
         "output_match": false,
         "note": "Browser-based JavaScript \u2014 cannot run with Node.js"
       },
-      "codebleu_score": 0.46336230420416236,
+      "codebleu_score": 0.6330100903886301,
       "codebleu_details": {
-        "codebleu": 0.46336230420416236,
-        "ngram_match_score": 0.19479182969251974,
-        "weighted_ngram_match_score": 0.27628284612045784,
-        "syntax_match_score": 0.5684210526315789,
-        "dataflow_match_score": 0.813953488372093
+        "codebleu": 0.6330100903886301,
+        "ngram_match_score": 0.32182821234181075,
+        "weighted_ngram_match_score": 0.38083638421882976,
+        "syntax_match_score": 0.8526315789473684,
+        "dataflow_match_score": 0.9767441860465116
       }
     },
     {
@@ -564,7 +664,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 223,
+      "generated_code_length": 4822,
       "reference_code_length": 538,
       "cs_score": 0,
       "cs_details": {
@@ -573,16 +673,16 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpcjfko6m4/main.js:1\nconst arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52,  content\n                                                                                                                                                                                                                               \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmplahxo0hw/main.js:46\nconst array = [10, 13, 23, 45, 69, 89, 90, 100, 120];\n      ^\n\nSyntaxError: Identifier 'array' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
-      "codebleu_score": 0.25158523935555926,
+      "codebleu_score": 0.416566138559341,
       "codebleu_details": {
-        "codebleu": 0.25158523935555926,
-        "ngram_match_score": 0.0030156166876891192,
-        "weighted_ngram_match_score": 0.0033253407345480435,
-        "syntax_match_score": 0.0,
-        "dataflow_match_score": 0.0
+        "codebleu": 0.416566138559341,
+        "ngram_match_score": 0.04600783038360805,
+        "weighted_ngram_match_score": 0.4534245490771918,
+        "syntax_match_score": 0.7894736842105263,
+        "dataflow_match_score": 0.37735849056603776
       }
     },
     {
@@ -591,7 +691,7 @@
       "is_skipped": false,
       "is_browser": true,
       "stdin_fed": false,
-      "generated_code_length": 742,
+      "generated_code_length": 652,
       "reference_code_length": 450,
       "cs_score": null,
       "cs_details": {
@@ -604,13 +704,13 @@
         "output_match": false,
         "note": "Browser-based JavaScript \u2014 cannot run with Node.js"
       },
-      "codebleu_score": 0.2708959399332116,
+      "codebleu_score": 0.34940162472777647,
       "codebleu_details": {
-        "codebleu": 0.2708959399332116,
-        "ngram_match_score": 0.017922708871304236,
-        "weighted_ngram_match_score": 0.04698532929957288,
+        "codebleu": 0.34940162472777647,
+        "ngram_match_score": 0.11603775128749473,
+        "weighted_ngram_match_score": 0.21026144711427322,
         "syntax_match_score": 0.3870967741935484,
-        "dataflow_match_score": 0.631578947368421
+        "dataflow_match_score": 0.6842105263157895
       }
     },
     {
@@ -619,7 +719,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 5218,
+      "generated_code_length": 1212,
       "reference_code_length": 1215,
       "cs_score": 0,
       "cs_details": {
@@ -628,16 +728,16 @@
         "stdin_fed": false,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp63zvs_mo/main.js:41\nconst arr1 = [1, 2, 3];\n      ^\n\nSyntaxError: Identifier 'arr1' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
+        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp6f_w56o8/main.js:1\n[1.00] const numbers = [1, 2, 3];\n       ^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
         "output_match": false
       },
-      "codebleu_score": 0.2714604313359256,
+      "codebleu_score": 0.2777523300769878,
       "codebleu_details": {
-        "codebleu": 0.2714604313359256,
-        "ngram_match_score": 0.03514143715823808,
-        "weighted_ngram_match_score": 0.1857030475673628,
-        "syntax_match_score": 0.5629139072847682,
-        "dataflow_match_score": 0.3020833333333333
+        "codebleu": 0.2777523300769878,
+        "ngram_match_score": 0.16489947712223044,
+        "weighted_ngram_match_score": 0.16824008601132787,
+        "syntax_match_score": 0.5695364238410596,
+        "dataflow_match_score": 0.20833333333333334
       }
     },
     {
@@ -646,25 +746,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 5264,
+      "generated_code_length": 356,
       "reference_code_length": 404,
-      "cs_score": 0,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "/private/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmposhzyh0b/main.js:281\n        arr[i + 1] = temp;\n                          \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1762:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.9.0\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "[ 1, 2, 3, 4, 5 ]\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "[ -6, -2, 4, 8, 20 ]",
+        "actual_preview": "[ 1, 2, 3, 4, 5 ]"
       },
-      "codebleu_score": 0.538256179127555,
+      "codebleu_score": 0.7265484656255423,
       "codebleu_details": {
-        "codebleu": 0.538256179127555,
-        "ngram_match_score": 0.03744170100718456,
-        "weighted_ngram_match_score": 0.5228228345075602,
-        "syntax_match_score": 0.7692307692307693,
-        "dataflow_match_score": 0.8235294117647058
+        "codebleu": 0.7265484656255423,
+        "ngram_match_score": 0.508018628538891,
+        "weighted_ngram_match_score": 0.5135598493478937,
+        "syntax_match_score": 0.8846153846153846,
+        "dataflow_match_score": 1.0
       }
     },
     {
@@ -673,7 +775,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": true,
-      "generated_code_length": 1973,
+      "generated_code_length": 1234,
       "reference_code_length": 1543,
       "cs_score": 2,
       "cs_details": {
@@ -681,19 +783,19 @@
         "is_browser": false,
         "stdin_fed": true,
         "status": "success",
-        "stdout": "Your pizza is m thin with extra cheese with olives crust\n",
+        "stdout": "Your pizza is medium thin crust with olives plus extra cheese\n",
         "stderr": "",
         "output_match": false,
         "expected_preview": "Your pizza is: Medium thin crust with olives plus extra cheese!!",
-        "actual_preview": "Your pizza is m thin with extra cheese with olives crust"
+        "actual_preview": "Your pizza is medium thin crust with olives plus extra cheese"
       },
-      "codebleu_score": 0.49212591874459166,
+      "codebleu_score": 0.467621682973162,
       "codebleu_details": {
-        "codebleu": 0.49212591874459166,
-        "ngram_match_score": 0.2539523981192078,
-        "weighted_ngram_match_score": 0.3178407505433693,
-        "syntax_match_score": 0.6842105263157895,
-        "dataflow_match_score": 0.7125
+        "codebleu": 0.467621682973162,
+        "ngram_match_score": 0.25005303635188403,
+        "weighted_ngram_match_score": 0.265170537646027,
+        "syntax_match_score": 0.8552631578947368,
+        "dataflow_match_score": 0.5
       }
     },
     {
@@ -702,7 +804,7 @@
       "is_skipped": true,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 1440,
+      "generated_code_length": 1070,
       "reference_code_length": 1373,
       "cs_score": null,
       "cs_details": {
@@ -715,12 +817,12 @@
         "output_match": false,
         "note": "Random-seeded program \u2014 output is non-deterministic"
       },
-      "codebleu_score": 0.3144617422798458,
+      "codebleu_score": 0.41998878943039275,
       "codebleu_details": {
-        "codebleu": 0.3144617422798458,
-        "ngram_match_score": 0.16386927208506494,
-        "weighted_ngram_match_score": 0.18704339046497517,
-        "syntax_match_score": 0.656934306569343,
+        "codebleu": 0.41998878943039275,
+        "ngram_match_score": 0.3117622019410181,
+        "weighted_ngram_match_score": 0.36636813826230474,
+        "syntax_match_score": 0.7518248175182481,
         "dataflow_match_score": 0.25
       }
     },
@@ -730,25 +832,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 1251,
+      "generated_code_length": 1636,
       "reference_code_length": 850,
-      "cs_score": 1,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "runtime_error",
-        "stdout": "Original: []\nSorted: []\n\nOriginal: [1]\nSorted: [1]\n\nOriginal: [5, 4, 3, 2, 1]\n",
-        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps67njwo4/main.py\", line 60, in <module>\n    test_merge_sort()\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps67njwo4/main.py\", line 55, in test_merge_sort\n    merge_sort_in_place(arr)\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps67njwo4/main.py\", line 40, in merge_sort_in_place\n    merge_sort_in_place(arr[:mid])\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmps67njwo4/main.py\", line 42, in merge_sort_in_place\n    merge_sorted_arrays(arr[:mid], arr[mid:], arr)\nTypeError: merge_sorted_arrays() takes 2 positional arguments but 3 were given\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "[3, 7, 10, 15]\n[]\n[1]\n[1, 2, 3, 4, 5]\n[1, 2, 3, 4, 5]\n[3, 7, 10, 15]\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "[3, 7, 8, 10, 15, 23, 29, 98]\n[]\n[3]\n[2, 7, 8, 9]\n[1, 2, 3, 4, 5]",
+        "actual_preview": "[3, 7, 10, 15]\n[]\n[1]\n[1, 2, 3, 4, 5]\n[1, 2, 3, 4, 5]\n[3, 7, 10, 15]"
       },
-      "codebleu_score": 0.42130196133337,
+      "codebleu_score": 0.45046475468816943,
       "codebleu_details": {
-        "codebleu": 0.42130196133337,
-        "ngram_match_score": 0.27034762881426416,
-        "weighted_ngram_match_score": 0.3820193553963792,
-        "syntax_match_score": 0.6347826086956522,
-        "dataflow_match_score": 0.39805825242718446
+        "codebleu": 0.45046475468816943,
+        "ngram_match_score": 0.1456872369862157,
+        "weighted_ngram_match_score": 0.32523045631268405,
+        "syntax_match_score": 0.8260869565217391,
+        "dataflow_match_score": 0.5048543689320388
       }
     },
     {
@@ -757,7 +861,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": true,
-      "generated_code_length": 3042,
+      "generated_code_length": 181,
       "reference_code_length": 1315,
       "cs_score": 0,
       "cs_details": {
@@ -766,16 +870,16 @@
         "stdin_fed": true,
         "status": "parse_error",
         "stdout": "",
-        "stderr": "  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpqie3yhgy/main.py\", line 52\n    </think>\n    ^\nSyntaxError: invalid syntax\n\n",
+        "stderr": "  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpeeviuhuv/main.py\", line 8\n    print(\"\n           ^\nSyntaxError: EOL while scanning string literal\n\n",
         "output_match": false
       },
-      "codebleu_score": 0.48185011175414005,
+      "codebleu_score": 0.13859751048174557,
       "codebleu_details": {
-        "codebleu": 0.48185011175414005,
-        "ngram_match_score": 0.1980410234587393,
-        "weighted_ngram_match_score": 0.45083892444908646,
-        "syntax_match_score": 0.8863636363636364,
-        "dataflow_match_score": 0.39215686274509803
+        "codebleu": 0.13859751048174557,
+        "ngram_match_score": 0.0023676071764418146,
+        "weighted_ngram_match_score": 0.09803402120330335,
+        "syntax_match_score": 0.4147727272727273,
+        "dataflow_match_score": 0.0392156862745098
       }
     },
     {
@@ -784,25 +888,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 7056,
+      "generated_code_length": 398,
       "reference_code_length": 294,
-      "cs_score": 0,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmp66i_33hg/main.py\", line 73\n    finally:\n    ^\nSyntaxError: invalid syntax\n\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "[Errno 2] No such file or directory: 'test file.txt'\nI am executing the finally\n[Errno 2] No such file or directory: 'corrupt file.txt'\nI am executing the finally\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "First!\nExecuting Finally...\nEnd of program",
+        "actual_preview": "[Errno 2] No such file or directory: 'test file.txt'\nI am executing the finally\n[Errno 2] No such file or directory: 'corrupt file.txt'\nI am executing the finally"
       },
-      "codebleu_score": 0.3627406752352226,
+      "codebleu_score": 0.5809365765452084,
       "codebleu_details": {
-        "codebleu": 0.3627406752352226,
-        "ngram_match_score": 0.006300660454539952,
-        "weighted_ngram_match_score": 0.16205334483417652,
-        "syntax_match_score": 0.782608695652174,
-        "dataflow_match_score": 0.5
+        "codebleu": 0.5809365765452084,
+        "ngram_match_score": 0.15557924624314,
+        "weighted_ngram_match_score": 0.2551235816768238,
+        "syntax_match_score": 0.9130434782608695,
+        "dataflow_match_score": 1.0
       }
     },
     {
@@ -811,25 +917,27 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 511,
+      "generated_code_length": 443,
       "reference_code_length": 458,
-      "cs_score": 1,
+      "cs_score": 2,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "runtime_error",
-        "stdout": "(True, 4)\n(True, 1)\n",
-        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpm8nogh6c/main.py\", line 24, in <module>\n    print(binary_search(arr, [1, 2, 3, 4, 5, 6, 7, 8, 9]))\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpm8nogh6c/main.py\", line 13, in binary_search\n    elif arr[mid] < target:\nTypeError: '<' not supported between instances of 'int' and 'list'\n",
-        "output_match": false
+        "status": "success",
+        "stdout": "Found at position 4\nFound at position 1\nNot found\n",
+        "stderr": "",
+        "output_match": false,
+        "expected_preview": "Not Found",
+        "actual_preview": "Found at position 4\nFound at position 1\nNot found"
       },
-      "codebleu_score": 0.30496636908745206,
+      "codebleu_score": 0.31562804109838094,
       "codebleu_details": {
-        "codebleu": 0.30496636908745206,
-        "ngram_match_score": 0.15954685164040783,
-        "weighted_ngram_match_score": 0.22808573155213765,
-        "syntax_match_score": 0.4852941176470588,
-        "dataflow_match_score": 0.3469387755102041
+        "codebleu": 0.31562804109838094,
+        "ngram_match_score": 0.19386047837279563,
+        "weighted_ngram_match_score": 0.22411387089467757,
+        "syntax_match_score": 0.5588235294117647,
+        "dataflow_match_score": 0.2857142857142857
       }
     },
     {
@@ -851,11 +959,11 @@
         "output_match": false,
         "note": "Random-seeded program \u2014 output is non-deterministic"
       },
-      "codebleu_score": 0.5816475057979791,
+      "codebleu_score": 0.588265091347242,
       "codebleu_details": {
-        "codebleu": 0.5816475057979791,
-        "ngram_match_score": 0.23162698759784509,
-        "weighted_ngram_match_score": 0.2616297022607381,
+        "codebleu": 0.588265091347242,
+        "ngram_match_score": 0.2478179308098993,
+        "weighted_ngram_match_score": 0.2719091012457354,
         "syntax_match_score": 0.8333333333333334,
         "dataflow_match_score": 1.0
       }
@@ -866,24 +974,24 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 7192,
+      "generated_code_length": 201,
       "reference_code_length": 132,
-      "cs_score": 0,
+      "cs_score": 1,
       "cs_details": {
         "is_skipped": false,
         "is_browser": false,
         "stdin_fed": false,
-        "status": "parse_error",
+        "status": "runtime_error",
         "stdout": "",
-        "stderr": "  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpaux6l1az/main.py\", line 142\n    named file\n          ^\nSyntaxError: invalid syntax\n\n",
+        "stderr": "Traceback (most recent call last):\n  File \"/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmpnn93xdf6/main.py\", line 1, in <module>\n    with open(\"test.txt\") as file:\nFileNotFoundError: [Errno 2] No such file or directory: 'test.txt'\n",
         "output_match": false
       },
-      "codebleu_score": 0.48006682541867407,
+      "codebleu_score": 0.6449197457633122,
       "codebleu_details": {
-        "codebleu": 0.48006682541867407,
-        "ngram_match_score": 0.0025409540862806152,
-        "weighted_ngram_match_score": 0.12605968092174913,
-        "syntax_match_score": 0.7916666666666666,
+        "codebleu": 0.6449197457633122,
+        "ngram_match_score": 0.2577229450699086,
+        "weighted_ngram_match_score": 0.3636227046500071,
+        "syntax_match_score": 0.9583333333333334,
         "dataflow_match_score": 1.0
       }
     },
@@ -893,7 +1001,7 @@
       "is_skipped": false,
       "is_browser": false,
       "stdin_fed": false,
-      "generated_code_length": 291,
+      "generated_code_length": 304,
       "reference_code_length": 325,
       "cs_score": 2,
       "cs_details": {
@@ -901,103 +1009,19 @@
         "is_browser": false,
         "stdin_fed": false,
         "status": "success",
-        "stdout": "[1, 2, 3, 4]\n",
+        "stdout": "[1, 2, 3, 5, 8, 9]\n",
         "stderr": "",
         "output_match": false,
         "expected_preview": "['a', 'b', 'c', 'd', 'e', 'f']",
-        "actual_preview": "[1, 2, 3, 4]"
+        "actual_preview": "[1, 2, 3, 5, 8, 9]"
       },
-      "codebleu_score": 0.381321965577096,
+      "codebleu_score": 0.40867902990042887,
       "codebleu_details": {
-        "codebleu": 0.381321965577096,
-        "ngram_match_score": 0.14783829020276099,
-        "weighted_ngram_match_score": 0.16744957210562306,
-        "syntax_match_score": 0.56,
-        "dataflow_match_score": 0.65
-      }
-    },
-    {
-      "id": "java/medium/medium_1",
-      "language": "java",
-      "is_skipped": false,
-      "is_browser": false,
-      "stdin_fed": false,
-      "generated_code_length": 1030,
-      "reference_code_length": 950,
-      "cs_score": 2,
-      "cs_details": {
-        "is_skipped": false,
-        "is_browser": false,
-        "stdin_fed": false,
-        "status": "success",
-        "stdout": "30156 475283 122287 18156 582168 270504 780680 548151 624665 5086 \n5086 18156 30156 122287 270504 475283 548151 582168 624665 780680 \n",
-        "stderr": "",
-        "output_match": false,
-        "expected_preview": "run:\nBefore:\n468574\n981556\n326191\n168933\n28349\n828185\n438183\n69456\n265461\n354779\n\nAfter:\n28349\n69456\n168933\n265461\n326191\n354779\n438183\n468574\n828185\n981556\nBUILD SUCCESSFUL (total time: 0 seconds)",
-        "actual_preview": "30156 475283 122287 18156 582168 270504 780680 548151 624665 5086 \n5086 18156 30156 122287 270504 475283 548151 582168 624665 780680"
-      },
-      "codebleu_score": 0.6547167958356341,
-      "codebleu_details": {
-        "codebleu": 0.6547167958356341,
-        "ngram_match_score": 0.6127863114777186,
-        "weighted_ngram_match_score": 0.6561483482480838,
-        "syntax_match_score": 0.7807017543859649,
-        "dataflow_match_score": 0.5692307692307692
-      }
-    },
-    {
-      "id": "java/medium/medium_2",
-      "language": "java",
-      "is_skipped": true,
-      "is_browser": false,
-      "stdin_fed": false,
-      "generated_code_length": 1080,
-      "reference_code_length": 1111,
-      "cs_score": null,
-      "cs_details": {
-        "is_skipped": true,
-        "is_browser": false,
-        "stdin_fed": false,
-        "status": "skipped_random",
-        "stdout": "",
-        "stderr": "",
-        "output_match": false,
-        "note": "Random-seeded program \u2014 output is non-deterministic"
-      },
-      "codebleu_score": 0.669090975524893,
-      "codebleu_details": {
-        "codebleu": 0.669090975524893,
-        "ngram_match_score": 0.39422090592590053,
-        "weighted_ngram_match_score": 0.47777406413483686,
-        "syntax_match_score": 0.8543689320388349,
-        "dataflow_match_score": 0.95
-      }
-    },
-    {
-      "id": "java/medium/medium_3",
-      "language": "java",
-      "is_skipped": false,
-      "is_browser": false,
-      "stdin_fed": false,
-      "generated_code_length": 394,
-      "reference_code_length": 482,
-      "cs_score": 0,
-      "cs_details": {
-        "is_skipped": false,
-        "is_browser": false,
-        "stdin_fed": false,
-        "status": "parse_error",
-        "stdout": "",
-        "stderr": "/var/folders/yd/ryrz1z9x75g4bbww6dny67sc0000gn/T/tmph4qw8vga/Main.java:21: error: reached end of file while parsing\n    public void run()\n                     ^\n1 error\n",
-        "output_match": false
-      },
-      "codebleu_score": 0.5783746826509504,
-      "codebleu_details": {
-        "codebleu": 0.5783746826509504,
-        "ngram_match_score": 0.4887568420938474,
-        "weighted_ngram_match_score": 0.5100097456528113,
-        "syntax_match_score": 0.921875,
-        "dataflow_match_score": 0.39285714285714285
+        "codebleu": 0.40867902990042887,
+        "ngram_match_score": 0.20812209921683228,
+        "weighted_ngram_match_score": 0.23159402038488333,
+        "syntax_match_score": 0.62,
+        "dataflow_match_score": 0.575
       }
     }
   ]
