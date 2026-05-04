@@ -218,58 +218,77 @@ def main():
             tokens = tokens[:MAX_TRANSCRIPT_TOKENS]
             transcript = llm.detokenize(tokens).decode(errors="replace")
 
+        # Compute minimum expected segments based on transcript length
+        transcript_lines = len(transcript.strip().splitlines())
+        min_segments = max(4, transcript_lines // 15)  # at least 1 segment per 15 lines
+
         prompt = PROMPT_TEMPLATE.format(transcript=transcript, language=language)
-        response = llm(
-            prompt,
-            max_tokens=MAX_OUTPUT_TOKENS,
-            temperature=0.0,
-            stop=["Transcript:", "---", "]"],
-        )
-        # Prepend '[' since we primed the prompt with it, and append ']' since it's a stop token
-        raw_output = "[" + response["choices"][0]["text"].strip() + "]"
 
-        # Parse and validate
-        try:
-            parsed = parse_json_response(raw_output)
-            if not isinstance(parsed, list):
-                raise ValueError("Response is not a JSON array")
+        # Retry loop: try up to 3 times, increasing temperature slightly
+        best_structured = None
+        last_error = None
+        for attempt in range(3):
+            temp = 0.0 + (attempt * 0.3)  # 0.0, 0.3, 0.6
+            response = llm(
+                prompt,
+                max_tokens=MAX_OUTPUT_TOKENS,
+                temperature=temp,
+                stop=["Transcript:", "---", "]"],
+            )
+            raw_output = "[" + response["choices"][0]["text"].strip() + "]"
 
-            # Auto-fix and filter entries
-            structured = []
-            valid_intents = {"implementation", "explanation", "debugging", "refactoring"}
-            for entry in parsed:
-                if not isinstance(entry, dict):
-                    continue
+            try:
+                parsed = parse_json_response(raw_output)
+                if not isinstance(parsed, list):
+                    raise ValueError("Response is not a JSON array")
 
-                # Fix typo'd narration keys (e.g. "narruse", "narrar")
-                if "narration" not in entry:
-                    narr_key = next((k for k in entry if k.startswith("narr")), None)
-                    if narr_key:
-                        entry["narration"] = entry.pop(narr_key)
+                # Auto-fix and filter entries
+                structured = []
+                valid_intents = {"implementation", "explanation", "debugging", "refactoring"}
+                for entry in parsed:
+                    if not isinstance(entry, dict):
+                        continue
+                    if "narration" not in entry:
+                        narr_key = next((k for k in entry if k.startswith("narr")), None)
+                        if narr_key:
+                            entry["narration"] = entry.pop(narr_key)
+                    if "narration" not in entry or "intent" not in entry:
+                        continue
+                    if entry["intent"] not in valid_intents:
+                        entry["intent"] = "explanation"
+                    structured.append({
+                        "narration": entry["narration"],
+                        "intent": entry["intent"],
+                    })
 
-                # Skip entries missing required keys
-                if "narration" not in entry or "intent" not in entry:
-                    continue
+                if not structured:
+                    raise ValueError("No valid entries after filtering")
 
-                # Fix invalid intents — default to "explanation"
-                if entry["intent"] not in valid_intents:
-                    entry["intent"] = "explanation"
+                # Keep the best attempt (most segments)
+                if best_structured is None or len(structured) > len(best_structured):
+                    best_structured = structured
 
-                # Keep only the two required keys
-                structured.append({
-                    "narration": entry["narration"],
-                    "intent": entry["intent"],
-                })
+                # Good enough? Stop retrying
+                if len(structured) >= min_segments:
+                    break
 
-            if not structured:
-                raise ValueError("No valid entries after filtering")
-        except (json.JSONDecodeError, ValueError) as e:
-            print(f"FAILED ({e})")
-            failed.append({"id": sample_id, "error": str(e), "raw_output": raw_output[:500]})
-            # Save raw output for debugging
-            out_dir.mkdir(parents=True, exist_ok=True)
-            (out_dir / "raw_output.txt").write_text(raw_output)
+            except (json.JSONDecodeError, ValueError) as e:
+                last_error = e
+                # Save raw output for debugging
+                out_dir.mkdir(parents=True, exist_ok=True)
+                (out_dir / "raw_output.txt").write_text(raw_output)
+                continue
+
+        if best_structured is None:
+            print(f"FAILED ({last_error})")
+            failed.append({"id": sample_id, "error": str(last_error), "raw_output": raw_output[:500]})
             continue
+
+        # Warn if still below minimum
+        structured = best_structured
+        quality = ""
+        if len(structured) < min_segments:
+            quality = f" [LOW: expected >={min_segments}]"
 
         # Save
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -278,7 +297,7 @@ def main():
         n_impl = sum(1 for e in structured if e["intent"] == "implementation")
         n_expl = sum(1 for e in structured if e["intent"] == "explanation")
         n_other = len(structured) - n_impl - n_expl
-        print(f"done ({len(structured)} segments: {n_impl} impl, {n_expl} expl, {n_other} other)")
+        print(f"done ({len(structured)} segments: {n_impl} impl, {n_expl} expl, {n_other} other){quality}")
         success += 1
 
     # Summary

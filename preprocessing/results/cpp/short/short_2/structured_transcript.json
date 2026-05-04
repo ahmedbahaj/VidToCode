@@ -1,6 +1,0 @@
-[
-  {
-    "narration": "Define a variable named slices with the data type int and assign it the value 5 using the assignment operator.",
-    "intent": "implementation"
-  }
-]
