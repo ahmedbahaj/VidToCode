@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 from llama_cpp import Llama
 
-MODEL_PATH = Path(__file__).parent.parent.parent / "models" / "Qwen3.5-4B-Q6_K.gguf"
+MODEL_PATH = Path(__file__).parent.parent.parent / "models" / "Qwen3.5-27B-Q4_K_M.gguf"
 DATA_DIR = Path(__file__).parent.parent.parent / "data"
 
 LANG_EXTENSIONS = {
