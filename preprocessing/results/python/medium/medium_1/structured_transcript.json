@@ -1,14 +1,38 @@
 [
   {
-    "narration": "Define a function called add_task that takes no parameters and prompts the user for a new task. Append the new task to the tasks array and print a confirmation message using an f-string.",
+    "narration": "Create a list called tasks and a main method.",
     "intent": "implementation"
   },
   {
-    "narration": "Define a function called delete_task that uses a try-except block to handle invalid input. Prompt the user for the index of the task to delete and validate that the index is within the range of the tasks array.",
+    "narration": "Create a while loop that runs infinitely until the user stops it.",
     "intent": "implementation"
   },
   {
-    "narration": "Define a function called list_tasks that checks if the tasks array is empty. If not, iterate through the tasks using a for loop and print each task with its index.",
+    "narration": "Display a menu with four options: add a new task, delete a task, list tasks, and quit.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Collect user input for their choice.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use if-else statements to handle user choices 1, 2, 3, and 4, with an else clause for invalid input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the add_task function to collect a task from the user and append it to the tasks list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the delete_task function to collect a task index, validate it, and remove the task from the list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the list_tasks function to display all tasks in the list with their indices.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Run the program and test the add, delete, and quit functions.",
     "intent": "implementation"
   }
 ]

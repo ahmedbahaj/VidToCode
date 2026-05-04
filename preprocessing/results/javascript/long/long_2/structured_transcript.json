@@ -1,462 +1,114 @@
 [
   {
-    "narration": "Introduce the video's topic: transforming loop-based algorithms into recursive ones.",
+    "narration": "Transform a loop-based algorithm to use recursion instead of a loop.",
     "intent": "explanation"
   },
   {
-    "narration": "Explain the concept of caching recursive results using memorization to simplify time complexity.",
+    "narration": "Cache the results of the recursive algorithm using memorization to simplify time complexity.",
     "intent": "explanation"
   },
   {
-    "narration": "State that the tutorial will use two examples: the Fibonacci and factorial algorithms.",
+    "narration": "Use two examples: runtime and factorial algorithms.",
     "intent": "explanation"
   },
   {
-    "narration": "Define recursion as a function calling itself.",
+    "narration": "Recursion is a function calling itself, useful for repeated tasks like loops.",
     "intent": "explanation"
   },
   {
-    "narration": "Explain that recursion is useful for carrying out repeated tasks, similar to loops.",
+    "narration": "Recursion is preferable for traversing tree data structures due to its structure.",
     "intent": "explanation"
   },
   {
-    "narration": "Explain that recursion can be nicer to use in certain scenarios, such as traversing trees.",
+    "narration": "Recursion creates a tree-like structure of function calls.",
     "intent": "explanation"
   },
   {
-    "narration": "Explain that recursive algorithms operate similarly to tree data structures.",
+    "narration": "All recursive functions require a base case to prevent stack overflow.",
     "intent": "explanation"
   },
   {
-    "narration": "Describe how a function calling itself twice triggers two more function calls.",
+    "narration": "Without a base case, the call stack overflows, causing a stack overflow error.",
     "intent": "explanation"
   },
   {
-    "narration": "Explain that each of these two function calls triggers two more, resulting in four function calls.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that these four function calls multiply to call eight more function calls.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the recursive tree continues to grow until a base case is met.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Define the base case as an if condition inside the function that prevents further recursive calls.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that all recursive functions need a base case to avoid a stack overflow.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that without a base case, the call stack will be overrun, leading to an application crash.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Describe a function that calls itself without a base case, causing a stack overflow.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the solution is to include a base case to prevent the function from calling itself indefinitely.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Describe a variable that will be incremented on each function call to establish the base case.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the variable must be incremented before the function calls itself.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the base case will be the counter being greater than four.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the function will only be called a total of five times.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that for the fifth time, the return keyword will be met and the function will be exited.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that if the function returns a value, the core stack works by piling functions on top of each other.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the most recent function call ends up as the uppermost function on the core stack.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that functions inside the core stack are waiting to be called and are removed one at a time.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the uppermost function returns a value, but its value is soon negated because it is the first one to be wiped off the core stack.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the uppermost and final function is the only one that returns a value, but when the bottom function is reached, there is nothing to return.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the solution is to make each function return the recursive function that it invokes itself.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that this allows the bottom most functions to return the chain of functions that lead to the final value.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that with this change, the final value returned will be the hello world string.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Define memorization as the practice of caching a function's return value when its output is determined by its input parameters.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that if input parameters are the same as a prior function call, the function will fetch the previously calculated value instead of performing new operations.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that this saves time complexity by not calculating values that have already been calculated.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that for the Fibonacci sequence, this is extremely useful because the sequence is constant.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the first 10 items in the sequence will always be the same, so processing power should only be used to calculate new items.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that storing data in global scope is bad practice.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the solution is to use a JavaScript closure to make global scope data private.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that closures allow us to make global scope data private.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the memorization function is now a variable assigned to a function.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the function should be wrapped in parentheses with a pair of parentheses at the end to call it immediately on initial document load.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that initializing the function on initial document load ensures all global scope variables are initialized.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that on initial document load, an anonymous function will be called, initializing the cache and assigning the nested function to the memorization constant.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that when memorization is called, it actually calls the nested function, which has access to data declared inside the parent function.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that a closure is made when the nested function can have access to data declared inside the parent function.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the tutorial will start with the Fibonacci sequence using a standard loop without recursion or memorization.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the end parameter will be the index of the number in the Fibonacci sequence that we want returned.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the Fibonacci sequence will always start with these two values.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that these two values will be returned if the user has requested them.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that other indexes will be dealt with iteratively.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the parameter n has to be at least two in order for the loop to run.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that two translates to the third item in the Fibonacci sequence.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the answer is generated from the sum of the previous two numbers.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the previous two numbers are updated to move the sequence along.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Demonstrate the iterative Fibonacci algorithm by requesting the seventh item, which returns 13.",
+    "narration": "Implement a base case by incrementing a counter before the function calls itself.",
     "intent": "implementation"
   },
   {
-    "narration": "Explain that the tutorial will now create the recursive algorithm.",
+    "narration": "The base case is when the counter is greater than four, limiting function calls to five.",
     "intent": "explanation"
   },
   {
-    "narration": "Define the base case as n being less than two, which serves as part of the algorithm.",
+    "narration": "If a function returns a value, the stack unwinds from top to bottom, negating the return value.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Make each function return the recursive function it invokes to propagate the return value up the stack.",
     "intent": "implementation"
   },
   {
-    "narration": "Explain that the first two items in the sequence, 0 and 1, are always the same as the index values.",
+    "narration": "Memorization caches a function's return value based on its input parameters.",
     "intent": "explanation"
   },
   {
-    "narration": "Explain that if those indexes were requested, the function can simply return the index as the value.",
+    "narration": "Caching prevents redundant calculations, improving time complexity.",
     "intent": "explanation"
   },
   {
-    "narration": "Explain that the method will be ended here because the return keyword is met.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the function will not have a chance to invoke another function because the method just ends here.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the recursive algorithm is simpler than the iterative method but can be harder to wrap your head around.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that essentially a tree-like structure is being created where each function calls itself twice.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that each function will call itself twice and return the sum of both function invokes.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that by the time the bottom most function is removed from the stack, the Fibonacci number requested will be returned.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the bottom most function on the stack will invoke two more functions, which can be thought of as child nodes on a tree.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that one of these child nodes is one index less than the requested index, and the other is two indexes less than the requested index.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that these child nodes will hold the following fibonacci values since we requested the fibonacci number at the index of seven.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that these nodes will continue sprouting off child nodes until we get to leaf nodes.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that these leaf nodes will either hold the fibonacci numbers at position one or two.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the base case prevented any function of an index of zero or one from invoking itself again.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that instead of invoking itself again, the function returns its own end parameter.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the first two items in the fibonacci sequence match their indexes zero and one respectively.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that these two values zero and one are essential for this recursion cycle to work properly.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the final value returned will work off of their values.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that each of the parent nodes will calculate the return values starting from the bottom up.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that by the time you get to the uppermost function, the function that will return the final value will have a value that represents the fibonacci number at the index requested.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Demonstrate the recursive Fibonacci algorithm by requesting seven again and getting the same value of 13.",
+    "narration": "Use a JavaScript closure to store cache data privately instead of global scope.",
     "intent": "implementation"
   },
   {
-    "narration": "Explain that the problem with this function is its extremely bad time complexity.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that if we wanted the number held in the fibonacci sequence at index seven, then we would have to calculate all previous seven numbers just to see this new number at the index of eight.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that this is extremely wasteful and makes things almost impossible to work out when calculating numbers in the higher end of the fibonacci sequence.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the current recursive algorithm has a time complexity of 2 to the power of n.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that unlike loops where each operation happens sequentially, the current recursive algorithm is calling two more function cores for every function call.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that this means stacks upon stacks of functions are getting piled on top of each other.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that memorization will do wonders to the time complexity of the current algorithm.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that memorization will reduce the time complexity to linear time.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that like before, a closure will be set up so that the cache object can only be accessed by the algorithm.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that if there's no key value pair on the cache object and the desired index is not less than two, the function will calculate the desired fibonacci sequence number.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that as soon as the value is calculated, it will be stored and indexed inside the cache object.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that this saves up on time complexity at a slight cost of some added memory complexity.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that a lot of the tree structure can now be crossed out because there are no repeated calculations.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that with all of this finished, the algorithm ends up with a time complexity of linear time.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the tutorial will now move on to the factorial algorithm.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that factorial is the sum of all integers multiplied together starting from the chosen number and ending at one.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the end parameter will have to hold a value greater than one for the loop to be called.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that if the end parameter is not greater than one, the value returned will be one by default.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that a number multiplied by one isn't going to affect its final value.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the algorithm will only want the sum of it being multiplied by all numbers starting from two and going up to the number itself.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the syntax here is shorthand for itself times by eye.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that it's probably better to write it how it was before just because it's a lot quicker that way.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the memorized algorithm and the recursive algorithm will be implemented at the same time for this one.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that memorization is less beneficial for the factorial algorithm compared to the Fibonacci algorithm.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the time complexity for the factorial algorithm is already linear time.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the algorithm is not recursively calling more than one function like with the Fibonacci algorithm.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that the base case is met when n is equal to 2.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that 2 factorial is simply two.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that if a larger number is requested, the function below the uppermost function will now have a number to work off of, which is the number two.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that this function will have an end parameter of three because of the way that the algorithm subtracts 1 by n's value on each new function invoke.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that this function directly below will turn 6 because 2 times 3 is 6.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that 3 factorial is also 6.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that if a number larger than three factorial is requested, there will be at least one more function below the function in the stack.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Explain that these functions will continue working out their values until all functions are removed and a finite value is returned.",
-    "intent": "explanation"
-  },
-  {
-    "narration": "Try out a larger number five and get the correct value.",
+    "narration": "Initialize the closure on document load to ensure proper behavior.",
     "intent": "implementation"
   },
   {
-    "narration": "Conclude the video by expressing hope that the viewer has a clear understanding of recursion and memorization.",
+    "narration": "Implement the iterative Fibonacci algorithm using a loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The iterative method calculates each number as the sum of the previous two.",
     "intent": "explanation"
   },
   {
-    "narration": "Encourage viewers to post comments if they have queries regarding the two algorithms.",
+    "narration": "Implement the recursive Fibonacci algorithm with a base case for n < 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The recursive algorithm creates a tree-like structure of function calls.",
     "intent": "explanation"
   },
   {
-    "narration": "Encourage viewers to like and subscribe to the channel.",
+    "narration": "The recursive Fibonacci algorithm has exponential time complexity (2^n).",
     "intent": "explanation"
   },
   {
-    "narration": "End the video with a wish for a great day and peace out.",
+    "narration": "Implement the memoized recursive Fibonacci algorithm using a closure.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The memoized algorithm stores calculated values in a cache object to avoid redundant calculations.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Implement the recursive factorial algorithm with a base case for n = 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The factorial algorithm multiplies integers from n down to 1.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The factorial algorithm has linear time complexity, so memorization is less beneficial.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Demonstrate the recursive factorial algorithm with test cases.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Conclude the tutorial on recursion and memorization.",
     "intent": "explanation"
   }
 ]

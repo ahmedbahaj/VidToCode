@@ -1,6 +1,22 @@
 [
   {
-    "narration": "Define a function called bubbleSort that takes myList as a parameter",
+    "narration": "Declare an int array with elements 45, 16, 100, 0, 5. Declare an int variable n for the element to search, set n = 10.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use a for loop to iterate through the array. Inside the loop, use an if condition to check if the current element equals the target element n. If found, print 'element found in index %d' and optionally break the loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare a boolean flag variable f initialized to 0. Inside the loop, if the current element equals n, set f = 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "After the loop, if f == 0, print 'element not found'. If f == 1, print 'element found in index %d'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If multiple occurrences of the target element exist, the print statement executes multiple times. To print only the first occurrence, add a break statement after the print statement and ensure f is set to 1 before the break.",
     "intent": "implementation"
   }
 ]
