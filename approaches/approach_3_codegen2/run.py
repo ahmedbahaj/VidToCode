@@ -58,6 +58,44 @@ def discover_samples():
     # Sort for deterministic processing
     return sorted(samples, key=lambda x: x["id"])
 
+def safe_load_tokenizer(model_id):
+    try:
+        return AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
+    except Exception as e:
+        # The Salesforce tokenizer has known bugs on modern transformers.
+        # It's already been downloaded to the huggingface cache at this point,
+        # so we can dynamically patch the broken python file and retry.
+        import os, glob, sys
+        home = os.path.expanduser("~")
+        pattern = os.path.join(home, ".cache", "huggingface", "modules", "transformers_modules", "Salesforce", "codegen25*", "*", "tokenization_codegen25.py")
+        matches = glob.glob(pattern)
+        
+        if not matches:
+            raise e # If we can't find the file, raise original error
+            
+        print("Patching broken Salesforce tokenizer cache...")
+        for path in matches:
+            with open(path, "r") as f:
+                content = f.read()
+            
+            # Fix 1: Add missing @property decorator to vocab_size
+            if "def vocab_size(self):" in content and "@property" not in content.split("def vocab_size(self):")[0][-20:]:
+                content = content.replace("    def vocab_size(self):", "    @property\n    def vocab_size(self):")
+            
+            # Fix 2: Remove conflicting kwarg from super().__init__
+            if "add_special_tokens=add_special_tokens," in content:
+                content = content.replace("add_special_tokens=add_special_tokens,", "")
+                
+            with open(path, "w") as f:
+                f.write(content)
+                
+        # Remove broken module from sys.modules so it's reloaded
+        for k in list(sys.modules.keys()):
+            if "tokenization_codegen25" in k:
+                del sys.modules[k]
+                
+        return AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
+
 def main():
     print(f"Loading {MODEL_ID}...")
     
@@ -65,19 +103,8 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Using device: {device}")
     
-    # --- MONKEY PATCH FOR TOKENIZER BUG ---
-    # Salesforce/codegen25-7b-instruct custom tokenizer passes `add_special_tokens` to super().__init__
-    # which conflicts with the base class method in transformers >= 4.34.0.
-    import transformers.tokenization_utils_base as tu_base
-    original_init = tu_base.PreTrainedTokenizerBase.__init__
-    def patched_init(self, **kwargs):
-        kwargs.pop("add_special_tokens", None)
-        original_init(self, **kwargs)
-    tu_base.PreTrainedTokenizerBase.__init__ = patched_init
-    # --------------------------------------
-
-    # Load tokenizer
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, trust_remote_code=True)
+    # Safely load and patch tokenizer
+    tokenizer = safe_load_tokenizer(MODEL_ID)
     
     # Use float16 if on CUDA to save memory, otherwise float32
     dtype = torch.float16 if device == "cuda" else torch.float32
