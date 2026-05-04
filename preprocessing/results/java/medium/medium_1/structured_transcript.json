@@ -1,18 +1,42 @@
 [
   {
-    "narration": "Explain the bubble sort algorithm conceptually: it iterates through the list, comparing adjacent elements and swapping them if out of order, repeating until no swaps occur.",
+    "narration": "Define a function named bubbleSort that takes an array of integers as a parameter.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize an integer variable i to 0 and set up a for loop that iterates while i is less than the length of the array minus one.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use a temporary variable to store the value of the current element at index i, then assign the value from index i+1 to index i.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Enclose the sorting loop in a while loop that continues as long as a boolean flag named swapped is true.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize the boolean variable swapped to true before entering the outer while loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Reset the swapped variable to false before each iteration of the inner for loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the swapped variable to true if any swap occurs during the inner loop iteration.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Execute the bubble sort algorithm on an array of 10 random integers and verify the output is sorted.",
     "intent": "explanation"
   },
   {
-    "narration": "Implement the bubble sort algorithm in Java using a nested loop structure with a boolean flag to track swaps.",
-    "intent": "implementation"
+    "narration": "Execute the bubble sort algorithm on an array of 1,000 random integers and verify the output is sorted.",
+    "intent": "explanation"
   },
   {
-    "narration": "Test the bubble sort implementation with arrays of increasing sizes (10, 100,000, and 1,000,000 elements) to demonstrate performance differences.",
-    "intent": "implementation"
-  },
-  {
-    "narration": "Explain the time complexity of bubble sort as O(n^2) and its implications for large datasets.",
+    "narration": "Execute the execution of the bubble sort algorithm on an array of 1,000,000 random integers and verify the output is sorted.",
     "intent": "explanation"
   }
 ]
