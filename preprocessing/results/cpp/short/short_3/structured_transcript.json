@@ -1,0 +1,10 @@
+[
+  {
+    "narration": "Linear search is an algorithm used to find the position of a target value in a list by checking each element one by one from the start until the target is found or the list ends.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Linear search is ideal when the data is unsorted, the list is small, or a simple solution with low complexity is required.",
+    "intent": "explanation"
+  }
+]

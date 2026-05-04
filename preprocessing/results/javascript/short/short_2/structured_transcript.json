@@ -1,0 +1,74 @@
+[
+  {
+    "narration": "Define the concept of array iteration as going through an array and performing an action on each item.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Use the forEach method to iterate through an array, passing in the item and index as parameters to the callback function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Execute a console.log statement inside the forEach callback to output the current item and its index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the map method as a way to transform each item in an array and return a new array with the transformed values.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Assign the result of calling map on an array to a new variable, passing a callback that returns the item multiplied by two.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the filter method as a way to create a new array containing only items that satisfy a specific condition.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Use the filter method with a condition checking if item modulus 2 equals 0 to extract even numbers from an array.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the reduce method as a way to accumulate a single result by processing each item in an array sequentially.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Implement reduce with a callback taking result and item parameters, returning the sum of result and item, with an initial value of zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Log the final sum variable to the console to verify the reduce calculation.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the some method as a way to check if at least one item in the array meets a specific condition, returning true or false.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Use the some method with a condition checking if an item is less than zero to detect negative numbers in an array.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the every method as a way to check if all items in the array meet a specific condition, returning true only if every item passes.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Use the every method with a condition checking if each item is greater than zero to verify all numbers are positive.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the find method as a way to search for and return the first item in an array that matches a specific condition.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Use the find method on an array of objects to locate and return the object where the ID property equals 'B'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the findIndex method as a variation of find that returns the index of the matching item instead of the item itself.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Use the findIndex method to locate the index of the object where the ID property equals 'B', returning 1.",
+    "intent": "implementation"
+  }
+]

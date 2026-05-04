@@ -1,0 +1,74 @@
+[
+  {
+    "narration": "Define integer variables: operator, n1, n2, and result initialized to 0.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a menu listing the available operations: 1 for Add, 2 for Subtract, 3 for Multiply, and 4 for Divide.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt the user to choose an operator.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a Scanner object named SC using System.in to read console input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Read the user's operator choice using SC.nextInt() and store it in the operator variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt the user to enter the first number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Read the first number using SC.nextInt() and store it in the n1 variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt the user to enter the second number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Read the second number using SC.nextInt() and store it in the n2 variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a switch statement using the operator variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define case 1: set result equal to n1 plus n2, then add a break statement.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define case 2: set result equal to n1 minus n2, then add a break statement.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define case 3: set result equal to n1 multiplied by n2, then add a break statement.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define case 4: set result equal to n1 divided by n2, then add a break statement.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a default case: print a message stating the entered operator is not valid.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print the final result variable to the console.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that integer division truncates the decimal part, resulting in an integer value.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Note that changing the result variable to double type is required to obtain accurate decimal results.",
+    "intent": "explanation"
+  }
+]

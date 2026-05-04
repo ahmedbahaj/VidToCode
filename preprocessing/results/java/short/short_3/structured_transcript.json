@@ -1,0 +1,18 @@
+[
+  {
+    "narration": "Declare an integer array named array and initialize it with elements: 1, 45, 16, 100, 0, 5.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare an integer variable named n and assign it the value 10 to represent the element to be searched.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that a simple for loop will be used to iterate through the entire array.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Define a for loop with initialization int i = 0, condition i < array.length, and increment i++.",
+    "intent": "implementation"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "narration": "Declare an integer variable named size and initialize it to zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a prompt asking the user to enter the size of the array.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Read the user input into the size variable using cin.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare an integer array named myArray with the size specified by the user.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a prompt asking the user to enter the specified number of integers in any order.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a for loop that iterates from 0 to size minus 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the loop, read each integer input into the corresponding index of myArray.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print the text 'Before sorting' to the console.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a for loop to iterate through the array and print each element of myArray separated by a space.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a newline character to move to the next line.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the quicksort function, passing myArray, 0 as the start index, and size minus 1 as the end index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print the text 'After sorting' to the console.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a for loop to iterate through the array and print each sorted element of myArray.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the quicksort function with parameters: integer array arr, integer start index s, and integer end index e.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a condition to check if the start index s is less than the end index e.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the condition, declare an integer variable p to store the partition index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the partition function with arr, s, and e, and assign the returned value to p.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Recursively call quicksort for the left partition, passing arr, s, and p minus 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Recursively call quicksort for the right partition, passing arr, p plus 1, and e.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the partition function with parameters: integer array arr, integer start index s, and integer end index e.",
+    "intent": "implementation"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "narration": "Import the argparse module to enable command-line argument parsing.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an instance of the ArgumentParser class and assign it to a variable named parser.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the description attribute of the parser to a welcome message string.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use the add_argument method to define a positional argument named 'size'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the type parameter of the size argument to string.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the choices parameter to the keys of the sizes constant to restrict valid inputs.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a help text string describing the size argument.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the parse_args method on the parser object and store the result in a variable named parsed_args.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a second positional argument named 'crust' using add_argument.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the choices for the crust argument to the keys of the crusts constant.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add help text for the crust argument describing the type of pizza crust.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define an optional argument for extra cheese using double dashes (e.g., --extra-cheese).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the action parameter to 'store_true' to treat the argument as a boolean flag.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the dest parameter to 'cheese' to store the flag value in a shorter variable name.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define an optional argument for extra sauce using double dashes (e.g., --extra-sauce).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the action parameter to 'store_true' for the extra sauce argument.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the dest parameter to 'sauce' for the extra sauce argument.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define an optional argument for toppings using a short flag (-t) and a long flag (--toppings).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the type parameter for toppings to string.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the nargs parameter to '+' to allow one or more toppings to be passed as a list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add help text for the toppings argument.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Access the parsed arguments using dot notation (e.g., parsed_args.size) instead of dictionary keys.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Update the build_pizza function to accept the namespace object returned by parse_args.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Retrieve the size and crust values from the namespace object using dot notation.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the toppings attribute exists and is not None before adding toppings to the pizza string.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check the cheese attribute from the namespace object to conditionally add extra cheese.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check the sauce attribute from the namespace object to conditionally add extra sauce.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the build_pizza function with the parsed_args object and print the resulting pizza description.",
+    "intent": "implementation"
+  }
+]

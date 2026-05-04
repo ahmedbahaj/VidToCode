@@ -1,0 +1,50 @@
+[
+  {
+    "narration": "Import the file system module by assigning it to a variable named fs.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use fs.readFile to read a file, passing the file path as the first parameter.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Pass the encoding option (e.g., 'utf8') as the second parameter to fs.readFile.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a callback function as the third parameter with 'error' and 'data' arguments.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the callback, use console.log to print the data if the file is read successfully.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use fs.writeFile to create a new file or overwrite an existing one.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Pass the file path as the first parameter to fs.writeFile.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Pass the content string to be written as the second parameter.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a callback function for fs.writeFile to handle errors and confirm data saving.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use fs.appendFile to add data to the end of an existing file instead of overwriting it.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Use fs.unlink to delete a file by passing the file path and a callback function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the unlink callback, log a confirmation message indicating the file was deleted.",
+    "intent": "implementation"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "narration": "Define a void function named showBalance that takes a double parameter named balance.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a function named deposit that returns a double and takes no parameters.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a function named withdraw that returns a double and takes a double parameter named balance.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In the main function, declare a double variable named balance and initialize it to zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare an integer variable named choice and initialize it to zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Display a menu prompt using standard output with options: 1 for show balance, 2 for deposit, 3 for withdrawal, and 4 for exit.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Accept user input into the choice variable using standard input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a switch statement that evaluates the choice variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In case 1, invoke the showBalance function passing the balance variable, then break.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In case 2, update the balance by adding the return value of the deposit function using the plus-equals operator, then break.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In case 3, update the balance by subtracting the return value of the withdraw function using the minus-equals operator, then break.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In case 4, display a thank you message using standard output and break.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In the default case, display an invalid choice message using standard output.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Wrap the menu and switch logic inside a do-while loop that continues while choice is not equal to 4.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement the showBalance function to display the balance with a dollar sign and a newline.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Include the iomanip header file to enable floating-point formatting.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use std::setprecision(2) and std::fixed in the output stream to display the balance with two decimal places.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement the deposit function by declaring a local double variable named amount and initializing it to zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt the user to enter the amount to be deposited and read the input into the amount variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an if statement to check if amount is greater than zero; if true, return amount, otherwise print an error message and return zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement the withdraw function by declaring a local double variable named amount.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt the user to enter the amount to be withdrawn and read the input into the amount variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an if statement to check if amount is greater than the current balance; if true, print insufficient funds and return zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an else-if statement to check if amount is less than zero; if true, print an invalid amount message and return zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In the else block of the withdrawal logic, return the amount to be withdrawn.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "After reading the choice input, call std::cin.clear() to reset error flags.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call std::cin.ignore() or std::cin.flush() to clear the input buffer and remove leftover newline characters.",
+    "intent": "implementation"
+  }
+]

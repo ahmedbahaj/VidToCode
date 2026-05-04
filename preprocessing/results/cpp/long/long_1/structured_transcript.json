@@ -1,0 +1,110 @@
+[
+  {
+    "narration": "Create a 2D character array named 'board' with dimensions 3x3 to represent the Tic Tac Toe grid.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize the board array with whitespace characters to represent empty tiles.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement a display function using a for loop to iterate through rows and print the board state.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Enhance the board display by adding vertical lines and underscores as dividers for a grid layout.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define constants 'playerX' and 'playerO' with values 'X' and 'O' respectively.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a variable 'currentPlayer' initialized to 'playerX' to track whose turn it is.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a main game loop using a for loop that iterates 9 times to handle each turn.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the loop, print the current board state and display the current player's turn.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt the user to enter row and column numbers (0-2) for their move.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Read the user input into integer variables 'r' and 'c' for row and column.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Assign the 'currentPlayer' value to the board at the specified row and column index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Switch the 'currentPlayer' to the other player using a ternary operator.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Wrap the input logic in a while(true) loop to validate user input before proceeding.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the input row or column is outside the valid range (0-2) and print an error message if invalid.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the selected tile is already occupied (not whitespace) and print an error message if full.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Break the validation loop only if the input is valid and the tile is empty.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Reset row and column variables to -1 before the input loop to ensure fresh state.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Handle non-integer input errors by calling cin.clear() to reset error flags.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Discard invalid input from the stream using cin.ignore() to prevent infinite loops.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a 'winner' variable initialized to a whitespace character to track the game result.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement a loop to check each row for a winning condition where all three cells match.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement a loop to check each column for a winning condition where all three cells match.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check the primary diagonal (0,0 to 2,2) for a winning condition.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check the anti-diagonal (0,2 to 2,0) for a winning condition.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Assign the winning character to the 'winner' variable and break the game loop if a winner is found.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "After the game loop, check if 'winner' is not whitespace and print the winner declaration.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If no winner is found after 9 turns, print a 'Tie' message.",
+    "intent": "implementation"
+  }
+]

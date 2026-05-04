@@ -1,0 +1,2 @@
+[{
+    "narration": "Define a variable named friends with type String[]

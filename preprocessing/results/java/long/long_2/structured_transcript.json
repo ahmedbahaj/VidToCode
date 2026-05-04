@@ -1,0 +1,66 @@
+[
+  {
+    "narration": "Binary search is an efficient searching algorithm used to find an element in a sorted array.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Binary search works by repeatedly dividing the search interval in half, similar to searching for a word in a sorted dictionary.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "To use binary search, the array must be sorted in ascending order; it cannot be performed on unsorted data.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Initialize a variable 'low' to 0, representing the index of the first element.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a variable 'high' to the last index of the array, calculated as length minus 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a variable 'mid' to calculate the middle index of the current search range.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Calculate the middle index using the formula: mid = (low + high) / 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a while loop that continues as long as low is less than or equal to high.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the loop, check if the element at the mid index is equal to the key.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the element at mid equals the key, return the mid index as the element is found.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the key is less than the element at mid, update high to mid minus 1 to search the left half.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the key is greater than the element at mid, update low to mid plus 1 to search the right half.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the loop terminates without finding the element, return -1 to indicate the element is not present.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The time complexity of binary search is O(log n) because the search space is halved in every iteration.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "If the input array is unsorted, sorting it first takes O(n log n), making the total complexity O(n log n), which is less efficient than linear search O(n) for a single search.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Use binary search only on sorted arrays; for unsorted arrays, linear search is often more efficient unless multiple searches are performed.",
+    "intent": "explanation"
+  }
+]

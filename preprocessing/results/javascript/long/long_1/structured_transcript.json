@@ -1,0 +1,126 @@
+[
+  {
+    "narration": "Create an input container div with the class name 'input-container'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the input container, add an input tag with type 'text', placeholder 'enter to do', and ID 'input-to-do'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a button with ID 'add-to-do' and text content '+' inside the input container.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a to-do container div with the class name 'container' to hold the list items.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the container, create a sample to-do div with class 'to-do' containing text 'write JavaScript code'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the to-do div, add a div with class 'actions' containing a checkbox input (type 'checkbox') and a delete button.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Copy the to-do div structure to create a second item with text 'write python code'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In CSS, set the body font-family and background color to 'wheat'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Style the H1 heading with text-align 'center'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Apply display 'flex', flex-direction 'column', align-items 'center', and gap '10px' to the input-container.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Style the input element inside input-container with width '300px', height '30px', and font-size '1.25rem'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Style the button inside input-container with width '40px', height '40px', border-radius '20px', font-size '1.5rem', and background color 'gold'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Apply a 2px solid black border and 15px top margin to the container div.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Style the individual to-do div with display 'flex', align-items 'center', justify-content 'space-between', and a 2px solid red border.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the container to display 'flex', flex-direction 'column', gap '5px', width '400px', and align-items 'center'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Style the to-do div with font-size '1.2rem', padding '0px 5px', border-radius '5px', and background color 'orange'. Remove the border.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Remove the border from the container div.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Style the delete button inside the actions div with width '75px', height '30px', background color 'red', color 'white', border 'dark gray', font-size '1.05rem', border-radius '10px', and margin-left '10px'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In JavaScript, select the input element by ID 'input-to-do' and the add button by ID 'add-to-do'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Select the to-do container using querySelector with the class '.container'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a click event listener to the add-to-do button that calls a function named 'displayToDo'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the displayToDo function, create a new div element using document.createElement('div') and assign it the class 'to-do'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a paragraph element for the to-do text, set its innerText to the value of input-to-do, and append it to the to-do div.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a div element for actions, assign it the class 'actions', and append it to the to-do div.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an input element for the checkbox, set its type attribute to 'checkbox', and append it to the actions div.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a button element for delete, set its innerText to 'delete', and append it to the actions div.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Append the newly created to-do div to the to-do container.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Clear the input field value after adding a new to-do item.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a conditional check to ensure the input value is not empty before creating a new to-do item.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a click event listener to the delete button that removes the parent to-do element from the container.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Remove or comment out the static HTML to-do items to allow dynamic generation only.",
+    "intent": "implementation"
+  }
+]

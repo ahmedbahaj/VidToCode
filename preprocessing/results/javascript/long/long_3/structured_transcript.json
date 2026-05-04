@@ -1,0 +1,82 @@
+[
+  {
+    "narration": "Create a new file named server.js in the project folder.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Import the http module by creating a constant variable named http using the require function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the createServer function from the http module and pass a callback function as an argument.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the callback function with two parameters: request and response.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use the response.end method to send a simple text response 'hello world' to the client.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Assign the result of createServer to a constant variable named server.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the listen method on the server variable, passing port 3000 and a callback function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the listen callback, log a message to the console indicating the server is listening on port 3000.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Run the server using the command 'node server.js' in the terminal.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Access the server in a web browser by navigating to localhost:3000 to verify the response.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use the response.setHeader method to set the content type to 'application/json' before sending the response.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a JavaScript object containing data such as name, age, and channel.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Convert the JavaScript object to a JSON string using the JSON.stringify function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Pass the JSON string to the response.end method to send the data back to the client.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Restart the server after code changes to apply the updates.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Verify the JSON response and headers in the browser's network tab.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that the request object provides information about the incoming HTTP request, such as URL and headers.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that the response object is used to send data back to the client based on the request.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Identify the error 'Cannot set headers after they are sent' caused by calling setHeader after response.end.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Identify the error 'chunk argument must be of type string' caused by passing a raw object to response.end instead of a string.",
+    "intent": "debugging"
+  }
+]

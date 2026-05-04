@@ -1,0 +1,26 @@
+[
+  {
+    "narration": "Bubble sort works by comparing adjacent items in a list. If the left item is greater than the right item, they swap places.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The algorithm repeats this comparison and swap process from the beginning of the list until the list is sorted.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "After each pass through the list, the largest unsorted element moves to its correct position at the end, reducing the number of comparisons needed in subsequent passes.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Define a function named bubbleSort that accepts a parameter called myList.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an outer for loop using a variable i that ranges from 0 to the length of myList minus 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an inner for loop using a variable j that ranges from 0 to the length of myList minus 1 minus i.",
+    "intent": "implementation"
+  }
+]

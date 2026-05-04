@@ -1,0 +1,46 @@
+[
+  {
+    "narration": "Binary search is a divide and conquer searching technique used to find an element in a sorted array with O(log n) time complexity.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The algorithm works by first finding the mid index of the current search range.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Calculate the mid index using the formula: (low + high) / 2.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Compare the target value (x) with the element at the mid index.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "If the target value is greater than the mid element, traverse the right side of the array.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Update the low index to mid + 1 when traversing to the right.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "If the target value is lesser than the mid element, traverse the left side of the array.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Update the high index to mid - 1 when traversing to the left.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Repeat the process until the target value is found or the search space is exhausted.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Define a function named 'binarySearch' that takes 'array', 'low', 'high', and 'x' as arguments.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Calculate the mid index using 'Math.floor((low + high) / 2)' to ensure a whole number.",
+    "intent": "implementation"
+  }
+]

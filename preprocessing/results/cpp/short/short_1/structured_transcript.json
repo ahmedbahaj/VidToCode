@@ -1,0 +1,110 @@
+[
+  {
+    "narration": "Include the cstdlib library to access the rand function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Include the ctime library to access the time function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call srand with a seed value to determine the sequence of random integers.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use the time function with a null argument to get the current time as the seed value.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Cast the time function return value to unsigned int to match the expected type for srand.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare an integer variable named number to store the random integer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use the rand function to generate a random integer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Apply the modulus operator with 100 to limit the random integer range to 0-99.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Add 1 to the result of the modulus operation to shift the range to 1-100.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare an integer variable named guess to store the user's input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a do-while loop that continues as long as guess does not equal number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the loop, use cout to prompt the user to enter a guess between 1 and 100.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use cin to read the user's input and store it in the guess variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an if statement to check if the guess is greater than the number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is greater, output 'Guess lower' followed by a newline.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an else if statement to check if the guess is less than the number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is less, output 'Guess higher' followed by a newline.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an else block to handle the case where the guess equals the number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In the else block, output 'You won' followed by a newline.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that the loop terminates when the guess equals the number.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Test the program by compiling and running it.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Enter 50 as the first guess and observe the 'Guess lower' message.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Enter 25 as the next guess and observe the 'Guess lower' message.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Enter 10 as the next guess and observe the 'Guess higher' message.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Enter 17 as the next guess and observe the 'Guess lower' message.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Enter 13 as the next guess and observe the 'Guess lower' message.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Enter 12 as the final guess and observe the 'You won' message.",
+    "intent": "debugging"
+  }
+]

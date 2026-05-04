@@ -1,0 +1,166 @@
+[
+  {
+    "narration": "Create an integer variable named userScore and initialize it to zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an integer variable named cpuScore and initialize it to zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an infinite while loop using the condition while(true).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a prompt asking the user to enter 1 for rock, 2 for paper, or 3 for scissors.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Import the Scanner class using import java.util.Scanner.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a Scanner object named scan and pass System.in as the parameter.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an integer variable named userChoice and assign it the value of scan.nextInt().",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Import the Random class using import java.util.Random.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a Random object named rand with no parameters.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an integer variable named cpuChoice and assign it the value of rand.nextInt(3) + 1 to generate a random number between 1 and 3.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an if statement to check if cpuChoice equals userChoice.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the tie condition, print a message stating it is a tie and no points are awarded.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an else if statement to check if userChoice equals 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the userChoice equals 1 block, create an if statement to check if cpuChoice equals 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If cpuChoice is 2, print that the CPU chose paper and the user lost, then increment cpuScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use System.out.printf to display the current cpuScore and userScore with newline characters.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an else if statement to check if cpuChoice equals 3.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If cpuChoice is 3, print that the CPU chose scissors and the user won, then increment userScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Display the updated scores using printf.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an else if statement to check if userChoice equals 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the userChoice equals 2 block, create an if statement to check if cpuChoice equals 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If cpuChoice is 1, print that the CPU chose rock and the user won, then increment userScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Display the updated scores using printf.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an else if statement to check if cpuChoice equals 3.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If cpuChoice is 3, print that the CPU chose scissors and the user lost, then increment cpuScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Display the updated scores using printf.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an else if statement to check if userChoice equals 3.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the userChoice equals 3 block, create an if statement to check if cpuChoice equals 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If cpuChoice is 1, print that the CPU chose rock and the user lost, then increment cpuScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Display the updated scores using printf.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an else if statement to check if cpuChoice equals 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If cpuChoice is 2, print that the CPU chose paper and the user won, then increment userScore.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Display the updated scores using printf.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an if statement to check if cpuScore equals 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If cpuScore is 2, print a message stating the user lost best two out of three.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Display the final scores using printf.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use the break statement to exit the infinite while loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an if statement to check if userScore equals 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If userScore is 2, print a message congratulating the user for winning best two out of three.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Display the final scores using printf.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use the break statement to exit the infinite while loop.",
+    "intent": "implementation"
+  }
+]

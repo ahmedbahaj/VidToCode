@@ -1,0 +1,102 @@
+[
+  {
+    "narration": "Create a constant named min and set it to 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a constant named max and set it to 100.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a constant named answer to store the random number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Generate a random number using Math.random multiplied by (max - min + 1).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Wrap the random number generation equation with Math.floor to round down to an integer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add min to the end of the equation to ensure the random number falls within the correct range.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a variable named attempts and initialize it to 0.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare a variable named guess without assigning a value yet.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a Boolean variable named running and set it to true.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a while loop that runs while the running variable is true.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Assign guess to window.prompt using a template literal asking for a number between min and max.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Reassign guess by type casting it to a Number to convert the string input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an if statement using isNaN to check if the guess is not a number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the isNaN check, use window.alert to display a message asking for a valid number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an else if statement to check if the guess is less than min or greater than max.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the range check, use window.alert to display a message asking for a valid number within the range.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an else statement to handle valid guesses within the range.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the valid guess block, increment the attempts variable by one.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an if statement to check if the guess is less than the answer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is too low, use window.alert to tell the user to try again.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an else if statement to check if the guess is greater than the answer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is too high, use window.alert to tell the user to try again.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a final else statement to handle the case where the guess equals the answer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the correct guess block, use window.alert with a template literal to congratulate the user and display the answer and attempt count.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the running variable to false inside the correct guess block to exit the while loop.",
+    "intent": "implementation"
+  }
+]

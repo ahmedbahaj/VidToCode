@@ -1,0 +1,74 @@
+[
+  {
+    "narration": "Define a helper function to merge two sorted arrays into a single sorted array.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize an empty list called 'sorted_list' to store the merged result.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize two pointers, 'i' and 'j', to zero to track the current index of the first and second arrays respectively.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a while loop that continues as long as both pointers are within the bounds of their respective arrays.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the loop, compare the element at index 'i' of the first array with the element at index 'j' of the second array.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the element from the first array is smaller or equal, append it to 'sorted_list' and increment pointer 'i'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Otherwise, append the element from the second array to 'sorted_list' and increment pointer 'j'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "After the main loop exits, add a loop to append any remaining elements from the first array to 'sorted_list'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a second loop to append any remaining elements from the second array to 'sorted_list'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Return the fully populated 'sorted_list'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the main 'merge_sort' function that takes an unsorted array as input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement the base case: if the array length is less than or equal to one, return the array immediately.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Calculate the middle index of the array using integer division.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Split the array into two halves: 'left' (from start to mid) and 'right' (from mid to end).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Recursively call 'merge_sort' on the 'left' half and store the result.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Recursively call 'merge_sort' on the 'right' half and store the result.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the merge helper function with the sorted 'left' and 'right' arrays and return the result.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Refactor the merge function to sort in-place by passing the original array and using an index 'k' for assignment instead of appending.",
+    "intent": "refactoring"
+  }
+]

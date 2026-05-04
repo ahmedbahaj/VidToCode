@@ -1,0 +1,78 @@
+[
+  {
+    "narration": "Define a class named A with a public void method called show.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the show method, create a for loop that iterates from 1 to 10.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the loop, print the string 'Hi' to the console.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a second class named B with a similar show method.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside class B's show method, create a for loop that iterates from 1 to 10.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the loop, print the string 'Hello' to the console.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In the main method, create an object of class A named obj1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "In the main method, create an object of class B named obj2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the show method on obj1 followed by calling the show method on obj2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Compile and run the code to observe that the methods execute sequentially.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Explain that the JVM executes the main method sequentially, waiting for one method call to finish before starting the next.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Modify class A to extend the Thread class.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Modify class B to extend the Thread class.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Replace the direct method calls with the start method for both obj1 and obj2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that calling start creates a new thread and internally invokes the run method.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Run the code and observe that the output still appears sequential due to the speed of execution.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Increase the loop iteration count from 10 to 100 in both classes.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Run the code again to observe the interleaved output of 'Hi' and 'Hello'.",
+    "intent": "debugging"
+  },
+  {
+    "narration": "Explain that the OS scheduler manages thread execution by time-sharing CPU cores.",
+    "intent": "explanation"
+  }
+]

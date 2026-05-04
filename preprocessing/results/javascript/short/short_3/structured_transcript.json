@@ -1,0 +1,18 @@
+[
+  {
+    "narration": "Define a function named bubbleSort that takes one parameter, arr, representing the array to sort.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an outer do-while loop to ensure the array is traversed at least once.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a boolean variable named swapped to false at the start of the do-while loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an inner for loop that iterates from index 0 to arr.length - 1.",
+    "intent": "implementation"
+  }
+]

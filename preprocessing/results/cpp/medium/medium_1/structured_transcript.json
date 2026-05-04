@@ -1,0 +1,82 @@
+[
+  {
+    "narration": "Understand that a class is an abstract blueprint, while objects are real instances of that class, such as a 'Phone' class having objects like iPhone or Google Pixel.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Recognize that a class must be defined before any objects can be created from it.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Identify the two main components of a class: attributes (data/properties) and functionalities (operations/functions).",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Define a class named 'Phone' using the 'class' keyword followed by the class name and curly braces.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Follow the naming convention where the class name starts with an uppercase letter.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare string attributes 'p_name' and 'p_size' inside the class to represent the phone's name and screen size.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare void functions 'makeCall' and 'receiveCall' inside the class to represent the phone's operations.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Understand that access specifiers like 'private' and 'public' control visibility; by default, members are private if no specifier is used.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Keep attributes in the private section to prevent direct external modification.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Keep methods (operations) in the public section so they can be called from outside the class.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Implement the 'makeCall' function to print a message indicating a call is being made using the phone.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement the 'receiveCall' function to print a message indicating a call is being received.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a constructor named 'Phone' that matches the class name and takes string parameters for name and size.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the constructor, assign the passed parameters to the class attributes using 'p_name = name' and 'p_size = size'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an object named 'phone1' of type 'Phone' by passing specific name and size arguments to the constructor.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Invoke the 'makeCall' operation on the 'phone1' object using the dot operator.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Invoke the 'receiveCall' operation on the 'phone1' object using the dot operator.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a second object named 'gPixel' of type 'Phone' with different parameters to demonstrate multiple instances.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the 'makeCall' and 'receiveCall' functions on the 'gPixel' object to verify it operates independently.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Understand that a single class blueprint allows for the creation of multiple distinct objects with unique data.",
+    "intent": "explanation"
+  }
+]

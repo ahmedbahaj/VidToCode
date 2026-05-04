@@ -1,0 +1,74 @@
+[
+  {
+    "narration": "Binary search requires the input array to be sorted, unlike linear search.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Binary search reduces the search space by half with every comparison, offering significantly better performance than linear search.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "The algorithm calculates a midpoint index and compares the search value against the element at that midpoint.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "If the search value is not equal to the midpoint value, the algorithm eliminates half of the search space based on whether the search value is greater or less than the midpoint.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Initialize a 'low' variable to 0, representing the index of the first element.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a 'high' variable to the last index of the array (size - 1).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Calculate the midpoint index by adding 'low' and 'high' and dividing by 2, using integer division to truncate the fractional part.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Compare the search value with the element at the calculated midpoint index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the search value equals the element at the midpoint, return the midpoint index as the result.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the search value is greater than the element at the midpoint, update 'low' to be 'mid + 1' to search the upper half.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the search value is less than the element at the midpoint, update 'high' to be 'mid - 1' to search the lower half.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Wrap the comparison and update logic in a while loop that continues as long as 'low' is less than or equal to 'high'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the loop terminates without finding the value, return -1 to indicate the search value was not found.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the binary search function to return an integer, accepting an integer array, the array size, and the search value as parameters.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The time complexity of binary search is O(log n), meaning doubling the array size only adds one additional comparison.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "In the main function, define a sorted array of integers to serve as the test data.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the binary search function from main, passing the array, the size of the array, and a user-provided search value.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Build and run the program to verify that it correctly finds existing values and returns -1 for values not in the array.",
+    "intent": "implementation"
+  }
+]

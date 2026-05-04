@@ -1,0 +1,82 @@
+[
+  {
+    "narration": "Import the Random class by adding 'import java.util.Random' at the top of the file.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a Random object by instantiating the class: 'Random random = new Random();'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Import the Scanner class by adding 'import java.util.Scanner' at the top of the file.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a Scanner object to accept user input: 'Scanner scanner = new Scanner(System.in);'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare an integer variable named 'guess' to store the user's input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare an integer variable named 'attempts' to track the number of guesses.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare an integer variable named 'randomNumber' to store the target number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Assign a random number to 'randomNumber' using the 'nextInt' method with a range, for example: 'randomNumber = random.nextInt(1, 11);'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize the 'attempts' variable to zero before the loop starts.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a do-while loop that continues as long as 'guess' is not equal to 'randomNumber'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the loop, prompt the user to enter a guess using 'System.out.println'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Read the user's input and assign it to the 'guess' variable using 'scanner.nextInt()'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Increment the 'attempts' variable by one after each guess.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an if statement to check if 'guess' is less than 'randomNumber' and print 'Too low, try again'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an else if statement to check if 'guess' is greater than 'randomNumber' and print 'Too high, try again'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an else block to handle the correct guess, printing the winning number and the total attempts.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Close the scanner object using 'scanner.close()' to prevent resource leaks.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare integer variables 'min' and 'max' to define the range of the random number.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Update the 'nextInt' method to use 'min' and 'max + 1' as arguments for the range.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Replace hardcoded numbers in the prompt with 'System.out.printf' and format specifiers to display the dynamic range.",
+    "intent": "implementation"
+  }
+]

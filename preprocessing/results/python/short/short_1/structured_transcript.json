@@ -1,0 +1,42 @@
+[
+  {
+    "narration": "Import the random module to generate random numbers.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Assign the variable 'number' to random.randint(1, 100) to generate a random integer between 1 and 100.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a variable called 'guess' and set it equal to 0 to store user guesses.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a while loop that continues as long as 'guess' does not equal 'number'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the loop, prompt the user for input using 'guess = int(input(\"Enter guess\"))' to convert the string input to an integer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the 'guess' is lower than the 'number'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is lower, print 'Guess higher'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the 'guess' is higher than the 'number'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is higher, print 'Guess lower'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is neither lower nor higher, print 'You won' to indicate the correct guess.",
+    "intent": "implementation"
+  }
+]

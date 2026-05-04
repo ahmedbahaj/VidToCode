@@ -1,0 +1,174 @@
+[
+  {
+    "narration": "Import the random module to enable random word selection.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Ensure the coding language is set to Python in the Visual Studio Code status bar.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a list named 'animals' containing strings of animal names like 'dolphin', 'shark', 'elephant', and 'rhino'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a variable named 'word' that assigns a random choice from the 'animals' list using random.choice().",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Convert the selected word to lowercase using the .lower() method.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize an empty list named 'guessed_correctly' to store correct letter guesses.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize an empty list named 'guessed_incorrectly' to store incorrect letter guesses.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a variable named 'tries' and set it to 6 to define the maximum number of guesses.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a variable named 'hangman_count' and set it to 1 to track the hangman drawing stage.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a variable named 'output' as an empty string to build the displayed word.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a while loop that continues as long as 'tries' is greater than zero.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the while loop, create a for loop that iterates through each letter in the 'word' variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an if statement to check if the current letter is in the 'guessed_correctly' list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the letter is guessed correctly, append the letter to the 'output' string.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an else statement to append an underscore to 'output' if the letter has not been guessed.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "After the for loop, add an if statement to check if 'output' equals 'word'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the word is fully guessed, use the break statement to exit the while loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a message instructing the user to guess the word.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print the current state of the 'output' variable to show guessed letters and underscores.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print the remaining number of 'tries' available to the user.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a variable named 'guess' that captures user input and converts it to lowercase.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an if statement to check if the 'guess' is already in 'guessed_correctly' or 'guessed_incorrectly'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the letter was already guessed, print a message indicating the user has already guessed that letter.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an elif statement to check if the 'guess' is in the 'word'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is correct, print a congratulatory message.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an else statement to handle incorrect guesses.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the guess is incorrect, print a message stating the letter was wrong.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Increment the 'hangman_count' variable by 1 for incorrect guesses.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Decrement the 'tries' variable by 1 for incorrect guesses.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Append the correct 'guess' to the 'guessed_correctly' list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an if statement to check if 'tries' is still greater than zero after the guess.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the user has won, print a message confirming they guessed the word correctly.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an else statement to handle the case where the user has run out of tries.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the user loses, print a message telling them to try again.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print the current hangman drawing based on the 'hangman_count' index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a list named 'hangman_one' to store ASCII art strings representing the hangman stages.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the first string in the list as the empty gallows structure.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the second string in the list as the gallows with the head added.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the third string in the list as the gallows with the head and upper body.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the fourth string in the list as the gallows with the head, body, and one arm.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the fifth string in the list as the gallows with the head, body, and both arms.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the sixth string in the list as the gallows with the head, body, arms, and one leg.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the seventh string in the list as the complete hangman with both legs.",
+    "intent": "implementation"
+  }
+]

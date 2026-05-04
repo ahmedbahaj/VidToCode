@@ -1,0 +1,38 @@
+[
+  {
+    "narration": "Define a variable named slices with the data type int and assign it the value 5 using the assignment operator.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Identify the five components of a variable declaration: data type, identifier, assignment operator, value, and semicolon.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Separate the variable declaration from initialization by removing the assignment and ending the declaration statement with a semicolon.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize the variable slices by assigning it the value 5 in a separate statement without repeating the data type.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Assign an expression, such as 5 plus 1, to the variable slices to store the calculated result.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Output the value of the variable slices to the console by passing the variable name directly to cout without quotes.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a new variable named children and assign it the current value of the variable slices.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Understand that assigning one variable to another copies the value, creating independent storage for each variable.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Modify the value of slices to a different number and observe that the value of children remains unchanged.",
+    "intent": "explanation"
+  }
+]

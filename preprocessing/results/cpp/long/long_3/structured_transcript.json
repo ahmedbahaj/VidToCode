@@ -1,0 +1,134 @@
+[
+  {
+    "narration": "Define a base class named YouTubeChannel with private properties: name, subscribersCount, and publishedVideoTitles.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a protected property named ownerName to the YouTubeChannel class to allow access in derived classes.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement a constructor for YouTubeChannel to initialize the properties.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a public method named getInfo to output information about the YouTube channel.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement subscribe and unsubscribe methods to increase or decrease the subscriber count.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a publishVideo method to add video titles to the publishedVideoTitles list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a derived class named CookingYouTubeChannel that inherits from YouTubeChannel.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement a constructor for CookingYouTubeChannel that invokes the base class constructor.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Override the practice method in CookingYouTubeChannel to output a message about practicing cooking and learning recipes.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a second derived class named SingersYouTubeChannel that inherits from YouTubeChannel.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement a constructor for SingersYouTubeChannel that invokes the base class constructor.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Override the practice method in SingersYouTubeChannel to output a message about taking singing classes, learning songs, and dancing.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Instantiate a CookingYouTubeChannel object named cookingYouTubeChannel with the name 'Amy's Kitchen' and owner 'Amy'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Instantiate a SingersYouTubeChannel object named singersYouTubeChannel with the name 'John Sings' and owner 'John'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Invoke the practice method on the cookingYouTubeChannel object.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Invoke the practice method on the singersYouTubeChannel object.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a protected property named contentQuality to the YouTubeChannel base class.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize contentQuality to zero in the YouTubeChannel constructor.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Increment the contentQuality property inside the practice method of CookingYouTubeChannel.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Increment the contentQuality property inside the practice method of SingersYouTubeChannel.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Invoke the practice method on the singersYouTubeChannel object multiple times to simulate extensive practice.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a public method named checkAnalytics in the YouTubeChannel base class.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement an if condition in checkAnalytics to check if contentQuality is less than 5.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Output a message indicating bad content quality if contentQuality is less than 5.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement an else block in checkAnalytics to output a message indicating great content quality if contentQuality is 5 or greater.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare a pointer of type YouTubeChannel named youtube1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Assign the address of the cookingYouTubeChannel object to the youtube1 pointer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare a pointer of type YouTubeChannel named youtube2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Assign the address of the singersYouTubeChannel object to the youtube2 pointer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Invoke the checkAnalytics method on youtube1 using the arrow operator.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Invoke the checkAnalytics method on youtube2 using the arrow operator.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that polymorphism allows derived classes to have methods with the same name but different implementations.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that a base class pointer can point to an object of a derived class.",
+    "intent": "explanation"
+  }
+]

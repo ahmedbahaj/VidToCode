@@ -1,0 +1,66 @@
+[
+  {
+    "narration": "Create a prompt asking the user to start the game with the text 'start okay question mark'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an if statement that checks if the prompt answer is equal to 'roll'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a function named 'roll the dice' inside the if block to handle the dice rolling logic.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an alert inside the function displaying 'roll' to verify the code is working.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use Math.random to generate a random number between 0 and 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Multiply the result of Math.random by 6 to get a range between 0 and 6.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add 1 to the result to shift the range to between 1 and 7.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Wrap the calculation in an alert to display the result.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use Math.floor to round the number down to a whole integer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a prompt asking 'play again' after the alert to allow the user to continue the game.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an if statement to check if the 'play again' prompt result is equal to 'yes'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the 'roll the dice' function again inside the 'yes' block to repeat the game.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an else block for when the user answers 'no' to the 'play again' prompt.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an alert inside the else block displaying 'you next time'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Declare a variable named 'play again' to store the result of the prompt outside the if statement.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Update the if and else conditions to check the 'play again' variable instead of calling the prompt directly.",
+    "intent": "refactoring"
+  }
+]

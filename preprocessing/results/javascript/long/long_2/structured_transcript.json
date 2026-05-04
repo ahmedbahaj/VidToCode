@@ -1,0 +1,174 @@
+[
+  {
+    "narration": "Define a recursive function that calls itself to perform repeated tasks.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that recursion is useful for traversing tree data structures due to its multiplying nature.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Describe how a function calling itself twice creates a tree-like structure of function calls.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Define a base case as an if condition that prevents infinite recursive calls.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that missing a base case causes a stack overflow and application crash.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Create a variable counter to track the number of function calls.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Increment the counter variable before the function calls itself.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the base case condition to check if the counter is greater than four.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use the return keyword in the base case to exit the function before the sixth call.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that the call stack piles functions on top of each other, with the most recent at the top.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Modify the function to return the result of the recursive call it invokes.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that returning the recursive call allows the bottom-most function to pass the value back up the stack.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Define memoization as caching a function's return value based on its input parameters.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that memoization avoids recalculating values for inputs that have been processed before.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Create a function that adds 10 to an input value and returns the result.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an object to store the cache data for the function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add an if condition to check if the input value exists in the cache object.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Return the cached value if the input exists in the cache object.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Store the calculated value in the cache object before returning it.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Wrap the memoization logic in an Immediately Invoked Function Expression (IIFE) to create a closure.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize the cache object inside the closure to keep it private from global scope.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Return the nested function from the closure so it can access the private cache.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a function to calculate the Fibonacci sequence using a standard loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize two variables to hold the first two values of the Fibonacci sequence (0 and 1).",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Add a base case to return the input n if it is less than 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a for loop that starts at index 2 and runs until index n.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Calculate the next Fibonacci number by summing the previous two numbers.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Update the previous two number variables to move the sequence forward.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a recursive function for the Fibonacci sequence.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the base case to return n if n is less than 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Return the sum of the function called with n-1 and the function called with n-2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that the recursive Fibonacci algorithm has exponential time complexity (2^n).",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Implement memoization into the recursive Fibonacci function using a closure.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check the cache object for the requested index before performing calculations.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Store the calculated Fibonacci number in the cache object indexed by n.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that memoization reduces the time complexity to linear time.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Define a function to calculate the factorial of a number using a loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a result variable to 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a loop that multiplies the result by the loop counter until the counter reaches n.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a recursive function for the factorial algorithm.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Set the base case to return 2 if n is equal to 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Return n multiplied by the function called with n-1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that memoization is less beneficial for the factorial algorithm since it is already linear time.",
+    "intent": "explanation"
+  }
+]

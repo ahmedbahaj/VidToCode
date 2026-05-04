@@ -1,0 +1,50 @@
+[
+  {
+    "narration": "Binary search requires the input list to be sorted, unlike linear search which works on unsorted lists.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Initialize the lower bound variable 'L' to 0, representing the first index of the list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize the upper bound variable 'U' to the length of the list minus 1, representing the last index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a while loop that continues as long as the lower bound is less than or equal to the upper bound.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Calculate the mid index by adding the lower bound and upper bound together and performing integer division by 2.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the element at the mid index matches the target value being searched for.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the target is found, store the position and return true or print the result.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the target value is greater than the mid value, update the lower bound to mid plus 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the target value is smaller than the mid value, update the upper bound to mid minus 1.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the loop completes without finding the target, return false to indicate the element was not found.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "The algorithm works by repeatedly dividing the search interval in half to skip unnecessary values.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Ensure bounds are updated to mid plus 1 or mid minus 1 to avoid infinite loops and correctly narrow the search range.",
+    "intent": "debugging"
+  }
+]

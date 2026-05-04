@@ -1,0 +1,30 @@
+[
+  {
+    "narration": "Define an integer array named numbers with a size of 10.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a for loop that iterates through the numbers array to fill it with random integers between 0 and 1,000,000.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the printArray method to display the unsorted state of the numbers array.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Initialize a boolean variable named swappedSomething to true to control the sorting loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a while loop that continues executing as long as swappedSomething is true.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside the while loop, set swappedSomething to false at the start of each iteration.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a for loop with an integer variable i starting at 0, continuing while i is less than numbers.length minus 1.",
+    "intent": "implementation"
+  }
+]

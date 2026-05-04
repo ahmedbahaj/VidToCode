@@ -1,0 +1,142 @@
+[
+  {
+    "narration": "Initialize an empty list named 'tasks' to store the to-do items.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the main entry point using 'if __name__ == \"__main__\":'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a welcome message to the user.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an infinite 'while True' loop to keep the application running.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a newline character and a prompt asking the user to select an option.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a separator line of dashes for visual clarity.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print the four menu options: 1. Add a new task, 2. Delete a task, 3. List tasks, 4. Quit.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Capture user input into a variable named 'choice' using the input function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an 'if' statement to check if 'choice' equals '1'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an 'elif' statement to check if 'choice' equals '2'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an 'elif' statement to check if 'choice' equals '3'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an 'elif' statement to check if 'choice' equals '4'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create an 'else' block to print an error message for invalid input.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the 'add_task' function inside the 'if choice == \"1\"' block.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the 'delete_task' function inside the 'elif choice == \"2\"' block.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the 'list_tasks' function inside the 'elif choice == \"3\"' block.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use the 'break' statement inside the 'elif choice == \"4\"' block to exit the loop.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a goodbye message after the loop terminates.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the 'add_task' function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Inside 'add_task', prompt the user to enter a task and store it in a variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Append the new task to the 'tasks' list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a confirmation message using an f-string to show the added task.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the 'delete_task' function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call 'list_tasks' at the beginning of 'delete_task' to show current items.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Wrap the deletion logic in a 'try-except' block to handle invalid input errors.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Prompt the user to enter the number of the task to delete and cast the input to an integer.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the entered index is greater than or equal to 0 and less than the length of 'tasks'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the index is valid, use 'tasks.pop()' to remove the task at that index.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print a confirmation message stating the task has been removed.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If the index is invalid, print an error message indicating the task was not found.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define the 'list_tasks' function.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Check if the 'tasks' list is empty; if so, print a message stating there are no tasks.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "If tasks exist, print a header 'Current Tasks:'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Use a 'for' loop with 'enumerate' to iterate through the 'tasks' list.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print each task with its index using an f-string formatted as 'Task #index: task_name'.",
+    "intent": "implementation"
+  }
+]

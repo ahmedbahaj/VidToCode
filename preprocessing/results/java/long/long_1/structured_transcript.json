@@ -1,0 +1,106 @@
+[
+  {
+    "narration": "Define polymorphism as the ability of a method or object to react in many different ways.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Explain that the term polymorphism is derived from 'poly' meaning many and 'morphism' meaning behavior.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Illustrate polymorphism with a real-life analogy where one person behaves differently at school versus at home.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Categorize polymorphism into two types: compile-time polymorphism and runtime polymorphism.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Define compile-time polymorphism as a scenario where the result of a method is known before execution.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Define runtime polymorphism as a scenario where the specific method to be executed is determined during execution.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Identify method overloading as the implementation of compile-time polymorphism.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Identify method overriding as the implementation of runtime polymorphism.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Create a class named Addition to demonstrate method overloading.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Define a method named add that takes two integer arguments (n1, n2) and returns their sum.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Overload the add method by creating a version that takes three integer arguments.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Overload the add method again by creating a version that takes four double arguments.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Instantiate an object of the Addition class.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the first add method with two integer arguments (10, 2) and store the result in a variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the second add method with three integer arguments (5, 6, 5) and store the result in a variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the third add method with four double arguments (8, 9, 2, 3) and store the result in a variable.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Print the results of the three overloaded methods to the console.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a parent class named ClassA containing a void method named show.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Implement the show method in ClassA to print 'This is A'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Create a child class named ClassB that extends ClassA.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Override the show method in ClassB to print 'This is B'.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Instantiate an object of the child class ClassB.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Call the show method on the ClassB object to demonstrate runtime polymorphism.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Explain that the child class method overrides the parent class method at runtime.",
+    "intent": "explanation"
+  },
+  {
+    "narration": "Demonstrate how to access the parent class method using the 'super' keyword within the child class.",
+    "intent": "implementation"
+  },
+  {
+    "narration": "Summarize that method overloading occurs at compile time while method overriding occurs at runtime.",
+    "intent": "explanation"
+  }
+]
