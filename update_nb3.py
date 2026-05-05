@@ -1,0 +1,102 @@
+import json
+
+with open('results/evaluation_analysis.ipynb', 'r') as f:
+    nb = json.load(f)
+
+cell_12_code = [
+    "import pandas as pd\n",
+    "\n",
+    "def get_df(d, name):\n",
+    "    records = []\n",
+    "    for s in d['per_sample']:\n",
+    "        dur = s['id'].split('/')[1] if '/' in s['id'] else 'unknown'\n",
+    "        records.append({\n",
+    "            'id': s['id'],\n",
+    "            'language': s['language'],\n",
+    "            'duration': dur,\n",
+    "            f'{name}_cs': s.get('cs_score', 0) if s.get('cs_score') is not None else 0,\n",
+    "            f'{name}_cb': s.get('codebleu_score', 0) if s.get('codebleu_score') is not None else 0,\n",
+    "            f'{name}_valid': 1 if s.get('cs_details', {}).get('status') == 'success' else 0\n",
+    "        })\n",
+    "    return pd.DataFrame(records)\n",
+    "\n",
+    "df1 = get_df(d1, '4B_zero')\n",
+    "df2 = get_df(d2, '27B_zero')\n",
+    "df3 = get_df(d3, '27B_struct')\n",
+    "\n",
+    "df = df1.merge(df2, on=['id', 'language', 'duration']).merge(df3, on=['id', 'language', 'duration'])\n",
+    "\n",
+    "# Language breakdown - CS\n",
+    "lang_cs = df.groupby('language')[['4B_zero_cs', '27B_zero_cs', '27B_struct_cs']].mean()\n",
+    "ax = lang_cs.plot(kind='bar', figsize=(8, 4), title=\"Average CS Score by Language\")\n",
+    "ax.set_ylabel(\"CS Score\")\n",
+    "ax.tick_params(axis='x', rotation=45)\n",
+    "ax.tick_params(axis='y', rotation=45)\n",
+    "plt.tight_layout()\n",
+    "plt.show()\n",
+    "\n",
+    "# Language breakdown - CodeBLEU\n",
+    "lang_cb = df.groupby('language')[['4B_zero_cb', '27B_zero_cb', '27B_struct_cb']].mean()\n",
+    "ax_cb = lang_cb.plot(kind='bar', figsize=(8, 4), title=\"Average CodeBLEU by Language\")\n",
+    "ax_cb.set_ylabel(\"CodeBLEU\")\n",
+    "ax_cb.tick_params(axis='x', rotation=45)\n",
+    "ax_cb.tick_params(axis='y', rotation=45)\n",
+    "plt.tight_layout()\n",
+    "plt.show()\n",
+    "\n",
+    "# Duration breakdown - CS\n",
+    "dur_cs = df.groupby('duration')[['4B_zero_cs', '27B_zero_cs', '27B_struct_cs']].mean()\n",
+    "ax2 = dur_cs.plot(kind='bar', figsize=(8, 4), title=\"Average CS Score by Duration\")\n",
+    "ax2.set_ylabel(\"CS Score\")\n",
+    "ax2.tick_params(axis='x', rotation=45)\n",
+    "ax2.tick_params(axis='y', rotation=45)\n",
+    "plt.tight_layout()\n",
+    "plt.show()\n",
+    "\n",
+    "# Duration breakdown - CodeBLEU\n",
+    "dur_cb = df.groupby('duration')[['4B_zero_cb', '27B_zero_cb', '27B_struct_cb']].mean()\n",
+    "ax2_cb = dur_cb.plot(kind='bar', figsize=(8, 4), title=\"Average CodeBLEU by Duration\")\n",
+    "ax2_cb.set_ylabel(\"CodeBLEU\")\n",
+    "ax2_cb.tick_params(axis='x', rotation=45)\n",
+    "ax2_cb.tick_params(axis='y', rotation=45)\n",
+    "plt.tight_layout()\n",
+    "plt.show()\n"
+]
+nb['cells'][12]['source'] = cell_12_code
+
+cell_14_code = [
+    "df['1v2_change_cs'] = df['27B_zero_cs'] - df['4B_zero_cs']\n",
+    "df['2v3_change_cs'] = df['27B_struct_cs'] - df['27B_zero_cs']\n",
+    "df['1v2_change_cb'] = df['27B_zero_cb'] - df['4B_zero_cb']\n",
+    "df['2v3_change_cb'] = df['27B_struct_cb'] - df['27B_zero_cb']\n",
+    "\n",
+    "fig, axes = plt.subplots(1, 2, figsize=(14, 5))\n",
+    "df.groupby('language')[['1v2_change_cs', '2v3_change_cs']].mean().plot(kind='bar', ax=axes[0], title='CS Score Change by Language')\n",
+    "axes[0].set_ylabel('Avg CS Score Change')\n",
+    "axes[0].tick_params(axis='x', rotation=45)\n",
+    "axes[0].tick_params(axis='y', rotation=45)\n",
+    "df.groupby('duration')[['1v2_change_cs', '2v3_change_cs']].mean().plot(kind='bar', ax=axes[1], title='CS Score Change by Duration')\n",
+    "axes[1].set_ylabel('Avg CS Score Change')\n",
+    "axes[1].tick_params(axis='x', rotation=45)\n",
+    "axes[1].tick_params(axis='y', rotation=45)\n",
+    "plt.tight_layout()\n",
+    "plt.show()\n",
+    "\n",
+    "fig2, axes2 = plt.subplots(1, 2, figsize=(14, 5))\n",
+    "df.groupby('language')[['1v2_change_cb', '2v3_change_cb']].mean().plot(kind='bar', ax=axes2[0], title='CodeBLEU Change by Language')\n",
+    "axes2[0].set_ylabel('Avg CodeBLEU Change')\n",
+    "axes2[0].tick_params(axis='x', rotation=45)\n",
+    "axes2[0].tick_params(axis='y', rotation=45)\n",
+    "df.groupby('duration')[['1v2_change_cb', '2v3_change_cb']].mean().plot(kind='bar', ax=axes2[1], title='CodeBLEU Change by Duration')\n",
+    "axes2[1].set_ylabel('Avg CodeBLEU Change')\n",
+    "axes2[1].tick_params(axis='x', rotation=45)\n",
+    "axes2[1].tick_params(axis='y', rotation=45)\n",
+    "plt.tight_layout()\n",
+    "plt.show()\n"
+]
+nb['cells'][14]['source'] = cell_14_code
+
+with open('results/evaluation_analysis.ipynb', 'w') as f:
+    json.dump(nb, f, indent=2)
+
+print('Notebook updated successfully with CodeBLEU graphs.')
